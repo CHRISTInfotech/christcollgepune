@@ -4,7 +4,6 @@ import Seo from '../../components/Seo';
 import { ChevronDownIcon } from '../../components/icons';
 import jamesThayyil from '../../assets/images/2-about-us-administration/james-thayyil.png';
 import antonyPuthussery from '../../assets/images/2-about-us-administration/antony-puthussery.png';
-import arunAntonyChully from '../../assets/images/2-about-us-administration/arun-antony-chully.jpg';
 import peterKochalumkal from '../../assets/images/2-about-us-administration/peter-kochalumkal.jpg';
 import jossyPGeorge from '../../assets/images/2-about-us-administration/jossy-p-george.jpg';
 import arunAntonyChullyAcademic from '../../assets/images/2-about-us-administration/arun-antony-chully-academic.png';

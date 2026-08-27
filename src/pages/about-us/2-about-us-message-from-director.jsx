@@ -1,6 +1,6 @@
 import PageHeader from '../../components/PageHeader';
 import Seo from '../../components/Seo';
-import directorImg from '../../assets/aboutus/fr.arunDirector.png';
+import directorImg from '../../assets/images/2-about-us-administration/arun-antony-chully-academic.png';
 
 export default function MessageFromDirector() {
   return (
@@ -48,7 +48,7 @@ export default function MessageFromDirector() {
 
             <blockquote className="border-l-4 border-cc-gold py-1 pl-4 italic text-cc-text-heading">
               &ldquo;Train up a child in the way he should go, and when he is old he will not
-              depart from it&rdquo; (Proverbs 22:6).
+              depart from it&rdquo; <br /> (Proverbs 22:6).
             </blockquote>
 
             <p>

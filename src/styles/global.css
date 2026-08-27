@@ -32,6 +32,14 @@
     width: 100%;
   }
 
+  /* Long-form body copy (the .text-cc-text-body color utility doubles as the
+     marker for real prose paragraphs) is justified; short labels like card
+     names/roles are untouched since they use other color classes. */
+  .text-cc-text-body {
+    text-align: justify;
+    text-align-last: left;
+  }
+
   :focus-visible {
     outline: 3px solid var(--color-cc-gold);
     outline-offset: 2px;

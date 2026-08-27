@@ -75,7 +75,7 @@ function PersonCard({ name, designation, photo }) {
       </div>
       <div className="flex flex-1 flex-col items-center justify-center gap-1 px-4 py-5 text-center">
         <p className="font-semibold text-cc-text-heading">{name}</p>
-        <p className="text-sm text-cc-text-muted-light">{designation}</p>
+        <p className="text-sm text-cc-text-muted-light text-center">{designation}</p>
       </div>
     </div>
   );

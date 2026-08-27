@@ -88,7 +88,7 @@ export default function Footer() {
           <p className="text-base font-semibold text-cc-text-light">Vision</p>
           <p className="mt-1 text-sm text-cc-text-muted">Enlighten to Excel</p>
           <p className="mt-5 text-base font-semibold text-cc-text-light">Mission</p>
-          <p className="mt-1 text-sm text-cc-text-muted">
+          <p className="mt-1 text-sm text-cc-text-muted text-justify [text-align-last:left]">
             As a C.M.I. Educational Institution, the college regards education as integral to
             the formation of the human person for the fulfillment of his/her individual and
             social responsibilities. The college aims at forming leaders who are intellectually

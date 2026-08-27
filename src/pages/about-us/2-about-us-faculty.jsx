@@ -99,7 +99,7 @@ export default function Faculty() {
                 alt={person.name}
                 className="h-24 w-24 rounded-full border border-cc-gray-200 object-cover object-top"
               />
-              <p className="mt-4 font-semibold text-cc-text-heading">{person.name}</p>
+              <p className="mt-4 font-semibold text-cc-text-heading text-center">{person.name}</p>
               <p className="mt-1 text-xs uppercase tracking-wide text-cc-primary">{person.department}</p>
               {person.specialization && (
                 <p className="mt-2 text-sm text-cc-text-muted-light">{person.specialization}</p>
