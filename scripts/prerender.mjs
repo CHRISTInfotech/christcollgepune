@@ -39,12 +39,14 @@ async function main() {
   const preview = spawn(
     'npx',
     ['vite', 'preview', '--port', String(port), '--strictPort'],
-    { cwd: rootDir, shell: true, stdio: ['ignore', 'pipe', 'pipe'] }
+    { cwd: rootDir, shell: true, stdio: 'inherit' }
   );
 
+  let expectExit = false;
   let previewFailed = false;
   preview.on('exit', (code) => {
-    if (code !== null && code !== 0) previewFailed = true;
+    console.log(`[prerender] Preview server exited. code: ${code}, expectExit: ${expectExit}`);
+    if (!expectExit && code !== null && code !== 0) previewFailed = true;
   });
 
   try {
@@ -80,6 +82,7 @@ async function main() {
       failed.forEach((f) => console.log(`  ${f.route}: ${f.error.split('\n')[0]}`));
     }
   } finally {
+    expectExit = true;
     preview.kill();
   }
 
