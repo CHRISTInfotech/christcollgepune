@@ -10,6 +10,16 @@ const base = {
   'aria-hidden': true,
 };
 
+export function HomeIcon(props) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M4 11.5L12 4l8 7.5" />
+      <path d="M6 9.5V20h12V9.5" />
+      <path d="M10 20v-6h4v6" />
+    </svg>
+  );
+}
+
 export function AcademicCapIcon(props) {
   return (
     <svg {...base} {...props}>

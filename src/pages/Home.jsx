@@ -43,7 +43,7 @@ const ADMISSION_LINKS = [
 
 const DEPARTMENTS = [
   {
-    title: 'Department of Commerce',
+    title: 'Commerce',
     image: commerceImg,
     overview: '/academics/department-of-commerce/department-page',
     programmes: [
@@ -52,7 +52,7 @@ const DEPARTMENTS = [
     ],
   },
   {
-    title: 'Department of Science',
+    title: 'Science',
     image: scienceImg,
     overview: '/academics/department-of-science/department-page',
     programmes: [
@@ -62,7 +62,7 @@ const DEPARTMENTS = [
     ],
   },
   {
-    title: 'Department of Arts',
+    title: 'Arts',
     image: artsImg,
     overview: '/academics/department-of-arts/department-index',
     programmes: [
@@ -72,7 +72,7 @@ const DEPARTMENTS = [
     ],
   },
   {
-    title: 'Department of Management',
+    title: 'Management',
     image: managementImg,
     overview: '/academics/department-of-management/department-page',
     programmes: [
@@ -160,7 +160,7 @@ function HeroVideo() {
     videoRef.current?.play().catch(() => { });
   }, []);
 
-  // Skip autoplay entirely for users who've asked for reduced motion — the
+  // Skip autoplay entirely for users who've asked for reduced motion - the
   // gradient background alone still reads fine without the video layer.
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return null;
 
@@ -245,9 +245,9 @@ export default function Home() {
     <>
       <Seo
         title="Home"
-        description="Christ College Pune — a NAAC-accredited institution offering undergraduate and postgraduate programmes in commerce, science, arts, and management, with a focus on academic excellence and holistic student development."
+        description="Christ College Pune - a NAAC-accredited institution offering undergraduate and postgraduate programmes in commerce, science, arts, and management, with a focus on academic excellence and holistic student development."
       />
-      <h1 className="sr-only">Christ College Pune — Shaping Minds, Building Character</h1>
+      <h1 className="sr-only">Christ College Pune - Shaping Minds, Building Character</h1>
 
       <motion.section
         className="bg-cc-bg-page px-4 py-6 md:px-6"
@@ -309,11 +309,10 @@ export default function Home() {
         viewport={{ once: true, amount: 0.15 }}
         variants={staggerContainer}
       >
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="mx-auto text-center">
           <h2>Academic Departments</h2>
           <p className="mt-3 text-cc-text-muted-light">
-            Undergraduate and postgraduate programmes across commerce, science, the arts, and
-            management.
+            Undergraduate and postgraduate programmes across commerce, science, the arts, and management.
           </p>
         </div>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -374,7 +373,7 @@ export default function Home() {
         >
           <h2>Student Life</h2>
           <p className="mt-3 max-w-2xl text-cc-text-muted-light">
-            Campus experience beyond the classroom — societies, service, sport, and support.
+            Campus experience beyond the classroom - societies, service, sport, and support.
           </p>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {STUDENT_LIFE_LINKS.map((item) => (
@@ -415,7 +414,7 @@ export default function Home() {
 
           <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-4">
             {GALLERY_IMAGES.map((src, index) => (
-              <div key={src} className="aspect-square overflow-hidden rounded-cc-md">
+              <div key={src} className="aspect-[8/5] overflow-hidden rounded-cc-md">
                 <img
                   src={src}
                   alt={`Campus gallery photo ${index + 1}`}
