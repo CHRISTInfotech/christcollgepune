@@ -6,11 +6,16 @@ export { sitemapData };
  * Finds a sitemap row by its exact `page` (and optional `sub_link`) and
  * returns a menu item `{ label, path }`. `label` overrides the display text
  * when the real site's menu wording differs slightly from the sitemap's page
- * name (e.g. "Faculty" in the sitemap, "Faculty List" in the menu).
+ * name (e.g. "Faculty" in the sitemap, "Faculty List" in the menu). `section`
+ * disambiguates when the same `page` name exists in more than one sitemap
+ * section (e.g. "Contact Us" appears under both "2. About Us" and
+ * "17. Contact Us", pointing at the same real URL under two different paths).
  */
-function pick(page, sub_link, label) {
-  const row = sitemapData.find((r) => r.page === page && (r.sub_link || '') === (sub_link || ''));
-  if (!row) throw new Error(`Nav item not found in sitemap: page="${page}" sub_link="${sub_link || ''}"`);
+function pick(page, sub_link, label, section) {
+  const row = sitemapData.find(
+    (r) => r.page === page && (r.sub_link || '') === (sub_link || '') && (!section || r.section === section)
+  );
+  if (!row) throw new Error(`Nav item not found in sitemap: page="${page}" sub_link="${sub_link || ''}" section="${section || ''}"`);
   return { label: label || sub_link || page, path: row.path };
 }
 
@@ -131,7 +136,7 @@ export function buildNavSections() {
         pick('Criterion 7 – Institutional Values and Best Practices', 'Metric 7.2 – Best Practices', 'Best Practices'),
         pick('Criterion 7 – Institutional Values and Best Practices', 'Metric 7.3 – Institutional Distinctiveness', 'Institutional Distinctiveness'),
         pick('IQAC', 'Strategic Plan'),
-        pick('IQAC', 'Feedback Analysis'),
+        pick('IQAC', 'Feedback Analysis', undefined, '19. NAAC / IQAC'),
       ],
     },
     {

@@ -4,19 +4,18 @@ import Home from './pages/Home';
 import PlaceholderPage from './pages/PlaceholderPage';
 import NotFound from './pages/NotFound';
 import { sitemapData } from './data/routes';
-import AboutUs from './pages/about-us/2-about-us-about-us';
-import History from './pages/about-us/2-about-us-history';
-import MessageFromDirector from './pages/about-us/2-about-us-message-from-director';
 
-// Real page components, keyed by sitemap row `id`. Every sitemap row not listed
-// here still gets a working PlaceholderPage stub (title + breadcrumb) so the
-// full mega menu stays clickable end-to-end while content is filled in one
-// page at a time.
-const componentMap = {
-  '2-about-us-about-us': AboutUs,
-  '2-about-us-history': History,
-  '2-about-us-message-from-director': MessageFromDirector,
-};
+// Auto-discovers real page components: every file under src/pages/{section}/{id}.jsx
+// is keyed by its filename (the sitemap row `id`) with no manual import needed —
+// batches of pages added later (scraped or pasted) just need the file to exist.
+// Any sitemap row without a matching file still gets a working PlaceholderPage
+// stub (title + breadcrumb) so the full mega menu stays clickable end-to-end.
+const pageModules = import.meta.glob('./pages/*/*.jsx', { eager: true });
+const componentMap = {};
+for (const [filepath, module] of Object.entries(pageModules)) {
+  const id = filepath.split('/').pop().replace('.jsx', '');
+  if (module.default) componentMap[id] = module.default;
+}
 
 const ROUTES = sitemapData
   .filter((row) => row.path !== '/')
