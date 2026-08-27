@@ -1,0 +1,2192 @@
+[
+  {
+    "id": "1-home-home",
+    "section": "1. Home",
+    "page": "Home",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/",
+    "path": "/",
+    "verification": "Verified",
+    "notes": "Primary homepage."
+  },
+  {
+    "id": "2-about-us-founder",
+    "section": "2. About Us",
+    "page": "Founder",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/founder/",
+    "path": "/about-us/founder",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "2-about-us-administration",
+    "section": "2. About Us",
+    "page": "Administration",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/administration",
+    "path": "/about-us/administration",
+    "verification": "Verified",
+    "notes": "Administration members and academic administration."
+  },
+  {
+    "id": "2-about-us-faculty",
+    "section": "2. About Us",
+    "page": "Faculty",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/facultylistpunenewcampus",
+    "path": "/about-us/faculty",
+    "verification": "Verified",
+    "notes": "Faculty list."
+  },
+  {
+    "id": "2-about-us-contact-us",
+    "section": "2. About Us",
+    "page": "Contact Us",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/news/contact-us",
+    "path": "/about-us/contact-us",
+    "verification": "Verified",
+    "notes": "Contact page."
+  },
+  {
+    "id": "3-academics-department-index-management",
+    "section": "3. Academics",
+    "page": "Department Index",
+    "sub_link": "Management",
+    "url": "https://christcollegepune.org/academics/Main-Campus/department-of-management",
+    "path": "/academics/department-index/management",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "3-academics-department-index-commerce",
+    "section": "3. Academics",
+    "page": "Department Index",
+    "sub_link": "Commerce",
+    "url": "https://christcollegepune.org/academics/Main-Campus/department-of-commerce",
+    "path": "/academics/department-index/commerce",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "3-academics-department-index-science",
+    "section": "3. Academics",
+    "page": "Department Index",
+    "sub_link": "Science",
+    "url": "https://christcollegepune.org/academics/Main-Campus/department-of--science",
+    "path": "/academics/department-index/science",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "3-academics-department-index-arts",
+    "section": "3. Academics",
+    "page": "Department Index",
+    "sub_link": "Arts",
+    "url": "https://christcollegepune.org/academics/Main-Campus/department-of-arts",
+    "path": "/academics/department-index/arts",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "3-academics-department-of-management-department-page",
+    "section": "3. Academics",
+    "page": "Department of Management",
+    "sub_link": "Department page",
+    "url": "https://christcollegepune.org/departments/main-campus/department-of-management/management",
+    "path": "/academics/department-of-management/department-page",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "3-academics-department-of-management-bba-computer-applications",
+    "section": "3. Academics",
+    "page": "Department of Management",
+    "sub_link": "BBA (Computer Applications)",
+    "url": "https://christcollegepune.org/courses/main-campus/department-of-management/management-/bba-%28computer-applications%29",
+    "path": "/academics/department-of-management/bba-computer-applications",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "3-academics-department-of-management-bba-bachelor-of-business-administration",
+    "section": "3. Academics",
+    "page": "Department of Management",
+    "sub_link": "BBA (Bachelor of Business Administration)",
+    "url": "https://christcollegepune.org/courses/main-campus/department-of-management/management-/bba-%28bachelor-of-business-administration%29",
+    "path": "/academics/department-of-management/bba-bachelor-of-business-administration",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "3-academics-department-of-management-bba-international-business",
+    "section": "3. Academics",
+    "page": "Department of Management",
+    "sub_link": "BBA (International Business)",
+    "url": "https://christcollegepune.org/courses/main-campus/department-of-management/management-/bba-%28international-business%29",
+    "path": "/academics/department-of-management/bba-international-business",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "3-academics-department-of-management-collaboration",
+    "section": "3. Academics",
+    "page": "Department of Management",
+    "sub_link": "Collaboration",
+    "url": "https://christcollegepune.org/department-collaboration/main%20campus/department%20of%20management/management%20/NjQ1Ng%3D%3D",
+    "path": "/academics/department-of-management/collaboration",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "3-academics-department-of-management-new-campus-bba-page-duplicate-current-variant",
+    "section": "3. Academics",
+    "page": "Department of Management",
+    "sub_link": "New-campus BBA page (duplicate/current variant)",
+    "url": "https://christcollegepune.org/courses/main-campus/department-of-management/management-punenewcampus/bba-%28bachelor-of-business-administration%29",
+    "path": "/academics/department-of-management/new-campus-bba-page-duplicate-current-variant",
+    "verification": "Verified",
+    "notes": "Legacy/duplicate URL variant also indexed."
+  },
+  {
+    "id": "3-academics-department-of-commerce-department-page",
+    "section": "3. Academics",
+    "page": "Department of Commerce",
+    "sub_link": "Department page",
+    "url": "https://christcollegepune.org/departments/main%20campus/department%20of%20commerce/commerce",
+    "path": "/academics/department-of-commerce/department-page",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "3-academics-department-of-commerce-bcom-bachelor-of-commerce",
+    "section": "3. Academics",
+    "page": "Department of Commerce",
+    "sub_link": "BCom (Bachelor of Commerce)",
+    "url": "https://christcollegepune.org/courses/main-campus/department-of-commerce/commerce-pune-new-campus/bcom-%28bachelor-of-commerce%29",
+    "path": "/academics/department-of-commerce/bcom-bachelor-of-commerce",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "3-academics-department-of-commerce-mcom-master-of-commerce",
+    "section": "3. Academics",
+    "page": "Department of Commerce",
+    "sub_link": "MCom (Master of Commerce)",
+    "url": "https://christcollegepune.org/courses/main-campus/department-of-commerce/commerce/mcom-%28master-of-commerce%29",
+    "path": "/academics/department-of-commerce/mcom-master-of-commerce",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "3-academics-department-of-commerce-mcom-new-campus-variant",
+    "section": "3. Academics",
+    "page": "Department of Commerce",
+    "sub_link": "MCom – new-campus variant",
+    "url": "https://christcollegepune.org/courses/main-campus/department-of-commerce/commerce/mcom-master-of-commerce-pune-new-campus",
+    "path": "/academics/department-of-commerce/mcom-new-campus-variant",
+    "verification": "Verified",
+    "notes": "Duplicate/variant URL also indexed."
+  },
+  {
+    "id": "3-academics-department-of-science-department-page",
+    "section": "3. Academics",
+    "page": "Department of Science",
+    "sub_link": "Department page",
+    "url": "https://christcollegepune.org/departments/main%20campus/department%20of%20%20science/computer%20science",
+    "path": "/academics/department-of-science/department-page",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "3-academics-department-of-science-bsc-bachelor-of-computer-science",
+    "section": "3. Academics",
+    "page": "Department of Science",
+    "sub_link": "BSc (Bachelor of Computer Science)",
+    "url": "https://christcollegepune.org/courses/main-campus/department-of--science/computer-science/bsc-%28bachelor-of-computer-science%29",
+    "path": "/academics/department-of-science/bsc-bachelor-of-computer-science",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "3-academics-department-of-science-bsc-data-science",
+    "section": "3. Academics",
+    "page": "Department of Science",
+    "sub_link": "BSc (Data Science)",
+    "url": "https://christcollegepune.org/courses/Main%20Campus/department-of--science/computer-science/bsc-%28data-science%29",
+    "path": "/academics/department-of-science/bsc-data-science",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "3-academics-department-of-science-msc-master-of-computer-science",
+    "section": "3. Academics",
+    "page": "Department of Science",
+    "sub_link": "MSc (Master of Computer Science)",
+    "url": "https://christcollegepune.org/courses/Main%20Campus/department-of--science/computer-science/msc-%28master-of-computer-science%29",
+    "path": "/academics/department-of-science/msc-master-of-computer-science",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "3-academics-department-of-science-bsc-regular-variant",
+    "section": "3. Academics",
+    "page": "Department of Science",
+    "sub_link": "BSc regular variant",
+    "url": "https://christcollegepune.org/courses/main-campus/department-of--science/computer-science/bsc--%28regular%29",
+    "path": "/academics/department-of-science/bsc-regular-variant",
+    "verification": "Verified",
+    "notes": "Variant/legacy indexed URL."
+  },
+  {
+    "id": "3-academics-department-of-arts-department-index",
+    "section": "3. Academics",
+    "page": "Department of Arts",
+    "sub_link": "Department index",
+    "url": "https://christcollegepune.org/academics/Main-Campus/department-of-arts",
+    "path": "/academics/department-of-arts/department-index",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "3-academics-department-of-arts-ba-department-programme-page",
+    "section": "3. Academics",
+    "page": "Department of Arts",
+    "sub_link": "BA department/programme page",
+    "url": "https://christcollegepune.org/departments/Main%20Campus/DEPARTMENT%20OF%20ARTS/ba-pune-new-campus",
+    "path": "/academics/department-of-arts/ba-department-programme-page",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "3-academics-department-of-arts-ba-economics",
+    "section": "3. Academics",
+    "page": "Department of Arts",
+    "sub_link": "BA (Economics)",
+    "url": "https://christcollegepune.org/courses/main-campus/department-of-arts/ba-economics-pune-new-campus/ba-%28economics%29",
+    "path": "/academics/department-of-arts/ba-economics",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "3-academics-department-of-arts-ba-english",
+    "section": "3. Academics",
+    "page": "Department of Arts",
+    "sub_link": "BA (English)",
+    "url": "https://christcollegepune.org/courses/Main%20Campus/department-of-arts/ba-pune-new-campus/ba%28english%29",
+    "path": "/academics/department-of-arts/ba-english",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "3-academics-department-of-arts-ba-psychology",
+    "section": "3. Academics",
+    "page": "Department of Arts",
+    "sub_link": "BA (Psychology)",
+    "url": "https://christcollegepune.org/courses/Main%20Campus/department-of-arts/ba-pune-new-campus/ba%28psychology%29",
+    "path": "/academics/department-of-arts/ba-psychology",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "3-academics-department-of-arts-ba-variant",
+    "section": "3. Academics",
+    "page": "Department of Arts",
+    "sub_link": "BA variant",
+    "url": "https://christcollegepune.org/courses/main-campus/department-of-arts/ba-economics-pune-new-campus/ba-pune-new-campus",
+    "path": "/academics/department-of-arts/ba-variant",
+    "verification": "Verified",
+    "notes": "Variant/legacy indexed URL."
+  },
+  {
+    "id": "3-academics-programme-outcomes-and-course-outcomes",
+    "section": "3. Academics",
+    "page": "Programme Outcomes & Course Outcomes",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/programoutcomesandcourseoutcomes",
+    "path": "/academics/programme-outcomes-and-course-outcomes",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "3-academics-programme-outcomes-and-course-outcomes-management-bba",
+    "section": "3. Academics",
+    "page": "Programme Outcomes & Course Outcomes",
+    "sub_link": "Management – BBA",
+    "url": "https://christcollegepune.org/programoutcomesandcourseoutcomes",
+    "path": "/academics/programme-outcomes-and-course-outcomes/management-bba",
+    "verification": "Verified parent page",
+    "notes": "Programme is presented on the same PO/CO page; no separate URL was independently exposed in crawl."
+  },
+  {
+    "id": "3-academics-programme-outcomes-and-course-outcomes-management-bba-ca",
+    "section": "3. Academics",
+    "page": "Programme Outcomes & Course Outcomes",
+    "sub_link": "Management – BBA (CA)",
+    "url": "https://christcollegepune.org/programoutcomesandcourseoutcomes",
+    "path": "/academics/programme-outcomes-and-course-outcomes/management-bba-ca",
+    "verification": "Verified parent page",
+    "notes": "Programme is presented on the same PO/CO page; no separate URL was independently exposed in crawl."
+  },
+  {
+    "id": "3-academics-programme-outcomes-and-course-outcomes-management-bba-ib",
+    "section": "3. Academics",
+    "page": "Programme Outcomes & Course Outcomes",
+    "sub_link": "Management – BBA (IB)",
+    "url": "https://christcollegepune.org/programoutcomesandcourseoutcomes",
+    "path": "/academics/programme-outcomes-and-course-outcomes/management-bba-ib",
+    "verification": "Verified parent page",
+    "notes": "Programme is presented on the same PO/CO page; no separate URL was independently exposed in crawl."
+  },
+  {
+    "id": "3-academics-programme-outcomes-and-course-outcomes-science-bsc-cs",
+    "section": "3. Academics",
+    "page": "Programme Outcomes & Course Outcomes",
+    "sub_link": "Science – BSc (CS)",
+    "url": "https://christcollegepune.org/programoutcomesandcourseoutcomes",
+    "path": "/academics/programme-outcomes-and-course-outcomes/science-bsc-cs",
+    "verification": "Verified parent page",
+    "notes": "Programme is presented on the same PO/CO page; no separate URL was independently exposed in crawl."
+  },
+  {
+    "id": "3-academics-programme-outcomes-and-course-outcomes-science-msc-cs",
+    "section": "3. Academics",
+    "page": "Programme Outcomes & Course Outcomes",
+    "sub_link": "Science – MSc (CS)",
+    "url": "https://christcollegepune.org/programoutcomesandcourseoutcomes",
+    "path": "/academics/programme-outcomes-and-course-outcomes/science-msc-cs",
+    "verification": "Verified parent page",
+    "notes": "Programme is presented on the same PO/CO page; no separate URL was independently exposed in crawl."
+  },
+  {
+    "id": "3-academics-programme-outcomes-and-course-outcomes-arts-ba-economics",
+    "section": "3. Academics",
+    "page": "Programme Outcomes & Course Outcomes",
+    "sub_link": "Arts – BA (Economics)",
+    "url": "https://christcollegepune.org/programoutcomesandcourseoutcomes",
+    "path": "/academics/programme-outcomes-and-course-outcomes/arts-ba-economics",
+    "verification": "Verified parent page",
+    "notes": "Programme is presented on the same PO/CO page; no separate URL was independently exposed in crawl."
+  },
+  {
+    "id": "3-academics-programme-outcomes-and-course-outcomes-commerce-b-com",
+    "section": "3. Academics",
+    "page": "Programme Outcomes & Course Outcomes",
+    "sub_link": "Commerce – B.Com",
+    "url": "https://christcollegepune.org/programoutcomesandcourseoutcomes",
+    "path": "/academics/programme-outcomes-and-course-outcomes/commerce-b-com",
+    "verification": "Verified parent page",
+    "notes": "Programme is presented on the same PO/CO page; no separate URL was independently exposed in crawl."
+  },
+  {
+    "id": "3-academics-programme-outcomes-and-course-outcomes-commerce-m-com",
+    "section": "3. Academics",
+    "page": "Programme Outcomes & Course Outcomes",
+    "sub_link": "Commerce – M.Com",
+    "url": "https://christcollegepune.org/programoutcomesandcourseoutcomes",
+    "path": "/academics/programme-outcomes-and-course-outcomes/commerce-m-com",
+    "verification": "Verified parent page",
+    "notes": "Programme is presented on the same PO/CO page; no separate URL was independently exposed in crawl."
+  },
+  {
+    "id": "4-admissions-online-application-instructions",
+    "section": "4. Admissions",
+    "page": "Online Application Instructions",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/instructions-for-online-application-form",
+    "path": "/admissions/online-application-instructions",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "4-admissions-application-queries",
+    "section": "4. Admissions",
+    "page": "Application Queries",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/application-queries",
+    "path": "/admissions/application-queries",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "4-admissions-cancellation-policy",
+    "section": "4. Admissions",
+    "page": "Cancellation Policy",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/cancellation-policychrist-college-pune",
+    "path": "/admissions/cancellation-policy",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "4-admissions-cet-2026-notice",
+    "section": "4. Admissions",
+    "page": "CET 2026 Notice",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/view-pdf/cet-registration-notice_-bba_bca_bbm_bms_-cet-2026",
+    "path": "/admissions/cet-2026-notice",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "4-admissions-cet-2025-26-notice",
+    "section": "4. Admissions",
+    "page": "CET 2025-26 Notice",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/view-pdf/cet2025-26",
+    "path": "/admissions/cet-2025-26-notice",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "4-admissions-admission-process-course-level-admission-process",
+    "section": "4. Admissions",
+    "page": "Admission process",
+    "sub_link": "Course-level admission process",
+    "url": "https://christcollegepune.org/courses/main-campus/department-of-management/management-/bba-%28bachelor-of-business-administration%29",
+    "path": "/admissions/admission-process/course-level-admission-process",
+    "verification": "Verified",
+    "notes": "Admission Process appears as an in-page section on course pages; no separate URL independently exposed."
+  },
+  {
+    "id": "5-students-campus-life-student-life",
+    "section": "5. Students",
+    "page": "Campus Life / Student Life",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/campus/campus",
+    "path": "/students/campus-life-student-life",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "5-students-student-council",
+    "section": "5. Students",
+    "page": "Student Council",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center/C/SC-CHRIST-Pune",
+    "path": "/students/student-council",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "5-students-student-council-constitution",
+    "section": "5. Students",
+    "page": "Student Council",
+    "sub_link": "Constitution",
+    "url": "https://christcollegepune.org/center/C/Student%20Council/constitution-pune-new-campus",
+    "path": "/students/student-council/constitution",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "5-students-student-cultural-association",
+    "section": "5. Students",
+    "page": "Student Cultural Association",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center/C/SCA",
+    "path": "/students/student-cultural-association",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "5-students-national-service-scheme-about-us",
+    "section": "5. Students",
+    "page": "National Service Scheme",
+    "sub_link": "About Us",
+    "url": "https://christcollegepune.org/center/C/NCC/about-us",
+    "path": "/students/national-service-scheme/about-us",
+    "verification": "Verified",
+    "notes": "Current indexed URL is under /NCC although the page is the NSS section."
+  },
+  {
+    "id": "5-students-national-service-scheme-nss-index-variant",
+    "section": "5. Students",
+    "page": "National Service Scheme",
+    "sub_link": "NSS index variant",
+    "url": "https://christcollegepune.org/center/C/ncc",
+    "path": "/students/national-service-scheme/nss-index-variant",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "5-students-physical-education",
+    "section": "5. Students",
+    "page": "Physical Education",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center/C/Athletics",
+    "path": "/students/physical-education",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "5-students-placement-and-career-guidance",
+    "section": "5. Students",
+    "page": "Placement & Career Guidance",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/support-and-assistance/main-campus/placements",
+    "path": "/students/placement-and-career-guidance",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "6-campus-life-campus",
+    "section": "6. Campus Life",
+    "page": "Campus",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/campus/campus",
+    "path": "/campus-life/campus",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "6-campus-life-campus-labs",
+    "section": "6. Campus Life",
+    "page": "Campus",
+    "sub_link": "Labs",
+    "url": "https://christcollegepune.org/campus/campus",
+    "path": "/campus-life/campus/labs",
+    "verification": "Verified parent page",
+    "notes": "Listed as a campus facility on the page; no separate URL independently exposed for this item."
+  },
+  {
+    "id": "6-campus-life-campus-library",
+    "section": "6. Campus Life",
+    "page": "Campus",
+    "sub_link": "Library",
+    "url": "https://christcollegepune.org/campus/campus",
+    "path": "/campus-life/campus/library",
+    "verification": "Verified parent page",
+    "notes": "Listed as a campus facility on the page; no separate URL independently exposed for this item."
+  },
+  {
+    "id": "6-campus-life-campus-it-services",
+    "section": "6. Campus Life",
+    "page": "Campus",
+    "sub_link": "IT Services",
+    "url": "https://christcollegepune.org/campus/campus",
+    "path": "/campus-life/campus/it-services",
+    "verification": "Verified parent page",
+    "notes": "Listed as a campus facility on the page; no separate URL independently exposed for this item."
+  },
+  {
+    "id": "6-campus-life-campus-academics",
+    "section": "6. Campus Life",
+    "page": "Campus",
+    "sub_link": "Academics",
+    "url": "https://christcollegepune.org/campus/campus",
+    "path": "/campus-life/campus/academics",
+    "verification": "Verified parent page",
+    "notes": "Listed as a campus facility on the page; no separate URL independently exposed for this item."
+  },
+  {
+    "id": "6-campus-life-campus-play-ground",
+    "section": "6. Campus Life",
+    "page": "Campus",
+    "sub_link": "Play Ground",
+    "url": "https://christcollegepune.org/campus/campus",
+    "path": "/campus-life/campus/play-ground",
+    "verification": "Verified parent page",
+    "notes": "Listed as a campus facility on the page; no separate URL independently exposed for this item."
+  },
+  {
+    "id": "6-campus-life-campus-research-facilities",
+    "section": "6. Campus Life",
+    "page": "Campus",
+    "sub_link": "Research Facilities",
+    "url": "https://christcollegepune.org/campus/campus",
+    "path": "/campus-life/campus/research-facilities",
+    "verification": "Verified parent page",
+    "notes": "Listed as a campus facility on the page; no separate URL independently exposed for this item."
+  },
+  {
+    "id": "6-campus-life-campus-recreational-areas",
+    "section": "6. Campus Life",
+    "page": "Campus",
+    "sub_link": "Recreational Areas",
+    "url": "https://christcollegepune.org/campus/campus",
+    "path": "/campus-life/campus/recreational-areas",
+    "verification": "Verified parent page",
+    "notes": "Listed as a campus facility on the page; no separate URL independently exposed for this item."
+  },
+  {
+    "id": "6-campus-life-campus-health-and-wellness",
+    "section": "6. Campus Life",
+    "page": "Campus",
+    "sub_link": "Health and Wellness",
+    "url": "https://christcollegepune.org/campus/campus",
+    "path": "/campus-life/campus/health-and-wellness",
+    "verification": "Verified parent page",
+    "notes": "Listed as a campus facility on the page; no separate URL independently exposed for this item."
+  },
+  {
+    "id": "7-centres-and-cells-centres-index",
+    "section": "7. Centres & Cells",
+    "page": "Centres Index",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center",
+    "path": "/centres-and-cells/centres-index",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "7-centres-and-cells-cells-and-committees",
+    "section": "7. Centres & Cells",
+    "page": "Cells & Committees",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/cells-and-committees",
+    "path": "/centres-and-cells/cells-and-committees",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "7-centres-and-cells-iqac",
+    "section": "7. Centres & Cells",
+    "page": "IQAC",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center/C/IQAC",
+    "path": "/centres-and-cells/iqac",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "7-centres-and-cells-iqac-extended-profile",
+    "section": "7. Centres & Cells",
+    "page": "IQAC",
+    "sub_link": "Extended Profile",
+    "url": "https://christcollegepune.org/center/C/IQAC/extendedprofile",
+    "path": "/centres-and-cells/iqac/extended-profile",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "7-centres-and-cells-iqac-criterion-1-curricular-aspects",
+    "section": "7. Centres & Cells",
+    "page": "IQAC",
+    "sub_link": "Criterion 1 – Curricular Aspects",
+    "url": "https://christcollegepune.org/center/C/IQAC/criterion1-curricularaspects",
+    "path": "/centres-and-cells/iqac/criterion-1-curricular-aspects",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "7-centres-and-cells-iqac-criterion-2-teaching-learning-and-evaluation",
+    "section": "7. Centres & Cells",
+    "page": "IQAC",
+    "sub_link": "Criterion 2 – Teaching-Learning and Evaluation",
+    "url": "https://christcollegepune.org/center/C/IQAC/teaching-learning-and-evaluation",
+    "path": "/centres-and-cells/iqac/criterion-2-teaching-learning-and-evaluation",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "7-centres-and-cells-iqac-criterion-4-infrastructure-and-learning-resources",
+    "section": "7. Centres & Cells",
+    "page": "IQAC",
+    "sub_link": "Criterion 4 – Infrastructure and Learning Resources",
+    "url": "https://christcollegepune.org/center/C/IQAC/infrastructureandlearningresources",
+    "path": "/centres-and-cells/iqac/criterion-4-infrastructure-and-learning-resources",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "7-centres-and-cells-iqac-criterion-5-student-support-and-progression",
+    "section": "7. Centres & Cells",
+    "page": "IQAC",
+    "sub_link": "Criterion 5 – Student Support and Progression",
+    "url": "https://christcollegepune.org/center/C/IQAC/studentsupportandprogression",
+    "path": "/centres-and-cells/iqac/criterion-5-student-support-and-progression",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "7-centres-and-cells-iqac-criterion-6-governance-leadership-and-management",
+    "section": "7. Centres & Cells",
+    "page": "IQAC",
+    "sub_link": "Criterion 6 – Governance, Leadership and Management",
+    "url": "https://christcollegepune.org/center/C/IQAC/governanceleadershipandmanagement",
+    "path": "/centres-and-cells/iqac/criterion-6-governance-leadership-and-management",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "7-centres-and-cells-iqac-criterion-7-institutional-values-and-best-practices",
+    "section": "7. Centres & Cells",
+    "page": "IQAC",
+    "sub_link": "Criterion 7 – Institutional Values and Best Practices",
+    "url": "https://christcollegepune.org/center/C/IQAC/institutionalvaluesandbestpractices",
+    "path": "/centres-and-cells/iqac/criterion-7-institutional-values-and-best-practices",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "7-centres-and-cells-iqac-feedback-analysis",
+    "section": "7. Centres & Cells",
+    "page": "IQAC",
+    "sub_link": "Feedback Analysis",
+    "url": "https://christcollegepune.org/view-pdf/feedback-analysis",
+    "path": "/centres-and-cells/iqac/feedback-analysis",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "7-centres-and-cells-nirmiti-start-up-and-innovation-centre",
+    "section": "7. Centres & Cells",
+    "page": "Nirmiti Start Up and Innovation Centre",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center/C/Start-Up-and-Innovation-Centre",
+    "path": "/centres-and-cells/nirmiti-start-up-and-innovation-centre",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "7-centres-and-cells-nature-club",
+    "section": "7. Centres & Cells",
+    "page": "Nature Club",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center/C/NATURECLUB",
+    "path": "/centres-and-cells/nature-club",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "7-centres-and-cells-centre-for-health-and-wellness-activities",
+    "section": "7. Centres & Cells",
+    "page": "Centre for Health and Wellness",
+    "sub_link": "Activities",
+    "url": "https://christcollegepune.org/center/C/CHW/activities",
+    "path": "/centres-and-cells/centre-for-health-and-wellness/activities",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "7-centres-and-cells-student-cultural-association",
+    "section": "7. Centres & Cells",
+    "page": "Student Cultural Association",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center/C/SCA",
+    "path": "/centres-and-cells/student-cultural-association",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "7-centres-and-cells-library-about-us",
+    "section": "7. Centres & Cells",
+    "page": "Library",
+    "sub_link": "About Us",
+    "url": "https://christcollegepune.org/center/C/Information%20Center/aboutus",
+    "path": "/centres-and-cells/library/about-us",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "7-centres-and-cells-library-library-collection",
+    "section": "7. Centres & Cells",
+    "page": "Library",
+    "sub_link": "Library Collection",
+    "url": "https://christcollegepune.org/center/C/Information%20Center/librarycollection",
+    "path": "/centres-and-cells/library/library-collection",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "7-centres-and-cells-student-council",
+    "section": "7. Centres & Cells",
+    "page": "Student Council",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center/C/SC-CHRIST-Pune",
+    "path": "/centres-and-cells/student-council",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "7-centres-and-cells-physical-education",
+    "section": "7. Centres & Cells",
+    "page": "Physical Education",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center/C/Athletics",
+    "path": "/centres-and-cells/physical-education",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "7-centres-and-cells-mou",
+    "section": "7. Centres & Cells",
+    "page": "MoU",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center/C/mou",
+    "path": "/centres-and-cells/mou",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "7-centres-and-cells-mou-2023-2024",
+    "section": "7. Centres & Cells",
+    "page": "MoU",
+    "sub_link": "2023 - 2024",
+    "url": "https://christcollegepune.org/center/C/mou",
+    "path": "/centres-and-cells/mou/2023-2024",
+    "verification": "Verified parent page",
+    "notes": "Year is an in-page MoU navigation item; no separate URL independently exposed."
+  },
+  {
+    "id": "7-centres-and-cells-mou-2022-2023",
+    "section": "7. Centres & Cells",
+    "page": "MoU",
+    "sub_link": "2022 - 2023",
+    "url": "https://christcollegepune.org/center/C/mou",
+    "path": "/centres-and-cells/mou/2022-2023",
+    "verification": "Verified parent page",
+    "notes": "Year is an in-page MoU navigation item; no separate URL independently exposed."
+  },
+  {
+    "id": "7-centres-and-cells-mou-2021-2022",
+    "section": "7. Centres & Cells",
+    "page": "MoU",
+    "sub_link": "2021 - 2022",
+    "url": "https://christcollegepune.org/center/C/mou",
+    "path": "/centres-and-cells/mou/2021-2022",
+    "verification": "Verified parent page",
+    "notes": "Year is an in-page MoU navigation item; no separate URL independently exposed."
+  },
+  {
+    "id": "7-centres-and-cells-mou-2020-2021",
+    "section": "7. Centres & Cells",
+    "page": "MoU",
+    "sub_link": "2020 - 2021",
+    "url": "https://christcollegepune.org/center/C/mou",
+    "path": "/centres-and-cells/mou/2020-2021",
+    "verification": "Verified parent page",
+    "notes": "Year is an in-page MoU navigation item; no separate URL independently exposed."
+  },
+  {
+    "id": "7-centres-and-cells-mou-2019-2020",
+    "section": "7. Centres & Cells",
+    "page": "MoU",
+    "sub_link": "2019 - 2020",
+    "url": "https://christcollegepune.org/center/C/mou",
+    "path": "/centres-and-cells/mou/2019-2020",
+    "verification": "Verified parent page",
+    "notes": "Year is an in-page MoU navigation item; no separate URL independently exposed."
+  },
+  {
+    "id": "7-centres-and-cells-mou-2018-2019",
+    "section": "7. Centres & Cells",
+    "page": "MoU",
+    "sub_link": "2018 - 2019",
+    "url": "https://christcollegepune.org/center/C/mou",
+    "path": "/centres-and-cells/mou/2018-2019",
+    "verification": "Verified parent page",
+    "notes": "Year is an in-page MoU navigation item; no separate URL independently exposed."
+  },
+  {
+    "id": "7-centres-and-cells-intellectual-property-rights-cell",
+    "section": "7. Centres & Cells",
+    "page": "Intellectual Property Rights Cell",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center",
+    "path": "/centres-and-cells/intellectual-property-rights-cell",
+    "verification": "Listed on Centres index",
+    "notes": "Centre is listed, but a dedicated URL was not independently verified in this crawl."
+  },
+  {
+    "id": "7-centres-and-cells-equal-opportunity-cell",
+    "section": "7. Centres & Cells",
+    "page": "Equal Opportunity Cell",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center",
+    "path": "/centres-and-cells/equal-opportunity-cell",
+    "verification": "Listed on Centres index",
+    "notes": "Centre is listed, but a dedicated URL was not independently verified in this crawl."
+  },
+  {
+    "id": "7-centres-and-cells-research-cell",
+    "section": "7. Centres & Cells",
+    "page": "Research Cell",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center",
+    "path": "/centres-and-cells/research-cell",
+    "verification": "Listed on Centres index",
+    "notes": "Research Cell is listed on Centres index; dedicated page URL was not independently verified in this crawl."
+  },
+  {
+    "id": "7-centres-and-cells-centre-for-holistic-development",
+    "section": "7. Centres & Cells",
+    "page": "Centre for Holistic Development",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center",
+    "path": "/centres-and-cells/centre-for-holistic-development",
+    "verification": "Listed on Centres index",
+    "notes": "Dedicated URL not independently verified in this crawl."
+  },
+  {
+    "id": "7-centres-and-cells-centre-for-digital-media",
+    "section": "7. Centres & Cells",
+    "page": "Centre for Digital Media",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center",
+    "path": "/centres-and-cells/centre-for-digital-media",
+    "verification": "Listed on Centres index",
+    "notes": "Dedicated URL not independently verified in this crawl."
+  },
+  {
+    "id": "8-research-research-cell",
+    "section": "8. Research",
+    "page": "Research Cell",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center",
+    "path": "/research/research-cell",
+    "verification": "Listed on Centres index",
+    "notes": "Research Cell is listed; a dedicated page URL was not independently verified."
+  },
+  {
+    "id": "8-research-research-quality-documentation-self-study-report",
+    "section": "8. Research",
+    "page": "Research / Quality documentation",
+    "sub_link": "Self Study Report",
+    "url": "https://christcollegepune.org/uploads/cmsmenu/Updated%20SSR-PreQualified_20240214081816.pdf",
+    "path": "/research/research-quality-documentation/self-study-report",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "8-research-research-quality-documentation-peer-team-report",
+    "section": "8. Research",
+    "page": "Research / Quality documentation",
+    "sub_link": "Peer Team Report",
+    "url": "https://christcollegepune.org/uploads/cmsmenu/Peer%20Team%20Report-2_20250220015539.pdf",
+    "path": "/research/research-quality-documentation/peer-team-report",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "9-placements-and-career-placements",
+    "section": "9. Placements & Career",
+    "page": "Placements",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/support-and-assistance/main-campus/placements",
+    "path": "/placements-and-career/placements",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "9-placements-and-career-placements-internship-placement-listings",
+    "section": "9. Placements & Career",
+    "page": "Placements",
+    "sub_link": "Internship / placement listings",
+    "url": "https://christcollegepune.org/support-and-assistance/main-campus/placements",
+    "path": "/placements-and-career/placements/internship-placement-listings",
+    "verification": "Verified parent page",
+    "notes": "Placement/internship content is presented on the same page; no separate child URL independently exposed."
+  },
+  {
+    "id": "10-examination-examination-cell-roles-and-responsibilities",
+    "section": "10. Examination",
+    "page": "Examination Cell – Roles & Responsibilities",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/office-of-examinations/roles-and-responsibilities-",
+    "path": "/examination/examination-cell-roles-and-responsibilities",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "10-examination-examination-cell-members-list",
+    "section": "10. Examination",
+    "page": "Examination",
+    "sub_link": "Cell Members List",
+    "url": "https://christcollegepune.org/view-pdf/examination-cell-members-list",
+    "path": "/examination/examination/cell-members-list",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "10-examination-examination-cell-members-pdf-current",
+    "section": "10. Examination",
+    "page": "Examination",
+    "sub_link": "Cell Members PDF (current)",
+    "url": "https://christcollegepune.org/uploads/cmsmenu/Exam%20Cell%20Members%20List%20%281%29_20251101105919.pdf",
+    "path": "/examination/examination/cell-members-pdf-current",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "10-examination-examination-instructions-for-candidates",
+    "section": "10. Examination",
+    "page": "Examination",
+    "sub_link": "Instructions for Candidates",
+    "url": "https://christcollegepune.org/uploads/cmsmenu/Examination%20Instructions%20for%20Candidates_20251101110143.pdf",
+    "path": "/examination/examination/instructions-for-candidates",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "11-news-and-events-campus-news-events-campus",
+    "section": "11. News & Events",
+    "page": "Campus News / Events",
+    "sub_link": "Campus",
+    "url": "https://christcollegepune.org/news/campus",
+    "path": "/news-and-events/campus-news-events/campus",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "11-news-and-events-gallery-chrisliga-2024",
+    "section": "11. News & Events",
+    "page": "Gallery",
+    "sub_link": "CHRISLIGA 2024",
+    "url": "https://christcollegepune.org/gallery/CHRISLIGA%20%202024",
+    "path": "/news-and-events/gallery/chrisliga-2024",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "11-news-and-events-science-department-events",
+    "section": "11. News & Events",
+    "page": "Science Department Events",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/main%20campus/department%20of%20%20science/computer-science/events",
+    "path": "/news-and-events/science-department-events",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "12-media-and-gallery-gallery-chrisliga-2024",
+    "section": "12. Media & Gallery",
+    "page": "Gallery",
+    "sub_link": "CHRISLIGA 2024",
+    "url": "https://christcollegepune.org/gallery/CHRISLIGA%20%202024",
+    "path": "/media-and-gallery/gallery/chrisliga-2024",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "12-media-and-gallery-gallery-gallery-index-homepage-gallery",
+    "section": "12. Media & Gallery",
+    "page": "Gallery",
+    "sub_link": "Gallery index / homepage gallery",
+    "url": "https://christcollegepune.org/",
+    "path": "/media-and-gallery/gallery/gallery-index-homepage-gallery",
+    "verification": "Verified parent page",
+    "notes": "Homepage contains the gallery component and View All entry."
+  },
+  {
+    "id": "13-library-library-about-us",
+    "section": "13. Library",
+    "page": "Library – About Us",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center/C/Information%20Center/aboutus",
+    "path": "/library/library-about-us",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "13-library-library-library-collection",
+    "section": "13. Library",
+    "page": "Library – Library Collection",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center/C/Information%20Center/librarycollection",
+    "path": "/library/library-library-collection",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "13-library-library-rules",
+    "section": "13. Library",
+    "page": "Library – Rules",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center/C/Information%20Center/aboutus",
+    "path": "/library/library-rules",
+    "verification": "Verified parent page",
+    "notes": "Library Rules is a navigation item on the Library page; separate URL not independently exposed."
+  },
+  {
+    "id": "13-library-library-services",
+    "section": "13. Library",
+    "page": "Library – Services",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center/C/Information%20Center/aboutus",
+    "path": "/library/library-services",
+    "verification": "Verified parent page",
+    "notes": "Library Services is a navigation item on the Library page; separate URL not independently exposed."
+  },
+  {
+    "id": "14-quality-and-accreditation-iqac",
+    "section": "14. Quality & Accreditation",
+    "page": "IQAC",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center/C/IQAC",
+    "path": "/quality-and-accreditation/iqac",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "14-quality-and-accreditation-naac-certificate-cycle-2",
+    "section": "14. Quality & Accreditation",
+    "page": "NAAC Certificate – Cycle 2",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/view-pdf/naac-certificate-cycle-2",
+    "path": "/quality-and-accreditation/naac-certificate-cycle-2",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "14-quality-and-accreditation-extended-profile",
+    "section": "14. Quality & Accreditation",
+    "page": "Extended Profile",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center/C/IQAC/extendedprofile",
+    "path": "/quality-and-accreditation/extended-profile",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "14-quality-and-accreditation-criterion-1",
+    "section": "14. Quality & Accreditation",
+    "page": "Criterion 1",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center/C/IQAC/criterion1-curricularaspects",
+    "path": "/quality-and-accreditation/criterion-1",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "14-quality-and-accreditation-criterion-2",
+    "section": "14. Quality & Accreditation",
+    "page": "Criterion 2",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center/C/IQAC/teaching-learning-and-evaluation",
+    "path": "/quality-and-accreditation/criterion-2",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "14-quality-and-accreditation-criterion-4",
+    "section": "14. Quality & Accreditation",
+    "page": "Criterion 4",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center/C/IQAC/infrastructureandlearningresources",
+    "path": "/quality-and-accreditation/criterion-4",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "14-quality-and-accreditation-criterion-5",
+    "section": "14. Quality & Accreditation",
+    "page": "Criterion 5",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center/C/IQAC/studentsupportandprogression",
+    "path": "/quality-and-accreditation/criterion-5",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "14-quality-and-accreditation-criterion-6",
+    "section": "14. Quality & Accreditation",
+    "page": "Criterion 6",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center/C/IQAC/governanceleadershipandmanagement",
+    "path": "/quality-and-accreditation/criterion-6",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "14-quality-and-accreditation-criterion-7",
+    "section": "14. Quality & Accreditation",
+    "page": "Criterion 7",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center/C/IQAC/institutionalvaluesandbestpractices",
+    "path": "/quality-and-accreditation/criterion-7",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "14-quality-and-accreditation-dvv-extended-profile",
+    "section": "14. Quality & Accreditation",
+    "page": "DVV – Extended Profile",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center/C/DVV/extendedprofilechristnewcollege",
+    "path": "/quality-and-accreditation/dvv-extended-profile",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "14-quality-and-accreditation-dvv-criterion-2",
+    "section": "14. Quality & Accreditation",
+    "page": "DVV – Criterion 2",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center/C/DVV/teachinglearningevaluationddv",
+    "path": "/quality-and-accreditation/dvv-criterion-2",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "14-quality-and-accreditation-dvv-criterion-5",
+    "section": "14. Quality & Accreditation",
+    "page": "DVV – Criterion 5",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center/C/DVV/student-support-andprogression",
+    "path": "/quality-and-accreditation/dvv-criterion-5",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "14-quality-and-accreditation-dvv-criterion-6",
+    "section": "14. Quality & Accreditation",
+    "page": "DVV – Criterion 6",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/center/C/DVV/governance-leadership-and-management",
+    "path": "/quality-and-accreditation/dvv-criterion-6",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "14-quality-and-accreditation-policy-documents",
+    "section": "14. Quality & Accreditation",
+    "page": "Policy Documents",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/view-pdf/policy-documents",
+    "path": "/quality-and-accreditation/policy-documents",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "15-rti-statutory-declaration-under-rti-act",
+    "section": "15. RTI",
+    "page": "Statutory Declaration under RTI Act",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/uploads/Footer%20Menu/Statutory%20Declaration%20under%20Section1_20230701095839.pdf",
+    "path": "/rti/statutory-declaration-under-rti-act",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "16-policies-policy-documents",
+    "section": "16. Policies",
+    "page": "Policy Documents",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/view-pdf/policy-documents",
+    "path": "/policies/policy-documents",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "16-policies-cancellation-policy",
+    "section": "16. Policies",
+    "page": "Cancellation Policy",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/cancellation-policychrist-college-pune",
+    "path": "/policies/cancellation-policy",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "17-contact-us-contact-us",
+    "section": "17. Contact Us",
+    "page": "Contact Us",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/news/contact-us",
+    "path": "/contact-us/contact-us",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "18-institutional-documents-handbook-2022-23",
+    "section": "18. Institutional Documents",
+    "page": "Handbook 2022-23",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/uploads/userfiles/2022-23%20%281%29%281%29.pdf",
+    "path": "/institutional-documents/handbook-2022-23",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "18-institutional-documents-handbook-2023-24",
+    "section": "18. Institutional Documents",
+    "page": "Handbook 2023-24",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/uploads/userfiles/2023-%2024%20Handbook%20-%20CHRIST%20Pune%20%281%29.pdf",
+    "path": "/institutional-documents/handbook-2023-24",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "18-institutional-documents-aqar-2023-24",
+    "section": "18. Institutional Documents",
+    "page": "AQAR 2023-24",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/uploads/userfiles/AQAR23-24%20%282%29.pdf",
+    "path": "/institutional-documents/aqar-2023-24",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "18-institutional-documents-strategic-plan-and-vision-2030",
+    "section": "18. Institutional Documents",
+    "page": "Strategic Plan & Vision 2030",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/uploads/userfiles/6_1%20-Strategic%20Plan.pdf",
+    "path": "/institutional-documents/strategic-plan-and-vision-2030",
+    "verification": "Verified",
+    "notes": ""
+  },
+  {
+    "id": "19-naac-iqac-iqac-main-iqac-page",
+    "section": "19. NAAC / IQAC",
+    "page": "IQAC",
+    "sub_link": "Main IQAC page",
+    "url": "https://christcollegepune.org/center/C/IQAC",
+    "path": "/naac-iqac/iqac/main-iqac-page",
+    "verification": "Verified",
+    "notes": "IQAC page exposes Feedback Analysis, Extended Profile and Criteria 1–7."
+  },
+  {
+    "id": "19-naac-iqac-iqac-about-iqac",
+    "section": "19. NAAC / IQAC",
+    "page": "IQAC",
+    "sub_link": "About IQAC",
+    "url": "https://christcollegepune.org/about-iqac",
+    "path": "/naac-iqac/iqac/about-iqac",
+    "verification": "Verified",
+    "notes": "Dedicated About IQAC page."
+  },
+  {
+    "id": "19-naac-iqac-iqac-feedback-analysis",
+    "section": "19. NAAC / IQAC",
+    "page": "IQAC",
+    "sub_link": "Feedback Analysis",
+    "url": "https://christcollegepune.org/view-pdf/iqac1",
+    "path": "/naac-iqac/iqac/feedback-analysis",
+    "verification": "Verified",
+    "notes": "PDF viewer page for the Feedback Analysis Report."
+  },
+  {
+    "id": "19-naac-iqac-iqac-extended-profile",
+    "section": "19. NAAC / IQAC",
+    "page": "IQAC",
+    "sub_link": "Extended Profile",
+    "url": "https://christcollegepune.org/center/C/IQAC/extendedprofile",
+    "path": "/naac-iqac/iqac/extended-profile",
+    "verification": "Verified",
+    "notes": "NAAC/IQAC Extended Profile."
+  },
+  {
+    "id": "19-naac-iqac-iqac-criterion-1-curricular-aspects",
+    "section": "19. NAAC / IQAC",
+    "page": "IQAC",
+    "sub_link": "Criterion 1 – Curricular Aspects",
+    "url": "https://christcollegepune.org/center/C/IQAC/criterion1-curricularaspects",
+    "path": "/naac-iqac/iqac/criterion-1-curricular-aspects",
+    "verification": "Verified",
+    "notes": "Criterion 1 page; metric/document links are on the page."
+  },
+  {
+    "id": "19-naac-iqac-iqac-criterion-2-teaching-learning-and-evaluation",
+    "section": "19. NAAC / IQAC",
+    "page": "IQAC",
+    "sub_link": "Criterion 2 – Teaching-Learning and Evaluation",
+    "url": "https://christcollegepune.org/center/C/IQAC/teaching-learning-and-evaluation",
+    "path": "/naac-iqac/iqac/criterion-2-teaching-learning-and-evaluation",
+    "verification": "Verified",
+    "notes": "Criterion 2 page; metric/document links are on the page."
+  },
+  {
+    "id": "19-naac-iqac-iqac-criterion-3-research-innovation-and-extension",
+    "section": "19. NAAC / IQAC",
+    "page": "IQAC",
+    "sub_link": "Criterion 3 – Research, Innovation and Extension",
+    "url": "https://christcollegepune.org/center/C/IQAC/research-innovation-and-extension",
+    "path": "/naac-iqac/iqac/criterion-3-research-innovation-and-extension",
+    "verification": "URL mapped",
+    "notes": "Criterion 3 is listed in the site's IQAC navigation; URL should be rechecked if routing changes."
+  },
+  {
+    "id": "19-naac-iqac-iqac-criterion-4-infrastructure-and-learning-resources",
+    "section": "19. NAAC / IQAC",
+    "page": "IQAC",
+    "sub_link": "Criterion 4 – Infrastructure and Learning Resources",
+    "url": "https://christcollegepune.org/center/C/IQAC/infrastructureandlearningresources",
+    "path": "/naac-iqac/iqac/criterion-4-infrastructure-and-learning-resources",
+    "verification": "Verified",
+    "notes": "Criterion 4 page; metric/document links are on the page."
+  },
+  {
+    "id": "19-naac-iqac-iqac-criterion-5-student-support-and-progression",
+    "section": "19. NAAC / IQAC",
+    "page": "IQAC",
+    "sub_link": "Criterion 5 – Student Support and Progression",
+    "url": "https://christcollegepune.org/center/C/IQAC/studentsupportandprogression",
+    "path": "/naac-iqac/iqac/criterion-5-student-support-and-progression",
+    "verification": "Verified",
+    "notes": "Criterion 5 page; metric/document links are on the page."
+  },
+  {
+    "id": "19-naac-iqac-iqac-criterion-6-governance-leadership-and-management",
+    "section": "19. NAAC / IQAC",
+    "page": "IQAC",
+    "sub_link": "Criterion 6 – Governance, Leadership and Management",
+    "url": "https://christcollegepune.org/center/C/IQAC/governanceleadershipandmanagement",
+    "path": "/naac-iqac/iqac/criterion-6-governance-leadership-and-management",
+    "verification": "Verified",
+    "notes": "Criterion 6 page; metric/document links are on the page."
+  },
+  {
+    "id": "19-naac-iqac-iqac-criterion-7-institutional-values-and-best-practices",
+    "section": "19. NAAC / IQAC",
+    "page": "IQAC",
+    "sub_link": "Criterion 7 – Institutional Values and Best Practices",
+    "url": "https://christcollegepune.org/center/C/IQAC/institutionalvaluesandbestpractices",
+    "path": "/naac-iqac/iqac/criterion-7-institutional-values-and-best-practices",
+    "verification": "Verified",
+    "notes": "Criterion 7 page; metric/document links are on the page."
+  },
+  {
+    "id": "19-naac-iqac-naac-accreditation-naac-certificate-cycle-2",
+    "section": "19. NAAC / IQAC",
+    "page": "NAAC Accreditation",
+    "sub_link": "NAAC Certificate – Cycle 2",
+    "url": "https://christcollegepune.org/view-pdf/naac-certificate-cycle-2",
+    "path": "/naac-iqac/naac-accreditation/naac-certificate-cycle-2",
+    "verification": "Verified",
+    "notes": "NAAC accreditation certificate PDF viewer page."
+  },
+  {
+    "id": "19-naac-iqac-naac-accreditation-self-study-report-ssr",
+    "section": "19. NAAC / IQAC",
+    "page": "NAAC Accreditation",
+    "sub_link": "Self Study Report (SSR)",
+    "url": "https://christcollegepune.org/uploads/cmsmenu/Updated%20SSR-PreQualified_20240214081816.pdf",
+    "path": "/naac-iqac/naac-accreditation/self-study-report-ssr",
+    "verification": "Verified",
+    "notes": "Official SSR PDF."
+  },
+  {
+    "id": "19-naac-iqac-naac-accreditation-peer-team-report",
+    "section": "19. NAAC / IQAC",
+    "page": "NAAC Accreditation",
+    "sub_link": "Peer Team Report",
+    "url": "https://christcollegepune.org/uploads/cmsmenu/Peer%20Team%20Report-2_20250220015539.pdf",
+    "path": "/naac-iqac/naac-accreditation/peer-team-report",
+    "verification": "Verified",
+    "notes": "Official Peer Team Report PDF."
+  },
+  {
+    "id": "19-naac-iqac-naac-accreditation-aqar-2023-24",
+    "section": "19. NAAC / IQAC",
+    "page": "NAAC Accreditation",
+    "sub_link": "AQAR 2023–24",
+    "url": "https://christcollegepune.org/uploads/userfiles/AQAR23-24%20%282%29.pdf",
+    "path": "/naac-iqac/naac-accreditation/aqar-2023-24",
+    "verification": "Verified",
+    "notes": "Official AQAR PDF."
+  },
+  {
+    "id": "19-naac-iqac-naac-accreditation-aqar-2020-21",
+    "section": "19. NAAC / IQAC",
+    "page": "NAAC Accreditation",
+    "sub_link": "AQAR 2020–21",
+    "url": "https://christcollegepune.org/uploads/userfiles/AQAR2020-2021%282%29.pdf",
+    "path": "/naac-iqac/naac-accreditation/aqar-2020-21",
+    "verification": "Verified",
+    "notes": "Official AQAR PDF."
+  },
+  {
+    "id": "19-naac-iqac-naac-accreditation-academic-and-administrative-audit-aaa",
+    "section": "19. NAAC / IQAC",
+    "page": "NAAC Accreditation",
+    "sub_link": "Academic & Administrative Audit (AAA)",
+    "url": "https://christcollegepune.org/uploads/userfiles/AAA_Final.pdf",
+    "path": "/naac-iqac/naac-accreditation/academic-and-administrative-audit-aaa",
+    "verification": "Verified",
+    "notes": "Official AAA report PDF."
+  },
+  {
+    "id": "19-naac-iqac-naac-accreditation-policy-documents",
+    "section": "19. NAAC / IQAC",
+    "page": "NAAC Accreditation",
+    "sub_link": "Policy Documents",
+    "url": "https://christcollegepune.org/view-pdf/policy-documents",
+    "path": "/naac-iqac/naac-accreditation/policy-documents",
+    "verification": "Verified",
+    "notes": "Policy document viewer includes quality/IQAC-related policies."
+  },
+  {
+    "id": "19-naac-iqac-dvv-dvv-extended-profile",
+    "section": "19. NAAC / IQAC",
+    "page": "DVV",
+    "sub_link": "DVV – Extended Profile",
+    "url": "https://christcollegepune.org/center/C/DVV/extendedprofilechristnewcollege",
+    "path": "/naac-iqac/dvv/dvv-extended-profile",
+    "verification": "Verified",
+    "notes": "DVV Extended Profile."
+  },
+  {
+    "id": "19-naac-iqac-dvv-dvv-criterion-1-curricular-aspects",
+    "section": "19. NAAC / IQAC",
+    "page": "DVV",
+    "sub_link": "DVV – Criterion 1 – Curricular Aspects",
+    "url": "https://christcollegepune.org/center/C/DVV/curricularaspects",
+    "path": "/naac-iqac/dvv/dvv-criterion-1-curricular-aspects",
+    "verification": "URL mapped",
+    "notes": "DVV Criterion 1 URL mapped from site navigation; recheck if routing changes."
+  },
+  {
+    "id": "19-naac-iqac-dvv-dvv-criterion-2-teaching-learning-and-evaluation",
+    "section": "19. NAAC / IQAC",
+    "page": "DVV",
+    "sub_link": "DVV – Criterion 2 – Teaching-Learning & Evaluation",
+    "url": "https://christcollegepune.org/center/C/DVV/teachinglearningevaluationddv",
+    "path": "/naac-iqac/dvv/dvv-criterion-2-teaching-learning-and-evaluation",
+    "verification": "Verified",
+    "notes": "DVV Criterion 2."
+  },
+  {
+    "id": "19-naac-iqac-dvv-dvv-criterion-3-research-innovation-and-extension",
+    "section": "19. NAAC / IQAC",
+    "page": "DVV",
+    "sub_link": "DVV – Criterion 3 – Research, Innovation and Extension",
+    "url": "https://christcollegepune.org/center/C/DVV/researchinnovationandextension",
+    "path": "/naac-iqac/dvv/dvv-criterion-3-research-innovation-and-extension",
+    "verification": "URL mapped",
+    "notes": "DVV Criterion 3 URL mapped from site navigation; recheck if routing changes."
+  },
+  {
+    "id": "19-naac-iqac-dvv-dvv-criterion-4-infrastructure-and-learning-resources",
+    "section": "19. NAAC / IQAC",
+    "page": "DVV",
+    "sub_link": "DVV – Criterion 4 – Infrastructure and Learning Resources",
+    "url": "https://christcollegepune.org/center/C/DVV/infrastructureandlearningresources",
+    "path": "/naac-iqac/dvv/dvv-criterion-4-infrastructure-and-learning-resources",
+    "verification": "URL mapped",
+    "notes": "DVV Criterion 4 URL mapped from site navigation; recheck if routing changes."
+  },
+  {
+    "id": "19-naac-iqac-dvv-dvv-criterion-5-student-support-and-progression",
+    "section": "19. NAAC / IQAC",
+    "page": "DVV",
+    "sub_link": "DVV – Criterion 5 – Student Support and Progression",
+    "url": "https://christcollegepune.org/center/C/DVV/student-support-andprogression",
+    "path": "/naac-iqac/dvv/dvv-criterion-5-student-support-and-progression",
+    "verification": "Verified",
+    "notes": "DVV Criterion 5."
+  },
+  {
+    "id": "19-naac-iqac-dvv-dvv-criterion-6-governance-leadership-and-management",
+    "section": "19. NAAC / IQAC",
+    "page": "DVV",
+    "sub_link": "DVV – Criterion 6 – Governance, Leadership and Management",
+    "url": "https://christcollegepune.org/center/C/DVV/governance-leadership-and-management",
+    "path": "/naac-iqac/dvv/dvv-criterion-6-governance-leadership-and-management",
+    "verification": "Verified",
+    "notes": "DVV Criterion 6."
+  },
+  {
+    "id": "19-naac-iqac-dvv-dvv-criterion-7-institutional-values-and-best-practices",
+    "section": "19. NAAC / IQAC",
+    "page": "DVV",
+    "sub_link": "DVV – Criterion 7 – Institutional Values and Best Practices",
+    "url": "https://christcollegepune.org/center/C/DVV/institutional-values-and-best-practices",
+    "path": "/naac-iqac/dvv/dvv-criterion-7-institutional-values-and-best-practices",
+    "verification": "URL mapped",
+    "notes": "DVV Criterion 7 URL mapped from site navigation; recheck if routing changes."
+  },
+  {
+    "id": "19-naac-iqac-criterion-1-curricular-aspects-metric-1-1-1-curriculum-planning-and-implementation",
+    "section": "19. NAAC / IQAC",
+    "page": "Criterion 1 – Curricular Aspects",
+    "sub_link": "Metric 1.1.1 – Curriculum Planning and Implementation",
+    "url": "https://christcollegepune.org/center/C/IQAC/criterion1-curricularaspects",
+    "path": "/naac-iqac/criterion-1-curricular-aspects/metric-1-1-1-curriculum-planning-and-implementation",
+    "verification": "In-page",
+    "notes": "Academic Calendar, Workload Distribution, Department Time Table, Activity Planner, Teaching/Course Plan and CIA are shown on the same page."
+  },
+  {
+    "id": "19-naac-iqac-criterion-2-teaching-learning-and-evaluation-metric-2-1-1-student-enrollment-and-profile",
+    "section": "19. NAAC / IQAC",
+    "page": "Criterion 2 – Teaching-Learning and Evaluation",
+    "sub_link": "Metric 2.1.1 – Student Enrollment and Profile",
+    "url": "https://christcollegepune.org/center/C/IQAC/teaching-learning-and-evaluation",
+    "path": "/naac-iqac/criterion-2-teaching-learning-and-evaluation/metric-2-1-1-student-enrollment-and-profile",
+    "verification": "In-page",
+    "notes": "Metric content and year-wise document links are on the same page."
+  },
+  {
+    "id": "19-naac-iqac-criterion-4-infrastructure-and-learning-resources-metric-4-1-1-physical-facilities",
+    "section": "19. NAAC / IQAC",
+    "page": "Criterion 4 – Infrastructure and Learning Resources",
+    "sub_link": "Metric 4.1.1 – Physical Facilities",
+    "url": "https://christcollegepune.org/center/C/IQAC/infrastructureandlearningresources",
+    "path": "/naac-iqac/criterion-4-infrastructure-and-learning-resources/metric-4-1-1-physical-facilities",
+    "verification": "In-page",
+    "notes": "Infrastructure and Physical Facilities; Sports and Cultural Facilities."
+  },
+  {
+    "id": "19-naac-iqac-criterion-5-student-support-and-progression-metric-5-1-1-scholarships-and-freeships",
+    "section": "19. NAAC / IQAC",
+    "page": "Criterion 5 – Student Support and Progression",
+    "sub_link": "Metric 5.1.1 – Scholarships and Freeships",
+    "url": "https://christcollegepune.org/center/C/IQAC/studentsupportandprogression",
+    "path": "/naac-iqac/criterion-5-student-support-and-progression/metric-5-1-1-scholarships-and-freeships",
+    "verification": "In-page",
+    "notes": "Year-wise scholarship/freeship information."
+  },
+  {
+    "id": "19-naac-iqac-criterion-5-student-support-and-progression-metric-5-1-4-grievance-redressal",
+    "section": "19. NAAC / IQAC",
+    "page": "Criterion 5 – Student Support and Progression",
+    "sub_link": "Metric 5.1.4 – Grievance Redressal",
+    "url": "https://christcollegepune.org/center/C/IQAC/studentsupportandprogression",
+    "path": "/naac-iqac/criterion-5-student-support-and-progression/metric-5-1-4-grievance-redressal",
+    "verification": "In-page",
+    "notes": "Grievance mechanism, Anti-Ragging, ICC and Student Grievance documents."
+  },
+  {
+    "id": "19-naac-iqac-criterion-5-student-support-and-progression-metric-5-2-1-placement-higher-education",
+    "section": "19. NAAC / IQAC",
+    "page": "Criterion 5 – Student Support and Progression",
+    "sub_link": "Metric 5.2.1 – Placement / Higher Education",
+    "url": "https://christcollegepune.org/center/C/IQAC/studentsupportandprogression",
+    "path": "/naac-iqac/criterion-5-student-support-and-progression/metric-5-2-1-placement-higher-education",
+    "verification": "In-page",
+    "notes": "Placement and higher education progression data."
+  },
+  {
+    "id": "19-naac-iqac-criterion-5-student-support-and-progression-metric-5-3-1-awards-medals",
+    "section": "19. NAAC / IQAC",
+    "page": "Criterion 5 – Student Support and Progression",
+    "sub_link": "Metric 5.3.1 – Awards / Medals",
+    "url": "https://christcollegepune.org/center/C/IQAC/studentsupportandprogression",
+    "path": "/naac-iqac/criterion-5-student-support-and-progression/metric-5-3-1-awards-medals",
+    "verification": "In-page",
+    "notes": "Sports/cultural awards and medals."
+  },
+  {
+    "id": "19-naac-iqac-criterion-6-governance-leadership-and-management-metric-6-1-1-vision-and-mission",
+    "section": "19. NAAC / IQAC",
+    "page": "Criterion 6 – Governance, Leadership and Management",
+    "sub_link": "Metric 6.1.1 – Vision and Mission",
+    "url": "https://christcollegepune.org/center/C/IQAC/governanceleadershipandmanagement",
+    "path": "/naac-iqac/criterion-6-governance-leadership-and-management/metric-6-1-1-vision-and-mission",
+    "verification": "In-page",
+    "notes": "Vision and Mission, Roles & Responsibilities, IQAC, Strategic Plan, Committees & Cells."
+  },
+  {
+    "id": "19-naac-iqac-criterion-7-institutional-values-and-best-practices-metric-7-1-1-gender-equity-audit",
+    "section": "19. NAAC / IQAC",
+    "page": "Criterion 7 – Institutional Values and Best Practices",
+    "sub_link": "Metric 7.1.1 – Gender Equity / Audit",
+    "url": "https://christcollegepune.org/center/C/IQAC/institutionalvaluesandbestpractices",
+    "path": "/naac-iqac/criterion-7-institutional-values-and-best-practices/metric-7-1-1-gender-equity-audit",
+    "verification": "In-page",
+    "notes": "Gender Audit, sensitization action plan, gender-equity measures and environmental documents."
+  },
+  {
+    "id": "19-naac-iqac-criterion-7-institutional-values-and-best-practices-metric-7-2-best-practices",
+    "section": "19. NAAC / IQAC",
+    "page": "Criterion 7 – Institutional Values and Best Practices",
+    "sub_link": "Metric 7.2 – Best Practices",
+    "url": "https://christcollegepune.org/center/C/IQAC/institutionalvaluesandbestpractices",
+    "path": "/naac-iqac/criterion-7-institutional-values-and-best-practices/metric-7-2-best-practices",
+    "verification": "In-page",
+    "notes": "Best Practices and supporting documents."
+  },
+  {
+    "id": "19-naac-iqac-criterion-7-institutional-values-and-best-practices-metric-7-3-institutional-distinctiveness",
+    "section": "19. NAAC / IQAC",
+    "page": "Criterion 7 – Institutional Values and Best Practices",
+    "sub_link": "Metric 7.3 – Institutional Distinctiveness",
+    "url": "https://christcollegepune.org/center/C/IQAC/institutionalvaluesandbestpractices",
+    "path": "/naac-iqac/criterion-7-institutional-values-and-best-practices/metric-7-3-institutional-distinctiveness",
+    "verification": "In-page",
+    "notes": "Institutional Distinctiveness and relevant document."
+  },
+  {
+    "id": "5-students-hostel",
+    "section": "5. Students",
+    "page": "Hostel",
+    "sub_link": "",
+    "url": "",
+    "path": "/students/hostel",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "5-students-co-curricular-and-cultural-activities",
+    "section": "5. Students",
+    "page": "Co-curricular & Cultural Activities",
+    "sub_link": "",
+    "url": "",
+    "path": "/students/co-curricular-and-cultural-activities",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "2-about-us-about-us",
+    "section": "2. About Us",
+    "page": "About Us",
+    "sub_link": "",
+    "url": "",
+    "path": "/about-us/about-us",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "2-about-us-history",
+    "section": "2. About Us",
+    "page": "History",
+    "sub_link": "",
+    "url": "",
+    "path": "/about-us/history",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "2-about-us-message-from-director",
+    "section": "2. About Us",
+    "page": "Message from Director",
+    "sub_link": "",
+    "url": "",
+    "path": "/about-us/message-from-director",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "2-about-us-leadership",
+    "section": "2. About Us",
+    "page": "Leadership",
+    "sub_link": "",
+    "url": "",
+    "path": "/about-us/leadership",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "2-about-us-alumni",
+    "section": "2. About Us",
+    "page": "Alumni",
+    "sub_link": "",
+    "url": "",
+    "path": "/about-us/alumni",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "2-about-us-virtual-tour",
+    "section": "2. About Us",
+    "page": "Virtual Tour",
+    "sub_link": "",
+    "url": "",
+    "path": "/about-us/virtual-tour",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "5-students-college-magazine",
+    "section": "5. Students",
+    "page": "College Magazine",
+    "sub_link": "",
+    "url": "",
+    "path": "/students/college-magazine",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "7-centres-and-cells-women-s-cell",
+    "section": "7. Centres & Cells",
+    "page": "Women's Cell",
+    "sub_link": "",
+    "url": "",
+    "path": "/centres-and-cells/women-s-cell",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "7-centres-and-cells-anti-ragging-cell",
+    "section": "7. Centres & Cells",
+    "page": "Anti-Ragging Cell",
+    "sub_link": "",
+    "url": "",
+    "path": "/centres-and-cells/anti-ragging-cell",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "7-centres-and-cells-electoral-literacy-club",
+    "section": "7. Centres & Cells",
+    "page": "Electoral Literacy Club",
+    "sub_link": "",
+    "url": "",
+    "path": "/centres-and-cells/electoral-literacy-club",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "7-centres-and-cells-anti-sexual-harassment-cell",
+    "section": "7. Centres & Cells",
+    "page": "Anti-Sexual Harassment Cell",
+    "sub_link": "",
+    "url": "",
+    "path": "/centres-and-cells/anti-sexual-harassment-cell",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "7-centres-and-cells-student-grievance-redressal-cell",
+    "section": "7. Centres & Cells",
+    "page": "Student Grievance Redressal Cell",
+    "sub_link": "",
+    "url": "",
+    "path": "/centres-and-cells/student-grievance-redressal-cell",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "7-centres-and-cells-students-insurance-2026-27",
+    "section": "7. Centres & Cells",
+    "page": "Students Insurance 2026-27",
+    "sub_link": "",
+    "url": "",
+    "path": "/centres-and-cells/students-insurance-2026-27",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "4-admissions-application-form-for-ug",
+    "section": "4. Admissions",
+    "page": "Application Form for UG",
+    "sub_link": "",
+    "url": "",
+    "path": "/admissions/application-form-for-ug",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "4-admissions-application-form-for-pg",
+    "section": "4. Admissions",
+    "page": "Application Form for PG",
+    "sub_link": "",
+    "url": "",
+    "path": "/admissions/application-form-for-pg",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "4-admissions-miscellaneous-information",
+    "section": "4. Admissions",
+    "page": "Miscellaneous Information",
+    "sub_link": "",
+    "url": "",
+    "path": "/admissions/miscellaneous-information",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "4-admissions-international-nri-student",
+    "section": "4. Admissions",
+    "page": "International / NRI Student",
+    "sub_link": "",
+    "url": "",
+    "path": "/admissions/international-nri-student",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "4-admissions-fees-regulating-authority-fra",
+    "section": "4. Admissions",
+    "page": "Fees Regulating Authority (FRA)",
+    "sub_link": "",
+    "url": "",
+    "path": "/admissions/fees-regulating-authority-fra",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "10-examination-examination-policy",
+    "section": "10. Examination",
+    "page": "Examination Policy",
+    "sub_link": "",
+    "url": "",
+    "path": "/examination/examination-policy",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "10-examination-important-circulars",
+    "section": "10. Examination",
+    "page": "Important Circulars",
+    "sub_link": "",
+    "url": "",
+    "path": "/examination/important-circulars",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "10-examination-examination-time-table-external",
+    "section": "10. Examination",
+    "page": "Examination Time Table (External)",
+    "sub_link": "",
+    "url": "",
+    "path": "/examination/examination-time-table-external",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "10-examination-results",
+    "section": "10. Examination",
+    "page": "Results",
+    "sub_link": "",
+    "url": "",
+    "path": "/examination/results",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "10-examination-convocation-certificate-application",
+    "section": "10. Examination",
+    "page": "Convocation Certificate Application",
+    "sub_link": "",
+    "url": "",
+    "path": "/examination/convocation-certificate-application",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "10-examination-duplicate-degree-certificate",
+    "section": "10. Examination",
+    "page": "Duplicate Degree Certificate",
+    "sub_link": "",
+    "url": "",
+    "path": "/examination/duplicate-degree-certificate",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "19-naac-iqac-iqac-iqac-composition",
+    "section": "19. NAAC / IQAC",
+    "page": "IQAC",
+    "sub_link": "IQAC Composition",
+    "url": "",
+    "path": "/naac-iqac/iqac/iqac-composition",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "19-naac-iqac-iqac-meeting-minutes-atr",
+    "section": "19. NAAC / IQAC",
+    "page": "IQAC",
+    "sub_link": "Meeting Minutes / ATR",
+    "url": "",
+    "path": "/naac-iqac/iqac/meeting-minutes-atr",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "19-naac-iqac-iqac-cells-and-committees",
+    "section": "19. NAAC / IQAC",
+    "page": "IQAC",
+    "sub_link": "Cells and Committees",
+    "url": "",
+    "path": "/naac-iqac/iqac/cells-and-committees",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "19-naac-iqac-iqac-student-hand-book",
+    "section": "19. NAAC / IQAC",
+    "page": "IQAC",
+    "sub_link": "Student Hand Book",
+    "url": "",
+    "path": "/naac-iqac/iqac/student-hand-book",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "19-naac-iqac-iqac-academic-calendar",
+    "section": "19. NAAC / IQAC",
+    "page": "IQAC",
+    "sub_link": "Academic Calendar",
+    "url": "",
+    "path": "/naac-iqac/iqac/academic-calendar",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "19-naac-iqac-iqac-quality-initiative",
+    "section": "19. NAAC / IQAC",
+    "page": "IQAC",
+    "sub_link": "Quality Initiative",
+    "url": "",
+    "path": "/naac-iqac/iqac/quality-initiative",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "19-naac-iqac-iqac-annual-reports",
+    "section": "19. NAAC / IQAC",
+    "page": "IQAC",
+    "sub_link": "Annual Reports",
+    "url": "",
+    "path": "/naac-iqac/iqac/annual-reports",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "19-naac-iqac-iqac-mou-and-activities",
+    "section": "19. NAAC / IQAC",
+    "page": "IQAC",
+    "sub_link": "MoU and Activities",
+    "url": "",
+    "path": "/naac-iqac/iqac/mou-and-activities",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "19-naac-iqac-iqac-strategic-plan",
+    "section": "19. NAAC / IQAC",
+    "page": "IQAC",
+    "sub_link": "Strategic Plan",
+    "url": "",
+    "path": "/naac-iqac/iqac/strategic-plan",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "19-naac-iqac-naac-accreditation-naac-certificate-cycle-1",
+    "section": "19. NAAC / IQAC",
+    "page": "NAAC Accreditation",
+    "sub_link": "NAAC Certificate – Cycle 1",
+    "url": "",
+    "path": "/naac-iqac/naac-accreditation/naac-certificate-cycle-1",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "19-naac-iqac-naac-accreditation-ssr-cycle-1-pdf",
+    "section": "19. NAAC / IQAC",
+    "page": "NAAC Accreditation",
+    "sub_link": "SSR – Cycle 1 (PDF)",
+    "url": "",
+    "path": "/naac-iqac/naac-accreditation/ssr-cycle-1-pdf",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "19-naac-iqac-naac-accreditation-ssr-cycle-2-supporting-documents",
+    "section": "19. NAAC / IQAC",
+    "page": "NAAC Accreditation",
+    "sub_link": "SSR – Cycle 2 (Supporting Documents)",
+    "url": "",
+    "path": "/naac-iqac/naac-accreditation/ssr-cycle-2-supporting-documents",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "19-naac-iqac-naac-accreditation-dvv-clarification",
+    "section": "19. NAAC / IQAC",
+    "page": "NAAC Accreditation",
+    "sub_link": "DVV Clarification",
+    "url": "",
+    "path": "/naac-iqac/naac-accreditation/dvv-clarification",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "20-e-services-student-login",
+    "section": "20. E-Services",
+    "page": "Student Login",
+    "sub_link": "",
+    "url": "",
+    "path": "/e-services/student-login",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "20-e-services-faculty-login",
+    "section": "20. E-Services",
+    "page": "Faculty Login",
+    "sub_link": "",
+    "url": "",
+    "path": "/e-services/faculty-login",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "20-e-services-online-payment-portal",
+    "section": "20. E-Services",
+    "page": "Online Payment Portal",
+    "sub_link": "",
+    "url": "",
+    "path": "/e-services/online-payment-portal",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "20-e-services-orbis-erp",
+    "section": "20. E-Services",
+    "page": "Orbis - ERP",
+    "sub_link": "",
+    "url": "",
+    "path": "/e-services/orbis-erp",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "20-e-services-online-payment-policy",
+    "section": "20. E-Services",
+    "page": "Online Payment Policy",
+    "sub_link": "",
+    "url": "",
+    "path": "/e-services/online-payment-policy",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "20-e-services-live-tv",
+    "section": "20. E-Services",
+    "page": "Live TV",
+    "sub_link": "",
+    "url": "",
+    "path": "/e-services/live-tv",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "21-aicte-essential-documents",
+    "section": "21. AICTE",
+    "page": "Essential Documents",
+    "sub_link": "",
+    "url": "",
+    "path": "/aicte/essential-documents",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "21-aicte-aicte-approved-courses",
+    "section": "21. AICTE",
+    "page": "AICTE Approved Courses",
+    "sub_link": "",
+    "url": "",
+    "path": "/aicte/aicte-approved-courses",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "21-aicte-scholarship-fellowship-schemes",
+    "section": "21. AICTE",
+    "page": "Scholarship/Fellowship Schemes",
+    "sub_link": "",
+    "url": "",
+    "path": "/aicte/scholarship-fellowship-schemes",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "21-aicte-mandatory-disclosure",
+    "section": "21. AICTE",
+    "page": "Mandatory Disclosure",
+    "sub_link": "",
+    "url": "",
+    "path": "/aicte/mandatory-disclosure",
+    "verification": "Needs URL verification",
+    "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  }
+]

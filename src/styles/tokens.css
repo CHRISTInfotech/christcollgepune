@@ -1,0 +1,86 @@
+@theme {
+  --font-sans: 'Inter', 'Roboto', sans-serif;
+
+  /* --- Fixed, do not change --- */
+  --color-cc-primary: #6e2439;
+  --color-cc-gold: #c9a84c;
+  --color-cc-white: #ffffff;
+  --radius-cc-pill: 50px;
+
+  /* --- Derived: primary (maroon) scale --- */
+  --color-cc-primary-dark: #4a1827;
+  --color-cc-primary-deeper: #2a0e17;
+  --color-cc-primary-light: #8a3a52;
+
+  /* --- Derived: gold scale --- */
+  --color-cc-gold-light: #e8d49a;
+  --color-cc-gold-dark: #a08032;
+
+  /* --- Text on dark backgrounds (header, drawer, footer, hero) --- */
+  --color-cc-text-light: #f5e6eb;
+  --color-cc-text-muted: #b8929e;
+
+  /* --- Text on light backgrounds (the majority of 170 content pages) --- */
+  --color-cc-text-heading: #2a0e17;
+  --color-cc-text-body: #3d2b32;
+  --color-cc-text-muted-light: #7a6169;
+
+  /* --- Neutral grays (borders, dividers, disabled UI on light backgrounds) --- */
+  --color-cc-gray-100: #f4f1f2;
+  --color-cc-gray-200: #e6dfe1;
+  --color-cc-gray-300: #cfc3c8;
+
+  /* --- Backgrounds --- */
+  --color-cc-bg-page: #ffffff;
+  --color-cc-bg-surface: #faf7f8;
+  --color-cc-bg-drawer: #1f0f15;
+
+  /* --- Semantic status --- */
+  --color-cc-success: #3a7d4f;
+  --color-cc-warning: #b8860b;
+  --color-cc-error: #a13a3a;
+
+  /* --- Radius --- */
+  --radius-cc-sm: 8px;
+  --radius-cc-md: 12px;
+  --radius-cc-lg: 20px;
+
+  /* --- Shadow --- */
+  --shadow-cc: 0 4px 24px rgba(0, 0, 0, 0.25);
+  --shadow-cc-sm: 0 2px 8px rgba(0, 0, 0, 0.12);
+
+  /* --- Motion easing (mirrors --transition-standard below) --- */
+  --ease-cc: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Overrides of Tailwind's default type scale to match the derived scale exactly
+     (xs/sm/base/lg/xl/2xl already coincide with Tailwind's defaults, so only the
+     larger sizes — used for headings/hero — need overriding) */
+  --text-3xl: 2rem;    /* 32px */
+  --text-4xl: 2.5rem;  /* 40px */
+  --text-5xl: 3.25rem; /* 52px */
+
+  /* Tailwind's default spacing scale (0.25rem/4px base) already matches the
+     project's 4px spacing scale key-for-key (spacing-4 = 16px, spacing-6 = 24px,
+     spacing-8 = 32px, etc.) — no override needed, use the p, m, and gap
+     utilities directly. */
+}
+
+/* Composite/layout values that aren't Tailwind theme categories, but are reused
+   across component CSS and available as var(--x) anywhere (including Tailwind's
+   arbitrary-value syntax, e.g. bg-[image:var(--gradient-hero)]). */
+:root {
+  --gradient-hero: linear-gradient(135deg, var(--color-cc-primary) 0%, var(--color-cc-primary-deeper) 100%);
+  --gradient-gold: linear-gradient(90deg, var(--color-cc-gold-dark) 0%, var(--color-cc-gold) 50%, var(--color-cc-gold-light) 100%);
+  --gradient-overlay: linear-gradient(180deg, rgba(42, 14, 23, 0) 0%, rgba(42, 14, 23, 0.85) 100%);
+
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-subtle-light: rgba(42, 14, 23, 0.08);
+
+  --transition-standard: 0.35s var(--ease-cc);
+
+  --header-height: 72px;
+  --drawer-width: 640px;
+  --container-max: 1200px;
+
+  /* mobile: 0–599px, tablet: 600–959px, desktop: 960px+ */
+}

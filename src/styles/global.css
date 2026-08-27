@@ -1,0 +1,40 @@
+/* Preflight (Tailwind's reset) already handles box-sizing, margin/padding
+   resets and unstyled headings — this layer only adds the brand-specific base
+   look on top of it. */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    color: var(--color-cc-text-body);
+    background: var(--color-cc-bg-page);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-cc-text-heading);
+    font-weight: var(--font-weight-bold);
+    line-height: 1.25;
+  }
+
+  a {
+    color: var(--color-cc-primary);
+    transition: color var(--transition-standard);
+  }
+
+  a:hover {
+    color: var(--color-cc-primary-dark);
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-cc-gold);
+    outline-offset: 2px;
+    border-radius: var(--radius-cc-sm);
+  }
+}
