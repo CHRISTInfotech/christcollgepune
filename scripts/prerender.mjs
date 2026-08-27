@@ -48,7 +48,7 @@ async function main() {
   });
 
   try {
-    await waitForServer(`http://localhost:${port}/`);
+    await waitForServer(`http://localhost:${port}/christcollgepune/`);
 
     const browser = await chromium.launch({ args: ['--no-sandbox'] });
     const page = await browser.newPage();
@@ -60,7 +60,7 @@ async function main() {
         // 'load' rather than 'networkidle': the Home route's looping <video>
         // issues ongoing range requests once playback starts, so the page
         // never reaches network-idle and networkidle would time out here.
-        await page.goto(`http://localhost:${port}${route}`, { waitUntil: 'load', timeout: 15000 });
+        await page.goto(`http://localhost:${port}/christcollgepune${route}`, { waitUntil: 'load', timeout: 15000 });
         await page.waitForTimeout(150);
         const html = await page.content();
         const outPath = route === '/' ? join(distDir, 'index.html') : join(distDir, route.slice(1), 'index.html');
