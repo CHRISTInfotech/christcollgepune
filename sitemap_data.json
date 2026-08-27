@@ -884,9 +884,9 @@
     "section": "7. Centres & Cells",
     "page": "Intellectual Property Rights Cell",
     "sub_link": "",
-    "url": "https://christcollegepune.org/center",
+    "url": "https://christcollegepune.org/center/O/IPRC",
     "path": "/centres-and-cells/intellectual-property-rights-cell",
-    "verification": "Listed on Centres index",
+    "verification": "Verified",
     "notes": "Centre is listed, but a dedicated URL was not independently verified in this crawl."
   },
   {
@@ -894,9 +894,9 @@
     "section": "7. Centres & Cells",
     "page": "Equal Opportunity Cell",
     "sub_link": "",
-    "url": "https://christcollegepune.org/center",
+    "url": "https://christcollegepune.org/center/C/Equal-Opportunity-Cell",
     "path": "/centres-and-cells/equal-opportunity-cell",
-    "verification": "Listed on Centres index",
+    "verification": "Verified",
     "notes": "Centre is listed, but a dedicated URL was not independently verified in this crawl."
   },
   {
@@ -904,9 +904,9 @@
     "section": "7. Centres & Cells",
     "page": "Research Cell",
     "sub_link": "",
-    "url": "https://christcollegepune.org/center",
+    "url": "https://christcollegepune.org/center/C/-Researchcellchristcollege",
     "path": "/centres-and-cells/research-cell",
-    "verification": "Listed on Centres index",
+    "verification": "Verified",
     "notes": "Research Cell is listed on Centres index; dedicated page URL was not independently verified in this crawl."
   },
   {
@@ -914,9 +914,9 @@
     "section": "7. Centres & Cells",
     "page": "Centre for Holistic Development",
     "sub_link": "",
-    "url": "https://christcollegepune.org/center",
+    "url": "https://christcollegepune.org/center/C/CHD",
     "path": "/centres-and-cells/centre-for-holistic-development",
-    "verification": "Listed on Centres index",
+    "verification": "Verified",
     "notes": "Dedicated URL not independently verified in this crawl."
   },
   {
@@ -934,9 +934,9 @@
     "section": "8. Research",
     "page": "Research Cell",
     "sub_link": "",
-    "url": "https://christcollegepune.org/center",
+    "url": "https://christcollegepune.org/center/C/-Researchcellchristcollege",
     "path": "/research/research-cell",
-    "verification": "Listed on Centres index",
+    "verification": "Verified",
     "notes": "Research Cell is listed; a dedicated page URL was not independently verified."
   },
   {
@@ -1784,9 +1784,9 @@
     "section": "5. Students",
     "page": "College Magazine",
     "sub_link": "",
-    "url": "",
+    "url": "https://christcollegepune.org/view-pdf/collegemagazine",
     "path": "/students/college-magazine",
-    "verification": "Needs URL verification",
+    "verification": "Verified",
     "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
   },
   {
@@ -1794,9 +1794,9 @@
     "section": "7. Centres & Cells",
     "page": "Women's Cell",
     "sub_link": "",
-    "url": "",
+    "url": "https://christcollegepune.org/women-cell",
     "path": "/centres-and-cells/women-s-cell",
-    "verification": "Needs URL verification",
+    "verification": "Verified",
     "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
   },
   {
@@ -1804,9 +1804,9 @@
     "section": "7. Centres & Cells",
     "page": "Anti-Ragging Cell",
     "sub_link": "",
-    "url": "",
+    "url": "https://christcollegepune.org/anti-ragging-cell",
     "path": "/centres-and-cells/anti-ragging-cell",
-    "verification": "Needs URL verification",
+    "verification": "Verified",
     "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
   },
   {
@@ -1814,9 +1814,9 @@
     "section": "7. Centres & Cells",
     "page": "Electoral Literacy Club",
     "sub_link": "",
-    "url": "",
+    "url": "https://christcollegepune.org/electoralliteraryclubchristcollegepune",
     "path": "/centres-and-cells/electoral-literacy-club",
-    "verification": "Needs URL verification",
+    "verification": "Verified",
     "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
   },
   {
@@ -1824,9 +1824,9 @@
     "section": "7. Centres & Cells",
     "page": "Anti-Sexual Harassment Cell",
     "sub_link": "",
-    "url": "",
+    "url": "https://christcollegepune.org/anti-sexual-harassment-cell",
     "path": "/centres-and-cells/anti-sexual-harassment-cell",
-    "verification": "Needs URL verification",
+    "verification": "Verified",
     "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
   },
   {
@@ -1834,9 +1834,9 @@
     "section": "7. Centres & Cells",
     "page": "Student Grievance Redressal Cell",
     "sub_link": "",
-    "url": "",
+    "url": "https://christcollegepune.org/student-grievance-redressal-cell",
     "path": "/centres-and-cells/student-grievance-redressal-cell",
-    "verification": "Needs URL verification",
+    "verification": "Verified",
     "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
   },
   {
@@ -1844,9 +1844,9 @@
     "section": "7. Centres & Cells",
     "page": "Students Insurance 2026-27",
     "sub_link": "",
-    "url": "",
+    "url": "https://christcollegepune.org/view-pdf/students-insurance-2026-27",
     "path": "/centres-and-cells/students-insurance-2026-27",
-    "verification": "Needs URL verification",
+    "verification": "Verified",
     "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
   },
   {
