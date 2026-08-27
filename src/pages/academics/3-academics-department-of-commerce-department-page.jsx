@@ -1,6 +1,6 @@
 import PageHeader from '../../components/PageHeader';
 import Seo from '../../components/Seo';
-import departmentBanner from '../../assets/images/3-academics-department-of-commerce-department-page/department-banner.jpg';
+import departmentBanner from '../../assets/images/3-academics-department-of-commerce-department-page/department-banner.JPG';
 import hodDeepaSujith from '../../assets/images/3-academics-department-of-commerce-department-page/hod-deepa-sujith.jpg';
 import desafio from '../../assets/images/3-academics-department-of-commerce-department-page/desafio.jpg';
 import ccca from '../../assets/images/3-academics-department-of-commerce-department-page/ccca.jpg';
