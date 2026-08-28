@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import PageHeader from '../../components/PageHeader';
 import Seo from '../../components/Seo';
 import departmentBanner from '../../assets/images/3-academics-department-of-management-department-page/department-banner.jpg';
@@ -94,10 +95,10 @@ export default function DepartmentOfManagementPage() {
             <ul className="mt-3 flex flex-col gap-2">
               {PROGRAMMES.map((p) => (
                 <li key={p.label}>
-                  <a href={p.path} className="flex items-center gap-2 text-sm text-cc-text-body hover:text-cc-primary hover:underline">
+                  <Link to={p.path} className="flex items-center gap-2 text-sm text-cc-text-body hover:text-cc-primary hover:underline">
                     <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-cc-primary" aria-hidden="true" />
                     {p.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

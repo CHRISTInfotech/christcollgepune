@@ -121,10 +121,10 @@ export default function DepartmentOfCommercePage() {
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {ACTIVITIES.map((a) => (
               <div key={a.name} className="overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page shadow-cc-sm">
-                <img src={a.image} alt={a.name} className="h-32 w-full object-cover" />
-                <div className="p-4">
-                  <h3 className="text-sm font-semibold text-cc-text-heading">{a.name}</h3>
-                  <p className="mt-1 text-xs text-cc-text-muted-light">{a.description}</p>
+                <img src={a.image} alt={a.name} className="h-40 w-full object-cover" />
+                <div className="p-5">
+                  <h3 className="text-base">{a.name}</h3>
+                  <p className="mt-1 text-sm text-cc-text-muted-light">{a.description}</p>
                 </div>
               </div>
             ))}

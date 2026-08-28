@@ -1,38 +1,55 @@
 import PageHeader from '../../components/PageHeader';
 import Seo from '../../components/Seo';
-import { DownloadIcon } from '../../components/icons';
-
-const PDF_URL =
-  'https://christcollegepune.org/uploads/cmsmenu/compress_ebook_merged_compressed_20250626033851.pdf';
-
 export default function CollegeMagazine() {
+  const driveUrl = 'https://drive.google.com/file/d/1HWTNpKHvOIG29_W8KLpZIZofIfQeaaeS/view?usp=sharing';
+  const embedUrl = 'https://drive.google.com/file/d/1HWTNpKHvOIG29_W8KLpZIZofIfQeaaeS/preview';
+
   return (
     <>
       <Seo
         title="College Magazine"
-        description="View or download the Christ College, Pune college magazine, the annual student publication showcasing campus life, achievements and creative work."
+        description="Read or download the Christ College, Pune college magazine, the annual student publication showcasing campus life, achievements and creative work."
       />
       <PageHeader title="College Magazine" breadcrumbs={[{ label: 'Student Life' }, { label: 'College Magazine' }]} />
 
       <section className="mx-auto max-w-[1200px] px-6 py-16">
-        <div className="mx-auto flex max-w-xl flex-col items-center rounded-cc-lg border border-cc-gray-200 bg-cc-bg-surface p-10 text-center shadow-cc-sm">
-          <span className="flex h-14 w-14 items-center justify-center rounded-full bg-cc-primary/10 text-cc-primary">
-            <DownloadIcon width={28} height={28} />
-          </span>
-          <h2 className="mt-6">College Magazine</h2>
-          <p className="mt-3 text-cc-text-body">
+        <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
+          <p className="max-w-2xl text-sm text-cc-text-body">
             Read the latest edition of the Christ College, Pune college magazine, published by the
             college for its students.
           </p>
           <a
-            href={PDF_URL}
+            href={driveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-8 inline-flex items-center gap-2 rounded-cc-pill bg-cc-primary px-6 py-3 text-sm font-semibold text-cc-text-light transition-colors hover:bg-cc-primary-dark"
+            className="inline-flex items-center gap-2 rounded-cc-pill bg-cc-primary px-4 py-2 text-sm font-semibold text-cc-text-light shadow-cc-sm transition-all hover:bg-cc-primary-hover hover:shadow-cc-md"
           >
-            <DownloadIcon width={18} height={18} />
-            View / Download PDF
+            Open in Google Drive
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+              <polyline points="15 3 21 3 21 9" />
+              <line x1="10" y1="14" x2="21" y2="3" />
+            </svg>
           </a>
+        </div>
+
+        <div className="overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-surface shadow-cc-sm">
+          <iframe
+            src={embedUrl}
+            title="Christ College Pune Magazine"
+            className="h-[80vh] w-full border-0"
+            allow="autoplay"
+          />
         </div>
       </section>
     </>

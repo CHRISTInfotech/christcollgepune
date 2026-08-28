@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
@@ -10,11 +11,15 @@ import { sitemapData } from './data/routes';
 // batches of pages added later (scraped or pasted) just need the file to exist.
 // Any sitemap row without a matching file still gets a working PlaceholderPage
 // stub (title + breadcrumb) so the full mega menu stays clickable end-to-end.
-const pageModules = import.meta.glob('./pages/*/*.jsx', { eager: true });
+// Loaded lazily (not `eager: true`) and code-split per route: a handful of
+// pages pull in heavy page-specific libraries (e.g. the PDF flip-book on the
+// College Magazine page), and eager-loading would ship that weight to every
+// visitor on every route instead of just the one page that needs it.
+const pageModules = import.meta.glob('./pages/*/*.jsx');
 const componentMap = {};
-for (const [filepath, module] of Object.entries(pageModules)) {
+for (const [filepath, loader] of Object.entries(pageModules)) {
   const id = filepath.split('/').pop().replace('.jsx', '');
-  if (module.default) componentMap[id] = module.default;
+  componentMap[id] = lazy(loader);
 }
 
 const ROUTES = sitemapData
@@ -41,7 +46,13 @@ function App() {
                 key={route.path}
                 path={route.path}
                 element={
-                  RealPage ? <RealPage /> : <PlaceholderPage title={route.title} breadcrumbs={route.breadcrumbs} />
+                  RealPage ? (
+                    <Suspense fallback={null}>
+                      <RealPage />
+                    </Suspense>
+                  ) : (
+                    <PlaceholderPage title={route.title} breadcrumbs={route.breadcrumbs} />
+                  )
                 }
               />
             );

@@ -3,11 +3,11 @@ import Seo from '../../components/Seo';
 import iprcBanner from '../../assets/images/7-centres-and-cells-intellectual-property-rights-cell/iprc-banner.png';
 
 const OBJECTIVES = [
-  'To create awareness about IPRs, especially Patents / Copyright',
-  'To enable Patents / Copyright searches',
-  'To guide inventors in respect of patenting their inventions',
-  'To setup IP Cell at Universities and Engineering Colleges',
-  'To promote a better understanding of IPR',
+  'To create awareness about IPRs, especially Patents / Copyright.',
+  'To enable Patents / Copyright searches.',
+  'To guide inventors in respect of patenting their inventions.',
+  'To setup IP Cell at Universities and Engineering Colleges.',
+  'To promote a better understanding of IPR.',
 ];
 
 export default function IntellectualPropertyRightsCell() {
@@ -30,8 +30,8 @@ export default function IntellectualPropertyRightsCell() {
           <h2>Objectives</h2>
           <ul className="mt-4 flex flex-col gap-2">
             {OBJECTIVES.map((item) => (
-              <li key={item} className="flex items-center gap-2 text-cc-text-body">
-                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-cc-primary" aria-hidden="true" />
+              <li key={item} className="flex items-start gap-2 text-cc-text-body">
+                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-cc-primary" aria-hidden="true" />
                 {item}
               </li>
             ))}

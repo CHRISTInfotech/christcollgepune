@@ -1,5 +1,7 @@
 import PageHeader from '../../components/PageHeader';
 import Seo from '../../components/Seo';
+import { DownloadIcon } from '../../components/icons';
+import electoralClubPdf from '../../assets/studentlife/cells/Electro club.pdf';
 
 const ROLES = [
   'Educate students about the electoral process, the importance of voting, and the functioning of democratic institutions',
@@ -35,6 +37,22 @@ export default function ElectoralLiteracyClub() {
               </li>
             ))}
           </ul>
+
+          <h3 className="mt-8 text-base">Documents</h3>
+          <a
+            href={electoralClubPdf}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 flex max-w-sm items-center gap-4 rounded-cc-lg border border-cc-gray-200 bg-cc-bg-surface p-5 transition-colors hover:border-cc-primary"
+          >
+            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-cc-primary/10 text-cc-primary">
+              <DownloadIcon width={20} height={20} />
+            </span>
+            <span>
+              <span className="block font-semibold text-cc-text-heading">Electoral Literacy Club</span>
+              <span className="block text-sm text-cc-text-muted-light">View / Download PDF</span>
+            </span>
+          </a>
         </div>
       </section>
     </>

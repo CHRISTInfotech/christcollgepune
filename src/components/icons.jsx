@@ -187,6 +187,39 @@ export function DownloadIcon(props) {
   );
 }
 
+export function ShareIcon(props) {
+  return (
+    <svg {...base} {...props}>
+      <circle cx="18" cy="5" r="2.5" />
+      <circle cx="6" cy="12" r="2.5" />
+      <circle cx="18" cy="19" r="2.5" />
+      <path d="M8.2 10.6l7.6-4.4M8.2 13.4l7.6 4.4" />
+    </svg>
+  );
+}
+
+export function ExpandIcon(props) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M9 4H5a1 1 0 0 0-1 1v4" />
+      <path d="M15 4h4a1 1 0 0 1 1 1v4" />
+      <path d="M9 20H5a1 1 0 0 1-1-1v-4" />
+      <path d="M15 20h4a1 1 0 0 0 1-1v-4" />
+    </svg>
+  );
+}
+
+export function CollapseIcon(props) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M4 9h4V5" />
+      <path d="M20 9h-4V5" />
+      <path d="M4 15h4v4" />
+      <path d="M20 15h-4v4" />
+    </svg>
+  );
+}
+
 export function InstagramIcon(props) {
   return (
     <svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden {...props}>

@@ -1,5 +1,13 @@
 import PageHeader from '../../components/PageHeader';
 import Seo from '../../components/Seo';
+import { DownloadIcon } from '../../components/icons';
+import antiRaggingCellPdf from '../../assets/studentlife/cells/Anti- Ragging Cell.pdf';
+import antiRaggingFormPdf from '../../assets/studentlife/cells/Anti-Ragging Undertaking Form.pdf';
+
+const DOCUMENTS = [
+  { name: 'Anti-Ragging Cell', file: antiRaggingCellPdf },
+  { name: 'Anti-Ragging Form', file: antiRaggingFormPdf },
+];
 
 const OBJECTIVES = [
   'Ensure discipline amongst students in the classrooms and within the college campus',
@@ -51,6 +59,27 @@ export default function AntiRaggingCell() {
               </li>
             ))}
           </ul>
+
+          <h3 className="mt-8 text-base">Documents</h3>
+          <div className="mt-4 grid gap-4 sm:grid-cols-2">
+            {DOCUMENTS.map((doc) => (
+              <a
+                key={doc.name}
+                href={doc.file}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 rounded-cc-lg border border-cc-gray-200 bg-cc-bg-surface p-5 transition-colors hover:border-cc-primary"
+              >
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-cc-primary/10 text-cc-primary">
+                  <DownloadIcon width={20} height={20} />
+                </span>
+                <span>
+                  <span className="block font-semibold text-cc-text-heading">{doc.name}</span>
+                  <span className="block text-sm text-cc-text-muted-light">View / Download PDF</span>
+                </span>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
     </>
