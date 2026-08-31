@@ -1,7 +1,11 @@
 import PageHeader from '../../components/PageHeader';
 import Seo from '../../components/Seo';
 import banner from '../../assets/images/3-academics-department-of-management-new-campus-bba-page-duplicate-current-variant/banner.JPG';
-import courseImage from '../../assets/images/3-academics-department-of-management-new-campus-bba-page-duplicate-current-variant/course-image.JPG';
+
+const ELIGIBILITY = [
+  'Passed 10+2 (Higher Secondary) or equivalent in any stream with a minimum of 40% marks.',
+  'Must appear for the CET examination conducted by the Government of Maharashtra.',
+];
 
 const DOCUMENTS = [
   'Printout of online admission enquiry form',
@@ -57,7 +61,32 @@ export default function NewCampusBbaDuplicateVariant() {
           </div>
 
           <div className="flex flex-col gap-6">
-            <img src={courseImage} alt="BBA students, New Campus" className="w-full rounded-cc-lg border border-cc-gray-200 object-cover" />
+            <div className="rounded-cc-lg border border-cc-gray-200 bg-cc-bg-surface p-6">
+              <h3 className="text-base">Course Duration</h3>
+              <dl className="mt-4 flex flex-col divide-y divide-cc-gray-200">
+                <div className="py-3 first:pt-0">
+                  <dt className="text-xs uppercase tracking-wide text-cc-text-muted-light">Duration</dt>
+                  <dd className="mt-1 text-sm font-medium text-cc-text-heading">3 Years, Full-Time</dd>
+                </div>
+                <div className="py-3 last:pb-0">
+                  <dt className="text-xs uppercase tracking-wide text-cc-text-muted-light">Structure</dt>
+                  <dd className="mt-1 text-sm font-medium text-cc-text-heading">6 Semesters</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div className="rounded-cc-lg border border-cc-gray-200 bg-cc-bg-surface p-6">
+              <h3 className="text-base">Eligibility</h3>
+              <ul className="mt-4 flex flex-col gap-2">
+                {ELIGIBILITY.map((e) => (
+                  <li key={e} className="flex items-start gap-2 text-sm text-cc-text-body">
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-cc-primary" aria-hidden="true" />
+                    {e}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
             <div className="rounded-cc-lg border border-cc-gray-200 bg-cc-bg-surface p-6">
               <h3 className="text-base">Admissions Contact</h3>
               <dl className="mt-4 flex flex-col divide-y divide-cc-gray-200">

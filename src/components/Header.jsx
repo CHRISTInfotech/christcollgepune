@@ -8,7 +8,7 @@ const NAV_SECTIONS = buildNavSections();
 
 const TOP_LINKS = [
   { label: 'Alumni', path: '/about-us/alumni', icon: <AcademicCapIcon width={16} height={16} /> },
-  { label: 'Virtual Tour', path: '/about-us/virtual-tour', icon: <CompassIcon width={16} height={16} /> },
+  { label: 'Virtual Tour', path: 'https://www.rangoli360.com/christ%20college%20pune/', icon: <CompassIcon width={16} height={16} /> },
 ];
 
 function ChevronBadge({ isOpen }) {
@@ -33,20 +33,34 @@ function NavGroup({ section, isOpen, onToggle, onCloseDrawer }) {
       </button>
       {isOpen && (
         <div className="ml-2 flex flex-col gap-1 border-l border-white/10 pb-3 pl-3">
-          {section.items.map((item) => (
-            <NavLink
-              key={item.path}
-              to={item.path}
-              onClick={onCloseDrawer}
-              className={({ isActive }) =>
-                `rounded-cc-sm px-6 py-2 text-sm transition-colors duration-[350ms] ${
-                  isActive ? 'text-cc-gold' : 'text-cc-text-muted hover:text-cc-gold-light'
-                }`
-              }
-            >
-              {item.label}
-            </NavLink>
-          ))}
+          {section.items.map((item) => {
+            const isExternal = item.path.startsWith('http');
+            return isExternal ? (
+              <a
+                key={item.path}
+                href={item.path}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={onCloseDrawer}
+                className="rounded-cc-sm px-6 py-2 text-sm text-cc-text-muted hover:text-cc-gold-light transition-colors duration-[350ms]"
+              >
+                {item.label}
+              </a>
+            ) : (
+              <NavLink
+                key={item.path}
+                to={item.path}
+                onClick={onCloseDrawer}
+                className={({ isActive }) =>
+                  `rounded-cc-sm px-6 py-2 text-sm transition-colors duration-[350ms] ${
+                    isActive ? 'text-cc-gold' : 'text-cc-text-muted hover:text-cc-gold-light'
+                  }`
+                }
+              >
+                {item.label}
+              </NavLink>
+            );
+          })}
 
           {section.subGroups?.map((sub) => (
             <details key={sub.label} className="group/sub">
@@ -55,20 +69,34 @@ function NavGroup({ section, isOpen, onToggle, onCloseDrawer }) {
                 <ChevronDownIcon className="shrink-0 transition-transform duration-[350ms] group-open/sub:rotate-180" />
               </summary>
               <div className="ml-2 flex flex-col gap-1 border-l border-white/10 pb-2 pl-3">
-                {sub.items.map((item) => (
-                  <NavLink
-                    key={item.path}
-                    to={item.path}
-                    onClick={onCloseDrawer}
-                    className={({ isActive }) =>
-                      `rounded-cc-sm px-6 py-2 text-sm transition-colors duration-[350ms] ${
-                        isActive ? 'text-cc-gold' : 'text-cc-text-muted hover:text-cc-gold-light'
-                      }`
-                    }
-                  >
-                    {item.label}
-                  </NavLink>
-                ))}
+                {sub.items.map((item) => {
+                  const isExternal = item.path.startsWith('http');
+                  return isExternal ? (
+                    <a
+                      key={item.path}
+                      href={item.path}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={onCloseDrawer}
+                      className="rounded-cc-sm px-6 py-2 text-sm text-cc-text-muted hover:text-cc-gold-light transition-colors duration-[350ms]"
+                    >
+                      {item.label}
+                    </a>
+                  ) : (
+                    <NavLink
+                      key={item.path}
+                      to={item.path}
+                      onClick={onCloseDrawer}
+                      className={({ isActive }) =>
+                        `rounded-cc-sm px-6 py-2 text-sm transition-colors duration-[350ms] ${
+                          isActive ? 'text-cc-gold' : 'text-cc-text-muted hover:text-cc-gold-light'
+                        }`
+                      }
+                    >
+                      {item.label}
+                    </NavLink>
+                  );
+                })}
               </div>
             </details>
           ))}
@@ -112,16 +140,30 @@ export default function Header({ isDrawerOpen, onToggleDrawer, onCloseDrawer }) 
 
           <div className="flex items-center gap-5">
             <nav className="hidden items-center gap-5 lg:flex" aria-label="Utility">
-              {TOP_LINKS.map((link) => (
-                <Link
-                  key={link.path}
-                  to={link.path}
-                  className="flex items-center gap-1.5 text-sm font-medium text-cc-text-light transition-colors duration-[350ms] hover:text-cc-gold"
-                >
-                  {link.icon}
-                  {link.label}
-                </Link>
-              ))}
+              {TOP_LINKS.map((link) => {
+                const isExternal = link.path.startsWith('http');
+                return isExternal ? (
+                  <a
+                    key={link.path}
+                    href={link.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 text-sm font-medium text-cc-text-light transition-colors duration-[350ms] hover:text-cc-gold"
+                  >
+                    {link.icon}
+                    {link.label}
+                  </a>
+                ) : (
+                  <Link
+                    key={link.path}
+                    to={link.path}
+                    className="flex items-center gap-1.5 text-sm font-medium text-cc-text-light transition-colors duration-[350ms] hover:text-cc-gold"
+                  >
+                    {link.icon}
+                    {link.label}
+                  </Link>
+                );
+              })}
             </nav>
 
             <NavLink
@@ -201,17 +243,32 @@ export default function Header({ isDrawerOpen, onToggleDrawer, onCloseDrawer }) 
         </div>
 
         <nav className="flex flex-col gap-1 border-b border-white/10 px-4 py-4 lg:hidden" aria-label="Utility">
-          {TOP_LINKS.map((link) => (
-            <Link
-              key={link.path}
-              to={link.path}
-              onClick={onCloseDrawer}
-              className="flex items-center gap-2 rounded-cc-sm px-2 py-2 text-sm font-medium text-cc-text-light hover:text-cc-gold"
-            >
-              {link.icon}
-              {link.label}
-            </Link>
-          ))}
+          {TOP_LINKS.map((link) => {
+            const isExternal = link.path.startsWith('http');
+            return isExternal ? (
+              <a
+                key={link.path}
+                href={link.path}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={onCloseDrawer}
+                className="flex items-center gap-2 rounded-cc-sm px-2 py-2 text-sm font-medium text-cc-text-light hover:text-cc-gold"
+              >
+                {link.icon}
+                {link.label}
+              </a>
+            ) : (
+              <Link
+                key={link.path}
+                to={link.path}
+                onClick={onCloseDrawer}
+                className="flex items-center gap-2 rounded-cc-sm px-2 py-2 text-sm font-medium text-cc-text-light hover:text-cc-gold"
+              >
+                {link.icon}
+                {link.label}
+              </Link>
+            );
+          })}
         </nav>
 
         <nav className="flex flex-1 flex-col gap-1 px-4 py-5" aria-label="Site sections">

@@ -2,6 +2,18 @@ import sitemapData from '../../sitemap_data.json';
 
 export { sitemapData };
 
+const EXTERNAL_URLS = {
+  '/e-services/student-login': 'https://christcollegepune.linways.com/ams/student/login',
+  '/e-services/faculty-login': 'https://christcollegepune.linways.com/ams/faculty/login',
+  '/e-services/online-payment-portal': 'https://feebook.southindianbank.com/FeeBookUser/org?id=984',
+  '/e-services/orbis-erp': 'https://erp.christcollegepune.org/',
+  '/e-services/live-tv': 'https://www.youtube.com/@christcollege-pune',
+  '/admissions/application-form-for-ug': 'https://christcollegepune.linways.com/v4/adm-applicant/login',
+  '/admissions/application-form-for-pg': 'https://christcollegepune.linways.com/v4/adm-applicant/login',
+  '/aicte/scholarship-fellowship-schemes': 'https://www.aicte.gov.in/schemes/students-development-schemes',
+  '/about-us/virtual-tour': 'https://www.rangoli360.com/christ%20college%20pune/',
+};
+
 /**
  * Finds a sitemap row by its exact `page` (and optional `sub_link`) and
  * returns a menu item `{ label, path }`. `label` overrides the display text
@@ -16,8 +28,10 @@ function pick(page, sub_link, label, section) {
     (r) => r.page === page && (r.sub_link || '') === (sub_link || '') && (!section || r.section === section)
   );
   if (!row) throw new Error(`Nav item not found in sitemap: page="${page}" sub_link="${sub_link || ''}" section="${section || ''}"`);
-  return { label: label || sub_link || page, path: row.path };
+  const path = EXTERNAL_URLS[row.path] || row.path;
+  return { label: label || sub_link || page, path };
 }
+
 
 /**
  * The site's top-level menu structure — an explicit, curated match to the
@@ -76,7 +90,7 @@ export function buildNavSections() {
       label: 'Academics',
       items: [
         pick('Department of Science', 'Department page', 'Department of Science'),
-        pick('Department of Arts', 'Department index', 'Department of Arts'),
+        pick('Department of Arts', 'BA department/programme page', 'Department of Arts'),
         pick('Department of Commerce', 'Department page', 'Department of Commerce'),
         pick('Department of Management', 'Department page', 'Department of Management'),
       ],
@@ -155,7 +169,7 @@ export function buildNavSections() {
       label: 'AICTE',
       items: [
         pick('Essential Documents'),
-        pick('AICTE Approved Courses'),
+        pick('Department of Management', 'Department page', 'AICTE Approved Courses'),
         pick('Scholarship/Fellowship Schemes'),
         pick('Mandatory Disclosure'),
       ],

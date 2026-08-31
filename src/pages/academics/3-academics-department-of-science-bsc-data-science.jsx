@@ -1,6 +1,11 @@
 import PageHeader from '../../components/PageHeader';
+import { ClockIcon, AcademicCapIcon, PhoneIcon, BookIcon, CheckCircleIcon, CompassIcon, CalendarIcon, GlobeIcon, GridIcon } from '../../components/icons';
 import Seo from '../../components/Seo';
 import banner from '../../assets/images/3-academics-department-of-science-department-page/department-banner.JPG';
+
+const ELIGIBILITY = [
+  'Passed 10+2 (Higher Secondary) or equivalent in Science stream with Mathematics from a recognized Board.',
+];
 
 const SKILL_AREAS = [
   'Programming in C, C++, Java & Python',
@@ -58,7 +63,10 @@ export default function BscDataScience() {
 
         <div className="mt-10 grid gap-10 lg:grid-cols-[1.4fr_1fr]">
           <div>
-            <h2>Programme Overview</h2>
+            <h2 className="flex items-center gap-2.5">
+              <BookIcon className="h-6 w-6 text-cc-primary shrink-0" />
+              Programme Overview
+            </h2>
             <p className="mt-4 text-cc-text-body leading-relaxed">
               BSc (Data Science) is a four-year undergraduate programme focused on data analytics,
               machine learning, and statistical modelling. It equips students to become data-driven
@@ -80,7 +88,10 @@ export default function BscDataScience() {
               modern tools and technologies, students gain exposure to contemporary scientific practices.
             </p>
 
-            <h3 className="mt-8 text-base">Key Expertise Offered</h3>
+            <h3 className="mt-8 text-base flex items-center gap-2">
+              <CheckCircleIcon className="h-5 w-5 text-cc-primary shrink-0" />
+              Key Expertise Offered
+            </h3>
             <ul className="mt-3 grid gap-2 sm:grid-cols-2">
               {SKILL_AREAS.map((h) => (
                 <li key={h} className="flex items-start gap-2 text-sm text-cc-text-body">
@@ -93,7 +104,10 @@ export default function BscDataScience() {
 
           <div className="flex flex-col gap-6">
             <div className="rounded-cc-lg border border-cc-gray-200 bg-cc-bg-surface p-6">
-              <h3 className="text-base">Course Duration</h3>
+              <h3 className="text-base font-bold text-cc-text-heading flex items-center gap-2">
+                <ClockIcon className="h-5 w-5 text-cc-primary" />
+                Course Duration
+              </h3>
               <dl className="mt-4 flex flex-col divide-y divide-cc-gray-200">
                 <div className="py-3 first:pt-0">
                   <dt className="text-xs uppercase tracking-wide text-cc-text-muted-light">Duration</dt>
@@ -107,7 +121,25 @@ export default function BscDataScience() {
             </div>
 
             <div className="rounded-cc-lg border border-cc-gray-200 bg-cc-bg-surface p-6">
-              <h3 className="text-base">Admissions Contact</h3>
+              <h3 className="text-base font-bold text-cc-text-heading flex items-center gap-2">
+                <AcademicCapIcon className="h-5 w-5 text-cc-primary" />
+                Eligibility
+              </h3>
+              <ul className="mt-4 flex flex-col gap-2">
+                {ELIGIBILITY.map((e) => (
+                  <li key={e} className="flex items-start gap-2 text-sm text-cc-text-body">
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-cc-primary" aria-hidden="true" />
+                    {e}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="rounded-cc-lg border border-cc-gray-200 bg-cc-bg-surface p-6">
+              <h3 className="text-base font-bold text-cc-text-heading flex items-center gap-2">
+                <PhoneIcon className="h-5 w-5 text-cc-primary" />
+                Admissions Contact
+              </h3>
               <dl className="mt-4 flex flex-col divide-y divide-cc-gray-200">
                 <div className="py-3 first:pt-0">
                   <dt className="text-xs uppercase tracking-wide text-cc-text-muted-light">College Reception</dt>
@@ -133,7 +165,10 @@ export default function BscDataScience() {
 
       <section className="bg-cc-bg-surface">
         <div className="mx-auto max-w-[1200px] px-6 py-16">
-          <h2 className="text-center mb-2">Career Opportunities</h2>
+          <h2 className="text-center mb-2 flex items-center justify-center gap-2.5">
+            <CompassIcon className="h-6 w-6 text-cc-primary shrink-0" />
+            Career Opportunities
+          </h2>
           <p className="text-center text-sm text-cc-text-muted-light mb-8">
             Graduates of the BSc (Data Science) programme can pursue careers in the following domains:
           </p>
@@ -149,7 +184,10 @@ export default function BscDataScience() {
       </section>
 
       <section className="mx-auto max-w-[1200px] px-6 py-16">
-        <h2>Christ College Admission Process</h2>
+        <h2 className="flex items-center gap-2.5">
+          <CalendarIcon className="h-6 w-6 text-cc-primary shrink-0" />
+          Christ College Admission Process
+        </h2>
         <p className="mt-2 text-sm text-cc-text-muted-light">
           The admission process at Christ College involves the following steps:
         </p>
@@ -237,7 +275,10 @@ export default function BscDataScience() {
           </li>
         </ol>
 
-        <h3 className="mt-12 text-base">International / NRI / PIO Students</h3>
+        <h3 className="mt-12 text-base flex items-center gap-2">
+          <GlobeIcon className="h-5 w-5 text-cc-primary shrink-0" />
+          International / NRI / PIO Students
+        </h3>
         <ol className="mt-4 flex flex-col gap-3 max-w-3xl">
           <li className="flex items-start gap-3 text-sm text-cc-text-body">
             <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-cc-primary/10 text-xs font-bold text-cc-primary">1</span>
@@ -287,7 +328,10 @@ export default function BscDataScience() {
           </li>
         </ol>
 
-        <h3 className="mt-12 text-base">Documents Required</h3>
+        <h3 className="mt-12 text-base flex items-center gap-2">
+          <GridIcon className="h-5 w-5 text-cc-primary shrink-0" />
+          Documents Required
+        </h3>
         <ul className="mt-4 grid gap-2 sm:grid-cols-2">
           {DOCUMENTS.map((d) => (
             <li key={d} className="flex items-start gap-2 text-sm text-cc-text-body">

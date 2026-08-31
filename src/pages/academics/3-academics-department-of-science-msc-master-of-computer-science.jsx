@@ -1,16 +1,24 @@
 import PageHeader from '../../components/PageHeader';
+import { ClockIcon, AcademicCapIcon, PhoneIcon, BookIcon, CheckCircleIcon, DownloadIcon, CalendarIcon, GlobeIcon, GridIcon } from '../../components/icons';
 import Seo from '../../components/Seo';
 import PdfViewer from '../../components/PdfViewer';
-import banner from '../../assets/images/3-academics-department-of-science-department-page/department-banner.JPG';
+import courseImage from '../../assets/images/3-academics-department-of-science-msc-master-of-computer-science/course-image.JPG';
 import syllabusPdf from '../../assets/acadmics/Science/msc-computer-science-syllabus.pdf';
 
 const SKILL_AREAS = [
-  'Advanced Software Development',
-  'Artificial Intelligence & Machine Learning',
-  'Advanced Networking & Security',
-  'Software Testing & Quality Assurance',
-  'Research Methodology & Aptitude',
-  'Practical System Design & Simulations',
+  'Software Development',
+  'Software Testing',
+  'Artificial Intelligence',
+  'Machine Learning',
+  'Networking',
+  'Advanced Programming',
+];
+
+const ELIGIBILITY = [
+  'Bachelor of Computer Science (BCS)',
+  'B.Sc. (Computer Science)',
+  'Bachelor of Engineering in Computer Science / Information Technology / Electronic Telecommunication',
+  'B.Sc. in IT or Computer Science',
 ];
 
 const DOCUMENTS = [
@@ -31,41 +39,36 @@ export default function MscMasterOfComputerScience() {
     <>
       <Seo
         title="MSc (Master of Computer Science)"
-        description="MSc (Master of Computer Science) at Christ College, Pune is a 2-year, 4-semester post-graduate programme offering advanced grounding in theoretical and practical computer science, specializing in software development, AI, ML, and Networking."
+        description="MSc (Master of Computer Science) at Christ College, Pune provides a thorough grounding in theoretical and practical computer science, developing software development, AI, machine learning and networking skills for today's job market."
       />
       <PageHeader
         title="MSc (Master of Computer Science)"
-        breadcrumbs={[
-          { label: 'Department of Science', path: '/academics/department-of-science/department-page' },
-          { label: 'MSc (Master of Computer Science)' }
-        ]}
+        breadcrumbs={[{ label: 'Department of Science', path: '/academics/department-of-science/department-page' }, { label: 'MSc (Master of Computer Science)' }]}
       />
 
       <section className="mx-auto max-w-[1200px] px-6 py-16">
-        <img
-          src={banner}
-          alt="MSc (Master of Computer Science)"
-          className="w-full h-[400px] rounded-cc-lg border border-cc-gray-200 object-cover shadow-cc-sm"
-        />
+        <img src={courseImage} alt="MSc (Master of Computer Science)" className="w-full rounded-cc-lg border border-cc-gray-200 object-cover shadow-cc-sm" />
 
         <div className="mt-10 grid gap-10 lg:grid-cols-[1.4fr_1fr]">
           <div>
-            <h2>Programme Overview</h2>
-            <p className="mt-4 text-cc-text-body leading-relaxed">
-              The M.Sc (Computer Science) program at CHRIST College is designed to provide students a thorough grounding in
-              theoretical and practical aspects of computer science. Our program polishes and sharpens software skill sets of
-              students like software development, software testing, AI, Machine learning and Networking-based skills which prepares
-              them to take up future challenges.
-            </p>
-            <p className="mt-4 text-cc-text-body leading-relaxed">
-              Our program offers focused education to develop advanced programming skills and strategies to solve logical challenges.
-              This aids the students to develop technical thinking and generate research aptitude. Alongside, various practical exposure
-              through industrial training, simulation, project EXPO, conferences, seminars etc. aids the students to gain an in-depth
-              understanding of theoretical concepts.
+            <h2 className="flex items-center gap-2.5">
+              <BookIcon className="h-6 w-6 text-cc-primary shrink-0" />
+              Programme Overview
+            </h2>
+            <p className="mt-4 text-cc-text-body">
+              The programme provides a thorough grounding in theoretical and practical aspects of
+              computer science. It focuses on developing software development, testing, AI,
+              machine learning, and networking skills. The curriculum emphasizes advanced
+              programming skills and strategies to solve logical challenges while building
+              technical thinking and research aptitude through industrial training, simulations,
+              project expos, conferences, and seminars.
             </p>
 
-            <h3 className="mt-8 text-base">Key Skill Areas</h3>
-            <ul className="mt-3 grid gap-2 sm:grid-cols-2">
+            <h3 className="mt-8 text-base flex items-center gap-2">
+              <CheckCircleIcon className="h-5 w-5 text-cc-primary shrink-0" />
+              Skill Areas
+            </h3>
+            <ul className="mt-3 flex flex-col gap-2">
               {SKILL_AREAS.map((h) => (
                 <li key={h} className="flex items-start gap-2 text-sm text-cc-text-body">
                   <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-cc-primary" aria-hidden="true" />
@@ -77,46 +80,48 @@ export default function MscMasterOfComputerScience() {
 
           <div className="flex flex-col gap-6">
             <div className="rounded-cc-lg border border-cc-gray-200 bg-cc-bg-surface p-6">
-              <h3 className="text-base">Course Eligibility & Duration</h3>
+              <h3 className="text-base font-bold text-cc-text-heading flex items-center gap-2">
+                <ClockIcon className="h-5 w-5 text-cc-primary" />
+                Course Duration
+              </h3>
               <dl className="mt-4 flex flex-col divide-y divide-cc-gray-200">
                 <div className="py-3 first:pt-0">
                   <dt className="text-xs uppercase tracking-wide text-cc-text-muted-light">Duration</dt>
                   <dd className="mt-1 text-sm font-medium text-cc-text-heading">2 Years, Full-Time</dd>
                 </div>
-                <div className="py-3">
+                <div className="py-3 last:pb-0">
                   <dt className="text-xs uppercase tracking-wide text-cc-text-muted-light">Structure</dt>
                   <dd className="mt-1 text-sm font-medium text-cc-text-heading">4 Semesters</dd>
-                </div>
-                <div className="py-3 last:pb-0">
-                  <dt className="text-xs uppercase tracking-wide text-cc-text-muted-light">Eligibility Criteria</dt>
-                  <dd className="mt-1 text-sm text-cc-text-body leading-relaxed font-medium">
-                    Bachelor of Computer Science (BCS) with 60% marks, OR B.Sc. (Computer Science) with 60% marks, OR
-                    A Bachelor of Engineering in Computer Science/Information Technology/Electronic Telecommunication with 60% marks, OR
-                    B.Sc. in IT or B.Sc. in Entire Computer Science with 60% Marks.
-                  </dd>
                 </div>
               </dl>
             </div>
 
             <div className="rounded-cc-lg border border-cc-gray-200 bg-cc-bg-surface p-6">
-              <h3 className="text-base">Admissions Contact</h3>
+              <h3 className="text-base font-bold text-cc-text-heading flex items-center gap-2">
+                <AcademicCapIcon className="h-5 w-5 text-cc-primary" />
+                Eligibility
+              </h3>
+              <p className="mt-2 text-xs text-cc-text-muted-light">Candidates must hold one of the following with a minimum of 60% marks:</p>
+              <ul className="mt-3 flex flex-col gap-2">
+                {ELIGIBILITY.map((e) => (
+                  <li key={e} className="flex items-start gap-2 text-sm text-cc-text-body">
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-cc-primary" aria-hidden="true" />
+                    {e}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="rounded-cc-lg border border-cc-gray-200 bg-cc-bg-surface p-6">
+              <h3 className="text-base font-bold text-cc-text-heading flex items-center gap-2">
+                <PhoneIcon className="h-5 w-5 text-cc-primary" />
+                Admissions Contact
+              </h3>
               <dl className="mt-4 flex flex-col divide-y divide-cc-gray-200">
-                <div className="py-3 first:pt-0">
-                  <dt className="text-xs uppercase tracking-wide text-cc-text-muted-light">College Reception</dt>
-                  <dd className="mt-1 text-sm font-medium text-cc-text-heading">7823839456</dd>
-                </div>
-                <div className="py-3">
-                  <dt className="text-xs uppercase tracking-wide text-cc-text-muted-light">College Office</dt>
-                  <dd className="mt-1 text-sm font-medium text-cc-text-heading">7447727243, 7447727242</dd>
-                </div>
-                <div className="py-3">
-                  <dt className="text-xs uppercase tracking-wide text-cc-text-muted-light">Office Hours</dt>
-                  <dd className="mt-1 text-sm font-medium text-cc-text-heading">Mon&ndash;Fri 8:30am&ndash;4:00pm, Sat 8:30am&ndash;1:30pm</dd>
-                </div>
-                <div className="py-3 last:pb-0">
-                  <dt className="text-xs uppercase tracking-wide text-cc-text-muted-light">Email</dt>
-                  <dd className="mt-1 text-sm font-medium text-cc-text-heading">admission@christcollegepune.org</dd>
-                </div>
+                <div className="py-3 first:pt-0"><dt className="text-xs uppercase tracking-wide text-cc-text-muted-light">College Reception</dt><dd className="mt-1 text-sm font-medium text-cc-text-heading">7823839456</dd></div>
+                <div className="py-3"><dt className="text-xs uppercase tracking-wide text-cc-text-muted-light">College Office</dt><dd className="mt-1 text-sm font-medium text-cc-text-heading">7447727243, 7447727242</dd></div>
+                <div className="py-3"><dt className="text-xs uppercase tracking-wide text-cc-text-muted-light">Office Hours</dt><dd className="mt-1 text-sm font-medium text-cc-text-heading">Mon&ndash;Fri 8:30am&ndash;4:00pm, Sat 8:30am&ndash;1:30pm</dd></div>
+                <div className="py-3 last:pb-0"><dt className="text-xs uppercase tracking-wide text-cc-text-muted-light">Email</dt><dd className="mt-1 text-sm font-medium text-cc-text-heading">admission@christcollegepune.org</dd></div>
               </dl>
             </div>
           </div>
@@ -125,13 +130,19 @@ export default function MscMasterOfComputerScience() {
 
       <section className="bg-cc-bg-surface">
         <div className="mx-auto max-w-[1200px] px-6 py-16">
-          <h2 className="text-center mb-8">Course Syllabus</h2>
+          <h2 className="text-center mb-8 flex items-center justify-center gap-2.5">
+            <DownloadIcon className="h-6 w-6 text-cc-primary shrink-0" />
+            Course Syllabus
+          </h2>
           <PdfViewer fileUrl={syllabusPdf} title="MSc Computer Science Syllabus" />
         </div>
       </section>
 
       <section className="mx-auto max-w-[1200px] px-6 py-16">
-        <h2>Christ College Admission Process</h2>
+        <h2 className="flex items-center gap-2.5">
+          <CalendarIcon className="h-6 w-6 text-cc-primary shrink-0" />
+          Christ College Admission Process
+        </h2>
         <p className="mt-2 text-sm text-cc-text-muted-light">
           The admission process at Christ College involves the following steps:
         </p>
@@ -219,7 +230,10 @@ export default function MscMasterOfComputerScience() {
           </li>
         </ol>
 
-        <h3 className="mt-12 text-base">International / NRI / PIO Students</h3>
+        <h3 className="mt-12 text-base flex items-center gap-2">
+          <GlobeIcon className="h-5 w-5 text-cc-primary shrink-0" />
+          International / NRI / PIO Students
+        </h3>
         <ol className="mt-4 flex flex-col gap-3 max-w-3xl">
           <li className="flex items-start gap-3 text-sm text-cc-text-body">
             <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-cc-primary/10 text-xs font-bold text-cc-primary">1</span>
@@ -269,7 +283,10 @@ export default function MscMasterOfComputerScience() {
           </li>
         </ol>
 
-        <h3 className="mt-12 text-base">Documents Required</h3>
+        <h3 className="mt-12 text-base flex items-center gap-2">
+          <GridIcon className="h-5 w-5 text-cc-primary shrink-0" />
+          Documents Required
+        </h3>
         <ul className="mt-4 grid gap-2 sm:grid-cols-2">
           {DOCUMENTS.map((d) => (
             <li key={d} className="flex items-start gap-2 text-sm text-cc-text-body">
@@ -278,26 +295,6 @@ export default function MscMasterOfComputerScience() {
             </li>
           ))}
         </ul>
-
-        <div className="mt-12 rounded-cc-lg border border-cc-primary/20 bg-cc-primary/5 p-6 shadow-cc-sm">
-          <h4 className="text-base font-bold text-cc-primary flex items-center gap-2">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="shrink-0" aria-hidden="true">
-              <path d="M12 9v4m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-            Notice
-          </h4>
-          <p className="mt-3 text-sm text-cc-text-body leading-relaxed">
-            All professional courses, namely BBA, BBA (IB), and BBA (CA), require candidates to appear for the CET examination conducted by the Government of Maharashtra as part of the admission process. For more details regarding the CET examination, candidates are advised to visit the official website:{' '}
-            <a
-              href="https://cetcell.mahacet.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-cc-primary hover:underline font-semibold"
-            >
-              cetcell.mahacet.org
-            </a>.
-          </p>
-        </div>
       </section>
     </>
   );

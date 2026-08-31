@@ -1,8 +1,13 @@
 import PageHeader from '../../components/PageHeader';
+import { ClockIcon, AcademicCapIcon, PhoneIcon, BookIcon, CheckCircleIcon, DownloadIcon, CalendarIcon, GlobeIcon, GridIcon } from '../../components/icons';
 import Seo from '../../components/Seo';
 import PdfViewer from '../../components/PdfViewer';
 import banner from '../../assets/images/3-academics-department-of-science-bsc-bachelor-of-computer-science/banner.JPG';
 import syllabusPdf from '../../assets/acadmics/Science/bachelor-of-computer-science-syllabus.pdf';
+
+const ELIGIBILITY = [
+  'Passed 10+2 (Higher Secondary) or equivalent in Science stream with Mathematics from a recognized Board.',
+];
 
 const SKILL_AREAS = [
   'Networking',
@@ -44,7 +49,10 @@ export default function BscBachelorOfComputerScience() {
 
         <div className="mt-10 grid gap-10 lg:grid-cols-[1.4fr_1fr]">
           <div>
-            <h2>Programme Overview</h2>
+            <h2 className="flex items-center gap-2.5">
+              <BookIcon className="h-6 w-6 text-cc-primary shrink-0" />
+              Programme Overview
+            </h2>
             <p className="mt-4 text-cc-text-body">
               BSc (Bachelor of Computer Science) deals with the subjects and topics related to
               computer science, computer applications and its services. The programme aims to
@@ -58,7 +66,10 @@ export default function BscBachelorOfComputerScience() {
               simulation, project EXPOs, conferences, and seminars.
             </p>
 
-            <h3 className="mt-8 text-base">Skill Areas</h3>
+            <h3 className="mt-8 text-base flex items-center gap-2">
+              <CheckCircleIcon className="h-5 w-5 text-cc-primary shrink-0" />
+              Skill Areas
+            </h3>
             <ul className="mt-3 flex flex-col gap-2">
               {SKILL_AREAS.map((h) => (
                 <li key={h} className="flex items-start gap-2 text-sm text-cc-text-body">
@@ -71,7 +82,10 @@ export default function BscBachelorOfComputerScience() {
 
           <div className="flex flex-col gap-6">
             <div className="rounded-cc-lg border border-cc-gray-200 bg-cc-bg-surface p-6">
-              <h3 className="text-base">Course Duration</h3>
+              <h3 className="text-base font-bold text-cc-text-heading flex items-center gap-2">
+                <ClockIcon className="h-5 w-5 text-cc-primary" />
+                Course Duration
+              </h3>
               <dl className="mt-4 flex flex-col divide-y divide-cc-gray-200">
                 <div className="py-3 first:pt-0">
                   <dt className="text-xs uppercase tracking-wide text-cc-text-muted-light">Duration</dt>
@@ -85,7 +99,25 @@ export default function BscBachelorOfComputerScience() {
             </div>
 
             <div className="rounded-cc-lg border border-cc-gray-200 bg-cc-bg-surface p-6">
-              <h3 className="text-base">Admissions Contact</h3>
+              <h3 className="text-base font-bold text-cc-text-heading flex items-center gap-2">
+                <AcademicCapIcon className="h-5 w-5 text-cc-primary" />
+                Eligibility
+              </h3>
+              <ul className="mt-4 flex flex-col gap-2">
+                {ELIGIBILITY.map((e) => (
+                  <li key={e} className="flex items-start gap-2 text-sm text-cc-text-body">
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-cc-primary" aria-hidden="true" />
+                    {e}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="rounded-cc-lg border border-cc-gray-200 bg-cc-bg-surface p-6">
+              <h3 className="text-base font-bold text-cc-text-heading flex items-center gap-2">
+                <PhoneIcon className="h-5 w-5 text-cc-primary" />
+                Admissions Contact
+              </h3>
               <dl className="mt-4 flex flex-col divide-y divide-cc-gray-200">
                 <div className="py-3 first:pt-0"><dt className="text-xs uppercase tracking-wide text-cc-text-muted-light">College Reception</dt><dd className="mt-1 text-sm font-medium text-cc-text-heading">7823839456</dd></div>
                 <div className="py-3"><dt className="text-xs uppercase tracking-wide text-cc-text-muted-light">College Office</dt><dd className="mt-1 text-sm font-medium text-cc-text-heading">7447727243, 7447727242</dd></div>
@@ -99,13 +131,19 @@ export default function BscBachelorOfComputerScience() {
 
       <section className="bg-cc-bg-surface">
         <div className="mx-auto max-w-[1200px] px-6 py-16">
-          <h2 className="text-center mb-8">Course Syllabus</h2>
+          <h2 className="text-center mb-8 flex items-center justify-center gap-2.5">
+            <DownloadIcon className="h-6 w-6 text-cc-primary shrink-0" />
+            Course Syllabus
+          </h2>
           <PdfViewer fileUrl={syllabusPdf} title="BSc Computer Science Syllabus" />
         </div>
       </section>
 
       <section className="mx-auto max-w-[1200px] px-6 py-16">
-        <h2>Christ College Admission Process</h2>
+        <h2 className="flex items-center gap-2.5">
+          <CalendarIcon className="h-6 w-6 text-cc-primary shrink-0" />
+          Christ College Admission Process
+        </h2>
         <p className="mt-2 text-sm text-cc-text-muted-light">
           The admission process at Christ College involves the following steps:
         </p>
@@ -193,7 +231,10 @@ export default function BscBachelorOfComputerScience() {
           </li>
         </ol>
 
-        <h3 className="mt-12 text-base">International / NRI / PIO Students</h3>
+        <h3 className="mt-12 text-base flex items-center gap-2">
+          <GlobeIcon className="h-5 w-5 text-cc-primary shrink-0" />
+          International / NRI / PIO Students
+        </h3>
         <ol className="mt-4 flex flex-col gap-3 max-w-3xl">
           <li className="flex items-start gap-3 text-sm text-cc-text-body">
             <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-cc-primary/10 text-xs font-bold text-cc-primary">1</span>
@@ -243,7 +284,10 @@ export default function BscBachelorOfComputerScience() {
           </li>
         </ol>
 
-        <h3 className="mt-12 text-base">Documents Required</h3>
+        <h3 className="mt-12 text-base flex items-center gap-2">
+          <GridIcon className="h-5 w-5 text-cc-primary shrink-0" />
+          Documents Required
+        </h3>
         <ul className="mt-4 grid gap-2 sm:grid-cols-2">
           {DOCUMENTS.map((d) => (
             <li key={d} className="flex items-start gap-2 text-sm text-cc-text-body">

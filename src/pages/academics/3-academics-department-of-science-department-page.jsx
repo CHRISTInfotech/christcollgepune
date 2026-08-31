@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import PageHeader from '../../components/PageHeader';
 import Seo from '../../components/Seo';
 import TestimonialCarousel from '../../components/TestimonialCarousel';
+import { ChevronDownIcon, BuildingIcon, GridIcon, UsersIcon, AwardIcon, CompassIcon, AcademicCapIcon } from '../../components/icons';
 import departmentBanner from '../../assets/images/3-academics-department-of-science-department-page/department-banner.JPG';
 import hodNilimaShingate from '../../assets/images/3-academics-department-of-science-department-page/hod-nilima-shingate.jpg';
 import events from '../../assets/images/3-academics-department-of-science-department-page/events.JPG';
@@ -132,7 +133,10 @@ export default function DepartmentOfSciencePage() {
 
         <div className="mt-10 grid gap-10 lg:grid-cols-[1.4fr_1fr]">
           <div>
-            <h2>About the Department</h2>
+            <h2 className="flex items-center gap-2.5">
+              <BuildingIcon className="h-6 w-6 text-cc-primary shrink-0" />
+              About the Department
+            </h2>
             <p className="mt-4 text-cc-text-body">
               The Department of Science at Christ College, established in 2007, is committed to
               delivering high-quality education in the field of science. The department offers
@@ -151,7 +155,10 @@ export default function DepartmentOfSciencePage() {
               well-prepared for both professional and personal success.
             </p>
 
-            <h2 className="mt-10">Department Overview</h2>
+            <h2 className="mt-10 flex items-center gap-2.5">
+              <GridIcon className="h-6 w-6 text-cc-primary shrink-0" />
+              Department Overview
+            </h2>
             <p className="mt-4 text-cc-text-body">
               The B.Sc. (Computer Science) is a well-structured four-year degree (Honours)
               program offered by the Faculty of Science and Technology. The primary objective of
@@ -167,7 +174,10 @@ export default function DepartmentOfSciencePage() {
               excel in the rapidly evolving field of computer science.
             </p>
 
-            <h2 className="mt-10">Message from the HOD</h2>
+            <h2 className="mt-10 flex items-center gap-2.5">
+              <UsersIcon className="h-6 w-6 text-cc-primary shrink-0" />
+              Message from the HOD
+            </h2>
             <div className="mt-4 flex items-start gap-4">
               <img
                 src={hodNilimaShingate}
@@ -204,33 +214,47 @@ export default function DepartmentOfSciencePage() {
           </div>
 
           <div className="rounded-cc-lg border border-cc-gray-200 bg-cc-bg-surface p-6">
-            <h3 className="text-base">Vision</h3>
-            <p className="mt-3 text-sm font-semibold italic text-cc-primary">
-              &ldquo;To be a recognized leader in delivering exceptional technical education,
-              fostering a research-driven environment, and equipping students with the
-              cutting-edge skills and practical experience needed to thrive in the ever-evolving
-              computing industry and academia. Our ultimate goal is to contribute to societal
-              progress by producing highly skilled graduates who make meaningful contributions to
-              the field.&rdquo;
-            </p>
+            <div>
+              <h4 className="text-xs uppercase tracking-wide text-cc-text-muted-light flex items-center gap-1.5">
+                  <CompassIcon className="h-3.5 w-3.5 text-cc-primary shrink-0" />
+                  Vision
+                </h4>
+              <p className="mt-1 text-sm font-semibold italic text-cc-primary">
+                &ldquo;To be a recognized leader in delivering exceptional technical education, fostering a research-driven environment, and equipping students with the cutting-edge skills and practical experience needed to thrive in the ever-evolving computing industry and academia. Our ultimate goal is to contribute to societal progress by producing highly skilled graduates who make meaningful contributions to the field.&rdquo;
+              </p>
+            </div>
+            <div className="mt-4">
+              <h4 className="text-xs uppercase tracking-wide text-cc-text-muted-light flex items-center gap-1.5">
+                  <AwardIcon className="h-3.5 w-3.5 text-cc-primary shrink-0" />
+                  Mission
+                </h4>
+              <ul className="mt-2 flex flex-col gap-3">
+                {MISSION_POINTS.map((m) => (
+                  <li key={m.title} className="text-sm text-cc-text-muted-light">
+                    <span className="font-semibold text-cc-text-heading">{m.title}:</span> {m.description}
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-            <h3 className="mt-6 text-base">Mission</h3>
-            <ul className="mt-3 flex flex-col gap-3">
-              {MISSION_POINTS.map((m) => (
-                <li key={m.title} className="text-sm text-cc-text-muted-light">
-                  <span className="font-semibold text-cc-text-heading">{m.title}:</span> {m.description}
-                </li>
-              ))}
-            </ul>
-
-            <h3 className="mt-6 text-base">Programmes Offered</h3>
+            <h3 className="mt-6 text-base font-bold text-cc-text-heading flex items-center gap-2">
+                <AcademicCapIcon className="h-5 w-5 text-cc-primary shrink-0" />
+                Programmes Offered
+              </h3>
             <p className="mt-3 text-xs uppercase tracking-wide text-cc-text-muted-light">Undergraduate</p>
             <ul className="mt-2 flex flex-col gap-2">
               {PROGRAMMES.undergraduate.map((p) => (
                 <li key={p.label}>
-                  <Link to={p.path} className="flex items-center gap-2 text-sm text-cc-text-body hover:text-cc-primary hover:underline">
-                    <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-cc-primary" aria-hidden="true" />
+                  <Link
+                    to={p.path}
+                    className="group flex items-center justify-between gap-2 rounded-cc-md border border-cc-gray-200 bg-cc-bg-page px-4 py-2.5 text-sm font-medium text-cc-text-body shadow-cc-sm transition-colors hover:border-cc-primary hover:bg-cc-primary/5 hover:text-cc-primary"
+                  >
                     {p.label}
+                    <ChevronDownIcon
+                      width={14}
+                      height={14}
+                      className="-rotate-90 shrink-0 text-cc-text-muted-light transition-colors group-hover:text-cc-primary"
+                    />
                   </Link>
                 </li>
               ))}
@@ -239,9 +263,16 @@ export default function DepartmentOfSciencePage() {
             <ul className="mt-2 flex flex-col gap-2">
               {PROGRAMMES.postgraduate.map((p) => (
                 <li key={p.label}>
-                  <Link to={p.path} className="flex items-center gap-2 text-sm text-cc-text-body hover:text-cc-primary hover:underline">
-                    <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-cc-primary" aria-hidden="true" />
+                  <Link
+                    to={p.path}
+                    className="group flex items-center justify-between gap-2 rounded-cc-md border border-cc-gray-200 bg-cc-bg-page px-4 py-2.5 text-sm font-medium text-cc-text-body shadow-cc-sm transition-colors hover:border-cc-primary hover:bg-cc-primary/5 hover:text-cc-primary"
+                  >
                     {p.label}
+                    <ChevronDownIcon
+                      width={14}
+                      height={14}
+                      className="-rotate-90 shrink-0 text-cc-text-muted-light transition-colors group-hover:text-cc-primary"
+                    />
                   </Link>
                 </li>
               ))}
@@ -252,7 +283,10 @@ export default function DepartmentOfSciencePage() {
 
       <section className="bg-cc-bg-surface">
         <div className="mx-auto max-w-[1200px] px-6 py-16">
-          <h2 className="text-center">Facilities &amp; Activities</h2>
+          <h2 className="text-center flex items-center justify-center gap-2.5">
+              <GridIcon className="h-6 w-6 text-cc-primary shrink-0" />
+              Facilities & Activities
+            </h2>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {ACTIVITIES.map((a) => (
               <div key={a.name} className="overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page shadow-cc-sm">
@@ -268,7 +302,10 @@ export default function DepartmentOfSciencePage() {
       </section>
 
       <section className="mx-auto max-w-[1200px] px-6 py-16">
-        <h2 className="text-center">Our Achievements</h2>
+        <h2 className="text-center flex items-center justify-center gap-2.5">
+              <AwardIcon className="h-6 w-6 text-cc-primary shrink-0" />
+              Our Achievements
+            </h2>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {ACHIEVEMENTS.map((a, index) => (
             <div key={`${a.name}-${index}`} className="overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page shadow-cc-sm">
@@ -285,7 +322,10 @@ export default function DepartmentOfSciencePage() {
 
       <section className="bg-cc-bg-surface">
         <div className="mx-auto max-w-[1200px] px-6 py-16">
-          <h2 className="text-center">Student Testimonials</h2>
+          <h2 className="text-center flex items-center justify-center gap-2.5">
+              <UsersIcon className="h-6 w-6 text-cc-primary shrink-0" />
+              Student Testimonials
+            </h2>
           <div className="mt-10">
             <TestimonialCarousel testimonials={TESTIMONIALS} />
           </div>

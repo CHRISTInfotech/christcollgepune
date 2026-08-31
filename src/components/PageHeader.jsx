@@ -3,7 +3,7 @@ import { HomeIcon } from './icons';
 
 export default function PageHeader({ title, breadcrumbs = [], headingRef }) {
   return (
-    <div>
+    <div className="sticky top-[var(--header-height)] z-40 shadow-cc-sm">
       {breadcrumbs.length > 0 && (
         <div className="bg-cc-gold py-2">
           <div className="mx-auto max-w-[1200px] px-6">
