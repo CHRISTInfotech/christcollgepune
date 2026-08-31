@@ -65,14 +65,25 @@ export default function BbaBachelorOfBusinessAdministration() {
               Programme Overview
             </h2>
             <p className="mt-4 text-cc-text-body">
-              This course aims at providing adequate understanding of the business management
-              concepts. It is designed to develop competent individuals with entrepreneurship
-              acumen capable of applying qualitative and quantitative skills to provide viable
-              solutions to business problems. The program aims to create sensitivity to social,
-              ethical and sustainability issues. With a choice of specialization in Finance and
-              Human Resource Management, the institute offers a blend of activities including
-              add on courses, internship program, mentoring and guidance sessions, industrial
-              visits and much more.
+              The Bachelor of Business Administration (BBA) programme at Christ College Pune is
+              designed to provide students with a strong academic foundation in management while
+              equipping them with the practical skills required in today's competitive business
+              environment. The programme blends core business knowledge with experiential learning
+              to ensure students develop leadership abilities, analytical thinking, communication
+              skills, and strong ethical values. With a focus on industry readiness and holistic
+              development, the BBA programme prepares graduates for successful corporate careers,
+              entrepreneurial ventures, and advanced academic pursuits such as an MBA and other
+              professional courses.
+            </p>
+            <p className="mt-4 text-cc-text-body">
+              This programme aims to provide a comprehensive understanding of business management
+              concepts. It is designed to develop competent professionals with entrepreneurial
+              acumen who are capable of applying qualitative and quantitative skills to deliver
+              viable solutions to business challenges. The curriculum also fosters sensitivity
+              toward social, ethical, and sustainability issues. Offering specializations in
+              Finance and Human Resource Management, the department provides a rich blend of academic
+              and co-curricular activities, including add-on courses, internship programmes,
+              mentoring and guidance sessions, and industrial visits.
             </p>
 
             <h3 className="mt-8 text-base flex items-center gap-2">
