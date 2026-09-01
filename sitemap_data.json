@@ -2358,5 +2358,15 @@
     "path": "/academics/department-of-management/newsletter",
     "verification": "Verified",
     "notes": "Facilities & Activities sub-page, linked from the Department of Management page, not in main nav menu."
+  },
+  {
+    "id": "12-media-and-gallery-gallery",
+    "section": "12. Media & Gallery",
+    "page": "Gallery",
+    "sub_link": "",
+    "url": "https://christcollegepune.org/gallery",
+    "path": "/media-and-gallery/gallery",
+    "verification": "Verified",
+    "notes": "Photo gallery of college events, organised by department with search, sort and download. Not in main nav menu."
   }
 ]

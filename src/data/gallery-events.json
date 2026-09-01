@@ -1,0 +1,248 @@
+[
+  {
+    "name": "AAGHAZ 2024",
+    "slug": "aaghaz-2024",
+    "department": null,
+    "photoCount": 12
+  },
+  {
+    "name": "Alumni Meet 2023",
+    "slug": "alumni-meet-2023",
+    "department": null,
+    "photoCount": 8
+  },
+  {
+    "name": "BHASHA UTSAV 2024",
+    "slug": "bhasha-utsav-2024",
+    "department": null,
+    "photoCount": 16
+  },
+  {
+    "name": "BLOOD DONATION 2023",
+    "slug": "blood-donation-2023",
+    "department": null,
+    "photoCount": 6
+  },
+  {
+    "name": "CHRISLIGA 2024",
+    "slug": "chrisliga-2024",
+    "department": null,
+    "photoCount": 12
+  },
+  {
+    "name": "CHRISLIGA 2023",
+    "slug": "chrisliga-2023",
+    "department": null,
+    "photoCount": 16
+  },
+  {
+    "name": "CHRYSALIS 2025",
+    "slug": "chrysalis-2025",
+    "department": "Science",
+    "photoCount": 4
+  },
+  {
+    "name": "CHRYSALIS 25",
+    "slug": "chrysalis-25",
+    "department": null,
+    "photoCount": 9
+  },
+  {
+    "name": "Chavara Cup 2023",
+    "slug": "chavara-cup-2023",
+    "department": null,
+    "photoCount": 5
+  },
+  {
+    "name": "Crescita 2023",
+    "slug": "crescita-2023",
+    "department": null,
+    "photoCount": 17
+  },
+  {
+    "name": "DATA DRIVEN DECISION MAKING: THE ROLE OF MATHEMATICS AND STATISTICS IN COMPUTER SCIENCE",
+    "slug": "data-driven-decision-making-the-role-of-mathematics-and-statistics-in-computer-science",
+    "department": "Science",
+    "photoCount": 6
+  },
+  {
+    "name": "Demystifying Cyber Security",
+    "slug": "demystifying-cyber-security",
+    "department": "Science",
+    "photoCount": 6
+  },
+  {
+    "name": "Desafio Comfest 2023",
+    "slug": "desafio-comfest-2023",
+    "department": null,
+    "photoCount": 19
+  },
+  {
+    "name": "Disaster Management Workshop",
+    "slug": "disaster-management-workshop",
+    "department": null,
+    "photoCount": 5
+  },
+  {
+    "name": "Ethnic Day 2024",
+    "slug": "ethnic-day-2024",
+    "department": null,
+    "photoCount": 23
+  },
+  {
+    "name": "Ethnic Day 2023",
+    "slug": "ethnic-day-2023",
+    "department": null,
+    "photoCount": 9
+  },
+  {
+    "name": "Fiesta Management Fest",
+    "slug": "fiesta-management-fest",
+    "department": null,
+    "photoCount": 12
+  },
+  {
+    "name": "Garjana 2023",
+    "slug": "garjana-2023",
+    "department": null,
+    "photoCount": 6
+  },
+  {
+    "name": "Giggle Gala (CHD)",
+    "slug": "giggle-gala-chd",
+    "department": null,
+    "photoCount": 5
+  },
+  {
+    "name": "Gloria 2025",
+    "slug": "gloria-2025",
+    "department": null,
+    "photoCount": 6
+  },
+  {
+    "name": "Guest Lecture on: Mechanistic Modeling of Complex Social Systems",
+    "slug": "guest-lecture-on-mechanistic-modeling-of-complex-social-systems",
+    "department": "Science",
+    "photoCount": 9
+  },
+  {
+    "name": "International Conference on Emerging Technologies (ICET 23) CS",
+    "slug": "international-conference-on-emerging-technologies-icet-23-cs",
+    "department": "Science",
+    "photoCount": 6
+  },
+  {
+    "name": "India's Youngest Author",
+    "slug": "indias-youngest-author",
+    "department": null,
+    "photoCount": 6
+  },
+  {
+    "name": "International Conference on Digital Transformation",
+    "slug": "international-conference-on-digital-transformation",
+    "department": null,
+    "photoCount": 7
+  },
+  {
+    "name": "International Conference on Emerging Technologies (ICET 23)",
+    "slug": "international-conference-on-emerging-technologies-icet-23",
+    "department": null,
+    "photoCount": 6
+  },
+  {
+    "name": "International Conference 2023",
+    "slug": "international-conference-2023",
+    "department": null,
+    "photoCount": 5
+  },
+  {
+    "name": "Joy of Giving",
+    "slug": "joy-of-giving",
+    "department": null,
+    "photoCount": 10
+  },
+  {
+    "name": "Manifest 2023",
+    "slug": "manifest-2023",
+    "department": null,
+    "photoCount": 7
+  },
+  {
+    "name": "Manifest 2024",
+    "slug": "manifest-2024",
+    "department": null,
+    "photoCount": 23
+  },
+  {
+    "name": "National Integration Camp 2026",
+    "slug": "national-integration-camp-2026",
+    "department": null,
+    "photoCount": 8
+  },
+  {
+    "name": "Republic Day 2025",
+    "slug": "republic-day-2025",
+    "department": null,
+    "photoCount": 7
+  },
+  {
+    "name": "Republic Day 2023",
+    "slug": "republic-day-2023",
+    "department": null,
+    "photoCount": 7
+  },
+  {
+    "name": "Science Exhibition 2024",
+    "slug": "science-exhibition-2024",
+    "department": null,
+    "photoCount": 6
+  },
+  {
+    "name": "Smart India",
+    "slug": "smart-india",
+    "department": "Management",
+    "photoCount": 8
+  },
+  {
+    "name": "Syntnia MUN 2025",
+    "slug": "syntnia-mun-2025",
+    "department": null,
+    "photoCount": 9
+  },
+  {
+    "name": "Technotsav 2023",
+    "slug": "technotsav-2023",
+    "department": null,
+    "photoCount": 23
+  },
+  {
+    "name": "Udaan 2025",
+    "slug": "udaan-2025",
+    "department": null,
+    "photoCount": 7
+  },
+  {
+    "name": "Workshop on Gender Justice",
+    "slug": "workshop-on-gender-justice",
+    "department": null,
+    "photoCount": 6
+  },
+  {
+    "name": "Workshop on Green Solutions and Environmental Action",
+    "slug": "workshop-on-green-solutions-and-environmental-action",
+    "department": null,
+    "photoCount": 6
+  },
+  {
+    "name": "Yessummit 2025",
+    "slug": "yessummit-2025",
+    "department": null,
+    "photoCount": 9
+  },
+  {
+    "name": "Zumba Revive 2023",
+    "slug": "zumba-revive-2023",
+    "department": null,
+    "photoCount": 8
+  }
+]

@@ -434,7 +434,7 @@ export default function Home() {
           <div className="flex flex-wrap items-center justify-between gap-4">
             <h2 className="text-cc-gold">Gallery</h2>
             <Link
-              to="/media-and-gallery/gallery/gallery-index-homepage-gallery"
+              to="/media-and-gallery/gallery"
               className="flex items-center gap-2 text-sm font-semibold text-cc-gold underline-offset-4 hover:underline"
             >
               <span className="h-4 w-0.5 rounded-full bg-cc-gold" aria-hidden="true" />
@@ -457,7 +457,7 @@ export default function Home() {
 
           <div className="mt-8 text-center">
             <Link
-              to="/media-and-gallery/gallery/gallery-index-homepage-gallery"
+              to="/media-and-gallery/gallery"
               className="inline-block rounded-cc-pill bg-cc-primary-light px-6 py-3 text-sm font-semibold uppercase tracking-wide text-cc-text-light transition-colors duration-[350ms] hover:bg-cc-primary"
             >
               View All

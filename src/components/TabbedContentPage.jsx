@@ -15,6 +15,7 @@ export default function TabbedContentPage({
   pageTitle,
   description,
   breadcrumbLabel,
+  breadcrumbSection = 'Student Life',
   bannerImage,
   bannerAlt,
   tabs,
@@ -29,7 +30,7 @@ export default function TabbedContentPage({
         title={activeKey === tabs[0].key ? pageTitle : `${pageTitle} – ${active.label}`}
         description={description}
       />
-      <PageHeader title={pageTitle} breadcrumbs={[{ label: 'Student Life' }, { label: breadcrumbLabel ?? pageTitle }]} />
+      <PageHeader title={pageTitle} breadcrumbs={[{ label: breadcrumbSection }, { label: breadcrumbLabel ?? pageTitle }]} />
 
       <section className="mx-auto max-w-[1200px] px-6 py-16">
         {bannerImage && (
