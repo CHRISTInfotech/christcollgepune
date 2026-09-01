@@ -21,13 +21,13 @@ const ELIGIBILITY = [
 ];
 
 const HIGHLIGHTS = [
-  'Specialized focus on international trade and global business practices',
-  'Curriculum covering global marketing, foreign exchange, and international finance',
-  'Exposure to cross-cultural management and global leadership concepts',
-  'Industry-oriented learning through projects, case studies, and internships',
-  'Development of strategic and analytical skills for global markets',
-  'Career preparation for multinational corporations and global enterprises',
-  'Strong foundation for higher education in International Business and Global Management',
+  'Specialized focus on international trade logistics, global marketing, foreign exchange, and international finance',
+  'Exposure to cross-cultural management, ethical governance, and global leadership frameworks',
+  'Industry-oriented learning through real-world case studies, research projects, and a mandatory internship programme',
+  'Foreign language training and value-added soft skills courses to boost global competency',
+  'Corporate immersion through industrial visits, executive mentorship, and corporate guest lectures',
+  'Development of strategic, analytical, and entrepreneurial skills tailored for international markets',
+  'Strong career preparation for multinational corporations, export-import firms, and elite global master’s programmes',
 ];
 
 const DOCUMENTS = [
@@ -63,13 +63,17 @@ export default function BbaInternationalBusiness() {
               <BookIcon className="h-6 w-6 text-cc-primary shrink-0" />
               Programme Overview
             </h2>
-            <p className="mt-4 text-cc-text-body">
-              The programme aims to &ldquo;provide a global outlook and exposure to
-              students&rdquo; while equipping them with &ldquo;managerial and entrepreneurial
-              skills along with various theoretical and practical aspects of international
-              business.&rdquo; It seeks to develop cross-cultural attitudes and &ldquo;ethical and
-              social consciousness in the students.&rdquo;
-            </p>
+            <div className="mt-4 flex flex-col gap-3 text-cc-text-body">
+              <p>
+                The <strong>Bachelor of Business Administration in International Business — BBA (IB)</strong> at Christ College Pune is designed to develop visionary professionals and dynamic leaders equipped for the rapidly evolving global marketplace. The programme provides comprehensive insights into international trade operations, global marketing strategies, foreign exchange dynamics, cross-border financial systems, and global supply chain management.
+              </p>
+              <p>
+                By integrating robust academic foundations with extensive practical exposure, the curriculum fosters strategic thinking, entrepreneurial acumen, and cross-cultural adaptability. Beyond core management principles, the programme actively cultivates ethical leadership and social consciousness, enabling students to navigate complex and competitive international environments with confidence.
+              </p>
+              <p>
+                To ensure industry readiness and global competency, the institute offers specialized foreign language training, value-added soft skills development, a mandatory internship programme, industrial field visits, executive mentorship, and expert-led corporate masterclasses.
+              </p>
+            </div>
 
             <h3 className="mt-8 text-base flex items-center gap-2">
               <CheckCircleIcon className="h-5 w-5 text-cc-primary shrink-0" />
@@ -89,11 +93,8 @@ export default function BbaInternationalBusiness() {
               Career Prospects
             </h3>
             <p className="mt-3 text-cc-text-body">
-              The programme prepares students for careers in the global business environment,
-              with opportunities in multinational corporations, export-import firms, and
-              international consulting, while laying a strong foundation for higher studies.
+              The programme equips learners to understand global economic trends and prepares them for rewarding careers in multinational corporations, export-import enterprises, international banking, and global consulting firms, while also laying a solid foundation for higher education in international business and global management.
             </p>
-
           </div>
 
           <div className="flex flex-col gap-6">
