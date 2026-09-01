@@ -20,11 +20,11 @@ const PROGRAMMES = [
 ];
 
 const ACTIVITIES = [
-  { name: 'Fiesta', description: 'The department’s annual festival.', image: fiesta },
-  { name: 'CCMA', description: 'Christ College Management Association.', image: ccma },
-  { name: 'Corporate Connect', description: 'Industry engagement through talks, visits and internships.', image: corporateConnect },
-  { name: 'Campus Updates', description: 'Newsletter and department activity updates.', image: campusUpdates },
-  { name: 'Faculty Publications', description: 'Research and publications by department faculty.', image: facultyPublications },
+  { name: 'Festivals', description: 'Department festivals held throughout the academic year.', image: fiesta, path: '/academics/department-of-management/festivals' },
+  { name: 'CCMA', description: 'Christ College Management Association.', image: ccma, path: '/academics/department-of-management/association' },
+  { name: 'Activities', description: 'Industry engagement through talks, visits and internships.', image: corporateConnect, path: '/academics/department-of-management/activities' },
+  { name: 'Newsletter', description: 'Department newsletter — Eloquence.', image: campusUpdates, path: '/academics/department-of-management/newsletter' },
+  { name: 'Faculty Publications', description: 'Research and publications by department faculty.', image: facultyPublications, path: '/academics/department-of-management/faculty-publications' },
 ];
 
 const TESTIMONIALS = [
@@ -157,15 +157,29 @@ export default function DepartmentOfManagementPage() {
               Facilities & Activities
             </h2>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {ACTIVITIES.map((a) => (
-              <div key={a.name} className="overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page shadow-cc-sm">
-                <img src={a.image} alt={a.name} className="h-40 w-full object-cover" />
-                <div className="p-5">
-                  <h3 className="text-base">{a.name}</h3>
-                  <p className="mt-1 text-sm text-cc-text-muted-light">{a.description}</p>
+            {ACTIVITIES.map((a) =>
+              a.path ? (
+                <Link
+                  key={a.name}
+                  to={a.path}
+                  className="overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page shadow-cc-sm transition-colors hover:border-cc-primary"
+                >
+                  <img src={a.image} alt={a.name} className="h-40 w-full object-cover" />
+                  <div className="p-5">
+                    <h3 className="text-base">{a.name}</h3>
+                    <p className="mt-1 text-sm text-cc-text-muted-light">{a.description}</p>
+                  </div>
+                </Link>
+              ) : (
+                <div key={a.name} className="overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page shadow-cc-sm">
+                  <img src={a.image} alt={a.name} className="h-40 w-full object-cover" />
+                  <div className="p-5">
+                    <h3 className="text-base">{a.name}</h3>
+                    <p className="mt-1 text-sm text-cc-text-muted-light">{a.description}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              )
+            )}
           </div>
         </div>
       </section>

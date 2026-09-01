@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useLocation, Outlet } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import Header from './Header';
@@ -10,6 +10,18 @@ import { standard } from '../motion/transitions';
 export default function Layout() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const location = useLocation();
+
+  useEffect(() => {
+    // Disable browser's automatic scroll restoration so SPA route transitions and back/forward always start at top
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+  }, []);
+
+  useEffect(() => {
+    // Scroll window immediately to the top whenever pathname or search params change
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  }, [location.pathname, location.search]);
 
   return (
     <div className="flex min-h-screen flex-col">

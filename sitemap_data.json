@@ -240,6 +240,36 @@
     "notes": "Variant/legacy indexed URL."
   },
   {
+    "id": "3-academics-department-of-science-festivals",
+    "section": "3. Academics",
+    "page": "Department of Science",
+    "sub_link": "Festivals",
+    "url": "https://christcollegepune.org/departments/main%20campus/department%20of%20%20science/computer%20science/festivals/technotsav-2024",
+    "path": "/academics/department-of-science/festivals",
+    "verification": "Verified",
+    "notes": "Facilities & Activities sub-page, linked from the Department of Science page, not in main nav menu."
+  },
+  {
+    "id": "3-academics-department-of-science-association",
+    "section": "3. Academics",
+    "page": "Department of Science",
+    "sub_link": "Association",
+    "url": "https://christcollegepune.org/departments/main%20campus/department%20of%20%20science/computer%20science/Association",
+    "path": "/academics/department-of-science/association",
+    "verification": "Verified",
+    "notes": "Facilities & Activities sub-page, linked from the Department of Science page, not in main nav menu."
+  },
+  {
+    "id": "3-academics-department-of-science-activities",
+    "section": "3. Academics",
+    "page": "Department of Science",
+    "sub_link": "Activities",
+    "url": "https://christcollegepune.org/departments/main%20campus/department%20of%20%20science/computer%20science/Activities/workshop-oncareer-opportunities-in-the-it-industry",
+    "path": "/academics/department-of-science/activities",
+    "verification": "Verified",
+    "notes": "Facilities & Activities sub-page, linked from the Department of Science page, not in main nav menu."
+  },
+  {
     "id": "3-academics-department-of-arts-department-index",
     "section": "3. Academics",
     "page": "Department of Arts",
@@ -288,6 +318,36 @@
     "path": "/academics/department-of-arts/ba-psychology",
     "verification": "Verified",
     "notes": ""
+  },
+  {
+    "id": "3-academics-department-of-arts-festivals",
+    "section": "3. Academics",
+    "page": "Department of Arts",
+    "sub_link": "Festivals",
+    "url": "https://christcollegepune.org/departments/main%20campus/department%20of%20arts/ba%20pune%20new%20campus/festivals/udan2024",
+    "path": "/academics/department-of-arts/festivals",
+    "verification": "Verified",
+    "notes": "Facilities & Activities sub-page, linked from the Department of Arts page, not in main nav menu."
+  },
+  {
+    "id": "3-academics-department-of-arts-association",
+    "section": "3. Academics",
+    "page": "Department of Arts",
+    "sub_link": "Association",
+    "url": "https://christcollegepune.org/departments/main%20campus/department%20of%20arts/ba%20pune%20new%20campus/Association",
+    "path": "/academics/department-of-arts/association",
+    "verification": "Verified",
+    "notes": "Facilities & Activities sub-page, linked from the Department of Arts page, not in main nav menu."
+  },
+  {
+    "id": "3-academics-department-of-arts-activities",
+    "section": "3. Academics",
+    "page": "Department of Arts",
+    "sub_link": "Activities",
+    "url": "https://christcollegepune.org/departments/main%20campus/department%20of%20arts/ba%20pune%20new%20campus/Activities/busy-minds",
+    "path": "/academics/department-of-arts/activities",
+    "verification": "Verified",
+    "notes": "Facilities & Activities sub-page, linked from the Department of Arts page, not in main nav menu."
   },
   {
     "id": "3-academics-department-of-arts-ba-variant",
@@ -2188,5 +2248,115 @@
     "path": "/aicte/mandatory-disclosure",
     "verification": "Needs URL verification",
     "notes": "Present in live-site navigation but missing from the source xlsx sitemap; added from menu reference provided during Step 1."
+  },
+  {
+    "id": "3-academics-department-of-science-faculty-publications",
+    "section": "3. Academics",
+    "page": "Department of Science",
+    "sub_link": "Faculty Publications",
+    "url": "https://christcollegepune.org/departments/main-campus/department-of--science/computer-science",
+    "path": "/academics/department-of-science/faculty-publications",
+    "verification": "Sample/illustrative",
+    "notes": "Facilities & Activities sub-page, linked from the Department of Science page, not in main nav menu. Real site publications tab has no actual list, so this uses generic sample entries per explicit user request."
+  },
+  {
+    "id": "3-academics-department-of-arts-faculty-publications",
+    "section": "3. Academics",
+    "page": "Department of Arts",
+    "sub_link": "Faculty Publications",
+    "url": "https://christcollegepune.org/departments/main%20campus/department%20of%20arts/ba%20pune%20new%20campus",
+    "path": "/academics/department-of-arts/faculty-publications",
+    "verification": "Sample/illustrative",
+    "notes": "Facilities & Activities sub-page, linked from the Department of Arts page, not in main nav menu. Real site publications tab has no actual list, so this uses generic sample entries per explicit user request."
+  },
+  {
+    "id": "3-academics-department-of-commerce-faculty-publications",
+    "section": "3. Academics",
+    "page": "Department of Commerce",
+    "sub_link": "Faculty Publications",
+    "url": "https://christcollegepune.org/departments/main%20campus/department%20of%20commerce/commerce",
+    "path": "/academics/department-of-commerce/faculty-publications",
+    "verification": "Sample/illustrative",
+    "notes": "Facilities & Activities sub-page, linked from the Department of Commerce page, not in main nav menu. Real site publications tab has no actual list, so this uses generic sample entries per explicit user request."
+  },
+  {
+    "id": "3-academics-department-of-management-faculty-publications",
+    "section": "3. Academics",
+    "page": "Department of Management",
+    "sub_link": "Faculty Publications",
+    "url": "https://christcollegepune.org/departments/main-campus/department-of-management/management",
+    "path": "/academics/department-of-management/faculty-publications",
+    "verification": "Sample/illustrative",
+    "notes": "Facilities & Activities sub-page, linked from the Department of Management page, not in main nav menu. Real site publications tab has no actual list, so this uses generic sample entries per explicit user request."
+  },
+  {
+    "id": "3-academics-department-of-commerce-festivals",
+    "section": "3. Academics",
+    "page": "Department of Commerce",
+    "sub_link": "Festivals",
+    "url": "https://christcollegepune.org/departments/main%20campus/department%20of%20commerce/commerce/Festivals",
+    "path": "/academics/department-of-commerce/festivals",
+    "verification": "Verified",
+    "notes": "Facilities & Activities sub-page, linked from the Department of Commerce page, not in main nav menu."
+  },
+  {
+    "id": "3-academics-department-of-commerce-association",
+    "section": "3. Academics",
+    "page": "Department of Commerce",
+    "sub_link": "Association",
+    "url": "https://christcollegepune.org/departments/main%20campus/department%20of%20commerce/commerce/Association",
+    "path": "/academics/department-of-commerce/association",
+    "verification": "Verified",
+    "notes": "Facilities & Activities sub-page, linked from the Department of Commerce page, not in main nav menu."
+  },
+  {
+    "id": "3-academics-department-of-commerce-activities",
+    "section": "3. Academics",
+    "page": "Department of Commerce",
+    "sub_link": "Activities",
+    "url": "https://christcollegepune.org/departments-activities/main%20campus/department%20of%20commerce/commerce/NzI1NQ==",
+    "path": "/academics/department-of-commerce/activities",
+    "verification": "Verified",
+    "notes": "Facilities & Activities sub-page, linked from the Department of Commerce page, not in main nav menu."
+  },
+  {
+    "id": "3-academics-department-of-management-festivals",
+    "section": "3. Academics",
+    "page": "Department of Management",
+    "sub_link": "Festivals",
+    "url": "https://christcollegepune.org/departments/main%20campus/department%20of%20management/management%20/festivals",
+    "path": "/academics/department-of-management/festivals",
+    "verification": "Verified",
+    "notes": "Facilities & Activities sub-page, linked from the Department of Management page, not in main nav menu."
+  },
+  {
+    "id": "3-academics-department-of-management-association",
+    "section": "3. Academics",
+    "page": "Department of Management",
+    "sub_link": "Association",
+    "url": "https://christcollegepune.org/departments/main%20campus/department%20of%20management/management%20/Association",
+    "path": "/academics/department-of-management/association",
+    "verification": "Verified",
+    "notes": "Facilities & Activities sub-page, linked from the Department of Management page, not in main nav menu."
+  },
+  {
+    "id": "3-academics-department-of-management-activities",
+    "section": "3. Academics",
+    "page": "Department of Management",
+    "sub_link": "Activities",
+    "url": "https://christcollegepune.org/departments/main%20campus/department%20of%20management/management%20/Activities",
+    "path": "/academics/department-of-management/activities",
+    "verification": "Verified",
+    "notes": "Facilities & Activities sub-page, linked from the Department of Management page, not in main nav menu."
+  },
+  {
+    "id": "3-academics-department-of-management-newsletter",
+    "section": "3. Academics",
+    "page": "Department of Management",
+    "sub_link": "Newsletter",
+    "url": "https://christcollegepune.org/uploads/departmentactivities/Eloquence_20240223121819.pdf",
+    "path": "/academics/department-of-management/newsletter",
+    "verification": "Verified",
+    "notes": "Facilities & Activities sub-page, linked from the Department of Management page, not in main nav menu."
   }
 ]

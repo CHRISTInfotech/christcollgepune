@@ -63,6 +63,11 @@ async function main() {
         // issues ongoing range requests once playback starts, so the page
         // never reaches network-idle and networkidle would time out here.
         await page.goto(`http://localhost:${port}/christcollgepune${route}`, { waitUntil: 'load', timeout: 15000 });
+        // Routes are React.lazy-loaded, so the real page (and its <h1> from
+        // PageHeader) only mounts after an additional async chunk fetch —
+        // waiting on this signal (rather than a fixed delay) avoids capturing
+        // the pre-mount Suspense fallback, which has no title/content at all.
+        await page.waitForSelector('h1', { timeout: 10000 });
         await page.waitForTimeout(150);
         const html = await page.content();
         const outPath = route === '/' ? join(distDir, 'index.html') : join(distDir, route.slice(1), 'index.html');

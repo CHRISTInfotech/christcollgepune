@@ -38,10 +38,10 @@ const MISSION_POINTS = [
 ];
 
 const ACTIVITIES = [
-  { name: 'Events', description: 'Department events held throughout the academic year.', image: events },
-  { name: 'CCSA', description: 'Computer Science Student Association.', image: ccsa },
-  { name: 'Club Activities', description: 'Student-led club activities and initiatives.', image: clubActivities },
-  { name: 'Faculty Publications', description: 'Research and publications by department faculty.', image: facultyPublications },
+  { name: 'Festivals', description: 'Department festivals and technical fests held throughout the academic year.', image: events, path: '/academics/department-of-science/festivals' },
+  { name: 'CCSA', description: 'Christ College Science Association (CCSA) and its events.', image: ccsa, path: '/academics/department-of-science/association' },
+  { name: 'Activities', description: 'Workshops, seminars, corporate talks and field visits organised by the department.', image: clubActivities, path: '/academics/department-of-science/activities' },
+  { name: 'Faculty Publications', description: 'Research and publications by department faculty.', image: facultyPublications, path: '/academics/department-of-science/faculty-publications' },
 ];
 
 const ACHIEVEMENTS = [
@@ -288,15 +288,29 @@ export default function DepartmentOfSciencePage() {
               Facilities & Activities
             </h2>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {ACTIVITIES.map((a) => (
-              <div key={a.name} className="overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page shadow-cc-sm">
-                <img src={a.image} alt={a.name} className="h-40 w-full object-cover" />
-                <div className="p-5">
-                  <h3 className="text-base">{a.name}</h3>
-                  <p className="mt-1 text-sm text-cc-text-muted-light">{a.description}</p>
+            {ACTIVITIES.map((a) =>
+              a.path ? (
+                <Link
+                  key={a.name}
+                  to={a.path}
+                  className="overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page shadow-cc-sm transition-colors hover:border-cc-primary"
+                >
+                  <img src={a.image} alt={a.name} className="h-40 w-full object-cover" />
+                  <div className="p-5">
+                    <h3 className="text-base">{a.name}</h3>
+                    <p className="mt-1 text-sm text-cc-text-muted-light">{a.description}</p>
+                  </div>
+                </Link>
+              ) : (
+                <div key={a.name} className="overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page shadow-cc-sm">
+                  <img src={a.image} alt={a.name} className="h-40 w-full object-cover" />
+                  <div className="p-5">
+                    <h3 className="text-base">{a.name}</h3>
+                    <p className="mt-1 text-sm text-cc-text-muted-light">{a.description}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              )
+            )}
           </div>
         </div>
       </section>

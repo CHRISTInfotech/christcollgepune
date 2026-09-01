@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom';
 import Seo from '../components/Seo';
 import { fadeInUp, staggerContainer, staggerItem } from '../motion/variants';
 import { emphasis } from '../motion/transitions';
-import { AcademicCapIcon } from '../components/icons';
+import { AcademicCapIcon, AwardIcon } from '../components/icons';
 import bannerVideo from '../assets/home/bannerViedo.mp4';
+import naacSealImg from '../assets/home/naac-a-plus-seal.jpg';
 import artsImg from '../assets/home/ArtsDept.jpg';
 import commerceImg from '../assets/home/commerceDept.jpg';
 import managementImg from '../assets/home/ManagementDept.jpg';
@@ -13,7 +14,7 @@ import scienceImg from '../assets/home/ScienceDept.jpg';
 import campusLifeImg from '../assets/home/campusLife_20260716095700.jpg';
 import cpcgImg from '../assets/home/cpcg.jpg';
 import culturalsImg from '../assets/home/culturals.jpg';
-import hostelImg from '../assets/home/Hostel_20260213122105.png';
+import councilImg from '../assets/images/5-students-student-council/council-banner.png';
 import nssImg from '../assets/home/nss.jpg';
 import sportsImg from '../assets/home/sports.jpg';
 import facilityLabsImg from '../assets/home/CampusFacilitiesLab.jpg';
@@ -85,9 +86,9 @@ const DEPARTMENTS = [
 
 const STUDENT_LIFE_LINKS = [
   { image: campusLifeImg, label: 'Campus Life', path: '/students/campus-life-student-life' },
-  { image: hostelImg, label: 'Hostel', path: '/students/hostel' },
-  { image: nssImg, label: 'NSS', path: '/students/national-service-scheme/about-us' },
-  { image: cpcgImg, label: 'Placement & Career Guidance', path: '/students/placement-and-career-guidance' },
+  { image: councilImg, label: 'Student Council (SC)', path: '/students/student-council' },
+  { image: nssImg, label: 'National Service Scheme (NSS)', path: '/students/national-service-scheme/about-us' },
+  { image: cpcgImg, label: 'Placement & Career Guidance (CPCG)', path: '/students/placement-and-career-guidance' },
   { image: sportsImg, label: 'Physical Education & Sports', path: '/students/physical-education' },
   { image: culturalsImg, label: 'Co-curricular & Cultural Activities', path: '/students/co-curricular-and-cultural-activities' },
 ];
@@ -267,7 +268,12 @@ export default function Home() {
                 <AcademicCapIcon width={20} height={20} />
               </span>
               <div>
-                <p className="text-xs uppercase tracking-wide text-cc-text-muted-light">Admissions</p>
+                <div className="flex items-center gap-1.5">
+                  <p className="text-xs uppercase tracking-wide text-cc-text-muted-light">Admissions</p>
+                  <span className="rounded-full bg-cc-primary/10 px-2 py-0.5 text-[10px] font-bold text-cc-primary">
+                    NAAC A+
+                  </span>
+                </div>
                 <p className="font-semibold text-cc-text-heading">2026-27</p>
               </div>
             </div>
@@ -300,6 +306,30 @@ export default function Home() {
           </aside>
         </div>
       </motion.section>
+
+      {/* Simple & Elegant NAAC Accreditation Strip */}
+      <section className="mx-auto max-w-[1200px] px-4 md:px-6 py-2">
+        <div className="flex flex-wrap items-center justify-between gap-3 rounded-cc-md border border-cc-gray-200 bg-cc-bg-surface px-4 py-2.5 shadow-cc-xs">
+          <div className="flex items-center gap-2.5">
+            <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-cc-primary/10 text-cc-primary">
+              <AwardIcon width={14} height={14} />
+            </span>
+            <p className="text-xs sm:text-sm text-cc-text-body">
+              <span className="font-semibold text-cc-text-heading">NAAC Accredited &lsquo;A+&rsquo; Grade</span>
+              <span className="mx-2 text-cc-gray-300 hidden sm:inline">&bull;</span>
+              <span className="text-cc-text-muted-light hidden sm:inline">Affiliated to Savitribai Phule Pune University (SPPU)</span>
+              <span className="mx-2 text-cc-gray-300 hidden md:inline">&bull;</span>
+              <span className="text-cc-text-muted-light hidden md:inline">AICTE Approved</span>
+            </p>
+          </div>
+          <Link
+            to="/naac-iqac/naac-accreditation/naac-certificate-cycle-2"
+            className="inline-flex items-center gap-1 text-xs font-semibold text-cc-primary transition-colors hover:text-cc-primary-dark hover:underline"
+          >
+            NAAC Certificate &rarr;
+          </Link>
+        </div>
+      </section>
 
       <motion.section
         id="departments"

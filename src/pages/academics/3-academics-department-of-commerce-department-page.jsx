@@ -16,10 +16,10 @@ const PROGRAMMES = {
 };
 
 const ACTIVITIES = [
-  { name: 'DeSafio', description: 'Department festival and competition showcasing student skills and creativity.', image: desafio },
-  { name: 'CCCA', description: 'Christ College Commerce Association - organizes workshops, seminars, competitions, and cultural events.', image: ccca },
-  { name: 'Webinars & Expert Sessions', description: 'Interactive webinars and guest lectures from industry and academic experts.', image: webinar },
-  { name: 'Faculty Publications', description: 'Scholarly research publications contributing to advanced academic knowledge.', image: facultyPublications },
+  { name: 'Festivals', description: 'Department festival and competition showcasing student skills and creativity.', image: desafio, path: '/academics/department-of-commerce/festivals' },
+  { name: 'CCCA', description: 'Christ College Commerce Association - organizes workshops, seminars, competitions, and cultural events.', image: ccca, path: '/academics/department-of-commerce/association' },
+  { name: 'Activities', description: 'Interactive webinars and guest lectures from industry and academic experts.', image: webinar, path: '/academics/department-of-commerce/activities' },
+  { name: 'Faculty Publications', description: 'Scholarly research publications contributing to advanced academic knowledge.', image: facultyPublications, path: '/academics/department-of-commerce/faculty-publications' },
 ];
 
 const TESTIMONIALS = [
@@ -205,15 +205,29 @@ export default function DepartmentOfCommercePage() {
               Facilities & Activities
             </h2>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {ACTIVITIES.map((a) => (
-              <div key={a.name} className="overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page shadow-cc-sm">
-                <img src={a.image} alt={a.name} className="h-40 w-full object-cover" />
-                <div className="p-5">
-                  <h3 className="text-base">{a.name}</h3>
-                  <p className="mt-1 text-sm text-cc-text-muted-light">{a.description}</p>
+            {ACTIVITIES.map((a) =>
+              a.path ? (
+                <Link
+                  key={a.name}
+                  to={a.path}
+                  className="overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page shadow-cc-sm transition-colors hover:border-cc-primary"
+                >
+                  <img src={a.image} alt={a.name} className="h-40 w-full object-cover" />
+                  <div className="p-5">
+                    <h3 className="text-base">{a.name}</h3>
+                    <p className="mt-1 text-sm text-cc-text-muted-light">{a.description}</p>
+                  </div>
+                </Link>
+              ) : (
+                <div key={a.name} className="overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page shadow-cc-sm">
+                  <img src={a.image} alt={a.name} className="h-40 w-full object-cover" />
+                  <div className="p-5">
+                    <h3 className="text-base">{a.name}</h3>
+                    <p className="mt-1 text-sm text-cc-text-muted-light">{a.description}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              )
+            )}
           </div>
         </div>
       </section>

@@ -12,6 +12,7 @@ const EXTERNAL_URLS = {
   '/admissions/application-form-for-pg': 'https://christcollegepune.linways.com/v4/adm-applicant/login',
   '/aicte/scholarship-fellowship-schemes': 'https://www.aicte.gov.in/schemes/students-development-schemes',
   '/about-us/virtual-tour': 'https://www.rangoli360.com/christ%20college%20pune/',
+  '/about-us/alumni': 'https://alumni.christcollegepune.org/',
 };
 
 /**

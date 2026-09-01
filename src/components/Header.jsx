@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/logo/logo.png';
+import naacSealImg from '../assets/home/naac-a-plus-seal.jpg';
 import { buildNavSections } from '../data/routes';
 import { AcademicCapIcon, ChevronDownIcon, CompassIcon } from './icons';
 
 const NAV_SECTIONS = buildNavSections();
 
 const TOP_LINKS = [
-  { label: 'Alumni', path: '/about-us/alumni', icon: <AcademicCapIcon width={16} height={16} /> },
+  { label: 'Alumni', path: 'https://alumni.christcollegepune.org/', icon: <AcademicCapIcon width={16} height={16} /> },
   { label: 'Virtual Tour', path: 'https://www.rangoli360.com/christ%20college%20pune/', icon: <CompassIcon width={16} height={16} /> },
 ];
 
@@ -134,9 +135,23 @@ export default function Header({ isDrawerOpen, onToggleDrawer, onCloseDrawer }) 
         }`}
       >
         <div className="mx-auto flex h-full max-w-[1200px] items-center justify-between gap-4 px-6">
-          <Link to="/" className="flex h-full items-center" onClick={onCloseDrawer}>
-            <img src={logo} alt="Christ College Pune" className="h-14 w-auto" />
-          </Link>
+          <div className="flex items-center gap-3 sm:gap-4">
+            <Link to="/" className="flex h-full items-center" onClick={onCloseDrawer}>
+              <img src={logo} alt="Christ College Pune" className="h-12 sm:h-14 w-auto" />
+            </Link>
+            <Link
+              to="/naac-iqac/naac-accreditation/naac-certificate-cycle-2"
+              title="NAAC Accredited 'A+' Grade — View Certificate"
+              onClick={onCloseDrawer}
+              className="group flex items-center transition-transform duration-300 hover:scale-105"
+            >
+              <img
+                src={naacSealImg}
+                alt="NAAC Accredited Grade A+"
+                className="h-10 w-10 sm:h-12 sm:w-12 drop-shadow-[0_2px_8px_rgba(0,0,0,0.35)] transition-transform duration-300 group-hover:rotate-6 rounded-full"
+              />
+            </Link>
+          </div>
 
           <div className="flex items-center gap-5">
             <nav className="hidden items-center gap-5 lg:flex" aria-label="Utility">
