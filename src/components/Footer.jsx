@@ -4,12 +4,12 @@ import { EnvelopeIcon, FacebookIcon, GlobeIcon, InstagramIcon, LinkedInIcon, Map
 
 const QUICK_LINKS = [
   { label: 'Centres', path: '/centres-and-cells/centres-index' },
-  { label: 'Admission', path: '/admissions/online-application-instructions' },
+  { label: 'Admission', path: 'https://christcollegepune.linways.com/v4/adm-applicant/login', isExternal: true },
   { label: 'Library', path: '/centres-and-cells/library/about-us' },
   { label: 'RTI', path: '/rti/statutory-declaration-under-rti-act' },
-  { label: 'Examination', path: '/examination/examination-cell-roles-and-responsibilities' },
+  { label: 'Examination', path: '/examination/examination-policy' },
   { label: 'Cancellation Policy', path: '/admissions/cancellation-policy' },
-  { label: 'IQAC', path: '/naac-iqac/iqac/main-iqac-page' },
+  { label: 'IQAC', path: '/naac-iqac/iqac/about-iqac' },
 ];
 
 // Real social profile URLs haven't been confirmed yet — placeholders pending verification.
@@ -102,15 +102,27 @@ export default function Footer() {
             <img src={logo} alt="Christ College Pune" className="h-10 w-auto" />
             <p className="text-sm italic text-cc-gold-light">Excellence and Service</p>
           </div>
-          {QUICK_LINKS.map((link) => (
-            <Link
-              key={link.path}
-              to={link.path}
-              className="rounded-cc-pill border border-white/15 px-4 py-2 text-center text-sm font-medium text-cc-text-light transition-colors duration-[350ms] hover:border-cc-gold hover:text-cc-gold"
-            >
-              {link.label}
-            </Link>
-          ))}
+          {QUICK_LINKS.map((link) =>
+            link.isExternal || link.path.startsWith('http') ? (
+              <a
+                key={link.label}
+                href={link.path}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-cc-pill border border-white/15 px-4 py-2 text-center text-sm font-medium text-cc-text-light transition-colors duration-[350ms] hover:border-cc-gold hover:text-cc-gold"
+              >
+                {link.label}
+              </a>
+            ) : (
+              <Link
+                key={link.path}
+                to={link.path}
+                className="rounded-cc-pill border border-white/15 px-4 py-2 text-center text-sm font-medium text-cc-text-light transition-colors duration-[350ms] hover:border-cc-gold hover:text-cc-gold"
+              >
+                {link.label}
+              </Link>
+            )
+          )}
         </div>
       </div>
 

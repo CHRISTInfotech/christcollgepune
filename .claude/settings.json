@@ -136,14 +136,38 @@
       "Bash(taskkill //F //PID 36680)",
       "Bash(mkdir -p \"C:/Users/CHRIST/AppData/Local/Temp/claude/d--Infotech-christcollgepune/50b01f74-fa90-4285-a588-50614b153111/scratchpad/iqac_criteria\" *)",
       "Bash(node extract_iqac_metrics.js)",
-      "Bash(grep -oE 'Student[s]?\\( [0-9]{4}[^<]{0,30}\\)?|Teaching Staff[^<]{0,30}|Non[- ]?Teaching[^<]{0,30}' \"C:/Users/CHRIST/AppData/Local/Temp/claude/d--Infotech-christcollgepune/50b01f74-fa90-4285-a588-50614b153111/scratchpad/iqac_criteria/extended-profile.html\")"
+      "Bash(grep -oE 'Student[s]?\\( [0-9]{4}[^<]{0,30}\\)?|Teaching Staff[^<]{0,30}|Non[- ]?Teaching[^<]{0,30}' \"C:/Users/CHRIST/AppData/Local/Temp/claude/d--Infotech-christcollgepune/50b01f74-fa90-4285-a588-50614b153111/scratchpad/iqac_criteria/extended-profile.html\")",
+      "Bash(curl -sL \"https://christcollegepune.org/center/C/NATURECLUB\" -o /tmp/nature_club.html)",
+      "Bash(curl -sL \"https://christcollegepune.org/center/C/NATURE%20CLUB/list-of-activities-conducted-\" -o /tmp/nature_activities.html)",
+      "Bash(curl -sL \"https://christcollegepune.org/center/C/CDMchristpunenewcampus\" -o /tmp/cdm.html)",
+      "Bash(grep -oE '<p[^>]*>[^<]{30,}</p>' /tmp/cdm.html)",
+      "Bash(mkdir -p \"D:/Infotech/christcollgepune/src/assets/images/7-centres-and-cells-nature-club\")",
+      "Bash(mkdir -p \"D:/Infotech/christcollgepune/src/assets/images/7-centres-and-cells-centre-for-digital-media\")",
+      "Bash(curl -sL \"https://christcollegepune.org/uploads/centers/banner/2105108099_2024-06-11_10-46-37.jpg\" -o \"D:/Infotech/christcollgepune/src/assets/images/7-centres-and-cells-nature-club/banner.jpg\")",
+      "Bash(curl -sL \"https://christcollegepune.org/uploads/centers/banner/598866227_2023-10-01_03-33-35.png\" -o \"D:/Infotech/christcollgepune/src/assets/images/7-centres-and-cells-centre-for-digital-media/banner.png\")",
+      "Bash(curl -sL \"https://christcollegepune.org/center/C/mou\" -o /tmp/mou_index.html)",
+      "PowerShell(Get-Process node -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Process | Where-Object { $_.ProcessName -match \"chrome|chromium|node\" } | Select-Object Id, ProcessName, CPU, StartTime | Sort-Object StartTime -Descending | Format-Table -AutoSize)",
+      "PowerShell(Get-Process chrome -ErrorAction SilentlyContinue)",
+      "Bash(curl -sL \"https://christcollegepune.org/center/C/MoU/2024mouchristcollegepune\" -o /tmp/mou_2024.html)",
+      "Bash(pdftotext -layout \"career-guidance-4-jan-2024.pdf\" -)",
+      "Bash(pdftotext -layout \"ecomania-report-6-oct-2023.pdf\" -)",
+      "Bash(pdftotext -layout \"guest-lecture-12-feb-2024.pdf\" -)",
+      "Bash(pdftotext -layout \"international-conference-12-feb-2024.pdf\" -)",
+      "Bash(pdftotext -layout \"international-webinar-12-jul-2023.pdf\" -)",
+      "Bash(pdftotext -layout \"human-values-workshop-24-feb-2024.pdf\" -)",
+      "Bash(pdftotext -layout \"report-22-mar-2024.pdf\" -)",
+      "PowerShell(\\(Get-Process chrome -ErrorAction SilentlyContinue | Measure-Object\\).Count)",
+      "Bash(mkdir -p \"D:/Infotech/christcollgepune/src/assets/iqac/mou-by-year/2023-24/reports\" *)",
+      "Bash(curl -sL \"https://christcollegepune.org/center/C/MoU/2023christcollegepune\" -o /tmp/mou_2223_recheck.html)"
     ],
     "additionalDirectories": [
       "D:\\Infotech\\christcollgepune\\src\\assets\\images",
       "\\tmp",
       "D:\\Infotech\\christcollgepune\\src\\assets\\images\\gallery",
       "C:\\Users\\CHRIST\\AppData\\Local\\Temp\\claude\\d--Infotech-christcollgepune\\50b01f74-fa90-4285-a588-50614b153111\\scratchpad\\html",
-      "\\tmp\\iqac_criteria"
+      "\\tmp\\iqac_criteria",
+      "D:\\Infotech\\christcollgepune\\src\\assets\\iqac\\mou-activity-reports"
     ]
   }
 }
