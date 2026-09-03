@@ -10,7 +10,7 @@ export default function DepartmentIndexArts() {
         title="Arts"
         description="Overview of the Department of Arts at Christ College, Pune, offering the BA programme at the Pune New Campus, with student achievements in sport."
       />
-      <PageHeader title="Arts" breadcrumbs={[{ label: 'Academics' }, { label: 'Arts' }]} />
+      <PageHeader title="Department of Arts" breadcrumbs={[{ label: 'Department of Arts' }]} />
 
       <section className="mx-auto max-w-[1200px] px-6 py-16">
         <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-center">

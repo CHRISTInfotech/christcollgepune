@@ -41,7 +41,7 @@ export default function DepartmentOfManagementPage() {
       />
       <PageHeader
         title="Department of Management"
-        breadcrumbs={[{ label: 'Management', path: '/academics/department-index/management' }, { label: 'Department of Management' }]}
+        breadcrumbs={[{ label: 'Department of Management' }]}
       />
 
       <section className="mx-auto max-w-[1200px] px-6 py-16">

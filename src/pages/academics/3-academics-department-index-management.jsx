@@ -28,7 +28,7 @@ export default function DepartmentIndexManagement() {
         title="Management"
         description="Overview of the Department of Management at Christ College, Pune, offering the BBA programme, with student testimonials from the BBA (International Business) course."
       />
-      <PageHeader title="Management" breadcrumbs={[{ label: 'Academics' }, { label: 'Management' }]} />
+      <PageHeader title="Department of Management" breadcrumbs={[{ label: 'Department of Management' }]} />
 
       <section className="mx-auto max-w-[1200px] px-6 py-16">
         <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-center">

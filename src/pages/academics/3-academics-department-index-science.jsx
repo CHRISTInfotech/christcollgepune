@@ -27,7 +27,7 @@ export default function DepartmentIndexScience() {
         title="Science"
         description="Overview of the Department of Science (Computer Science) at Christ College, Pune, featuring student achievements in hackathons and coding competitions, and testimonials from graduates."
       />
-      <PageHeader title="Science" breadcrumbs={[{ label: 'Academics' }, { label: 'Science' }]} />
+      <PageHeader title="Department of Science" breadcrumbs={[{ label: 'Department of Science' }]} />
 
       <section className="mx-auto max-w-[1200px] px-6 py-16">
         <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-center">

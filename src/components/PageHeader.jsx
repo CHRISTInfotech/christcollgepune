@@ -1,6 +1,34 @@
 import { Link } from 'react-router-dom';
 import { HomeIcon } from './icons';
 
+const CANONICAL_SECTION_PATHS = {
+  // Main Navigation Sections
+  'About Us': '/about-us/about-us',
+  'About': '/about-us/about-us',
+  'Academics': '/academics/department-of-commerce/department-page',
+  'Admissions': '/admissions/online-application-instructions',
+  'AICTE': '/aicte/essential-documents',
+  'Student Life': '/students/student-council',
+  'Centres & Cells': '/centres-and-cells/centres-index',
+  'Centres and Cells': '/centres-and-cells/centres-index',
+  'E-Services': '/e-services/online-payment-portal',
+  'Examination': '/examination/examination-policy',
+  'IQAC': '/naac-iqac/iqac/about-iqac',
+  'NAAC': '/naac-iqac/naac-accreditation/naac-certificate-cycle-1',
+  'NAAC Accreditation': '/naac-iqac/naac-accreditation/naac-certificate-cycle-1',
+  'RTI': '/rti/statutory-declaration-under-rti-act',
+
+  // Academic Department Sections
+  'Department of Arts': '/academics/department-of-arts/ba-department-programme-page',
+  'Department of Commerce': '/academics/department-of-commerce/department-page',
+  'Department of Management': '/academics/department-of-management/department-page',
+  'Department of Science': '/academics/department-of-science/department-page',
+
+  // Student Life Sub-units
+  'National Service Scheme': '/students/national-service-scheme/about-us',
+  'NSS': '/students/national-service-scheme/about-us',
+};
+
 export default function PageHeader({ title, breadcrumbs = [], headingRef }) {
   return (
     <div className="sticky top-[var(--header-height)] z-40 shadow-cc-sm">
@@ -15,16 +43,25 @@ export default function PageHeader({ title, breadcrumbs = [], headingRef }) {
                     Home
                   </Link>
                 </li>
-                {breadcrumbs.map((crumb, index) => (
-                  <li key={crumb.path ?? crumb.label} className="flex items-center gap-2">
-                    <span aria-hidden="true">/</span>
-                    {crumb.path && index !== breadcrumbs.length - 1 ? (
-                      <Link to={crumb.path} className="text-cc-primary-deeper hover:text-cc-primary-dark hover:underline">{crumb.label}</Link>
-                    ) : (
-                      <span className="font-semibold text-cc-primary-deeper" aria-current="page">{crumb.label}</span>
-                    )}
-                  </li>
-                ))}
+                {breadcrumbs.map((crumb, index) => {
+                  const resolvedPath = crumb.path || CANONICAL_SECTION_PATHS[crumb.label];
+                  const isLast = index === breadcrumbs.length - 1;
+
+                  return (
+                    <li key={crumb.path ?? crumb.label + index} className="flex items-center gap-2">
+                      <span aria-hidden="true">/</span>
+                      {resolvedPath && !isLast ? (
+                        <Link to={resolvedPath} className="text-cc-primary-deeper hover:text-cc-primary-dark hover:underline">
+                          {crumb.label}
+                        </Link>
+                      ) : (
+                        <span className="font-semibold text-cc-primary-deeper" aria-current={isLast ? 'page' : undefined}>
+                          {crumb.label}
+                        </span>
+                      )}
+                    </li>
+                  );
+                })}
               </ol>
             </nav>
           </div>

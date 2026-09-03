@@ -27,7 +27,7 @@ export default function DepartmentIndexCommerce() {
         title="Commerce"
         description="Overview of the Department of Commerce at Christ College, Pune, offering the three-year B.Com programme, with testimonials from B.Com graduates."
       />
-      <PageHeader title="Commerce" breadcrumbs={[{ label: 'Academics' }, { label: 'Commerce' }]} />
+      <PageHeader title="Department of Commerce" breadcrumbs={[{ label: 'Department of Commerce' }]} />
 
       <section className="mx-auto max-w-[1200px] px-6 py-16">
         <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-center">

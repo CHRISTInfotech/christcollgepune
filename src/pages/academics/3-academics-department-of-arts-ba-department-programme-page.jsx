@@ -43,7 +43,7 @@ export default function DepartmentOfArtsPage() {
       />
       <PageHeader
         title="Department of Arts"
-        breadcrumbs={[{ label: 'Arts', path: '/academics/department-of-arts/department-index' }, { label: 'Department of Arts' }]}
+        breadcrumbs={[{ label: 'Department of Arts' }]}
       />
 
       <section className="mx-auto max-w-[1200px] px-6 py-16">

@@ -52,7 +52,7 @@ export default function DepartmentOfCommercePage() {
       />
       <PageHeader
         title="Department of Commerce"
-        breadcrumbs={[{ label: 'Commerce', path: '/academics/department-index/commerce' }, { label: 'Department of Commerce' }]}
+        breadcrumbs={[{ label: 'Department of Commerce' }]}
       />
 
       <section className="mx-auto max-w-[1200px] px-6 py-16">

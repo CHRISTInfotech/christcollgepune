@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Seo from '../components/Seo';
 import { fadeInUp, staggerContainer, staggerItem } from '../motion/variants';
 import { emphasis } from '../motion/transitions';
-import { AcademicCapIcon, AwardIcon } from '../components/icons';
+import { AcademicCapIcon } from '../components/icons';
 import bannerVideo from '../assets/home/bannerViedo.mp4';
 import naacSealImg from '../assets/home/naac-a-plus-seal.jpg';
 import artsImg from '../assets/home/ArtsDept.jpg';
@@ -307,29 +307,7 @@ export default function Home() {
         </div>
       </motion.section>
 
-      {/* Simple & Elegant NAAC Accreditation Strip */}
-      <section className="mx-auto max-w-[1200px] px-4 md:px-6 py-2">
-        <div className="flex flex-wrap items-center justify-between gap-3 rounded-cc-md border border-cc-gray-200 bg-cc-bg-surface px-4 py-2.5 shadow-cc-xs">
-          <div className="flex items-center gap-2.5">
-            <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-cc-primary/10 text-cc-primary">
-              <AwardIcon width={14} height={14} />
-            </span>
-            <p className="text-xs sm:text-sm text-cc-text-body">
-              <span className="font-semibold text-cc-text-heading">NAAC Accredited &lsquo;A+&rsquo; Grade</span>
-              <span className="mx-2 text-cc-gray-300 hidden sm:inline">&bull;</span>
-              <span className="text-cc-text-muted-light hidden sm:inline">Affiliated to Savitribai Phule Pune University (SPPU)</span>
-              <span className="mx-2 text-cc-gray-300 hidden md:inline">&bull;</span>
-              <span className="text-cc-text-muted-light hidden md:inline">AICTE Approved</span>
-            </p>
-          </div>
-          <Link
-            to="/naac-iqac/naac-accreditation/naac-certificate-cycle-2"
-            className="inline-flex items-center gap-1 text-xs font-semibold text-cc-primary transition-colors hover:text-cc-primary-dark hover:underline"
-          >
-            NAAC Certificate &rarr;
-          </Link>
-        </div>
-      </section>
+
 
       <motion.section
         id="departments"

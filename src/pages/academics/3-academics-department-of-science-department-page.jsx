@@ -121,7 +121,7 @@ export default function DepartmentOfSciencePage() {
       />
       <PageHeader
         title="Department of Science"
-        breadcrumbs={[{ label: 'Science', path: '/academics/department-index/science' }, { label: 'Department of Science' }]}
+        breadcrumbs={[{ label: 'Department of Science' }]}
       />
 
       <section className="mx-auto max-w-[1200px] px-6 py-16">
