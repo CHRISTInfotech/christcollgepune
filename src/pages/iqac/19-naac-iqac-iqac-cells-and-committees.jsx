@@ -37,10 +37,10 @@ export default function CellsAndCommittees() {
           <p className="text-cc-text-body">
             In line with UGC and NAAC requirements, Christ College, Pune has constituted a number of
             statutory and quality-related cells and committees to support governance, student
-            welfare and institutional quality. The constitution documents for each are listed below.
+            welfare and institutional quality. The members of each cell are listed below.
           </p>
 
-          <h3 className="mt-8 text-base">Documents</h3>
+          <h3 className="mt-8 text-base">List of Committee Members</h3>
           <div className="mt-4 grid gap-4 sm:grid-cols-2">
             {DOCUMENTS.map((doc) => (
               <a
