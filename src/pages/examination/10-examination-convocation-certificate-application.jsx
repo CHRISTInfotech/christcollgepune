@@ -29,7 +29,7 @@ export default function ConvocationCertificateApplication() {
             apply after the notified window).
           </p>
           <a
-            href="http://convocation.unipune.ac.in/"
+            href="https://www.unipune.ac.in/university_files/certificatesection.htm"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-8 inline-flex items-center gap-2 rounded-cc-pill bg-cc-primary px-6 py-3 text-sm font-semibold text-cc-text-light transition-colors hover:bg-cc-primary-dark"
