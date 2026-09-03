@@ -1,25 +1,10 @@
+import { Link } from 'react-router-dom';
 import PageHeader from '../../components/PageHeader';
 import Seo from '../../components/Seo';
 import bbaProgramme from '../../assets/images/3-academics-department-index-management/bba-programme.png';
-import testimonialAdesh from '../../assets/images/3-academics-department-index-management/testimonial-adesh-ghisare.jpg';
-import testimonialNived from '../../assets/images/3-academics-department-index-management/testimonial-nived-menon.jpeg';
+import { getTestimonialsByDepartment } from '../../data/testimonials';
 
-const TESTIMONIALS = [
-  {
-    name: 'Adesh Ghisare',
-    programme: 'BBA (International Business), 2020–2023',
-    photo: testimonialAdesh,
-    quote:
-      'I had the privilege of pursuing my BBA in International Business at Christ College Pune, and my experience was nothing short of extraordinary.',
-  },
-  {
-    name: 'Nived P Menon',
-    programme: 'BBA (International Business), 2021–2024',
-    photo: testimonialNived,
-    quote:
-      'My time at Christ College Pune has been an amazing journey. The BBA International Business programme gave me a strong foundation.',
-  },
-];
+const TESTIMONIALS = getTestimonialsByDepartment('management');
 
 export default function DepartmentIndexManagement() {
   return (
@@ -55,8 +40,16 @@ export default function DepartmentIndexManagement() {
 
       <section className="bg-cc-bg-surface">
         <div className="mx-auto max-w-[1200px] px-6 py-16">
-          <h2 className="text-center">Student Testimonials</h2>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2">
+          <div className="flex flex-col items-center justify-between gap-4 sm:flex-row mb-10">
+            <h2 className="text-center sm:text-left">Student Testimonials</h2>
+            <Link
+              to="/academics/student-testimonials"
+              className="inline-flex items-center gap-2 rounded-cc-pill bg-cc-primary px-5 py-2 text-xs font-semibold text-white shadow-cc-xs transition-colors hover:bg-cc-primary-dark"
+            >
+              View All Testimonials &rarr;
+            </Link>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2">
             {TESTIMONIALS.map((t) => (
               <div key={t.name} className="flex flex-col rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page p-6 shadow-cc-sm">
                 <div className="flex items-center gap-4">

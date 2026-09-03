@@ -86,6 +86,22 @@ export function ChevronDownIcon(props) {
   );
 }
 
+export function ChevronLeftIcon(props) {
+  return (
+    <svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden {...props}>
+      <path d="M15 18l-6-6 6-6" />
+    </svg>
+  );
+}
+
+export function ChevronRightIcon(props) {
+  return (
+    <svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden {...props}>
+      <path d="M9 18l6-6-6-6" />
+    </svg>
+  );
+}
+
 export function MapPinIcon(props) {
   return (
     <svg {...base} {...props}>
@@ -286,5 +302,15 @@ export function LightbulbIcon(props) {
     </svg>
   );
 }
+
+export function QuoteIcon(props) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.75-2-2-2H4c-1.25 0-2 .75-2 2v6c0 1.25.75 2 2 2 0 4-2.5 6-4 8" />
+      <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.75-2-2-2h-4c-1.25 0-2 .75-2 2v6c0 1.25.75 2 2 2 0 4-2.5 6-4 8" />
+    </svg>
+  );
+}
+
 
 

@@ -1,7 +1,9 @@
+import { Link } from 'react-router-dom';
 import PageHeader from '../../components/PageHeader';
 import Seo from '../../components/Seo';
 import departmentBanner from '../../assets/images/3-academics-department-index-science/department-banner.JPG';
 import computerScienceDept from '../../assets/images/3-academics-department-index-science/computer-science-dept.png';
+import { getTestimonialsByDepartment } from '../../data/testimonials';
 
 const ACHIEVEMENTS = [
   { name: 'Sandesh Waghmare', note: 'SY MSc Computer Science — Secured 61st rank globally in Cyber Apocalypse CTF 2025 – Tales from Eldoria (Team: C4P&M3, 21–26 March 2025)' },
@@ -14,11 +16,7 @@ const ACHIEVEMENTS = [
   { name: 'Walte Aditya', note: 'Startup winner at AMC Hackathon 2K25' },
 ];
 
-const TESTIMONIALS = [
-  { name: 'Abith K Sunil', programme: 'BSc Computer Science', quote: 'The college provided an excellent academic environment, well-structured curriculum, and state-of-the-art facilities that enhanced my learning experience.' },
-  { name: 'Juliet Jenny', programme: 'BSc Computer Science', quote: 'An enriching academic journey with a strong foundation, excellent faculty, and a supportive environment.' },
-  { name: 'Kirti Nikam', programme: 'BCA & MCA', quote: 'My time at Christ College, Pune, in the Department of Computer Science was a transformative experience that shaped both my personal and professional growth.' },
-];
+const TESTIMONIALS = getTestimonialsByDepartment('science');
 
 export default function DepartmentIndexScience() {
   return (
@@ -74,8 +72,16 @@ export default function DepartmentIndexScience() {
       </section>
 
       <section className="mx-auto max-w-[1200px] px-6 py-16">
-        <h2 className="text-center">Student Testimonials</h2>
-        <div className="mt-10 grid gap-6 sm:grid-cols-3">
+        <div className="flex flex-col items-center justify-between gap-4 sm:flex-row mb-10">
+          <h2 className="text-center sm:text-left">Student Testimonials</h2>
+          <Link
+            to="/academics/student-testimonials"
+            className="inline-flex items-center gap-2 rounded-cc-pill bg-cc-primary px-5 py-2 text-xs font-semibold text-white shadow-cc-xs transition-colors hover:bg-cc-primary-dark"
+          >
+            View All Testimonials &rarr;
+          </Link>
+        </div>
+        <div className="grid gap-6 sm:grid-cols-3">
           {TESTIMONIALS.map((t) => (
             <div key={t.name} className="flex flex-col rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page p-6 shadow-cc-sm">
               <p className="font-semibold text-cc-text-heading">{t.name}</p>

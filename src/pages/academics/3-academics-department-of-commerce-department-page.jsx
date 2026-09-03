@@ -22,26 +22,9 @@ const ACTIVITIES = [
   { name: 'Faculty Publications', description: 'Scholarly research publications contributing to advanced academic knowledge.', image: facultyPublications, path: '/academics/department-of-commerce/faculty-publications' },
 ];
 
-const TESTIMONIALS = [
-  {
-    name: 'Vaishnavi Nair',
-    programme: 'B.Com, 2021–2024',
-    photo: 'https://christcollegepune.org/uploads/testimonial/medium/1242487989_2025-03-12_10-12-15.JPG',
-    quote: 'The college fostered a sense of community that made every student feel valued. The vibrant campus life, along with the many extracurricular opportunities, helped me develop essential soft skills like communication.'
-  },
-  {
-    name: 'Cijo Antu Athiyundhan',
-    programme: 'B.Com, 2021–2024',
-    photo: 'https://christcollegepune.org/uploads/testimonial/medium/713274653_2025-03-12_09-44-57.jpg',
-    quote: 'The professors were not only experts in their fields but also mentors who genuinely cared about my growth.'
-  },
-  {
-    name: 'Alfred Jaisemon',
-    programme: 'B.Com, 2021–2024',
-    photo: 'https://christcollegepune.org/uploads/testimonial/medium/2098072834_2025-03-12_09-31-37.jpg',
-    quote: 'My journey at Christ College, Pune, has been nothing short of extraordinary. The college provided a holistic learning experience that nurtured my academic knowledge, critical thinking, and leadership skills.'
-  },
-];
+import { getTestimonialsByDepartment } from '../../data/testimonials';
+
+const TESTIMONIALS = getTestimonialsByDepartment('commerce');
 
 export default function DepartmentOfCommercePage() {
   return (
@@ -233,11 +216,19 @@ export default function DepartmentOfCommercePage() {
       </section>
 
       <section className="mx-auto max-w-[1200px] px-6 py-16">
-        <h2 className="text-center flex items-center justify-center gap-2.5">
-              <UsersIcon className="h-6 w-6 text-cc-primary shrink-0" />
-              Student Testimonials
-            </h2>
-        <div className="mt-10">
+        <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+          <h2 className="flex items-center gap-2.5">
+            <UsersIcon className="h-6 w-6 text-cc-primary shrink-0" />
+            Student Testimonials
+          </h2>
+          <Link
+            to="/academics/student-testimonials"
+            className="inline-flex items-center gap-2 rounded-cc-pill bg-cc-primary px-5 py-2 text-xs font-semibold text-white shadow-cc-xs transition-colors hover:bg-cc-primary-dark"
+          >
+            View All Testimonials &rarr;
+          </Link>
+        </div>
+        <div className="mt-8">
           <TestimonialCarousel testimonials={TESTIMONIALS} />
         </div>
       </section>

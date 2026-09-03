@@ -94,6 +94,7 @@ export function buildNavSections() {
         pick('Department of Arts', 'BA department/programme page', 'Department of Arts'),
         pick('Department of Commerce', 'Department page', 'Department of Commerce'),
         pick('Department of Management', 'Department page', 'Department of Management'),
+        { label: 'Student Testimonials', path: '/academics/student-testimonials' },
       ],
     },
     {

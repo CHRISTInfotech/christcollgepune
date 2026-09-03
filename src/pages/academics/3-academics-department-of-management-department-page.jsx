@@ -10,8 +10,7 @@ import ccma from '../../assets/images/3-academics-department-of-management-depar
 import corporateConnect from '../../assets/images/3-academics-department-of-management-department-page/corporate-connect.JPG';
 import campusUpdates from '../../assets/images/3-academics-department-of-management-department-page/campus-updates.JPG';
 import facultyPublications from '../../assets/images/3-academics-department-of-management-department-page/faculty-publications.jpg';
-import testimonialAdesh from '../../assets/images/3-academics-department-of-management-department-page/testimonial-adesh-ghisare.jpg';
-import testimonialNived from '../../assets/images/3-academics-department-of-management-department-page/testimonial-nived-menon.jpeg';
+import { getTestimonialsByDepartment } from '../../data/testimonials';
 
 const PROGRAMMES = [
   { label: 'BBA (Computer Applications)', path: '/academics/department-of-management/bba-computer-applications' },
@@ -20,17 +19,14 @@ const PROGRAMMES = [
 ];
 
 const ACTIVITIES = [
-  { name: 'Festivals', description: 'Department festivals held throughout the academic year.', image: fiesta, path: '/academics/department-of-management/festivals' },
-  { name: 'CCMA', description: 'Christ College Management Association.', image: ccma, path: '/academics/department-of-management/association' },
+  { name: 'Fiesta', description: 'Annual business and management festival showcasing student talents.', image: fiesta, path: '/academics/department-of-management/festivals' },
+  { name: 'CCMA', description: 'Christ College Management Association - student-led events and workshops.', image: ccma, path: '/academics/department-of-management/association' },
   { name: 'Activities', description: 'Industry engagement through talks, visits and internships.', image: corporateConnect, path: '/academics/department-of-management/activities' },
   { name: 'Newsletter', description: 'Department newsletter — Eloquence.', image: campusUpdates, path: '/academics/department-of-management/newsletter' },
   { name: 'Faculty Publications', description: 'Research and publications by department faculty.', image: facultyPublications, path: '/academics/department-of-management/faculty-publications' },
 ];
 
-const TESTIMONIALS = [
-  { name: 'Adesh Ghisare', programme: 'BBA (International Business), 2020–2023', photo: testimonialAdesh, quote: 'I had the privilege of pursuing my BBA in International Business at Christ College Pune, and my experience was nothing short of extraordinary.' },
-  { name: 'Nived P Menon', programme: 'BBA (International Business), 2021–2024', photo: testimonialNived, quote: 'My time at Christ College Pune has been an amazing journey. The BBA International Business programme gave me a strong foundation.' },
-];
+const TESTIMONIALS = getTestimonialsByDepartment('management');
 
 export default function DepartmentOfManagementPage() {
   return (
@@ -185,11 +181,19 @@ export default function DepartmentOfManagementPage() {
       </section>
 
       <section className="mx-auto max-w-[1200px] px-6 py-16">
-        <h2 className="text-center flex items-center justify-center gap-2.5">
-              <UsersIcon className="h-6 w-6 text-cc-primary shrink-0" />
-              Student Testimonials
-            </h2>
-        <div className="mt-10">
+        <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+          <h2 className="flex items-center gap-2.5">
+            <UsersIcon className="h-6 w-6 text-cc-primary shrink-0" />
+            Student Testimonials
+          </h2>
+          <Link
+            to="/academics/student-testimonials"
+            className="inline-flex items-center gap-2 rounded-cc-pill bg-cc-primary px-5 py-2 text-xs font-semibold text-white shadow-cc-xs transition-colors hover:bg-cc-primary-dark"
+          >
+            View All Testimonials &rarr;
+          </Link>
+        </div>
+        <div className="mt-8">
           <TestimonialCarousel testimonials={TESTIMONIALS} />
         </div>
       </section>

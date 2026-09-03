@@ -1,24 +1,10 @@
+import { Link } from 'react-router-dom';
 import PageHeader from '../../components/PageHeader';
 import Seo from '../../components/Seo';
 import departmentBanner from '../../assets/images/3-academics-department-index-commerce/department-banner.JPG';
+import { getTestimonialsByDepartment } from '../../data/testimonials';
 
-const TESTIMONIALS = [
-  {
-    name: 'Vaishnavi Nair',
-    programme: 'B.Com, 2021–2024',
-    quote: 'The faculty and staff were always approachable and supportive, creating a nurturing environment for learning.',
-  },
-  {
-    name: 'Cijo Antu Athiyundhan',
-    programme: 'B.Com, 2021–2024',
-    quote: 'The college provided me with a strong academic foundation, exceptional guidance, and an atmosphere that fostered both personal and professional growth.',
-  },
-  {
-    name: 'Alfred Jaisemon',
-    programme: 'B.Com, 2021–2024',
-    quote: 'My journey at Christ College, Pune, has been nothing short of extraordinary — a holistic learning experience that nurtured my academic knowledge.',
-  },
-];
+const TESTIMONIALS = getTestimonialsByDepartment('commerce');
 
 export default function DepartmentIndexCommerce() {
   return (
@@ -54,8 +40,16 @@ export default function DepartmentIndexCommerce() {
 
       <section className="bg-cc-bg-surface">
         <div className="mx-auto max-w-[1200px] px-6 py-16">
-          <h2 className="text-center">Student Testimonials</h2>
-          <div className="mt-10 grid gap-6 sm:grid-cols-3">
+          <div className="flex flex-col items-center justify-between gap-4 sm:flex-row mb-10">
+            <h2 className="text-center sm:text-left">Student Testimonials</h2>
+            <Link
+              to="/academics/student-testimonials"
+              className="inline-flex items-center gap-2 rounded-cc-pill bg-cc-primary px-5 py-2 text-xs font-semibold text-white shadow-cc-xs transition-colors hover:bg-cc-primary-dark"
+            >
+              View All Testimonials &rarr;
+            </Link>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-3">
             {TESTIMONIALS.map((t) => (
               <div key={t.name} className="flex flex-col rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page p-6 shadow-cc-sm">
                 <p className="font-semibold text-cc-text-heading">{t.name}</p>

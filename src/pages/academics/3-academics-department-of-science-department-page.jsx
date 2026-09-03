@@ -9,9 +9,6 @@ import events from '../../assets/images/3-academics-department-of-science-depart
 import ccsa from '../../assets/images/3-academics-department-of-science-department-page/ccsa.jpg';
 import clubActivities from '../../assets/images/3-academics-department-of-science-department-page/club-activities.JPG';
 import facultyPublications from '../../assets/images/3-academics-department-of-science-department-page/faculty-publications.jpg';
-import testimonialAbith from '../../assets/images/3-academics-department-of-science-department-page/testimonial-abith-k-sunil.png';
-import testimonialJuliet from '../../assets/images/3-academics-department-of-science-department-page/testimonial-juliet-jenny.png';
-import testimonialKirti from '../../assets/images/3-academics-department-of-science-department-page/testimonial-kirti-nikam.jpg';
 import achievementSandesh from '../../assets/images/3-academics-department-of-science-department-page/achievement-sandesh-waghmare.jpg';
 import achievementBharat1 from '../../assets/images/3-academics-department-of-science-department-page/achievement-bharat-singh-rajpurohit-1.png';
 import achievementDouglas from '../../assets/images/3-academics-department-of-science-department-page/achievement-douglas-fernandes.png';
@@ -20,6 +17,7 @@ import achievementBharat2 from '../../assets/images/3-academics-department-of-sc
 import achievementSiddhi from '../../assets/images/3-academics-department-of-science-department-page/achievement-bhorde-siddhi.jpg';
 import achievementMritunjay from '../../assets/images/3-academics-department-of-science-department-page/achievement-mritunjay-singh.png';
 import achievementAditya from '../../assets/images/3-academics-department-of-science-department-page/achievement-walte-aditya.png';
+import { getTestimonialsByDepartment } from '../../data/testimonials';
 
 const PROGRAMMES = {
   undergraduate: [
@@ -91,26 +89,7 @@ const ACHIEVEMENTS = [
   },
 ];
 
-const TESTIMONIALS = [
-  {
-    name: 'Abith K Sunil',
-    programme: 'BSc Computer Science',
-    photo: testimonialAbith,
-    quote: 'I am immensely grateful for my journey at Christ College Pune, where I pursued my Bachelor of Science in Computer Science. The college provided an excellent academic environment, well-structured curriculum, and state-of-the-art facilities that enhanced my learning experience. The faculty members were highly knowledgeable and supportive, always encouraging us to think critically and apply our knowledge practically.',
-  },
-  {
-    name: 'Juliet Jenny',
-    programme: 'BSc Computer Science',
-    photo: testimonialJuliet,
-    quote: 'I am grateful for my enriching academic journey at Christ College Pune, where I completed my BSc in Computer Science. The college provided a strong foundation with its excellent faculty, well-structured curriculum, and practical learning opportunities. Beyond academics, the supportive environment and co-curricular activities helped shape my skills and confidence.',
-  },
-  {
-    name: 'Kirti Nikam',
-    programme: 'BCA & MCA',
-    photo: testimonialKirti,
-    quote: 'My time at Christ College, Pune, in the Department of Computer Science was a transformative experience that shaped both my personal and professional growth. Completing my Bachelor of Computer Applications (BCA) and Master of Computer Applications (MCA) here provided me with a solid foundation in computer science. The faculty members played a pivotal role in my development.',
-  },
-];
+const TESTIMONIALS = getTestimonialsByDepartment('science');
 
 export default function DepartmentOfSciencePage() {
   return (
@@ -336,11 +315,19 @@ export default function DepartmentOfSciencePage() {
 
       <section className="bg-cc-bg-surface">
         <div className="mx-auto max-w-[1200px] px-6 py-16">
-          <h2 className="text-center flex items-center justify-center gap-2.5">
+          <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+            <h2 className="flex items-center gap-2.5">
               <UsersIcon className="h-6 w-6 text-cc-primary shrink-0" />
               Student Testimonials
             </h2>
-          <div className="mt-10">
+            <Link
+              to="/academics/student-testimonials"
+              className="inline-flex items-center gap-2 rounded-cc-pill bg-cc-primary px-5 py-2 text-xs font-semibold text-white shadow-cc-xs transition-colors hover:bg-cc-primary-dark"
+            >
+              View All Testimonials &rarr;
+            </Link>
+          </div>
+          <div className="mt-8">
             <TestimonialCarousel testimonials={TESTIMONIALS} />
           </div>
         </div>

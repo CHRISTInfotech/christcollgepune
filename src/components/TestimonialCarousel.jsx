@@ -1,32 +1,65 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { ChevronDownIcon } from './icons';
 
-export default function TestimonialCarousel({ testimonials }) {
+export default function TestimonialCarousel({ testimonials = [], autoPlayInterval = 3500 }) {
   const [index, setIndex] = useState(0);
-  const total = testimonials.length;
-  const current = testimonials[index];
+  const [isPaused, setIsPaused] = useState(false);
+  const timerRef = useRef(null);
 
-  const goPrev = () => setIndex((i) => (i - 1 + total) % total);
-  const goNext = () => setIndex((i) => (i + 1) % total);
+  const total = testimonials.length;
+
+  const goPrev = () => {
+    if (total <= 1) return;
+    setIndex((i) => (i - 1 + total) % total);
+  };
+
+  const goNext = () => {
+    if (total <= 1) return;
+    setIndex((i) => (i + 1) % total);
+  };
+
+  // Automatic slide transition
+  useEffect(() => {
+    if (total <= 1 || isPaused) return;
+
+    timerRef.current = setInterval(() => {
+      setIndex((i) => (i + 1) % total);
+    }, autoPlayInterval);
+
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, [total, isPaused, autoPlayInterval]);
+
+  if (!testimonials || total === 0) return null;
+
+  const current = testimonials[index] || testimonials[0];
 
   return (
-    <div className="mx-auto max-w-2xl">
+    <div
+      className="mx-auto max-w-2xl"
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+    >
       <div className="flex items-center gap-4">
         <button
           type="button"
           onClick={goPrev}
           aria-label="Previous testimonial"
-          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-cc-gray-300 text-cc-text-body transition-colors hover:border-cc-primary hover:text-cc-primary"
+          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-cc-gray-300 text-cc-text-body transition-colors hover:border-cc-primary hover:text-cc-primary focus:outline-none"
         >
           <ChevronDownIcon className="rotate-90" />
         </button>
 
-        <div className="flex-1 rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page p-8 text-center shadow-cc-sm">
+        <div className="flex-1 rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page p-8 text-center shadow-cc-sm transition-opacity duration-300">
           {current.photo && (
             <img
               src={current.photo}
               alt={current.name}
               className="mx-auto h-16 w-16 rounded-full border border-cc-gray-200 object-cover object-top"
+              onError={(e) => {
+                e.target.style.display = 'none';
+              }}
             />
           )}
           <p className="mt-4 text-sm italic text-cc-text-muted-light">&ldquo;{current.quote}&rdquo;</p>
@@ -38,7 +71,7 @@ export default function TestimonialCarousel({ testimonials }) {
           type="button"
           onClick={goNext}
           aria-label="Next testimonial"
-          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-cc-gray-300 text-cc-text-body transition-colors hover:border-cc-primary hover:text-cc-primary"
+          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-cc-gray-300 text-cc-text-body transition-colors hover:border-cc-primary hover:text-cc-primary focus:outline-none"
         >
           <ChevronDownIcon className="-rotate-90" />
         </button>
@@ -47,7 +80,7 @@ export default function TestimonialCarousel({ testimonials }) {
       <div className="mt-6 flex justify-center gap-2">
         {testimonials.map((t, i) => (
           <button
-            key={t.name}
+            key={`${t.name}-${i}`}
             type="button"
             onClick={() => setIndex(i)}
             aria-label={`Go to testimonial ${i + 1}`}

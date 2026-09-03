@@ -9,6 +9,10 @@ import association from '../../assets/images/3-academics-department-of-arts-ba-d
 import activities from '../../assets/images/3-academics-department-of-arts-ba-department-programme-page/activities.JPG';
 import achievementKrishna from '../../assets/images/3-academics-department-of-arts-ba-department-programme-page/achievement-krishna-chauhan.png';
 import facultyPublications from '../../assets/images/3-academics-department-of-arts-ba-department-programme-page/faculty-publications.jpg';
+import TestimonialCarousel from '../../components/TestimonialCarousel';
+import { getTestimonialsByDepartment } from '../../data/testimonials';
+
+const TESTIMONIALS = getTestimonialsByDepartment('arts');
 
 const PROGRAMMES = {
   undergraduate: [
@@ -238,6 +242,26 @@ export default function DepartmentOfArtsPage() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="bg-cc-bg-surface py-16">
+        <div className="mx-auto max-w-[1200px] px-6">
+          <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+            <h2 className="flex items-center gap-2.5">
+              <UsersIcon className="h-6 w-6 text-cc-primary shrink-0" />
+              Student Testimonials
+            </h2>
+            <Link
+              to="/academics/student-testimonials"
+              className="inline-flex items-center gap-2 rounded-cc-pill bg-cc-primary px-5 py-2 text-xs font-semibold text-white shadow-cc-xs transition-colors hover:bg-cc-primary-dark"
+            >
+              View All Testimonials &rarr;
+            </Link>
+          </div>
+          <div className="mt-8">
+            <TestimonialCarousel testimonials={TESTIMONIALS} />
+          </div>
         </div>
       </section>
     </>

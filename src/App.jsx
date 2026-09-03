@@ -6,6 +6,8 @@ import PlaceholderPage from './pages/PlaceholderPage';
 import NotFound from './pages/NotFound';
 import { sitemapData } from './data/routes';
 
+const StudentTestimonials = lazy(() => import('./pages/academics/StudentTestimonials'));
+
 // Auto-discovers real page components: every file under src/pages/{section}/{id}.jsx
 // is keyed by its filename (the sitemap row `id`) with no manual import needed —
 // batches of pages added later (scraped or pasted) just need the file to exist.
@@ -39,6 +41,22 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
+          <Route
+            path="/academics/student-testimonials"
+            element={
+              <Suspense fallback={null}>
+                <StudentTestimonials />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/testimonials"
+            element={
+              <Suspense fallback={null}>
+                <StudentTestimonials />
+              </Suspense>
+            }
+          />
           {ROUTES.map((route) => {
             const RealPage = componentMap[route.id];
             return (
