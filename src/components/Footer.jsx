@@ -12,12 +12,27 @@ const QUICK_LINKS = [
   { label: 'IQAC', path: '/naac-iqac/iqac/about-iqac' },
 ];
 
-// Real social profile URLs haven't been confirmed yet — placeholders pending verification.
 const SOCIAL_LINKS = [
-  { label: 'Facebook', href: '#', icon: <FacebookIcon /> },
-  { label: 'YouTube', href: '#', icon: <YouTubeIcon /> },
-  { label: 'LinkedIn', href: '#', icon: <LinkedInIcon /> },
-  { label: 'Instagram', href: '#', icon: <InstagramIcon /> },
+  {
+    label: 'Facebook',
+    href: 'https://www.facebook.com/profile.php?id=100080274021165&mibextid=ZbWKwL',
+    icon: <FacebookIcon />,
+  },
+  {
+    label: 'YouTube',
+    href: 'https://youtube.com/@christcollege-pune',
+    icon: <YouTubeIcon />,
+  },
+  {
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/christ-college-pune-9b66ba189/',
+    icon: <LinkedInIcon />,
+  },
+  {
+    label: 'Instagram',
+    href: 'https://instagram.com/christpunecollege?igshid=YmMyMTA2M2Y=',
+    icon: <InstagramIcon />,
+  },
 ];
 
 function ContactRow({ icon, children }) {
@@ -43,6 +58,8 @@ export default function Footer() {
               key={social.label}
               href={social.href}
               aria-label={social.label}
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-cc-text-muted transition-colors duration-[350ms] hover:bg-cc-gold hover:text-cc-primary-deeper"
             >
               {social.icon}
