@@ -112,7 +112,7 @@ function PersonGrid({ people }) {
   return (
     <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {people.map((person) => (
-        <div key={`${person.name}-${person.role}`} className="flex items-center gap-4 rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page p-4 shadow-cc-sm">
+        <div key={`${person.name}-${person.role}`} className="flex items-center gap-4 rounded-cc-lg border border-cc-gray-200 bg-cc-bg-card p-4 shadow-cc-sm">
           <img
             src={person.photo}
             alt={person.name}
@@ -136,7 +136,7 @@ function StaffAccordion({ groups }) {
       {groups.map((group) => {
         const isOpen = openDepartment === group.department;
         return (
-          <div key={group.department} className="overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page">
+          <div key={group.department} className="overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-card">
             <button
               type="button"
               onClick={() => setOpenDepartment(isOpen ? null : group.department)}

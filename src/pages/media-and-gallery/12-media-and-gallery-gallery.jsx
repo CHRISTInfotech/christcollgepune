@@ -1,4 +1,5 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { createPortal } from 'react-dom';
 import PageHeader from '../../components/PageHeader';
 import Seo from '../../components/Seo';
@@ -24,13 +25,36 @@ const SORTS = [
   { value: 'name-asc', label: 'Name (A–Z)' },
   { value: 'name-desc', label: 'Name (Z–A)' },
   { value: 'photos-desc', label: 'Most Photos' },
+  { value: 'year-desc', label: 'Year (Newest)' },
+  { value: 'year-asc', label: 'Year (Oldest)' },
 ];
 
+// Most event names include a 4-digit year (e.g. "Udaan 2026"); events with no
+// year in their name sort to the end regardless of newest/oldest direction.
+function extractYear(name) {
+  const match = name.match(/20\d{2}/);
+  return match ? Number(match[0]) : null;
+}
+
 export default function GalleryPage() {
+  const [searchParams] = useSearchParams();
   const [search, setSearch] = useState('');
   const [department, setDepartment] = useState('All');
   const [sort, setSort] = useState('name-asc');
-  const [openEvent, setOpenEvent] = useState(null);
+  const [openEvent, setOpenEvent] = useState(() => {
+    const eventSlug = searchParams.get('event');
+    return eventSlug ? galleryEvents.find((e) => e.slug === eventSlug) || null : null;
+  });
+
+  useEffect(() => {
+    const eventSlug = searchParams.get('event');
+    if (eventSlug) {
+      const match = galleryEvents.find((e) => e.slug === eventSlug);
+      if (match) {
+        setOpenEvent(match);
+      }
+    }
+  }, [searchParams]);
 
   const events = useMemo(() => {
     let list = galleryEvents.filter((e) => {
@@ -41,7 +65,16 @@ export default function GalleryPage() {
     list = [...list].sort((a, b) => {
       if (sort === 'name-asc') return a.name.localeCompare(b.name);
       if (sort === 'name-desc') return b.name.localeCompare(a.name);
-      return b.photoCount - a.photoCount;
+      if (sort === 'photos-desc') return b.photoCount - a.photoCount;
+      if (sort === 'year-desc' || sort === 'year-asc') {
+        const ay = extractYear(a.name);
+        const by = extractYear(b.name);
+        if (ay === null && by === null) return a.name.localeCompare(b.name);
+        if (ay === null) return 1;
+        if (by === null) return -1;
+        return sort === 'year-desc' ? by - ay : ay - by;
+      }
+      return 0;
     });
     return list;
   }, [search, department, sort]);
@@ -75,7 +108,7 @@ export default function GalleryPage() {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search events..."
-              className="w-full rounded-cc-pill border border-cc-gray-200 bg-cc-bg-page py-2.5 pl-10 pr-4 text-sm text-cc-text-body outline-none transition-colors focus:border-cc-primary"
+              className="w-full rounded-cc-pill border border-cc-gray-200 bg-cc-bg-card py-2.5 pl-10 pr-4 text-sm text-cc-text-body outline-none transition-colors focus:border-cc-primary"
             />
           </div>
 
@@ -83,7 +116,7 @@ export default function GalleryPage() {
             <select
               value={department}
               onChange={(e) => setDepartment(e.target.value)}
-              className="rounded-cc-md border border-cc-gray-200 bg-cc-bg-page px-3 py-2.5 text-sm text-cc-text-body outline-none transition-colors focus:border-cc-primary"
+              className="rounded-cc-md border border-cc-gray-200 bg-cc-bg-card px-3 py-2.5 text-sm text-cc-text-body outline-none transition-colors focus:border-cc-primary"
             >
               {DEPARTMENTS.map((d) => (
                 <option key={d} value={d}>
@@ -95,7 +128,7 @@ export default function GalleryPage() {
             <select
               value={sort}
               onChange={(e) => setSort(e.target.value)}
-              className="rounded-cc-md border border-cc-gray-200 bg-cc-bg-page px-3 py-2.5 text-sm text-cc-text-body outline-none transition-colors focus:border-cc-primary"
+              className="rounded-cc-md border border-cc-gray-200 bg-cc-bg-card px-3 py-2.5 text-sm text-cc-text-body outline-none transition-colors focus:border-cc-primary"
             >
               {SORTS.map((s) => (
                 <option key={s.value} value={s.value}>
@@ -124,7 +157,7 @@ export default function GalleryPage() {
                   key={e.slug}
                   type="button"
                   onClick={() => setOpenEvent(e)}
-                  className="group overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page text-left shadow-cc-sm transition-colors hover:border-cc-primary"
+                  className="group overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-card text-left shadow-cc-sm transition-colors hover:border-cc-primary"
                 >
                   <div className="relative h-40 w-full overflow-hidden bg-cc-gray-100">
                     {thumb && (

@@ -62,7 +62,7 @@ export default function DepartmentOfScienceAssociationPage() {
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {EVENTS.map((item) => (
-            <div key={item.name} className="overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page shadow-cc-sm">
+            <div key={item.name} className="overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-card shadow-cc-sm">
               {item.image && <img src={item.image} alt={item.name} className="h-40 w-full object-cover" />}
               <div className="p-5">
                 <h3 className="text-base">{item.name}</h3>

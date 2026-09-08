@@ -51,7 +51,7 @@ export default function TestimonialCarousel({ testimonials = [], autoPlayInterva
           <ChevronDownIcon className="rotate-90" />
         </button>
 
-        <div className="flex-1 rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page p-8 text-center shadow-cc-sm transition-opacity duration-300">
+        <div className="flex-1 rounded-cc-lg border border-cc-gray-200 bg-cc-bg-card p-8 text-center shadow-cc-sm transition-opacity duration-300">
           {current.photo && (
             <img
               src={current.photo}

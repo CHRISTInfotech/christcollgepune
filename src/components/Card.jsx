@@ -30,7 +30,7 @@ export default function Card({ icon, image, title, description, to, className = 
     </>
   );
 
-  const cardClass = `group flex flex-col overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page shadow-cc-sm transition-all duration-[350ms] hover:-translate-y-1 hover:shadow-cc ${className}`;
+  const cardClass = `group flex flex-col overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-card shadow-cc-sm transition-all duration-[350ms] hover:-translate-y-1 hover:shadow-cc ${className}`;
 
   if (to) {
     return (

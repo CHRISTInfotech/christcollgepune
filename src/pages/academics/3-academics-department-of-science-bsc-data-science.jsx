@@ -174,7 +174,7 @@ export default function BscDataScience() {
           </p>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {CAREER_OPPORTUNITIES.map((role) => (
-              <div key={role} className="rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page p-5 shadow-cc-sm flex items-center gap-3">
+              <div key={role} className="rounded-cc-lg border border-cc-gray-200 bg-cc-bg-card p-5 shadow-cc-sm flex items-center gap-3">
                 <span className="h-2 w-2 shrink-0 rounded-full bg-cc-primary" aria-hidden="true" />
                 <span className="text-sm font-semibold text-cc-text-heading">{role}</span>
               </div>

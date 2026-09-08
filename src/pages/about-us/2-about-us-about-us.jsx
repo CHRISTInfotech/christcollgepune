@@ -46,7 +46,7 @@ export default function AboutUs() {
           </div>
 
           <div className="mt-10 grid gap-6 lg:grid-cols-3">
-            <div className="flex flex-col rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page p-6 shadow-cc-sm">
+            <div className="flex flex-col rounded-cc-lg border border-cc-gray-200 bg-cc-bg-card p-6 shadow-cc-sm">
               <span className="mb-4 h-1 w-10 rounded-full bg-[image:var(--gradient-gold)]" aria-hidden="true" />
               <h3>Mission</h3>
               <p className="mt-3 text-sm text-cc-text-muted-light">
@@ -59,7 +59,7 @@ export default function AboutUs() {
               </p>
             </div>
 
-            <div className="flex flex-col rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page p-6 shadow-cc-sm">
+            <div className="flex flex-col rounded-cc-lg border border-cc-gray-200 bg-cc-bg-card p-6 shadow-cc-sm">
               <span className="mb-4 h-1 w-10 rounded-full bg-[image:var(--gradient-gold)]" aria-hidden="true" />
               <h3>Vision</h3>
               <p className="mt-3 text-sm font-semibold italic text-cc-primary">Enlighten to Excel</p>
@@ -70,7 +70,7 @@ export default function AboutUs() {
               </p>
             </div>
 
-            <div className="flex flex-col rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page p-6 shadow-cc-sm">
+            <div className="flex flex-col rounded-cc-lg border border-cc-gray-200 bg-cc-bg-card p-6 shadow-cc-sm">
               <span className="mb-4 h-1 w-10 rounded-full bg-[image:var(--gradient-gold)]" aria-hidden="true" />
               <h3>Values</h3>
               <p className="mt-3 text-sm text-cc-text-muted-light">

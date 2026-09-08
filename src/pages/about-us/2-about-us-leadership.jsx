@@ -69,7 +69,7 @@ const SECTIONS = [
 
 function PersonCard({ name, designation, photo }) {
   return (
-    <div className="flex flex-col overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page shadow-cc-sm">
+    <div className="flex flex-col overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-card shadow-cc-sm">
       <div className="w-full overflow-hidden" style={{ aspectRatio: '500 / 457' }}>
         <img src={photo} alt={name} className="h-full w-full object-cover object-top" />
       </div>

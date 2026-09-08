@@ -1,25 +1,41 @@
 import PageHeader from '../../components/PageHeader';
 import Seo from '../../components/Seo';
-import { GridIcon, CalendarIcon, BookIcon, UsersIcon, AwardIcon, CompassIcon } from '../../components/icons';
+import CategorySection from '../../components/CategorySection';
+import { GridIcon, BookIcon, CompassIcon } from '../../components/icons';
 import busyMinds from '../../assets/images/3-academics-department-of-arts-activities/busy-minds.jpg';
 import aspireThinkCreateInspire from '../../assets/images/3-academics-department-of-arts-activities/aspire-think-create-inspire.jpg';
 import ecomania24 from '../../assets/images/3-academics-department-of-arts-activities/ecomania-24.png';
 import businessConclave from '../../assets/images/3-academics-department-of-arts-activities/business-conclave.jpg';
 import udaan2025 from '../../assets/images/3-academics-department-of-arts-activities/udaan-2025.jpeg';
-import sessionUpsc from '../../assets/images/3-academics-department-of-arts-activities/session-upsc.jpg';
-import understandingMarkets from '../../assets/images/3-academics-department-of-arts-activities/understanding-markets.jpg';
-import unfoldingOfEducation from '../../assets/images/3-academics-department-of-arts-activities/unfolding-of-education.jpg';
 import econVibe from '../../assets/images/3-academics-department-of-arts-activities/econ-vibe.png';
 import entrepreneurshipDevelopment from '../../assets/images/3-academics-department-of-arts-activities/entrepreneurship-development.jpg';
 import financialLiteracy from '../../assets/images/3-academics-department-of-arts-activities/financial-literacy.jpg';
 import garjanaMartialArts from '../../assets/images/3-academics-department-of-arts-activities/garjana-martial-arts.jpg';
 import infosysHinjewadi from '../../assets/images/3-academics-department-of-arts-activities/infosys-hinjewadi.jpg';
 import parleGFactory from '../../assets/images/3-academics-department-of-arts-activities/parle-g-factory.jpg';
-import careerGuidanceSession from '../../assets/images/3-academics-department-of-arts-activities/career-guidance-session.jpg';
-import edwiseInternational from '../../assets/images/3-academics-department-of-arts-activities/edwise-international.jpg';
-import tradeTheory from '../../assets/images/3-academics-department-of-arts-activities/trade-theory.jpg';
+import aspireExpo1 from '../../assets/images/3-academics-department-of-arts-activities-aspire-expo/aspire-expo-1.jpg';
+import aspireExpo2 from '../../assets/images/3-academics-department-of-arts-activities-aspire-expo/aspire-expo-2.jpg';
+import aspireExpo3 from '../../assets/images/3-academics-department-of-arts-activities-aspire-expo/aspire-expo-3.jpg';
+import aspireExpo4 from '../../assets/images/3-academics-department-of-arts-activities-aspire-expo/aspire-expo-4.jpg';
+import aspireExpo5 from '../../assets/images/3-academics-department-of-arts-activities-aspire-expo/aspire-expo-5.jpg';
+import aspireExpo6 from '../../assets/images/3-academics-department-of-arts-activities-aspire-expo/aspire-expo-6.jpg';
+import aspireExpo7 from '../../assets/images/3-academics-department-of-arts-activities-aspire-expo/aspire-expo-7.jpg';
+import aspireExpo8 from '../../assets/images/3-academics-department-of-arts-activities-aspire-expo/aspire-expo-8.jpg';
+import digitalSkills1 from '../../assets/images/gallery/digital-skills-workshop-canva/1.jpg';
+import digitalSkills2 from '../../assets/images/gallery/digital-skills-workshop-canva/2.jpg';
+import digitalSkills3 from '../../assets/images/gallery/digital-skills-workshop-canva/3.jpg';
+import digitalSkills4 from '../../assets/images/gallery/digital-skills-workshop-canva/4.jpg';
+import digitalSkills5 from '../../assets/images/gallery/digital-skills-workshop-canva/5.jpg';
+
+const ASPIRE_EXPO_IMAGES = [aspireExpo1, aspireExpo2, aspireExpo3, aspireExpo4, aspireExpo5, aspireExpo6, aspireExpo7, aspireExpo8];
+const DIGITAL_SKILLS_IMAGES = [digitalSkills1, digitalSkills2, digitalSkills3, digitalSkills4, digitalSkills5];
 
 const ACTIVITY = [
+  {
+    name: 'Aspire Expo',
+    images: ASPIRE_EXPO_IMAGES,
+    description: 'The Aspire Expo, organised by the Department of Arts in collaboration with the NSS Unit, Department of Science, and Centre for Environment and Climate Change, provided a creative platform for students to raise awareness about pressing societal issues through posters and digital comic strips on themes such as environmental sustainability, mental health, and gender equality.',
+  },
   {
     name: 'Busy Minds',
     date: '14 October',
@@ -48,28 +64,18 @@ const ACTIVITY = [
     image: udaan2025,
     description: "Udaan 2025, an intercollegiate fest organized by the Department of Arts, Christ College Pune, was a resounding success, attracting 850+ participants from over 50 colleges. The events included Nritya, a group dance competition; Sajja, a fashion show; Natya, a street play competition; Drishya, an online collage-making competition; Kavya, a poetry recitation competition; and Jigyasa, a quiz competition. The participants demonstrated exceptional talent, dedication, and teamwork, and the performances enthralled the audience throughout the fest.",
   },
-];
-
-const SEMINAR = [
   {
-    name: 'Session on Preparing for the UPSC Exam',
-    date: '22 October',
-    image: sessionUpsc,
-    description: 'The department partnered with IQRA to organize two major events in October. On 16th October, IQRA conducted a Scholarship Entrance Examination for GS Prelims and Mains (UPSC/PCS), offering students a chance to prepare for competitive exams. On 22nd October, a session on preparing for the UPSC exam was held, providing students with strategies and tips for cracking one of the nation’s most challenging examinations.',
-  },
-  {
-    name: 'Understanding the Markets in the Modern Microeconomic Scenario',
-    image: understandingMarkets,
-    description: "In today's rapidly changing economic landscape, a profound comprehension of individual markets is indispensable for various stakeholders, including businesses, policymakers, and economists. This session served as a comprehensive exploration into the realm of modern microeconomics markets, unveiling the intricate workings and influences that define them. The insights gleaned from the session furnished invaluable guidance for informed decision-making, strategic formulation, and effective market navigation.",
-  },
-  {
-    name: 'Unfolding of Education',
-    image: unfoldingOfEducation,
-    description: 'The guest session on "Unfolding of Education" was enlightening, delving into innovative pedagogical approaches. Dr. Bhupesh Chintamani discussed the evolution of traditional education towards flexible, adaptive models, emphasizing personalized learning and skill development, and highlighted the significance of technology in democratizing education. The session underscored the importance of fostering critical thinking, creativity, and adaptability in learners to navigate the complexities of the modern world.',
+    name: 'Symposium — "Mission Si\' Today: Religions Journeying Together for Peace"',
+    description: 'Students participated in the International Symposium on "Mission Si\' Today: Religions Journeying Together for Peace," organised by Ishvani Kendra, Pune, as part of its Golden Jubilee celebrations, bringing together scholars, academicians, and religious leaders to explore the role of religions in fostering peace, dialogue, and mutual understanding in contemporary society.',
   },
 ];
 
 const WORKSHOP = [
+  {
+    name: 'Workshop on Digital Skills — Canva',
+    images: DIGITAL_SKILLS_IMAGES,
+    description: 'A Digital Storytelling Workshop by Dr Priya Wahab provided hands-on Canva training, enabling students to explore creative storytelling and visual design through engaging digital comics.',
+  },
   {
     name: 'Econ Vibe',
     date: '19 November 2024',
@@ -108,87 +114,31 @@ const INDUSTRIAL_VISIT = [
   },
 ];
 
-const GUEST_LECTURE = [
-  {
-    name: 'Career Guidance Session',
-    date: '30 July 2024',
-    image: careerGuidanceSession,
-    description: 'Mrs. Ruby Kumari conducted a career guidance session for students, covering topics such as career planning, skill development, and navigating the job market. Students appreciated the practical advice and motivational insights shared by Mrs. Kumari, making the session a significant step towards their professional growth.',
-  },
-  {
-    name: 'Edwise International',
-    date: '23 September 2024',
-    image: edwiseInternational,
-    description: 'A guest lecture by Edwise International was conducted, led by Subhash Pol, focusing on international scholarship programs and the opportunities available to students pursuing higher education abroad. This session was particularly valuable for students aspiring to global academic excellence, providing critical information about scholarships, application processes, and eligibility criteria.',
-  },
-  {
-    name: 'Trade Theory in the Modern Times',
-    date: '20 April 2023',
-    image: tradeTheory,
-    description: 'The guest lecture on "Trade Theory in the Modern Times", conducted by Ms. Pooja Dinesh Thakur, was a thought-provoking and informative session hosted at Chavara Hall, providing attendees with valuable insights into the dynamics of international trade in contemporary contexts. Pooja Dinesh Thakur delved into complex trade concepts, economic models, and current trade trends, making them accessible and comprehensible to the audience.',
-  },
-];
-
-function CategorySection({ icon: Icon, title, items, emptyNote }) {
-  return (
-    <div>
-      <h2 className="flex items-center gap-2.5 mt-12">
-        <Icon className="h-6 w-6 text-cc-primary shrink-0" />
-        {title}
-      </h2>
-      {items.length === 0 ? (
-        <p className="mt-4 text-sm italic text-cc-text-muted-light">{emptyNote}</p>
-      ) : (
-        <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {items.map((item) => (
-            <div key={item.name} className="overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page shadow-cc-sm">
-              {item.image && <img src={item.image} alt={item.name} className="h-40 w-full object-cover" />}
-              <div className="p-5">
-                <h3 className="text-base">{item.name}</h3>
-                {item.date && (
-                  <p className="mt-1 flex items-center gap-1.5 text-xs uppercase tracking-wide text-cc-primary">
-                    <CalendarIcon className="h-3.5 w-3.5 shrink-0" />
-                    {item.date}
-                  </p>
-                )}
-                <p className="mt-2 text-sm text-cc-text-muted-light">{item.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      )}
-    </div>
-  );
-}
-
 export default function DepartmentOfArtsActivitiesPage() {
   return (
     <>
       <Seo
-        title="Activities — Department of Arts"
-        description="Activities, seminars, workshops, industrial visits and guest lectures organised by the Department of Arts at Christ College, Pune."
+        title="Conference/Workshop/Exhibitions — Department of Arts"
+        description="Conferences, workshops, exhibitions and industrial visits organised by the Department of Arts at Christ College, Pune."
       />
       <PageHeader
-        title="Activities"
+        title="Conference/Workshop/Exhibitions"
         breadcrumbs={[
           { label: 'Department of Arts', path: '/academics/department-of-arts/ba-department-programme-page' },
-          { label: 'Activities' },
+          { label: 'Conference/Workshop/Exhibitions' },
         ]}
       />
 
       <section className="mx-auto max-w-[1200px] px-6 py-16">
         <p className="max-w-3xl text-cc-text-body">
-          Beyond academics, the Department of Arts organises a range of co-curricular activities
-          for students — activities, seminars, workshops, industrial visits, and guest lectures —
-          grouped below by category.
+          Beyond academics, the Department of Arts organises a range of conferences, workshops,
+          exhibitions and industrial visits for students, grouped below by category.
         </p>
 
         <div className="mt-10 flex flex-col gap-14">
           <CategorySection icon={GridIcon} title="Activity" items={ACTIVITY} />
-          <CategorySection icon={UsersIcon} title="Seminar" items={SEMINAR} />
           <CategorySection icon={BookIcon} title="Workshop" items={WORKSHOP} />
           <CategorySection icon={CompassIcon} title="Industrial Visit" items={INDUSTRIAL_VISIT} />
-          <CategorySection icon={AwardIcon} title="Guest Lecture" items={GUEST_LECTURE} />
         </div>
       </section>
     </>

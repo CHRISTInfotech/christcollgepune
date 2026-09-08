@@ -93,7 +93,7 @@ export default function Faculty() {
       <section className="mx-auto max-w-[1200px] px-6 py-16">
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {FACULTY.map((person) => (
-            <div key={person.name} className="flex flex-col items-center rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page p-5 text-center shadow-cc-sm">
+            <div key={person.name} className="flex flex-col items-center rounded-cc-lg border border-cc-gray-200 bg-cc-bg-card p-5 text-center shadow-cc-sm">
               <img
                 src={person.photo}
                 alt={person.name}

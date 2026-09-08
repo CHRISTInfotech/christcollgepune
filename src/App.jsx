@@ -35,7 +35,7 @@ const ROUTES = sitemapData
       : [{ label: row.page }],
   }));
 
-function App() {
+function  App() {
   return (
     <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>

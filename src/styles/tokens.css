@@ -2,38 +2,53 @@
   --font-sans: 'Inter', 'Roboto', sans-serif;
 
   /* --- Fixed, do not change --- */
-  --color-cc-primary: #6e2439;
-  --color-cc-gold: #c9a84c;
+  /* Brand palette sourced from the magazine reference (2026): maroon primary,
+     gold secondary (the magazine's own pairing color), dusty-rose tertiary. */
+  --color-cc-primary: #610912;
+  --color-cc-gold: #fdd04b;
   --color-cc-white: #ffffff;
   --radius-cc-pill: 50px;
 
   /* --- Derived: primary (maroon) scale --- */
-  --color-cc-primary-dark: #4a1827;
-  --color-cc-primary-deeper: #2a0e17;
+  --color-cc-primary-hover: #530008;
+  --color-cc-primary-dark: #310005;
+  --color-cc-primary-deeper: #1f0003;
+  --color-cc-primary-tint: #ab414c;
+  --color-cc-primary-pale: #eae1e2;
   --color-cc-primary-light: #8a3a52;
 
   /* --- Derived: gold scale --- */
-  --color-cc-gold-light: #e8d49a;
-  --color-cc-gold-dark: #a08032;
+  --color-cc-gold-light: #f9e3a1;
+  --color-cc-gold-dark: #d39e02;
+  --color-cc-gold-darker: #926d02;
+
+  /* --- Tertiary: dusty rose (secondary buttons/tags, soft accents) --- */
+  --color-cc-tertiary: #bd5a5a;
+  --color-cc-tertiary-dark: #823434;
+  --color-cc-tertiary-light: #d3a5a5;
+  --color-cc-tertiary-pale: #f1e9e9;
 
   /* --- Text on dark backgrounds (header, drawer, footer, hero) --- */
   --color-cc-text-light: #f5e6eb;
   --color-cc-text-muted: #b8929e;
 
   /* --- Text on light backgrounds (the majority of 170 content pages) --- */
-  --color-cc-text-heading: #2a0e17;
-  --color-cc-text-body: #3d2b32;
-  --color-cc-text-muted-light: #7a6169;
+  --color-cc-text-heading: #372632;
+  --color-cc-text-body: #4a3a42;
+  --color-cc-text-muted-light: #7d6b73;
 
   /* --- Neutral grays (borders, dividers, disabled UI on light backgrounds) --- */
   --color-cc-gray-100: #f4f1f2;
   --color-cc-gray-200: #e6dfe1;
   --color-cc-gray-300: #cfc3c8;
 
-  /* --- Backgrounds --- */
-  --color-cc-bg-page: #ffffff;
-  --color-cc-bg-surface: #faf7f8;
-  --color-cc-bg-drawer: #1f0f15;
+  /* --- Backgrounds ---
+     bg-page is the warm cream <body> background; bg-card is pure white so
+     cards visibly lift off the page instead of blending into it. */
+  --color-cc-bg-page: #f4f1f0;
+  --color-cc-bg-card: #ffffff;
+  --color-cc-bg-surface: #fef8f5;
+  --color-cc-bg-drawer: #1f0003;
 
   /* --- Semantic status --- */
   --color-cc-success: #3a7d4f;
@@ -71,15 +86,15 @@
 :root {
   --gradient-hero: linear-gradient(135deg, var(--color-cc-primary) 0%, var(--color-cc-primary-deeper) 100%);
   --gradient-gold: linear-gradient(90deg, var(--color-cc-gold-dark) 0%, var(--color-cc-gold) 50%, var(--color-cc-gold-light) 100%);
-  --gradient-overlay: linear-gradient(180deg, rgba(42, 14, 23, 0) 0%, rgba(42, 14, 23, 0.85) 100%);
+  --gradient-overlay:  linear-gradient(180deg, rgba(31,0,3,0) 0%, rgba(31,0,3,0.85) 100%);
 
   --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-subtle-light: rgba(42, 14, 23, 0.08);
+  --border-subtle-light: rgba(139, 0, 14, 0.08);
 
   --transition-standard: 0.35s var(--ease-cc);
 
   --header-height: 72px;
-  --drawer-width: 640px;
+  --drawer-width: 380px;
   --container-max: 1200px;
 
   /* mobile: 0–599px, tablet: 600–959px, desktop: 960px+ */

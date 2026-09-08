@@ -204,7 +204,7 @@ export default function PdfFlipBook({ fileUrl, title }) {
         </div>
       </div>
 
-      <div className={`flex items-center justify-center bg-cc-bg-page py-8 ${isFullscreen ? 'flex-1' : ''}`}>
+      <div className={`flex items-center justify-center bg-cc-bg-card py-8 ${isFullscreen ? 'flex-1' : ''}`}>
         {numPages > 0 ? (
           <HTMLFlipBook
             ref={bookRef}
@@ -242,7 +242,7 @@ export default function PdfFlipBook({ fileUrl, title }) {
           >
             <ChevronDownIcon className="rotate-90" />
           </button>
-          <span className="rounded-cc-pill bg-cc-bg-page px-3 py-1 text-sm text-cc-text-muted-light">
+          <span className="rounded-cc-pill bg-cc-bg-card px-3 py-1 text-sm text-cc-text-muted-light">
             {currentPage} / {numPages}
           </span>
           <button

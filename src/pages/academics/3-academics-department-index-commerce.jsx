@@ -51,7 +51,7 @@ export default function DepartmentIndexCommerce() {
           </div>
           <div className="grid gap-6 sm:grid-cols-3">
             {TESTIMONIALS.map((t) => (
-              <div key={t.name} className="flex flex-col rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page p-6 shadow-cc-sm">
+              <div key={t.name} className="flex flex-col rounded-cc-lg border border-cc-gray-200 bg-cc-bg-card p-6 shadow-cc-sm">
                 <p className="font-semibold text-cc-text-heading">{t.name}</p>
                 <p className="text-xs text-cc-text-muted-light">{t.programme}</p>
                 <p className="mt-4 text-sm italic text-cc-text-muted-light">&ldquo;{t.quote}&rdquo;</p>

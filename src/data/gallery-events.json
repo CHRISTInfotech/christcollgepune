@@ -12,6 +12,12 @@
     "photoCount": 8
   },
   {
+    "name": "Aspire Expo",
+    "slug": "aspire-expo",
+    "department": "Arts",
+    "photoCount": 8
+  },
+  {
     "name": "BHASHA UTSAV 2024",
     "slug": "bhasha-utsav-2024",
     "department": null,
@@ -48,6 +54,12 @@
     "photoCount": 9
   },
   {
+    "name": "Career Guidance Session — Alumna Seyona Alex",
+    "slug": "career-guidance-session-alumna",
+    "department": "Arts",
+    "photoCount": 2
+  },
+  {
     "name": "Chavara Cup 2023",
     "slug": "chavara-cup-2023",
     "department": null,
@@ -78,10 +90,22 @@
     "photoCount": 19
   },
   {
+    "name": "Digital Skills Workshop — Canva",
+    "slug": "digital-skills-workshop-canva",
+    "department": "Arts",
+    "photoCount": 5
+  },
+  {
     "name": "Disaster Management Workshop",
     "slug": "disaster-management-workshop",
     "department": null,
     "photoCount": 5
+  },
+  {
+    "name": "Ecomania 2025",
+    "slug": "ecomania-2025",
+    "department": "Arts",
+    "photoCount": 13
   },
   {
     "name": "Ethnic Day 2024",
@@ -124,6 +148,12 @@
     "slug": "guest-lecture-on-mechanistic-modeling-of-complex-social-systems",
     "department": "Science",
     "photoCount": 9
+  },
+  {
+    "name": "IELTS Training Session",
+    "slug": "ielts-training-session",
+    "department": "Arts",
+    "photoCount": 8
   },
   {
     "name": "International Conference on Emerging Technologies (ICET 23) CS",
@@ -180,6 +210,12 @@
     "photoCount": 8
   },
   {
+    "name": "Observed Climate Change over the Indian Region — Seminar",
+    "slug": "observed-climate-change-seminar",
+    "department": "Arts",
+    "photoCount": 6
+  },
+  {
     "name": "Republic Day 2025",
     "slug": "republic-day-2025",
     "department": null,
@@ -220,6 +256,12 @@
     "slug": "udaan-2025",
     "department": null,
     "photoCount": 7
+  },
+  {
+    "name": "Udaan 2026",
+    "slug": "udaan-2026",
+    "department": "Arts",
+    "photoCount": 50
   },
   {
     "name": "Workshop on Gender Justice",

@@ -51,7 +51,7 @@ export default function DepartmentIndexManagement() {
           </div>
           <div className="grid gap-6 sm:grid-cols-2">
             {TESTIMONIALS.map((t) => (
-              <div key={t.name} className="flex flex-col rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page p-6 shadow-cc-sm">
+              <div key={t.name} className="flex flex-col rounded-cc-lg border border-cc-gray-200 bg-cc-bg-card p-6 shadow-cc-sm">
                 <div className="flex items-center gap-4">
                   <img src={t.photo} alt={t.name} className="h-14 w-14 shrink-0 rounded-full border border-cc-gray-200 object-cover" />
                   <div>

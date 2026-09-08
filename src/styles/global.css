@@ -46,3 +46,67 @@
     border-radius: var(--radius-cc-sm);
   }
 }
+
+/* Scrolling news-ticker used on department pages: the text is duplicated once
+   in the markup and this animates the pair left by exactly 50%, so the loop
+   seam is invisible. */
+@keyframes ticker {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-ticker {
+  animation: ticker 22s linear infinite;
+}
+
+/* 3D flip card (Vision & Mission on department pages): the container supplies
+   perspective, the inner face rotates on the Y axis, and each face hides its
+   own backface so only one side is ever visible at a time. */
+.flip-card-container {
+  perspective: 1800px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.flip-card-container.is-flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flip-card-inner {
+    transition: none;
+  }
+}
+
+/* Hides the scrollbar on the department page's sticky sidebar nav and mobile
+   section-pill row while keeping the element scrollable by touch/wheel/keys. */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}

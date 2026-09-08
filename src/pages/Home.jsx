@@ -1,12 +1,12 @@
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Seo from '../components/Seo';
 import { fadeInUp, staggerContainer, staggerItem } from '../motion/variants';
 import { emphasis } from '../motion/transitions';
-import { AcademicCapIcon } from '../components/icons';
+import { AcademicCapIcon, BuildingIcon, UsersIcon, CompassIcon, BriefcaseIcon, AwardIcon, SparklesIcon, LightbulbIcon, BookIcon, GridIcon, SearchIcon, CheckCircleIcon } from '../components/icons';
+import galleryEvents from '../data/gallery-events.json';
 import bannerVideo from '../assets/home/bannerViedo.mp4';
-import naacSealImg from '../assets/home/naac-a-plus-seal.jpg';
 import artsImg from '../assets/home/ArtsDept.jpg';
 import commerceImg from '../assets/home/commerceDept.jpg';
 import managementImg from '../assets/home/ManagementDept.jpg';
@@ -25,16 +25,208 @@ import facilityPlaygroundImg from '../assets/home/CampusFacilitiesPlayground.jpg
 import facilityResearchImg from '../assets/home/CampusFacilitiesResearch.jpg';
 import facilityRecreationalImg from '../assets/home/CampusFacilitiesRecreationalAreas.jpg';
 import facilityHealthImg from '../assets/home/CampusFacilitiesHealthandWlniness.jpg';
-import gallery1 from '../assets/home/gallery1.jpg';
-import gallery2 from '../assets/home/gallery2.jpg';
-import gallery3 from '../assets/home/gallery3.jpg';
-import gallery4 from '../assets/home/gallery4.jpg';
-import gallery5 from '../assets/home/gallery5.jpg';
-import gallery6 from '../assets/home/gallery6.jpg';
-import gallery7 from '../assets/home/gallery7.jpg';
-import gallery8 from '../assets/home/gallery8.jpg';
 
-const GALLERY_IMAGES = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7, gallery8];
+// All real event photos from the Gallery page's own image set, with exact event names
+const galleryPhotoModules = import.meta.glob('../assets/images/gallery/*/*.jpg', { eager: true, import: 'default' });
+
+const eventBySlug = {};
+for (const ev of galleryEvents) {
+  eventBySlug[ev.slug] = ev;
+}
+
+const ALL_GALLERY_PHOTOS = [];
+for (const [path, url] of Object.entries(galleryPhotoModules)) {
+  const match = path.match(/gallery\/([^/]+)\/(\d+)\.jpg$/);
+  if (!match) continue;
+  const [, slug, num] = match;
+  const ev = eventBySlug[slug];
+  ALL_GALLERY_PHOTOS.push({
+    src: url,
+    slug,
+    num: Number(num),
+    name: ev ? ev.name : slug.replace(/-/g, ' ').toUpperCase(),
+    department: ev?.department || null,
+  });
+}
+
+function pickRandomPhotos(pool, count) {
+  const shuffled = [...pool];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled.slice(0, count);
+}
+
+// Sequence that alternates across the 4x2 grid non-adjacently for organic realism
+const SLOT_SEQUENCE = [0, 5, 2, 7, 3, 1, 6, 4];
+
+function RotatingGallery({ count = 8, intervalMs = 2300 }) {
+  const [photos, setPhotos] = useState(() => pickRandomPhotos(ALL_GALLERY_PHOTOS, count));
+  const [activeSlot, setActiveSlot] = useState(null);
+  const [isHovered, setIsHovered] = useState(false);
+  const stepRef = useRef(0);
+
+  useEffect(() => {
+    if (ALL_GALLERY_PHOTOS.length <= count) return undefined;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return undefined;
+
+    const id = setInterval(() => {
+      if (isHovered) return;
+
+      // Select next slot in sequence to change one by one
+      const targetSlot = SLOT_SEQUENCE[stepRef.current % SLOT_SEQUENCE.length];
+      stepRef.current += 1;
+
+      setPhotos((currentPhotos) => {
+        const usedSrcs = new Set(currentPhotos.map((p) => p.src));
+        // Find an unused photo from pool
+        const available = ALL_GALLERY_PHOTOS.filter((p) => !usedSrcs.has(p.src));
+        const newPhoto =
+          available.length > 0
+            ? available[Math.floor(Math.random() * available.length)]
+            : ALL_GALLERY_PHOTOS[Math.floor(Math.random() * ALL_GALLERY_PHOTOS.length)];
+
+        const nextPhotos = [...currentPhotos];
+        nextPhotos[targetSlot] = newPhoto;
+        return nextPhotos;
+      });
+
+      setActiveSlot(targetSlot);
+    }, intervalMs);
+
+    return () => clearInterval(id);
+  }, [count, intervalMs, isHovered]);
+
+  return (
+    <div
+      className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-4"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {photos.map((photo, index) => {
+        const isSlotActive = activeSlot === index;
+        return (
+          <Link
+            key={index}
+            to={`/media-and-gallery/gallery?event=${photo.slug}`}
+            style={{ perspective: 1200 }}
+            className="group relative block aspect-[4/3] w-full overflow-hidden rounded-2xl border border-white/15 bg-slate-950 shadow-md backdrop-blur-sm transition-all duration-500 ease-out hover:-translate-y-1.5 hover:border-cc-gold hover:shadow-2xl hover:shadow-black/70 hover:rounded-3xl"
+          >
+            <AnimatePresence mode="popLayout" initial={false}>
+              <motion.div
+                key={photo.src}
+                initial={{
+                  opacity: 0,
+                  scale: 0.92,
+                  rotateY: 15,
+                  filter: 'blur(3px) brightness(1.15)',
+                }}
+                animate={{
+                  opacity: 1,
+                  scale: 1,
+                  rotateY: 0,
+                  filter: 'blur(0px) brightness(1)',
+                }}
+                exit={{
+                  opacity: 0,
+                  scale: 1.06,
+                  rotateY: -15,
+                  filter: 'blur(3px) brightness(0.85)',
+                }}
+                transition={{
+                  duration: 0.95,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+                className="absolute inset-0 h-full w-full"
+              >
+                <img
+                  src={photo.src}
+                  alt={photo.name}
+                  className="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-110"
+                  style={{ objectFit: 'cover', objectPosition: 'center' }}
+                  loading="lazy"
+                />
+              </motion.div>
+            </AnimatePresence>
+
+            {/* Subtle camera flash sheen effect when photo flips */}
+            <AnimatePresence>
+              {isSlotActive && (
+                <motion.div
+                  key={`flash-${photo.src}`}
+                  initial={{ x: '-100%', opacity: 0.65 }}
+                  animate={{ x: '220%', opacity: 0 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.85, ease: 'easeOut' }}
+                  className="pointer-events-none absolute inset-y-0 w-3/4 -skew-x-12 bg-gradient-to-r from-transparent via-white/30 to-transparent z-10"
+                  aria-hidden="true"
+                />
+              )}
+            </AnimatePresence>
+
+            {/* Bottom vignette & hover event name overlay with direct gallery link */}
+            <div className="pointer-events-none absolute inset-0 z-20 flex flex-col justify-end bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100">
+              {photo.department && (
+                <span className="text-[10px] font-bold uppercase tracking-wider text-cc-gold drop-shadow-sm">
+                  Dept. of {photo.department}
+                </span>
+              )}
+              <h4 className="text-sm sm:text-base font-bold text-white line-clamp-2 leading-snug drop-shadow-md">
+                {photo.name}
+              </h4>
+              <span className="mt-1.5 inline-flex items-center gap-1 text-[11px] font-semibold text-cc-gold drop-shadow-sm">
+                View in Gallery
+                <span aria-hidden="true">&rarr;</span>
+              </span>
+            </div>
+
+            {/* Subtle border ring on hover */}
+            <div className="pointer-events-none absolute inset-0 z-30 rounded-2xl transition-all duration-300 group-hover:rounded-3xl border border-transparent group-hover:border-cc-gold/60" />
+          </Link>
+        );
+      })}
+    </div>
+  );
+}
+
+const TICKER_ANNOUNCEMENTS = [
+  {
+    id: 'admissions-2026',
+    badge: 'NEW',
+    text: 'Admissions to Undergraduate (UG) & Postgraduate (PG) Programmes for Academic Year 2026-27 are now open.',
+    actionText: 'Apply Now',
+    path: '/admissions/online-application-instructions',
+  },
+  {
+    id: 'naac-grade',
+    badge: 'NEW',
+    text: "CHRIST College Pune is Re-accredited with 'A+' Grade by NAAC (CGPA 3.39 on a 4-point scale).",
+    actionText: 'Learn More',
+    path: '/naac/naac-accreditation',
+  },
+  {
+    id: 'hostel-campus',
+    badge: 'NEW',
+    text: 'Modern campus facilities, well-equipped science & computer labs, and expansive digital library resources.',
+    actionText: 'Explore Campus',
+    path: '/campus-life/campus/labs',
+  },
+  {
+    id: 'placements-cpcg',
+    badge: 'NEW',
+    text: 'Placement & Career Guidance (CPCG) drives underway for final year students with reputed corporate partners.',
+    actionText: 'Explore Now',
+    path: '/students/placement-and-career-guidance',
+  },
+  {
+    id: 'instructions',
+    badge: 'NEW',
+    text: 'Check step-by-step instructions and guidelines for online application submission.',
+    actionText: 'Read Instructions',
+    path: '/admissions/online-application-instructions',
+  },
+];
 
 const ADMISSION_LINKS = [
   { label: 'Application Form for UG', path: '/admissions/application-form-for-ug' },
@@ -85,17 +277,60 @@ const DEPARTMENTS = [
 ];
 
 const STUDENT_LIFE_LINKS = [
-  { image: campusLifeImg, label: 'Campus Life', path: '/students/campus-life-student-life' },
-  { image: councilImg, label: 'Student Council (SC)', path: '/students/student-council' },
-  { image: nssImg, label: 'National Service Scheme (NSS)', path: '/students/national-service-scheme/about-us' },
-  { image: cpcgImg, label: 'Placement & Career Guidance (CPCG)', path: '/students/placement-and-career-guidance' },
-  { image: sportsImg, label: 'Physical Education & Sports', path: '/students/physical-education' },
-  { image: culturalsImg, label: 'Co-curricular & Cultural Activities', path: '/students/co-curricular-and-cultural-activities' },
+  {
+    image: campusLifeImg,
+    icon: BuildingIcon,
+    label: 'Campus Life',
+    tag: 'Student Experience',
+    path: '/students/campus-life-student-life',
+    description: 'Vibrant campus environment, student clubs, modern amenities, and holistic development opportunities.',
+  },
+  {
+    image: councilImg,
+    icon: UsersIcon,
+    label: 'Student Council (SC)',
+    tag: 'Leadership & Voice',
+    path: '/students/student-council',
+    description: 'Democratic student body fostering leadership, organizing flagship events, and voicing student perspectives.',
+  },
+  {
+    image: nssImg,
+    icon: CompassIcon,
+    label: 'National Service Scheme (NSS)',
+    tag: 'Community Outreach',
+    path: '/students/national-service-scheme/about-us',
+    description: 'Instilling civic responsibility, social service, blood donation drives, and nation-building initiatives.',
+  },
+  {
+    image: cpcgImg,
+    icon: BriefcaseIcon,
+    label: 'Placement & Career Guidance (CPCG)',
+    tag: 'Career & Corporate',
+    path: '/students/placement-and-career-guidance',
+    description: 'Bridging talent with leading corporate recruiters, career counseling, and industry-oriented training.',
+  },
+  {
+    image: sportsImg,
+    icon: AwardIcon,
+    label: 'Physical Education & Sports',
+    tag: 'Athletics & Fitness',
+    path: '/students/physical-education',
+    description: 'State-of-the-art sports facilities, competitive tournaments, coaching in basketball, football, and athletics.',
+  },
+  {
+    image: culturalsImg,
+    icon: SparklesIcon,
+    label: 'Co-curricular & Cultural Activities',
+    tag: 'Arts & Culture',
+    path: '/students/co-curricular-and-cultural-activities',
+    description: 'Celebrating creativity with grand annual cultural festivals, drama, music, dance, and literary forums.',
+  },
 ];
 
 const CAMPUS_FACILITIES = [
   {
     label: 'Labs',
+    icon: LightbulbIcon,
     path: '/campus-life/campus/labs',
     image: facilityLabsImg,
     description:
@@ -103,6 +338,7 @@ const CAMPUS_FACILITIES = [
   },
   {
     label: 'Library',
+    icon: BookIcon,
     path: '/campus-life/campus/library',
     image: facilityLibraryImg,
     description:
@@ -110,6 +346,7 @@ const CAMPUS_FACILITIES = [
   },
   {
     label: 'IT Services',
+    icon: GridIcon,
     path: '/campus-life/campus/it-services',
     image: facilityItServicesImg,
     description:
@@ -117,6 +354,7 @@ const CAMPUS_FACILITIES = [
   },
   {
     label: 'Academics',
+    icon: AcademicCapIcon,
     path: '/campus-life/campus/academics',
     image: facilityAcademicsImg,
     description:
@@ -124,6 +362,7 @@ const CAMPUS_FACILITIES = [
   },
   {
     label: 'Play Ground',
+    icon: AwardIcon,
     path: '/campus-life/campus/play-ground',
     image: facilityPlaygroundImg,
     description:
@@ -131,6 +370,7 @@ const CAMPUS_FACILITIES = [
   },
   {
     label: 'Research Facilities',
+    icon: SearchIcon,
     path: '/campus-life/campus/research-facilities',
     image: facilityResearchImg,
     description:
@@ -138,6 +378,7 @@ const CAMPUS_FACILITIES = [
   },
   {
     label: 'Recreational Areas',
+    icon: SparklesIcon,
     path: '/campus-life/campus/recreational-areas',
     image: facilityRecreationalImg,
     description:
@@ -145,6 +386,7 @@ const CAMPUS_FACILITIES = [
   },
   {
     label: 'Health and Wellness',
+    icon: CheckCircleIcon,
     path: '/campus-life/campus/health-and-wellness',
     image: facilityHealthImg,
     description:
@@ -168,7 +410,8 @@ function HeroVideo() {
   return (
     <video
       ref={videoRef}
-      className="absolute inset-0 h-full w-full object-cover"
+      className="absolute inset-0 h-full w-full object-cover object-center"
+      style={{ objectFit: 'cover', objectPosition: 'center' }}
       src={bannerVideo}
       muted
       loop
@@ -179,65 +422,69 @@ function HeroVideo() {
 }
 
 function CampusFacilitiesSection() {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const active = CAMPUS_FACILITIES[activeIndex];
-
   return (
-    <motion.section
-      className="mx-auto max-w-[1200px] px-6 py-16"
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
-      variants={staggerContainer}
-    >
-      <motion.div variants={staggerItem} className="mx-auto max-w-2xl text-center">
-        <h2>Campus Facilities</h2>
-        <p className="mt-3 text-cc-text-muted-light">
-          A well-equipped infrastructure to promote the academic and cultural activities of CHRIST is one of our primary accomplishments. An attempt to provide equal opportunity for each and every Christite is the idea behind this unique feature of our campus.
-        </p>
-      </motion.div>
+    <section className="bg-cc-bg-surface py-16">
+      <motion.div
+        className="mx-auto max-w-[1200px] px-6"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.15 }}
+        variants={staggerContainer}
+      >
+        <motion.div variants={staggerItem} className="mx-auto max-w-2xl text-center">
+          <h2>Campus Facilities</h2>
+          <p className="mt-3 text-cc-text-muted-light">
+            A well-equipped infrastructure to promote the academic, research, and cultural pursuits of CHRIST College Pune. An equal opportunity learning environment for every Christite.
+          </p>
+        </motion.div>
 
-      <motion.div variants={staggerItem} className="mt-8 flex flex-wrap justify-center gap-3">
-        {CAMPUS_FACILITIES.map((facility, index) => (
-          <button
-            key={facility.path}
-            type="button"
-            onClick={() => setActiveIndex(index)}
-            aria-pressed={index === activeIndex}
-            className={`rounded-cc-pill border px-4 py-2 text-sm font-medium transition-colors duration-[350ms] ${index === activeIndex
-                ? 'border-cc-primary bg-cc-primary text-cc-white'
-                : 'border-cc-gray-300 text-cc-text-body hover:border-cc-primary hover:text-cc-primary'
-              }`}
-          >
-            {facility.label}
-          </button>
-        ))}
-      </motion.div>
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {CAMPUS_FACILITIES.map((facility) => {
+            const Icon = facility.icon || BuildingIcon;
+            return (
+              <motion.div key={facility.path} variants={staggerItem}>
+                <Link
+                  to={facility.path}
+                  className="group relative flex aspect-[4/3] flex-col justify-end overflow-hidden rounded-cc-lg shadow-cc-sm transition-all duration-[350ms] hover:-translate-y-1 hover:shadow-cc"
+                >
+                  <img
+                    src={facility.image}
+                    alt={facility.label}
+                    className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-500 ease-out group-hover:scale-110"
+                    style={{ objectFit: 'cover', objectPosition: 'center' }}
+                    loading="lazy"
+                  />
 
-      <motion.div variants={staggerItem} className="mt-8 grid gap-8 lg:grid-cols-2 lg:items-center">
-        <div className="overflow-hidden rounded-cc-lg shadow-cc-sm">
-          <img
-            src={active.image}
-            alt={active.label}
-            className="aspect-[4/3] h-full w-full object-cover"
-            loading="lazy"
-          />
-        </div>
-        <div>
-          <h3>{active.label}</h3>
-          <p className="mt-4 text-cc-text-muted-light">{active.description}</p>
-          <Link
-            to={active.path}
-            className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-cc-primary hover:text-cc-primary-dark"
-          >
-            Learn More
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </Link>
+                  {/* Icon badge at top-left */}
+                  <span className="absolute left-3 top-3 z-10 flex h-9 w-9 items-center justify-center rounded-cc-md bg-cc-primary-deeper/90 text-white shadow-cc-xs transition-all duration-300 group-hover:scale-110 group-hover:bg-white/20">
+                    <Icon className="h-4 w-4" />
+                  </span>
+
+                  {/* Gradient vignette so label is always readable before hover */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent transition-opacity duration-300 group-hover:opacity-0" />
+                  <span className="relative z-10 p-4 font-semibold text-cc-text-light transition-opacity duration-300 group-hover:opacity-0">
+                    {facility.label}
+                  </span>
+
+                  {/* Existing Student Life hover overlay: rich brand gradient overlay on hover */}
+                  <span className="absolute inset-0 z-20 flex flex-col items-center justify-center p-4 text-center bg-gradient-to-br from-cc-primary-deeper/95 via-cc-primary/90 to-cc-primary-dark/95 opacity-0 transition-opacity duration-[350ms] group-hover:opacity-100 group-focus-visible:opacity-100">
+                    <span className="font-bold text-white text-base">
+                      {facility.label}
+                    </span>
+                    <span className="mt-2 text-xs text-white/85 line-clamp-3 leading-relaxed">
+                      {facility.description}
+                    </span>
+                    <span className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-cc-gold">
+                      Learn More &rarr;
+                    </span>
+                  </span>
+                </Link>
+              </motion.div>
+            );
+          })}
         </div>
       </motion.div>
-    </motion.section>
+    </section>
   );
 }
 
@@ -250,15 +497,47 @@ export default function Home() {
       />
       <h1 className="sr-only">Christ College Pune - Shaping Minds, Building Character</h1>
 
+      {/* MIT-Style Announcement Marquee Bar */}
+      <div className="w-full border-y border-slate-200 bg-white py-2 shadow-[0_1px_3px_rgba(0,0,0,0.03)]">
+        <div className="w-full overflow-hidden">
+          <marquee
+            behavior="scroll"
+            direction="left"
+            scrollamount="5"
+            onMouseEnter={(e) => e.currentTarget.stop()}
+            onMouseLeave={(e) => e.currentTarget.start()}
+            className="flex items-center text-[13px] sm:text-sm font-medium text-slate-700 select-none cursor-pointer"
+          >
+            {TICKER_ANNOUNCEMENTS.map((item) => (
+              <span key={item.id} className="inline-flex items-center mr-10 sm:mr-14">
+                <span className="font-bold text-[#e53935] uppercase text-xs tracking-wider mr-2">
+                  {item.badge}
+                </span>
+                <span className="text-slate-800">
+                  {item.text}
+                </span>
+                <Link
+                  to={item.path}
+                  className="ml-2 font-bold text-[#d32f2f] hover:text-[#b71c1c] hover:underline inline-flex items-center gap-0.5 transition-colors"
+                >
+                  {item.actionText}
+                  <span aria-hidden="true">&rarr;</span>
+                </Link>
+              </span>
+            ))}
+          </marquee>
+        </div>
+      </div>
+
       <motion.section
-        className="bg-cc-bg-page px-4 py-6 md:px-6"
+        className="bg-cc-bg-card px-4 py-6 md:px-6"
         initial="hidden"
         animate="visible"
         variants={fadeInUp}
         transition={emphasis}
       >
         <div className="grid gap-4 lg:grid-cols-[1fr_240px] lg:items-start">
-          <div className="relative flex aspect-[21/9] flex-col justify-end overflow-hidden rounded-cc-lg bg-[image:var(--gradient-hero)] sm:aspect-[3/1] lg:aspect-[2.6/1]">
+          <div className="relative flex aspect-[16/9] flex-col justify-end overflow-hidden rounded-cc-lg bg-[image:var(--gradient-hero)] sm:aspect-[21/9] lg:aspect-[2.2/1]">
             <HeroVideo />
           </div>
 
@@ -294,7 +573,7 @@ export default function Home() {
               ))}
             </ul>
 
-            <div className="mt-4 flex items-center justify-between rounded-cc-md bg-cc-bg-page p-4">
+            <div className="mt-4 flex items-center justify-between rounded-cc-md bg-cc-bg-card p-4">
               <p className="text-sm font-semibold text-cc-text-heading">News &amp; Announcements</p>
               <Link
                 to="/news-and-events/campus-news-events/campus"
@@ -307,11 +586,9 @@ export default function Home() {
         </div>
       </motion.section>
 
-
-
       <motion.section
         id="departments"
-        className="mx-auto max-w-[1200px] scroll-mt-[calc(var(--header-height)+var(--space-4))] px-6 py-16"
+        className="mx-auto max-w-[1200px] scroll-mt-[calc(var(--header-height)+var(--space-4))] px-6 pt-6 pb-16"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.15 }}
@@ -328,14 +605,15 @@ export default function Home() {
             <motion.div
               key={dept.title}
               variants={staggerItem}
-              className="flex flex-col overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page shadow-cc-sm transition-shadow duration-[350ms] hover:shadow-cc"
+              className="flex flex-col overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-card shadow-cc-sm transition-shadow duration-[350ms] hover:shadow-cc"
             >
               <Link to={dept.overview} className="group relative block aspect-[4/3] overflow-hidden">
                 <span className="absolute inset-x-0 top-0 z-10 h-1 bg-[image:var(--gradient-gold)]" />
                 <img
                   src={dept.image}
                   alt={dept.title}
-                  className="h-full w-full object-cover transition-transform duration-[350ms] group-hover:scale-105"
+                  className="h-full w-full object-cover object-center transition-transform duration-[350ms] group-hover:scale-105"
+                  style={{ objectFit: 'cover', objectPosition: 'center' }}
                   loading="lazy"
                 />
               </Link>
@@ -371,36 +649,63 @@ export default function Home() {
         </div>
       </motion.section>
 
-      <section className="bg-cc-bg-surface">
+      <section className="bg-cc-bg-card py-16">
         <motion.div
-          className="mx-auto max-w-[1200px] px-6 py-16"
+          className="mx-auto max-w-[1200px] px-6"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.15 }}
           variants={staggerContainer}
         >
-          <h2>Student Life</h2>
-          <p className="mt-3 max-w-2xl text-cc-text-muted-light">
-            Campus experience beyond the classroom - societies, service, sport, and support.
-          </p>
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {STUDENT_LIFE_LINKS.map((item) => (
-              <motion.div key={item.path} variants={staggerItem}>
-                <Link
-                  to={item.path}
-                  className="group relative flex aspect-[4/3] items-end overflow-hidden rounded-cc-lg shadow-cc-sm transition-all duration-[350ms] hover:-translate-y-0.5 hover:shadow-cc"
-                >
-                  <img
-                    src={item.image}
-                    alt={item.label}
-                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-[350ms] group-hover:scale-105"
-                    loading="lazy"
-                  />
-                  <span className="absolute inset-0 bg-[image:var(--gradient-overlay)]" />
-                  <span className="relative p-4 font-medium text-cc-text-light">{item.label}</span>
-                </Link>
-              </motion.div>
-            ))}
+          <motion.div variants={staggerItem} className="mx-auto max-w-2xl text-center">
+            <h2>Student Life</h2>
+            <p className="mt-3 text-cc-text-muted-light">
+              Campus experience beyond the classroom — societies, service, sport, and holistic personal growth.
+            </p>
+          </motion.div>
+
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {STUDENT_LIFE_LINKS.map((item) => {
+              const Icon = item.icon || CompassIcon;
+              return (
+                <motion.div key={item.path} variants={staggerItem}>
+                  <Link
+                    to={item.path}
+                    className="group relative flex aspect-[4/3] w-full flex-col justify-end overflow-hidden rounded-xl border border-slate-200/80 bg-slate-900 shadow-sm transition-all duration-700 ease-out hover:-translate-y-1.5 hover:shadow-xl hover:rounded-3xl"
+                  >
+                    {/* Full-bleed Background Image: visible unhovered and stays clearly visible through the translucent gradient on hover */}
+                    <img
+                      src={item.image}
+                      alt={item.label}
+                      className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-110"
+                      style={{ objectFit: 'cover', objectPosition: 'center' }}
+                      loading="lazy"
+                    />
+
+                    {/* Permanent subtle dark bottom vignette so title is crisp and readable */}
+                    <div className="absolute inset-0 z-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent transition-opacity duration-700 group-hover:opacity-40" />
+
+                    {/* Top-Left Floating Icon Badge */}
+                    <span className="absolute left-4 top-4 z-20 flex h-10 w-10 items-center justify-center rounded-xl bg-cc-primary/90 text-white shadow-md backdrop-blur-sm transition-all duration-700 ease-out group-hover:scale-110 group-hover:bg-white/20 group-hover:text-white">
+                      <Icon className="h-5 w-5" />
+                    </span>
+
+                    {/* Smooth Left-Sweep Gradient Overlay: reduced speed (700ms) and translucent so the underlying image remains visible like Campus Facilities */}
+                    <div
+                      className="pointer-events-none absolute inset-y-0 left-0 z-10 w-0 bg-gradient-to-r from-[#610912]/80 via-[#7d101b]/75 to-[#45050b]/80 backdrop-blur-[0.5px] transition-[width] duration-700 ease-out group-hover:w-full"
+                      aria-hidden="true"
+                    />
+
+                    {/* Card Title cleanly anchored at bottom */}
+                    <div className="relative z-20 p-5">
+                      <h3 className="text-lg font-bold text-white transition-all duration-700 ease-out group-hover:text-cc-gold group-hover:translate-x-1.5">
+                        {item.label}
+                      </h3>
+                    </div>
+                  </Link>
+                </motion.div>
+              );
+            })}
           </div>
         </motion.div>
       </section>
@@ -420,18 +725,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-4">
-            {GALLERY_IMAGES.map((src, index) => (
-              <div key={src} className="aspect-[8/5] overflow-hidden rounded-cc-md">
-                <img
-                  src={src}
-                  alt={`Campus gallery photo ${index + 1}`}
-                  className="h-full w-full object-cover transition-transform duration-[350ms] hover:scale-105"
-                  loading="lazy"
-                />
-              </div>
-            ))}
-          </div>
+          <RotatingGallery />
 
           <div className="mt-8 text-center">
             <Link

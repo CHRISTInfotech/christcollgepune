@@ -60,7 +60,7 @@ export default function DepartmentIndexScience() {
           <h2 className="text-center">Our Achievements</h2>
           <ul className="mt-10 grid gap-4 lg:grid-cols-2">
             {ACHIEVEMENTS.map((item, index) => (
-              <li key={`${item.name}-${index}`} className="flex gap-3 rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page p-5 shadow-cc-sm">
+              <li key={`${item.name}-${index}`} className="flex gap-3 rounded-cc-lg border border-cc-gray-200 bg-cc-bg-card p-5 shadow-cc-sm">
                 <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-cc-primary" aria-hidden="true" />
                 <p className="text-sm text-cc-text-body">
                   <span className="font-semibold text-cc-text-heading">{item.name}</span> &ndash; {item.note}
@@ -83,7 +83,7 @@ export default function DepartmentIndexScience() {
         </div>
         <div className="grid gap-6 sm:grid-cols-3">
           {TESTIMONIALS.map((t) => (
-            <div key={t.name} className="flex flex-col rounded-cc-lg border border-cc-gray-200 bg-cc-bg-page p-6 shadow-cc-sm">
+            <div key={t.name} className="flex flex-col rounded-cc-lg border border-cc-gray-200 bg-cc-bg-card p-6 shadow-cc-sm">
               <p className="font-semibold text-cc-text-heading">{t.name}</p>
               <p className="text-xs text-cc-text-muted-light">{t.programme}</p>
               <p className="mt-4 text-sm italic text-cc-text-muted-light">&ldquo;{t.quote}&rdquo;</p>

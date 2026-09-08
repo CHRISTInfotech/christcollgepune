@@ -159,7 +159,12 @@
       "Bash(pdftotext -layout \"report-22-mar-2024.pdf\" -)",
       "PowerShell(\\(Get-Process chrome -ErrorAction SilentlyContinue | Measure-Object\\).Count)",
       "Bash(mkdir -p \"D:/Infotech/christcollgepune/src/assets/iqac/mou-by-year/2023-24/reports\" *)",
-      "Bash(curl -sL \"https://christcollegepune.org/center/C/MoU/2023christcollegepune\" -o /tmp/mou_2223_recheck.html)"
+      "Bash(curl -sL \"https://christcollegepune.org/center/C/MoU/2023christcollegepune\" -o /tmp/mou_2223_recheck.html)",
+      "WebFetch(domain:lavasa.christuniversity.in)",
+      "WebFetch(domain:mituniversity.ac.in)",
+      "Bash(curl -s \"https://lavasa.christuniversity.in/school-of-sciences\" -o /tmp/lavasa_dept.html -w \"%{http_code}\\\\n\")",
+      "Bash(curl -s -L \"https://lavasa.christuniversity.in/schools\" -o /tmp/lavasa_schools.html -w \"%{http_code}\\\\n\")",
+      "Bash(curl -s -L \"https://lavasa.christuniversity.in/\" -o /tmp/lavasa_home.html)"
     ],
     "additionalDirectories": [
       "D:\\Infotech\\christcollgepune\\src\\assets\\images",

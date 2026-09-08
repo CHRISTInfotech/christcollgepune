@@ -2253,29 +2253,29 @@
     "id": "3-academics-department-of-science-faculty-publications",
     "section": "3. Academics",
     "page": "Department of Science",
-    "sub_link": "Faculty Publications",
+    "sub_link": "Seminars/ Corporate Connect",
     "url": "https://christcollegepune.org/departments/main-campus/department-of--science/computer-science",
-    "path": "/academics/department-of-science/faculty-publications",
+    "path": "/academics/department-of-science/seminars-and-corporate-connect",
     "verification": "Sample/illustrative",
-    "notes": "Facilities & Activities sub-page, linked from the Department of Science page, not in main nav menu. Real site publications tab has no actual list, so this uses generic sample entries per explicit user request."
+    "notes": "Facilities & Activities sub-page, linked from the Department of Science page, not in main nav menu. Hosts real Seminar/Corporate Connect content moved from the Activities page, plus a sample publications list (real site publications tab has no actual list, so that section uses generic sample entries per explicit user request)."
   },
   {
     "id": "3-academics-department-of-arts-faculty-publications",
     "section": "3. Academics",
     "page": "Department of Arts",
-    "sub_link": "Faculty Publications",
+    "sub_link": "Seminars/ Corporate Connect",
     "url": "https://christcollegepune.org/departments/main%20campus/department%20of%20arts/ba%20pune%20new%20campus",
-    "path": "/academics/department-of-arts/faculty-publications",
+    "path": "/academics/department-of-arts/seminars-and-corporate-connect",
     "verification": "Sample/illustrative",
-    "notes": "Facilities & Activities sub-page, linked from the Department of Arts page, not in main nav menu. Real site publications tab has no actual list, so this uses generic sample entries per explicit user request."
+    "notes": "Facilities & Activities sub-page, linked from the Department of Arts page, not in main nav menu. Hosts real Seminar/Corporate Connect content plus a sample publications list (real site publications tab has no actual list, so that section uses generic sample entries per explicit user request)."
   },
   {
     "id": "3-academics-department-of-commerce-faculty-publications",
     "section": "3. Academics",
     "page": "Department of Commerce",
-    "sub_link": "Faculty Publications",
+    "sub_link": "Seminars/ Corporate Connect",
     "url": "https://christcollegepune.org/departments/main%20campus/department%20of%20commerce/commerce",
-    "path": "/academics/department-of-commerce/faculty-publications",
+    "path": "/academics/department-of-commerce/seminars-and-corporate-connect",
     "verification": "Sample/illustrative",
     "notes": "Facilities & Activities sub-page, linked from the Department of Commerce page, not in main nav menu. Real site publications tab has no actual list, so this uses generic sample entries per explicit user request."
   },
@@ -2283,11 +2283,11 @@
     "id": "3-academics-department-of-management-faculty-publications",
     "section": "3. Academics",
     "page": "Department of Management",
-    "sub_link": "Faculty Publications",
+    "sub_link": "Seminars/ Corporate Connect",
     "url": "https://christcollegepune.org/departments/main-campus/department-of-management/management",
-    "path": "/academics/department-of-management/faculty-publications",
+    "path": "/academics/department-of-management/seminars-and-corporate-connect",
     "verification": "Sample/illustrative",
-    "notes": "Facilities & Activities sub-page, linked from the Department of Management page, not in main nav menu. Real site publications tab has no actual list, so this uses generic sample entries per explicit user request."
+    "notes": "Facilities & Activities sub-page, linked from the Department of Management page, not in main nav menu. Hosts real Seminar/Corporate Connect content moved from the Activities page, plus a sample publications list (real site publications tab has no actual list, so that section uses generic sample entries per explicit user request)."
   },
   {
     "id": "3-academics-department-of-commerce-festivals",
