@@ -7,6 +7,7 @@ import NotFound from './pages/NotFound';
 import { sitemapData } from './data/routes';
 
 const StudentTestimonials = lazy(() => import('./pages/academics/StudentTestimonials'));
+const DepartmentOfArtsPage = lazy(() => import('./pages/academics/3-academics-department-of-arts-ba-department-programme-page'));
 
 // Auto-discovers real page components: every file under src/pages/{section}/{id}.jsx
 // is keyed by its filename (the sitemap row `id`) with no manual import needed —
@@ -54,6 +55,14 @@ function  App() {
             element={
               <Suspense fallback={null}>
                 <StudentTestimonials />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/academics/department-of-arts/department-page"
+            element={
+              <Suspense fallback={null}>
+                <DepartmentOfArtsPage />
               </Suspense>
             }
           />

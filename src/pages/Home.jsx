@@ -257,7 +257,7 @@ const DEPARTMENTS = [
   {
     title: 'Arts',
     image: artsImg,
-    overview: '/academics/department-of-arts/department-index',
+    overview: '/academics/department-of-arts/department-page',
     programmes: [
       { label: 'BA (Economics)', path: '/academics/department-of-arts/ba-economics' },
       { label: 'BA (English)', path: '/academics/department-of-arts/ba-english' },
@@ -396,28 +396,102 @@ const CAMPUS_FACILITIES = [
 
 function HeroVideo() {
   const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [showLoadingNotice, setShowLoadingNotice] = useState(false);
 
   useEffect(() => {
+    // If video hasn't started playing within 400ms, display the loading status
+    const timer = setTimeout(() => {
+      setShowLoadingNotice(true);
+    }, 400);
+
     const query = window.matchMedia('(prefers-reduced-motion: reduce)');
-    if (query.matches) return;
-    videoRef.current?.play().catch(() => { });
+    if (query.matches) {
+      clearTimeout(timer);
+      return undefined;
+    }
+
+    const video = videoRef.current;
+    if (video) {
+      if (!video.paused && video.readyState >= 3) {
+        setIsPlaying(true);
+        clearTimeout(timer);
+      }
+      video.play().catch(() => {});
+    }
+
+    return () => clearTimeout(timer);
   }, []);
 
-  // Skip autoplay entirely for users who've asked for reduced motion - the
-  // gradient background alone still reads fine without the video layer.
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return null;
+  const handlePlaying = () => {
+    setIsPlaying(true);
+  };
+
+  const isReducedMotion =
+    typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   return (
-    <video
-      ref={videoRef}
-      className="absolute inset-0 h-full w-full object-cover object-center"
-      style={{ objectFit: 'cover', objectPosition: 'center' }}
-      src={bannerVideo}
-      muted
-      loop
-      playsInline
-      aria-hidden="true"
-    />
+    <div className="relative h-full w-full overflow-hidden bg-gradient-to-br from-[#3b0409] via-[#610912] to-[#1e0205] flex flex-col justify-end">
+      {/* Ambient campus backdrop photo with soft blend while video loads/buffers */}
+      <img
+        src={facilityAcademicsImg}
+        alt="Christ College Pune Campus"
+        className={`absolute inset-0 h-full w-full object-cover object-center transition-opacity duration-1000 ${
+          isPlaying ? 'opacity-0' : 'opacity-25 mix-blend-overlay'
+        }`}
+        style={{ objectFit: 'cover', objectPosition: 'center' }}
+      />
+
+      {/* Decorative gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent pointer-events-none z-10" />
+
+      {/* Video element */}
+      {!isReducedMotion && (
+        <video
+          ref={videoRef}
+          className={`absolute inset-0 h-full w-full object-cover object-center transition-opacity duration-700 ${
+            isPlaying ? 'opacity-100' : 'opacity-0'
+          }`}
+          style={{ objectFit: 'cover', objectPosition: 'center' }}
+          src={bannerVideo}
+          muted
+          loop
+          playsInline
+          preload="auto"
+          onPlaying={handlePlaying}
+          onCanPlayThrough={handlePlaying}
+          onWaiting={() => setShowLoadingNotice(true)}
+          aria-hidden="true"
+        />
+      )}
+
+      {/* Institutional text & loading status container */}
+      <div className="relative z-20 p-5 sm:p-7 md:p-8 flex flex-col items-start justify-end max-w-2xl">
+        <div className="inline-flex items-center gap-2 rounded-full bg-black/40 border border-cc-gold/40 px-3 py-1 text-[11px] sm:text-xs font-bold uppercase tracking-wider text-cc-gold backdrop-blur-md shadow-sm">
+          <SparklesIcon className="h-3.5 w-3.5 text-cc-gold" />
+          <span>Christ College Pune &bull; Estd. 2007</span>
+        </div>
+
+        <h2 className="mt-2.5 font-serif text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight leading-tight drop-shadow-lg">
+          Shaping Minds, Building Character
+        </h2>
+
+        <p className="mt-1.5 text-xs sm:text-sm text-slate-200 font-medium leading-relaxed drop-shadow-md">
+          Autonomous Institution &bull; Re-accredited with &lsquo;A+&rsquo; Grade by NAAC (CGPA 3.39) &bull; Affiliated to SPPU
+        </p>
+
+        {/* Loading notice displayed if video is loading/buffering */}
+        {!isPlaying && showLoadingNotice && !isReducedMotion && (
+          <div className="mt-3.5 inline-flex items-center gap-2.5 rounded-full bg-black/60 border border-white/20 px-3.5 py-1.5 text-xs font-medium text-amber-200 backdrop-blur-md shadow-md animate-pulse">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+            </span>
+            <span>Campus video is loading...</span>
+          </div>
+        )}
+      </div>
+    </div>
   );
 }
 
@@ -537,7 +611,7 @@ export default function Home() {
         transition={emphasis}
       >
         <div className="grid gap-4 lg:grid-cols-[1fr_240px] lg:items-start">
-          <div className="relative flex aspect-[16/9] flex-col justify-end overflow-hidden rounded-cc-lg bg-[image:var(--gradient-hero)] sm:aspect-[21/9] lg:aspect-[2.2/1]">
+          <div className="relative flex aspect-[16/9] flex-col justify-end overflow-hidden rounded-cc-lg bg-gradient-to-br from-[#3b0409] via-[#610912] to-[#1e0205] shadow-inner sm:aspect-[21/9] lg:aspect-[2.2/1]">
             <HeroVideo />
           </div>
 
