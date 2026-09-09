@@ -517,8 +517,7 @@ function CampusFacilitiesSection() {
             const Icon = facility.icon || BuildingIcon;
             return (
               <motion.div key={facility.path} variants={staggerItem}>
-                <Link
-                  to={facility.path}
+                <div
                   className="group relative flex aspect-[4/3] flex-col justify-end overflow-hidden rounded-cc-lg shadow-cc-sm transition-all duration-[350ms] hover:-translate-y-1 hover:shadow-cc"
                 >
                   <img
@@ -545,14 +544,11 @@ function CampusFacilitiesSection() {
                     <span className="font-bold text-white text-base">
                       {facility.label}
                     </span>
-                    <span className="mt-2 text-xs text-white/85 line-clamp-3 leading-relaxed">
+                    <span className="mt-2 text-xs text-white/85 line-clamp-5 leading-relaxed">
                       {facility.description}
                     </span>
-                    <span className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-cc-gold">
-                      Learn More &rarr;
-                    </span>
                   </span>
-                </Link>
+                </div>
               </motion.div>
             );
           })}
@@ -590,13 +586,10 @@ export default function Home() {
                 <span className="text-slate-800">
                   {item.text}
                 </span>
-                <Link
-                  to={item.path}
-                  className="ml-2 font-bold text-[#d32f2f] hover:text-[#b71c1c] hover:underline inline-flex items-center gap-0.5 transition-colors"
-                >
+                <span className="ml-2 font-bold text-[#d32f2f] inline-flex items-center gap-0.5">
                   {item.actionText}
                   <span aria-hidden="true">&rarr;</span>
-                </Link>
+                </span>
               </span>
             ))}
           </marquee>
