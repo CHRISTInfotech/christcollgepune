@@ -476,9 +476,7 @@ function HeroVideo() {
           Shaping Minds, Building Character
         </h2>
 
-        <p className="mt-1.5 text-xs sm:text-sm text-slate-200 font-medium leading-relaxed drop-shadow-md">
-          Autonomous Institution &bull; Re-accredited with &lsquo;A+&rsquo; Grade by NAAC (CGPA 3.39) &bull; Affiliated to SPPU
-        </p>
+
 
         {/* Loading notice displayed if video is loading/buffering */}
         {!isPlaying && showLoadingNotice && !isReducedMotion && (

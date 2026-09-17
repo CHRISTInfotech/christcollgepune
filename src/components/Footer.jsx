@@ -117,7 +117,7 @@ export default function Footer() {
         <div className="flex flex-col gap-3">
           <div className="mb-1 flex items-center gap-3">
             <img src={logo} alt="Christ College Pune" className="h-10 w-auto" />
-            <p className="text-sm italic text-cc-gold-light">Excellence and Service</p>
+            <p className="text-sm italic text-cc-gold-light">Enlighten to Excel</p>
           </div>
           {QUICK_LINKS.map((link) =>
             link.isExternal || link.path.startsWith('http') ? (
