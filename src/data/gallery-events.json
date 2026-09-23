@@ -6,6 +6,18 @@
     "photoCount": 12
   },
   {
+    "name": "AI & ML Workshop — Learn, Build, Apply",
+    "slug": "aiml-workshop-learn-build-apply",
+    "department": "Science",
+    "photoCount": 9
+  },
+  {
+    "name": "AARAMBH 2026",
+    "slug": "aarambh-2026",
+    "department": "Science",
+    "photoCount": 11
+  },
+  {
     "name": "Alumni Meet 2023",
     "slug": "alumni-meet-2023",
     "department": null,
@@ -28,6 +40,12 @@
     "slug": "blood-donation-2023",
     "department": null,
     "photoCount": 6
+  },
+  {
+    "name": "CCSA Inauguration 2026",
+    "slug": "ccsa-inauguration-2026",
+    "department": "Science",
+    "photoCount": 4
   },
   {
     "name": "CHRISLIGA 2024",
@@ -54,6 +72,12 @@
     "photoCount": 9
   },
   {
+    "name": "CCSA Inauguration 2026",
+    "slug": "ccsa-inauguration-2026",
+    "department": "Science",
+    "photoCount": 4
+  },
+  {
     "name": "Career Guidance Session — Alumna Seyona Alex",
     "slug": "career-guidance-session-alumna",
     "department": "Arts",
@@ -64,6 +88,12 @@
     "slug": "chavara-cup-2023",
     "department": null,
     "photoCount": 5
+  },
+  {
+    "name": "Cipher 2025",
+    "slug": "cipher-2025",
+    "department": "Science",
+    "photoCount": 4
   },
   {
     "name": "Crescita 2023",
@@ -126,6 +156,18 @@
     "photoCount": 12
   },
   {
+    "name": "Freshers' Day 2026",
+    "slug": "freshers-day-2026",
+    "department": "Science",
+    "photoCount": 7
+  },
+  {
+    "name": "Future Proof Yourself — Grooming, Goals and Employability",
+    "slug": "future-proof-yourself",
+    "department": "Science",
+    "photoCount": 5
+  },
+  {
     "name": "Garjana 2023",
     "slug": "garjana-2023",
     "department": null,
@@ -148,6 +190,12 @@
     "slug": "guest-lecture-on-mechanistic-modeling-of-complex-social-systems",
     "department": "Science",
     "photoCount": 9
+  },
+  {
+    "name": "Higher Education Opportunities & Pathways — Session",
+    "slug": "higher-education-opportunity",
+    "department": "Science",
+    "photoCount": 5
   },
   {
     "name": "IELTS Training Session",
@@ -216,6 +264,12 @@
     "photoCount": 6
   },
   {
+    "name": "Python Programming for Data Analytics — Seminar",
+    "slug": "python-programming-data-analytics",
+    "department": "Science",
+    "photoCount": 4
+  },
+  {
     "name": "Republic Day 2025",
     "slug": "republic-day-2025",
     "department": null,
@@ -250,6 +304,12 @@
     "slug": "technotsav-2023",
     "department": null,
     "photoCount": 23
+  },
+  {
+    "name": "Technotsav 2026",
+    "slug": "technotsav-2026",
+    "department": "Science",
+    "photoCount": 9
   },
   {
     "name": "Udaan 2025",

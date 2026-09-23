@@ -82,6 +82,70 @@ function VisionMissionCard({ title, icon: Icon, statement }) {
   );
 }
 
+// 3D Flip Card for Student Achievements:
+// Front side shows the full image (full width and height without cropping).
+// Hovering (or tapping) flips the card to reveal the full achievement details.
+function AchievementFlipCard({ achievement }) {
+  const [flipped, setFlipped] = useState(false);
+  const title = achievement.title || achievement.name;
+
+  return (
+    <div
+      tabIndex={0}
+      role="button"
+      aria-label={`${title} achievement card - hover or press enter to flip`}
+      onClick={() => setFlipped((prev) => !prev)}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          setFlipped((prev) => !prev);
+        }
+      }}
+      style={{ aspectRatio: '877 / 483' }}
+      className={`flip-card-container group relative w-full cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-cc-gold rounded-cc-lg ${
+        flipped ? 'is-flipped' : ''
+      }`}
+    >
+      <div className="flip-card-inner rounded-cc-lg shadow-cc-sm transition-transform duration-500 group-hover:shadow-cc">
+        {/* Front Face: Full Width & Height Image */}
+        <div className="flip-card-front rounded-cc-lg overflow-hidden border border-cc-gray-200 bg-white shadow-cc-xs flex items-center justify-center">
+          {achievement.photo ? (
+            <img
+              src={achievement.photo}
+              alt={title}
+              className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-[1.01]"
+            />
+          ) : (
+            <div className="flex h-full w-full flex-col items-center justify-center bg-gradient-to-br from-cc-primary via-[#133880] to-[#081534] p-5 text-center text-white">
+              <span className="text-4xl mb-2">{achievement.badge || '🏆'}</span>
+              <h4 className="text-base font-bold">{title}</h4>
+              {achievement.programme && (
+                <p className="text-xs text-cc-gold mt-1">{achievement.programme}</p>
+              )}
+            </div>
+          )}
+        </div>
+
+        {/* Back Face: Full Achievement Details */}
+        <div className="flip-card-back rounded-cc-lg overflow-hidden border-2 border-cc-gold/60 bg-gradient-to-br from-[#0c2356] via-cc-primary to-[#081534] p-4 sm:p-5 text-white shadow-cc flex flex-col justify-center text-left">
+          <h4 className="text-sm sm:text-base font-bold text-white leading-snug">
+            {title}
+          </h4>
+          {achievement.programme && (
+            <span className="mt-1 inline-block text-[11px] font-semibold text-cc-gold">
+              {achievement.programme}
+            </span>
+          )}
+
+          <div className="mt-2.5 text-xs sm:text-[13px] leading-relaxed text-slate-100 overflow-y-auto max-h-[140px] sm:max-h-[170px] pr-1">
+            {achievement.description}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function DepartmentTemplate({
   seoTitle,
   seoDescription,
@@ -712,41 +776,9 @@ export default function DepartmentTemplate({
                   </h2>
                 </div>
 
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
                   {achievements.map((ach, idx) => (
-                    <motion.div
-                      key={idx}
-                      whileHover={{ y: -6, transition: { duration: 0.2 } }}
-                      className="group flex flex-col items-center rounded-cc-lg border border-cc-gray-200 bg-cc-bg-card p-4 sm:p-5 text-center shadow-cc-xs transition-all duration-300 hover:border-cc-primary/50 hover:shadow-cc"
-                    >
-                      {ach.photo ? (
-                        <div className="relative mb-3.5">
-                          <img
-                            src={ach.photo}
-                            alt={ach.name || 'Achievement'}
-                            className="h-16 w-16 sm:h-20 sm:w-20 rounded-full object-cover border-2 border-cc-primary/25 shadow-xs transition-transform duration-300 group-hover:scale-105"
-                          />
-                          <span className="absolute -bottom-1 -right-1 flex h-6 w-6 items-center justify-center rounded-full bg-cc-gold text-xs shadow-xs">
-                            🏆
-                          </span>
-                        </div>
-                      ) : (
-                        <div className="mb-3.5 flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-full bg-gradient-to-br from-cc-primary/15 to-cc-gold/20 text-2xl text-cc-primary shadow-xs transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
-                          {ach.badge || '🏆'}
-                        </div>
-                      )}
-                      <h5 className="text-xs sm:text-sm font-bold text-cc-text-heading line-clamp-1 group-hover:text-cc-primary transition-colors">
-                        {ach.title || ach.name}
-                      </h5>
-                      {ach.programme && (
-                        <p className="mt-0.5 text-[11px] text-cc-primary font-bold">
-                          {ach.programme}
-                        </p>
-                      )}
-                      <p className="mt-2 text-[11px] sm:text-xs text-cc-text-muted-light line-clamp-3 leading-relaxed">
-                        {ach.description}
-                      </p>
-                    </motion.div>
+                    <AchievementFlipCard key={idx} achievement={ach} />
                   ))}
                 </div>
               </motion.section>

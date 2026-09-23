@@ -25,40 +25,17 @@ export default function DepartmentOfCommerceAssociationPage() {
           <div>
             <h2 className="flex items-center gap-2.5">
               <UsersIcon className="h-6 w-6 text-cc-primary shrink-0" />
-              CCCA — Christ College Commerce Association
+              CCCA Activities
             </h2>
             <p className="mt-4 text-cc-text-body">
-              The Christ College Commerce Association (CCCA) is a vital platform for commerce
-              students to extend their academic knowledge beyond classrooms and immerse themselves
-              in real-life corporate scenarios. Throughout the year, CCCA hosts various
-              activities, offering students opportunities to showcase their talents, enhance
-              analytical and decision-making skills, and bridge the gap between theory and
-              practice.
-            </p>
-            <p className="mt-4 text-cc-text-body">
-              The regular meetings and engaging activities, such as presentations, group
-              discussions, debates, and competitions, contribute significantly to the overall
-              development of students. These activities focus on improving academic and creative
-              writing proficiency, communication skills, and personality development.
-            </p>
-            <p className="mt-4 text-cc-text-body">
-              The scope of the association includes organizing workshops and seminars on
-              commerce-related topics, conducting events and competitions to promote interest and
-              understanding among students, and providing networking opportunities with
-              professionals in the field.
-            </p>
-            <p className="mt-4 text-cc-text-body">
-              The series of events conducted by CCCA — such as &ldquo;Synergy in Action,&rdquo;
-              &ldquo;Puzzle Verse,&rdquo; &ldquo;Amazing Amble,&rdquo; and &ldquo;Shark
-              Tank,&rdquo; among many others — demonstrate the association&rsquo;s commitment to
-              fostering collaboration, critical thinking, creativity, and problem-solving skills
-              among its members, ranging from financial simulations to strategic problem-solving
-              and verbal challenges.
-            </p>
-            <p className="mt-4 text-cc-text-body">
-              In essence, the Christ College Commerce Association plays a crucial role in shaping
-              the career prospects of commerce students, providing them with a holistic learning
-              experience and preparing them for success in the dynamic field of commerce.
+              The Christ College Commerce Association (CCCA) acts as a primary vehicle for
+              student-led co-curricular engagement within the department throughout the academic
+              year. By organizing a continuous series of workshops, domain-specific competitions,
+              guest lectures, and interactive forums, the association extends learning beyond
+              traditional classroom boundaries. Its initiatives are structured to build
+              foundational skills in leadership, communication, and team management, helping
+              commerce students develop practical competencies, professional confidence, and
+              holistic industry awareness tailored to modern business environments.
             </p>
           </div>
         </div>

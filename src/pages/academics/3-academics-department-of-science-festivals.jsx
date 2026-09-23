@@ -1,5 +1,6 @@
 import PageHeader from '../../components/PageHeader';
 import Seo from '../../components/Seo';
+import ImageCarousel from '../../components/ImageCarousel';
 import { GridIcon, CalendarIcon } from '../../components/icons';
 import alumniMeet from '../../assets/images/3-academics-department-of-science-festivals/alumni-meet.jpg';
 import electronicsExpo from '../../assets/images/3-academics-department-of-science-festivals/electronics-expo.jpg';
@@ -9,8 +10,39 @@ import mathematicsExpo from '../../assets/images/3-academics-department-of-scien
 import streetPlay from '../../assets/images/3-academics-department-of-science-festivals/street-play.png';
 import systemSphere from '../../assets/images/3-academics-department-of-science-festivals/system-sphere.jpg';
 import technotsav2024 from '../../assets/images/3-academics-department-of-science-festivals/technotsav-2024.jpg';
+import cipher2025_1 from '../../assets/images/gallery/cipher-2025/1.jpg';
+import cipher2025_2 from '../../assets/images/gallery/cipher-2025/2.jpg';
+import cipher2025_3 from '../../assets/images/gallery/cipher-2025/3.jpg';
+import cipher2025_4 from '../../assets/images/gallery/cipher-2025/4.jpg';
+import technotsav2026_1 from '../../assets/images/gallery/technotsav-2026/1.jpg';
+import technotsav2026_2 from '../../assets/images/gallery/technotsav-2026/2.jpg';
+import technotsav2026_3 from '../../assets/images/gallery/technotsav-2026/3.jpg';
+import technotsav2026_4 from '../../assets/images/gallery/technotsav-2026/4.jpg';
+import technotsav2026_5 from '../../assets/images/gallery/technotsav-2026/5.jpg';
+import technotsav2026_6 from '../../assets/images/gallery/technotsav-2026/6.jpg';
+import technotsav2026_7 from '../../assets/images/gallery/technotsav-2026/7.jpg';
+import technotsav2026_8 from '../../assets/images/gallery/technotsav-2026/8.jpg';
+import technotsav2026_9 from '../../assets/images/gallery/technotsav-2026/9.jpg';
+
+const CIPHER_2025_IMAGES = [cipher2025_1, cipher2025_2, cipher2025_3, cipher2025_4];
+const TECHNOTSAV_2026_IMAGES = [
+  technotsav2026_1, technotsav2026_2, technotsav2026_3, technotsav2026_4, technotsav2026_5,
+  technotsav2026_6, technotsav2026_7, technotsav2026_8, technotsav2026_9,
+];
 
 const FESTIVALS = [
+  {
+    name: "Technotsav '26",
+    date: '26 & 27 February 2026',
+    images: TECHNOTSAV_2026_IMAGES,
+    description: "The Department of Science at Christ College, Pune, organised an Intercollegiate Fest, \"Technotsav'26,\" on 26th and 27th February 2026. The fest was designed to provide a dynamic platform for students to showcase their technical expertise, creativity, gaming skills, and stage talents, blending innovation with entertainment. Day one was dedicated to gaming qualifiers; day two brought the Inauguration Ceremony followed by all technical, stage and gaming finals, concluding with a valedictory ceremony. The fest featured seven major events across Technical, Stage and Gaming categories: Code Auction, InTime: Front-End Survival, Borderland: Trails of Numbers, Stranger Strings, House of Moves, Money Heist (Free Fire Tournament) and Hunger Games (BGMI Championship), along with additional events Flappython, Prime Rush and a Lucky Draw.",
+  },
+  {
+    name: "CIPHER '25",
+    date: '29 & 30 August 2025',
+    images: CIPHER_2025_IMAGES,
+    description: "The School of Sciences, Christ University, Lavasa, in collaboration with the Department of Computer Science, Christ College, Pune, successfully organised CIPHER '25 on August 29th and 30th, 2025 — a vibrant technical fest celebrating creativity, innovation, and technical excellence. The event provided an engaging platform for undergraduate Computer Science students to showcase their knowledge, problem-solving abilities, and teamwork through a series of intellectually stimulating competitions: Tech Quest 2025 – Unlock the Genius, Patch the Glitch – Hunt the Bugs Rule the Code, INNOVISION - Solve, Present, Innovate, Campus Conspiracy - Trust No One Solve Everything, TechTales in Reels Competition (Online), and Designovate – Poster Competition (Online).",
+  },
   {
     name: 'Technotsav 2024',
     date: '14 & 15 February 2024',
@@ -66,7 +98,7 @@ export default function DepartmentOfScienceFestivalsPage() {
     <>
       <Seo
         title="Festivals — Department of Science"
-        description="Festivals and technical fests organised by the Department of Science at Christ College, Pune, including Technotsav 2024, Alumni Meet, Mathematics Expo, Electronics Expo, System Sphere Exhibition, Mathletics, Street Play on Computer Security and CRESCITA 22."
+        description="Festivals and technical fests organised by the Department of Science at Christ College, Pune, including Technotsav '26, CIPHER '25, Technotsav 2024, Alumni Meet, Mathematics Expo, Electronics Expo, System Sphere Exhibition, Mathletics, Street Play on Computer Security and CRESCITA 22."
       />
       <PageHeader
         title="Festivals"
@@ -91,7 +123,11 @@ export default function DepartmentOfScienceFestivalsPage() {
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {FESTIVALS.map((item) => (
             <div key={item.name} className="overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-card shadow-cc-sm">
-              {item.image && <img src={item.image} alt={item.name} className="h-40 w-full object-cover" />}
+              {item.images ? (
+                <ImageCarousel images={item.images} alt={item.name} />
+              ) : (
+                item.image && <img src={item.image} alt={item.name} className="h-40 w-full object-cover" />
+              )}
               <div className="p-5">
                 <h3 className="text-base">{item.name}</h3>
                 {item.date && (

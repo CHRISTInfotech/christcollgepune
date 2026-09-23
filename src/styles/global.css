@@ -78,7 +78,9 @@
   transform-style: preserve-3d;
 }
 
-.flip-card-container.is-flipped .flip-card-inner {
+.flip-card-container.is-flipped .flip-card-inner,
+.flip-card-container:hover .flip-card-inner,
+.flip-card-container:focus-within .flip-card-inner {
   transform: rotateY(180deg);
 }
 

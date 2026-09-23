@@ -1,10 +1,28 @@
 import PageHeader from '../../components/PageHeader';
 import Seo from '../../components/Seo';
+import ImageCarousel from '../../components/ImageCarousel';
 import CategorySection from '../../components/CategorySection';
 import { BookIcon, UsersIcon, CompassIcon } from '../../components/icons';
 import workshopItIndustry from '../../assets/images/3-academics-department-of-science-activities/workshop-it-industry.jpeg';
+import aiml1 from '../../assets/images/gallery/aiml-workshop-learn-build-apply/1.jpg';
+import aiml2 from '../../assets/images/gallery/aiml-workshop-learn-build-apply/2.jpg';
+import aiml3 from '../../assets/images/gallery/aiml-workshop-learn-build-apply/3.jpg';
+import aiml4 from '../../assets/images/gallery/aiml-workshop-learn-build-apply/4.jpg';
+import aiml5 from '../../assets/images/gallery/aiml-workshop-learn-build-apply/5.jpg';
+import aiml6 from '../../assets/images/gallery/aiml-workshop-learn-build-apply/6.jpg';
+import aiml7 from '../../assets/images/gallery/aiml-workshop-learn-build-apply/7.jpg';
+import aiml8 from '../../assets/images/gallery/aiml-workshop-learn-build-apply/8.jpg';
+import aiml9 from '../../assets/images/gallery/aiml-workshop-learn-build-apply/9.jpg';
+
+const AIML_WORKSHOP_IMAGES = [aiml1, aiml2, aiml3, aiml4, aiml5, aiml6, aiml7, aiml8, aiml9];
 
 const WORKSHOP = [
+  {
+    name: 'National Workshop on AI & ML — "Learn, Build, Apply"',
+    date: '11 & 12 March 2026',
+    images: AIML_WORKSHOP_IMAGES,
+    description: "The Department of Computer Science, Christ College organised a Two-Day National Workshop on Artificial Intelligence and Machine Learning titled \"Learn, Build, Apply\" on 11th and 12th March 2026, funded by Savitribai Phule Pune University, Pune. The workshop aimed to give participants — faculty members, research scholars, and students — a comprehensive blend of conceptual understanding and hands-on experience in AI and ML, focusing on real-world applications and practical implementation. Its objectives were to build a strong conceptual understanding of AI/ML fundamentals; provide hands-on experience designing, building and evaluating AI/ML models; expose participants to real-world applications and industry trends; enhance analytical, problem-solving and research skills through practical case studies; and promote ethical awareness and responsible use of AI technologies. The organising committee comprised Chief Patron Dr. Fr. Arun Chully, CMI; Organising Secretary Mrs. Nilima Gaikwad; and Convenors Mrs. Nisha More and Mrs. Rasila Walhekar. Speakers included Dr Samiksha Shukla (HoD, Department of CSE-Cyber Security & Head of Research, Dayananda Sagar Academy of Technology and Management, Bangalore), Mr Gopal Parasnis (Head of Transformation, Innovation, and Domain Consulting for the Banking Industry Vertical, Tech Mahindra), Mr Kunal Pagariya (Software Technical Expert, Amdocs India Pvt. Ltd., with expertise in software architecture, Java, Python, Cloud, DevOps, Deep Learning and GenAI Agents), Ms Rupali Memane (Assistant Professor, University of People), Dr Sulaxan Jadhav (Assistant Professor, Symbiosis School of Economics), and Dr Vijayalaxmi (Associate Professor, Christ University, Lavasa).",
+  },
   {
     name: 'Workshop on Career Opportunities in the IT Industry',
     date: '19 December 2023',
@@ -25,14 +43,14 @@ export default function DepartmentOfScienceActivitiesPage() {
   return (
     <>
       <Seo
-        title="Activities — Department of Science"
-        description="Workshops and industrial visits organised by the Department of Science at Christ College, Pune, including the GMRT field visit."
+        title="Conference/Workshop/Exhibitions — Department of Science"
+        description="Workshops and industrial visits organised by the Department of Science at Christ College, Pune, including the National Workshop on AI & ML and the GMRT field visit."
       />
       <PageHeader
-        title="Activities"
+        title="Conference/Workshop/Exhibitions"
         breadcrumbs={[
           { label: 'Department of Science', path: '/academics/department-of-science/department-page' },
-          { label: 'Activities' },
+          { label: 'Conference/Workshop/Exhibitions' },
         ]}
       />
 
