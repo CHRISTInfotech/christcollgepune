@@ -1,0 +1,124 @@
+FACULTY PROFILE PAGE — INFORMATION TO COLLECT FROM EACH EMPLOYEE
+(Reference design: https://lavasa.christuniversity.in/computer-science/faculty-details/)
+
+Send this list to each faculty member and ask them to fill in whatever applies.
+Leave anything blank if it doesn't apply to them — blank sections simply won't
+show up on their profile page. Do not paraphrase their answers; use their exact
+wording/titles as given.
+
+--------------------------------------------------------------------------------
+BASIC DETAILS (needed for every faculty member, shown at the top of the page)
+--------------------------------------------------------------------------------
+- Full Name (with title, e.g. Dr./Mr./Ms./Fr.)
+- Designation (e.g. Assistant Professor, Associate Professor, HOD, Professor)
+- Department
+- Qualification(s) (e.g. MCA, PhD, M.Com, NET/SET — comma separated)
+- Specialization / Area of Expertise
+- Official Email ID
+- Contact Number (optional — confirm they're OK making this public)
+- Photograph (passport-size, plain background, JPG/PNG, min 400x400px)
+
+--------------------------------------------------------------------------------
+1. PROFILE
+--------------------------------------------------------------------------------
+- A short written bio in their own words (3–6 sentences): current role, subjects
+  taught, research interests, and any notable contribution to the department.
+
+--------------------------------------------------------------------------------
+2. ARTICLES IN JOURNALS
+--------------------------------------------------------------------------------
+For EACH published article:
+- Title of the article
+- Journal name
+- Year of publication
+- Volume / Issue number (if available)
+- ISSN / DOI (if available)
+- Indexing (UGC-CARE / Scopus / Web of Science / Peer-reviewed / etc.)
+- Co-author names (if any)
+
+--------------------------------------------------------------------------------
+3. BOOK CHAPTERS / ARTICLES
+--------------------------------------------------------------------------------
+For EACH book chapter or article in an edited book:
+- Chapter/article title
+- Book title
+- Editor(s) / Publisher name
+- Year of publication
+- ISBN
+- Co-author names (if any)
+
+--------------------------------------------------------------------------------
+4. PARTICIPATION IN CONFERENCES / SEMINARS / SYMPOSIUM
+--------------------------------------------------------------------------------
+For EACH conference/seminar/symposium attended or presented at:
+- Title of paper presented (or "Attended" if no paper)
+- Name of the conference/seminar/symposium
+- Organizing institution
+- Dates (From – To)
+- Level (National / International)
+- Mode (Online / Offline), if relevant
+
+--------------------------------------------------------------------------------
+5. INVITED TALKS
+--------------------------------------------------------------------------------
+For EACH invited talk / guest lecture delivered:
+- Topic of the talk
+- Host institution / organization
+- Date
+- Audience/occasion (optional, e.g. "FDP for junior faculty")
+
+--------------------------------------------------------------------------------
+6. PATENTS
+--------------------------------------------------------------------------------
+For EACH patent:
+- Title of the invention
+- Patent application/registration number
+- Status (Filed / Published / Granted)
+- Inventor names
+- Year
+- Field of invention
+
+--------------------------------------------------------------------------------
+7. RESEARCH PROJECTS
+--------------------------------------------------------------------------------
+For EACH research project (ongoing or completed):
+- Title of the project
+- Funding/sponsoring agency
+- Role (Principal Investigator / Co-Investigator / Team member)
+- Duration (start – end, or "Ongoing")
+- Grant amount (optional)
+
+--------------------------------------------------------------------------------
+8. WORKSHOPS / FDP / TRAINING PROGRAMMES
+--------------------------------------------------------------------------------
+For EACH workshop / Faculty Development Programme / training attended or conducted:
+- Title of the workshop/FDP/training
+- Organizing institution
+- Dates (From – To)
+- Role (Participant / Organizer / Resource Person / Trainer)
+
+--------------------------------------------------------------------------------
+9. AWARDS / ACHIEVEMENTS / OTHERS
+--------------------------------------------------------------------------------
+For EACH award/achievement:
+- Name/title of the award or achievement
+- Awarding body/organization
+- Year
+- Brief reason/context (optional, one line)
+
+--------------------------------------------------------------------------------
+10. CONSULTANCY
+--------------------------------------------------------------------------------
+For EACH consultancy assignment:
+- Organization/client name
+- Nature of the consultancy work (brief description)
+- Duration (From – To)
+
+--------------------------------------------------------------------------------
+NOTES FOR WHOEVER COLLECTS THIS
+--------------------------------------------------------------------------------
+- Collect a filled copy of this file (or a Google Form/Sheet with the same
+  fields) per faculty member.
+- Photo should be sent separately as an actual image file, not pasted into text.
+- Most faculty will only fill in Basic Details + Profile — that's fine; the rest
+  are optional per-entry lists and should only appear if they have real content.

@@ -12,6 +12,12 @@
     "photoCount": 9
   },
   {
+    "name": "AI Logic Hunt 2026",
+    "slug": "ai-logic-hunt-2026",
+    "department": "Management",
+    "photoCount": 2
+  },
+  {
     "name": "AARAMBH 2026",
     "slug": "aarambh-2026",
     "department": "Science",
@@ -40,6 +46,12 @@
     "slug": "blood-donation-2023",
     "department": null,
     "photoCount": 6
+  },
+  {
+    "name": "Book Review Competition",
+    "slug": "book-review-competition",
+    "department": "Management",
+    "photoCount": 2
   },
   {
     "name": "CCSA Inauguration 2026",
@@ -78,6 +90,12 @@
     "photoCount": 4
   },
   {
+    "name": "Can AI Be Creative?",
+    "slug": "can-ai-be-creative",
+    "department": "Management",
+    "photoCount": 5
+  },
+  {
     "name": "Career Guidance Session — Alumna Seyona Alex",
     "slug": "career-guidance-session-alumna",
     "department": "Arts",
@@ -106,6 +124,12 @@
     "slug": "data-driven-decision-making-the-role-of-mathematics-and-statistics-in-computer-science",
     "department": "Science",
     "photoCount": 6
+  },
+  {
+    "name": "Cybersecurity Careers & Beyond: Shaping Tomorrow's Tech Talent",
+    "slug": "cybersecurity-careers-beyond",
+    "department": "Management",
+    "photoCount": 4
   },
   {
     "name": "Demystifying Cyber Security",
@@ -150,6 +174,18 @@
     "photoCount": 9
   },
   {
+    "name": "Fiesta 2025",
+    "slug": "fiesta-2025",
+    "department": "Management",
+    "photoCount": 2
+  },
+  {
+    "name": "FINQUEST '25",
+    "slug": "finquest-25",
+    "department": "Management",
+    "photoCount": 2
+  },
+  {
     "name": "Fiesta Management Fest",
     "slug": "fiesta-management-fest",
     "department": null,
@@ -190,6 +226,18 @@
     "slug": "guest-lecture-on-mechanistic-modeling-of-complex-social-systems",
     "department": "Science",
     "photoCount": 9
+  },
+  {
+    "name": "Heritage Walk — BotaniXpedition",
+    "slug": "heritage-walk",
+    "department": "Management",
+    "photoCount": 2
+  },
+  {
+    "name": "Healthy Interpersonal Relationships Among Young Adults",
+    "slug": "healthy-interpersonal-relationships",
+    "department": "Management",
+    "photoCount": 5
   },
   {
     "name": "Higher Education Opportunities & Pathways — Session",
@@ -234,6 +282,12 @@
     "photoCount": 5
   },
   {
+    "name": "Investor Awareness Session",
+    "slug": "investor-awareness-session",
+    "department": "Management",
+    "photoCount": 3
+  },
+  {
     "name": "Joy of Giving",
     "slug": "joy-of-giving",
     "department": null,
@@ -252,16 +306,34 @@
     "photoCount": 23
   },
   {
+    "name": "Market Square & Manifest 2026",
+    "slug": "market-square-manifest-2026",
+    "department": "Management",
+    "photoCount": 2
+  },
+  {
     "name": "National Integration Camp 2026",
     "slug": "national-integration-camp-2026",
     "department": null,
     "photoCount": 8
   },
   {
+    "name": "NSE-Supported Investor Awareness Programme — Samriddhi: Important Aspects of Active Investing",
+    "slug": "samriddhi-investor-awareness",
+    "department": "Management",
+    "photoCount": 2
+  },
+  {
     "name": "Observed Climate Change over the Indian Region — Seminar",
     "slug": "observed-climate-change-seminar",
     "department": "Arts",
     "photoCount": 6
+  },
+  {
+    "name": "PULSE 2025",
+    "slug": "pulse-2025",
+    "department": "Management",
+    "photoCount": 2
   },
   {
     "name": "Python Programming for Data Analytics — Seminar",
@@ -282,6 +354,12 @@
     "photoCount": 7
   },
   {
+    "name": "SAMVAAD '2025",
+    "slug": "samvaad-2025",
+    "department": "Management",
+    "photoCount": 2
+  },
+  {
     "name": "Science Exhibition 2024",
     "slug": "science-exhibition-2024",
     "department": null,
@@ -294,10 +372,22 @@
     "photoCount": 8
   },
   {
+    "name": "Spark the Brand",
+    "slug": "spark-the-brand",
+    "department": "Management",
+    "photoCount": 2
+  },
+  {
     "name": "Syntnia MUN 2025",
     "slug": "syntnia-mun-2025",
     "department": null,
     "photoCount": 9
+  },
+  {
+    "name": "TATVA 2025",
+    "slug": "tatva-2025",
+    "department": "Management",
+    "photoCount": 2
   },
   {
     "name": "Technotsav 2023",
@@ -310,6 +400,12 @@
     "slug": "technotsav-2026",
     "department": "Science",
     "photoCount": 9
+  },
+  {
+    "name": "The Success Blueprint: Interview & Attitude Essentials",
+    "slug": "success-blueprint-interview-attitude",
+    "department": "Management",
+    "photoCount": 3
   },
   {
     "name": "Udaan 2025",

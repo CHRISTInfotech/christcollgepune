@@ -19,6 +19,10 @@ import seminarHrDigitalAge from '../../assets/images/3-academics-department-of-m
 import seminarTransformingChallenges from '../../assets/images/3-academics-department-of-management-activities/seminar-on-transforming-challenges-into-opportunities-the-fu.jpg';
 import seminarDabbawala from '../../assets/images/3-academics-department-of-management-activities/seminar-on-the-supply-chain-management-of-mumbai-dabbawala.jpg';
 import seminarTime from '../../assets/images/3-academics-department-of-management-activities/seminar-on-t-i-m-e-building-your-professional-identity.jpg';
+import samriddhi1 from '../../assets/images/gallery/samriddhi-investor-awareness/1.jpg';
+import samriddhi2 from '../../assets/images/gallery/samriddhi-investor-awareness/2.jpg';
+import samvaad1 from '../../assets/images/gallery/samvaad-2025/1.jpg';
+import samvaad2 from '../../assets/images/gallery/samvaad-2025/2.jpg';
 
 const SEMINAR = [
   {
@@ -141,24 +145,43 @@ const SEMINAR = [
 
 const CORPORATE_CONNECT = [
   {
+    name: 'SPPU Startup Talk Series — Conversation with Young Entrepreneurs',
+    date: '9 February 2026',
+    description: 'The Department of Management, in association with Nirmiti Startup and Innovation Centre and IQAC, Christ College Pune, organized an interactive session under the SPPU Startup Talk Series – “Conversation with Young Entrepreneurs” on 9th February 2026. The session featured Mr. Bapu Shivaji Narute, an entrepreneur and founder of Manashanti Chaibar, who shared his inspiring journey from a school teacher to a successful entrepreneur. Students gained practical insights into identifying business opportunities, prototyping, fundraising, revenue models, networking, and entrepreneurial resilience. The session encouraged students to develop an entrepreneurial mindset and view everyday challenges as opportunities for innovation and sustainable business creation.',
+  },
+  {
+    name: 'Finance Unfiltered: Insider Perspectives on Careers',
+    date: '23 January 2026',
+    description: 'The Department of Management, Christ College Pune, organized the Corporate Talk “Finance Unfiltered: Insider Perspectives on Careers” on 23rd January 2026, offering students valuable exposure to the finance and consulting sectors. Industry professionals Mr. Tejas Mahesh Shinde, Financial Analyst at BNY, and Mr. Akshay Chemte, Associate Consultant at Infosys Ltd., shared practical insights on career opportunities, industry expectations, professional skills, and corporate culture. The interactive session enabled students to understand career pathways and the transition from academics to the corporate world. The programme successfully bridged the gap between classroom learning and industry requirements while motivating students to make informed career choices.',
+  },
+  {
+    name: 'SAMVAAD ’2025',
+    date: '13 September 2025',
+    images: [samvaad1, samvaad2],
+    description: 'The Department of Management, Christ College Pune, organized SAMVAAD ’2025 on 13th September 2025, focusing on the theme “Future-Ready Managers: Integrating Business Functions for Tomorrow’s Challenges.” The industry–academia interaction featured distinguished experts from Quick Heal, OpenGov Inc., Marsh McLennan, and ProMiles Management Consulting, who shared valuable insights on leadership, innovation, risk management, technology, and entrepreneurship. The programme enabled students to connect academic learning with industry expectations while developing strategic thinking, analytical, communication, and employability skills. SAMVAAD ’25 successfully strengthened industry–institute collaboration and inspired students to become adaptable and future-ready management professionals.',
+  },
+  {
+    name: 'Business Voices – Future Leaders Lab 1.0',
+    date: '23 August 2025',
+    description: 'The Department of Management, Christ College Pune, in collaboration with BNI Foundation, organized Business Voices – Future Leaders Lab 1.0 on 23rd August 2025. The session, “Level Up Your Voice! Expression with Clarity and Respect,” was facilitated by Clinical Psychologist and Psychotherapist Ms. Poorva Sahasrabudhe, focusing on confident, empathetic, and effective communication. Students explored active listening, emotional regulation, assertive communication, and techniques to overcome stage fear and communication anxiety. The interactive session empowered students to express themselves with greater clarity, confidence, and respect, strengthening essential skills for personal and professional success.',
+  },
+  {
+    name: 'NSE-Supported Investor Awareness Programme — Samriddhi: Important Aspects of Active Investing',
+    date: '20 August 2025',
+    images: [samriddhi1, samriddhi2],
+    description: 'The Department of Management, Christ College Pune, organized an NSE-Supported Investor Awareness Programme, “Samriddhi: Important Aspects of Active Investing,” on 20th August 2025 for SY and TY students. The session was conducted by Ms. Jyoti Agarwal, SEBI SMART Trainer & Financial Professional, in association with Krisha Foundation. The programme provided students with practical insights into capital markets, active investing, risk management, investor protection, and safe investment practices. With 143 students participating, the session successfully enhanced financial literacy and encouraged students to adopt disciplined and informed approaches to long-term wealth creation.',
+  },
+  {
     name: 'IndusInd Bank Visit',
     date: '22 January 2025',
     description: 'Christ College Pune organized an industrial visit to IndusInd Bank\'s Magarpatta branch for TY BBA and SY BBA students, accompanied by Prof. Bitto Benny and Prof. Siju. Students explored customer service, cash handling, and loan processing, with a Q&A session with branch head Mr. Mehul Soni covering digitalization, career opportunities, and the role of the RBI.',
-  },
-  {
-    name: 'Leadership Conclave',
   },
   {
     name: 'Orientation on the Foundation of the Pune Management Association Student Chapter',
     date: '10 January 2024',
     description: 'Mr. Rahul Joshi conducted a seminar giving students a comprehensive understanding of the objectives and activities of the Pune Management Association (PMA) Student Chapter, highlighting events, workshops, and initiatives to develop leadership qualities, industry insights, and managerial acumen.',
   },
-  {
-    name: 'Sagitech',
-  },
-  {
-    name: 'United Way of Chennai',
-  },
+
 ];
 
 export default function DepartmentOfManagementFacultyPublicationsPage() {
@@ -166,7 +189,7 @@ export default function DepartmentOfManagementFacultyPublicationsPage() {
     <>
       <Seo
         title="Seminars/ Corporate Connect — Department of Management"
-        description="Seminars and corporate connect sessions organised by the Department of Management at Christ College, Pune."
+        description="Seminars and corporate connect sessions organised by the Department of Management at Christ College, Pune, including SAMVAAD '2025, the Samriddhi investor awareness programme, Business Voices – Future Leaders Lab, and the SPPU Startup Talk Series."
       />
       <PageHeader
         title="Seminars/ Corporate Connect"

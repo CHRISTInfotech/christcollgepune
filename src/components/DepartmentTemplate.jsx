@@ -42,7 +42,7 @@ function splitSentences(text) {
 
 // Shows only the first few sentences of a paragraph set, with a Read more /
 // Show less toggle that reveals the full paragraphs.
-function ExpandableText({ paragraphs = [], sentenceLimit = 3, quote = false, className = '' }) {
+function ExpandableText({ paragraphs = [], sentenceLimit = 3, quote = false, className = '', boldLastParagraph = false }) {
   const [expanded, setExpanded] = useState(false);
   const sentences = splitSentences(paragraphs.join(' '));
   const preview = sentences.slice(0, sentenceLimit).join(' ');
@@ -53,7 +53,14 @@ function ExpandableText({ paragraphs = [], sentenceLimit = 3, quote = false, cla
     <>
       <div className={className}>
         {expanded
-          ? paragraphs.map((para, idx) => <p key={idx}>{wrap(para)}</p>)
+          ? paragraphs.map((para, idx) => (
+              <p
+                key={idx}
+                className={boldLastParagraph && idx === paragraphs.length - 1 ? 'font-bold text-cc-primary' : undefined}
+              >
+                {wrap(para)}
+              </p>
+            ))
           : <p>{wrap(preview)}</p>}
       </div>
       {hasMore && (
@@ -578,6 +585,7 @@ export default function DepartmentTemplate({
               <ExpandableText
                 paragraphs={aboutParagraphs}
                 sentenceLimit={3}
+                boldLastParagraph
                 className="mt-5 flex-1 text-sm sm:text-base text-cc-text-body leading-relaxed text-justify space-y-4"
               />
             </motion.section>
