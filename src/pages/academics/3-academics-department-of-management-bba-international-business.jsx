@@ -50,12 +50,24 @@ export default function BbaInternationalBusiness() {
         description="BBA (International Business) at Christ College, Pune gives students a global outlook, managerial and entrepreneurial skills, and cross-cultural exposure to international trade, global marketing and finance."
       />
       <PageHeader
-        title="BBA (International Business)"
         breadcrumbs={[{ label: 'Department of Management', path: '/academics/department-of-management/department-page' }, { label: 'BBA (International Business)' }]}
       />
 
       <section className="mx-auto max-w-[1200px] px-6 py-16">
-        <img src={banner} alt="BBA (International Business)" className="w-full rounded-cc-lg border border-cc-gray-200 object-cover shadow-cc-sm" />
+        <div className="relative flex min-h-[220px] sm:min-h-[280px] flex-col items-center justify-center overflow-hidden rounded-cc-lg border border-cc-gray-200 text-center shadow-cc-sm">
+          <img
+            src={banner}
+            alt="BBA (International Business)"
+            className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-cc-primary-deeper/95 via-cc-primary/88 to-cc-primary-dark/95" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-black/20 to-black/50" />
+          <div className="relative z-10 w-full max-w-full px-6 py-10">
+            <h1 className="whitespace-nowrap text-[clamp(0.75rem,3.8vw,3.25rem)] font-extrabold tracking-wide uppercase text-white drop-shadow-md [text-align-last:center]">
+              BBA (International Business)
+            </h1>
+          </div>
+        </div>
 
         <div className="mt-10 grid gap-10 lg:grid-cols-[1.4fr_1fr]">
           <div>

@@ -68,13 +68,15 @@ export default function PageHeader({ title, breadcrumbs = [], headingRef }) {
         </div>
       )}
 
-      <div className="bg-[image:var(--gradient-hero)] py-8">
-        <div className="mx-auto max-w-[1200px] px-6">
-          <h1 tabIndex={-1} ref={headingRef} className="text-cc-text-light outline-none">
-            {title}
-          </h1>
+      {title && (
+        <div className="bg-[image:var(--gradient-hero)] py-8">
+          <div className="mx-auto max-w-[1200px] px-6">
+            <h1 tabIndex={-1} ref={headingRef} className="text-cc-text-light outline-none">
+              {title}
+            </h1>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }

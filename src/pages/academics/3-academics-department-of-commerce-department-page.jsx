@@ -5,6 +5,8 @@ import desafio from '../../assets/images/3-academics-department-of-commerce-depa
 import ccca from '../../assets/images/3-academics-department-of-commerce-department-page/ccca.jpg';
 import webinar from '../../assets/images/3-academics-department-of-commerce-department-page/webinar.jpg';
 import facultyPublications from '../../assets/images/3-academics-department-of-commerce-department-page/faculty-publications.jpg';
+import achievementMansiNege5thRank from '../../assets/images/3-academics-department-of-commerce-department-page/achievement-mansi-nege-5th-rank.jpg';
+import achievementRankHolders from '../../assets/images/3-academics-department-of-commerce-department-page/achievement-mansi-pratyusha-rank-holders.png';
 import { getTestimonialsByDepartment } from '../../data/testimonials';
 
 const PROGRAMMES = [
@@ -21,6 +23,21 @@ const ACTIVITIES = [
   { name: 'CCCA', description: 'Christ College Commerce Association - organizes workshops, seminars, competitions, and cultural events.', image: ccca, path: '/academics/department-of-commerce/association' },
   { name: 'Conference/Workshop/Exhibitions', description: 'Interactive webinars and guest lectures from industry and academic experts.', image: webinar, path: '/academics/department-of-commerce/activities' },
   { name: 'Seminars/ Corporate Connect', description: 'Scholarly research publications contributing to advanced academic knowledge.', image: facultyPublications, path: '/academics/department-of-commerce/seminars-and-corporate-connect' },
+];
+
+const ACHIEVEMENTS = [
+  {
+    name: 'Mansi Nege',
+    programme: 'M.Com',
+    description: 'M.Com student Ms. Mansi Nege secured 5th Rank in the University Examination 2023, bringing pride to the Department of Commerce, Christ College, Pune. Her achievement reflects her dedication, hard work, and commitment to academic excellence.',
+    photo: achievementMansiNege5thRank,
+  },
+  {
+    name: 'Mansi Nege & Pratyusha Talukder',
+    programme: 'M.Com',
+    description: 'M.Com students Ms. Mansi Nege and Ms. Pratyusha Talukder secured 4th Rank and 9th Rank, respectively, in the University Examination 2023 for the subject of Cost & Works Accounting. Their outstanding performance reflects their dedication, hard work, and academic excellence, bringing pride to the Department of Commerce, Christ College, Pune.',
+    photo: achievementRankHolders,
+  },
 ];
 
 const TESTIMONIALS = getTestimonialsByDepartment('commerce');
@@ -48,6 +65,7 @@ export default function DepartmentOfCommercePage() {
         ],
       }}
       activities={ACTIVITIES}
+      achievements={ACHIEVEMENTS}
       testimonials={TESTIMONIALS}
     />
   );

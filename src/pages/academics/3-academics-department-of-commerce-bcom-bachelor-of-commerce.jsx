@@ -50,7 +50,6 @@ export default function BcomBachelorOfCommerce() {
         description="The BCom (Bachelor of Commerce) programme at Christ College, Pune offers a comprehensive education in accounting, finance, taxation and business management, preparing students for professional careers globally."
       />
       <PageHeader
-        title="BCom (Bachelor of Commerce)"
         breadcrumbs={[
           { label: 'Department of Commerce', path: '/academics/department-of-commerce/department-page' },
           { label: 'BCom (Bachelor of Commerce)' }
@@ -58,7 +57,20 @@ export default function BcomBachelorOfCommerce() {
       />
 
       <section className="mx-auto max-w-[1200px] px-6 py-16">
-        <img src={banner} alt="BCom (Bachelor of Commerce)" className="w-full rounded-cc-lg border border-cc-gray-200 object-cover shadow-cc-sm" />
+        <div className="relative flex min-h-[220px] sm:min-h-[280px] flex-col items-center justify-center overflow-hidden rounded-cc-lg border border-cc-gray-200 text-center shadow-cc-sm">
+          <img
+            src={banner}
+            alt="BCom (Bachelor of Commerce)"
+            className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-cc-primary-deeper/95 via-cc-primary/88 to-cc-primary-dark/95" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-black/20 to-black/50" />
+          <div className="relative z-10 w-full max-w-full px-6 py-10">
+            <h1 className="whitespace-nowrap text-[clamp(0.75rem,3.8vw,3.25rem)] font-extrabold tracking-wide uppercase text-white drop-shadow-md [text-align-last:center]">
+              BCom (Bachelor of Commerce)
+            </h1>
+          </div>
+        </div>
 
         <div className="mt-10 grid gap-10 lg:grid-cols-[1.4fr_1fr]">
           <div>

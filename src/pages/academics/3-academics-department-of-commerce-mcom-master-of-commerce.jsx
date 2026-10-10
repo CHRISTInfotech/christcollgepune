@@ -50,7 +50,6 @@ export default function McomMasterOfCommerce() {
         description="The MCom (Master of Commerce) postgraduate programme at Christ College, Pune offers advanced study in accounting, finance, taxation, and research methodologies, preparing students for managerial and research careers."
       />
       <PageHeader
-        title="MCom (Master of Commerce)"
         breadcrumbs={[
           { label: 'Department of Commerce', path: '/academics/department-of-commerce/department-page' },
           { label: 'MCom (Master of Commerce)' }
@@ -58,7 +57,20 @@ export default function McomMasterOfCommerce() {
       />
 
       <section className="mx-auto max-w-[1200px] px-6 py-16">
-        <img src={banner} alt="MCom (Master of Commerce)" className="w-full rounded-cc-lg border border-cc-gray-200 object-cover shadow-cc-sm" />
+        <div className="relative flex min-h-[220px] sm:min-h-[280px] flex-col items-center justify-center overflow-hidden rounded-cc-lg border border-cc-gray-200 text-center shadow-cc-sm">
+          <img
+            src={banner}
+            alt="MCom (Master of Commerce)"
+            className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-cc-primary-deeper/95 via-cc-primary/88 to-cc-primary-dark/95" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-black/20 to-black/50" />
+          <div className="relative z-10 w-full max-w-full px-6 py-10">
+            <h1 className="whitespace-nowrap text-[clamp(0.75rem,3.8vw,3.25rem)] font-extrabold tracking-wide uppercase text-white drop-shadow-md [text-align-last:center]">
+              MCom (Master of Commerce)
+            </h1>
+          </div>
+        </div>
 
         <div className="mt-10 grid gap-10 lg:grid-cols-[1.4fr_1fr]">
           <div>
@@ -67,17 +79,14 @@ export default function McomMasterOfCommerce() {
               Programme Overview
             </h2>
             <p className="mt-4 text-cc-text-body leading-relaxed">
-              A higher education program for students seeking a postgraduate degree in commerce, MCom at Christ College 
-              Pune enables them to accept the challenges of the business world by providing opportunities for the study 
-              and analysis of advanced commercial and business methods and processes. The program focuses on equipping 
-              students to seek suitable careers in management and entrepreneurship.
-            </p>
-            <p className="mt-4 text-cc-text-body leading-relaxed">
-              This two-year program at Christ College Pune will acquaint students with the significance of research in 
-              business, skills of data collection & interpretations, communication and analytical skills. The MCom program 
-              offered is outcome-based, which enhances the horizon of knowledge so as to enable the learners to carry out 
-              qualitative research and pursue academic or professional careers, develop problem analysis skills, and foster 
-              the ability to engage in lifelong learning.
+              A higher education institute for students seeking post graduate programs in commerce, which enables them to
+              accept the challenges of the business world by providing opportunities for study and analysis of advanced
+              commercial and business methods and processes. A program which focuses on equipping students to seek
+              suitable careers in management and entrepreneurship. This two-year program at CHRIST College- Pune will
+              acquaint students with significance of research in business, skills of data collection & interpretations,
+              communication and analytical skills. The M. Com program offered is outcome based which enhances the horizon
+              of knowledge so as to enable the learners to carry out qualitative research and pursue academic or
+              professional careers, develop problem analysis skills and foster the ability to engage in life -long learning.
             </p>
 
             <h3 className="mt-8 text-base flex items-center gap-2">
