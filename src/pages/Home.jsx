@@ -565,7 +565,7 @@ export default function Home() {
       />
       <h1 className="sr-only">Christ College Pune - Shaping Minds, Building Character</h1>
 
-      {/* MIT-Style Announcement Marquee Bar */}
+      {/* MIT-Style Announcement Marquee Bar
       <div className="w-full border-y border-slate-200 bg-white py-2 shadow-[0_1px_3px_rgba(0,0,0,0.03)]">
         <div className="w-full overflow-hidden">
           <marquee
@@ -593,6 +593,7 @@ export default function Home() {
           </marquee>
         </div>
       </div>
+      */}
 
       <motion.section
         className="bg-cc-bg-card px-4 py-6 md:px-6"
@@ -601,11 +602,12 @@ export default function Home() {
         variants={fadeInUp}
         transition={emphasis}
       >
-        <div className="grid gap-4 lg:grid-cols-[1fr_240px] lg:items-start">
+        <div className="grid gap-4">
           <div className="relative flex aspect-[16/9] flex-col justify-end overflow-hidden rounded-cc-lg bg-gradient-to-br from-[#3b0409] via-[#610912] to-[#1e0205] shadow-inner sm:aspect-[21/9] lg:aspect-[2.2/1]">
             <HeroVideo />
           </div>
 
+          {/* Admissions sidebar card
           <aside className="flex flex-col rounded-cc-lg border border-cc-gray-200 bg-cc-bg-surface p-4">
             <div className="flex items-center gap-3 border-b border-cc-gray-200 pb-4">
               <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-cc-md bg-cc-primary/10 text-cc-primary">
@@ -648,6 +650,7 @@ export default function Home() {
               </Link>
             </div>
           </aside>
+          */}
         </div>
       </motion.section>
 

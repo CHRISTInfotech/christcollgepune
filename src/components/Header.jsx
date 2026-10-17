@@ -135,21 +135,26 @@ export default function Header({ isDrawerOpen, onToggleDrawer, onCloseDrawer }) 
         }`}
       >
         <div className="mx-auto flex h-full max-w-[1200px] items-center justify-between gap-4 px-6">
-          <div className="flex items-center gap-3 sm:gap-4">
+          <div className="flex items-center gap-4 sm:gap-5">
             <Link to="/" className="flex h-full items-center" onClick={onCloseDrawer}>
-              <img src={logo} alt="Christ College Pune" className="h-12 sm:h-14 w-auto" />
+              <img src={logo} alt="Christ College Pune" className="h-16 sm:h-20 w-auto" />
             </Link>
+            <span className="hidden sm:block h-10 w-px shrink-0 bg-white/20" aria-hidden="true" />
             <Link
               to="/naac-iqac/naac-accreditation/naac-certificate-cycle-2"
               title="NAAC Accredited 'A+' Grade — View Certificate"
               onClick={onCloseDrawer}
-              className="group flex items-center transition-transform duration-300 hover:scale-105"
+              className="group flex items-center gap-2 transition-transform duration-300 hover:scale-105"
             >
               <img
                 src={naacSealImg}
                 alt="NAAC Accredited Grade A+"
-                className="h-10 w-10 sm:h-12 sm:w-12 drop-shadow-[0_2px_8px_rgba(0,0,0,0.35)] transition-transform duration-300 group-hover:rotate-6 rounded-full"
+                className="h-11 w-11 sm:h-12 sm:w-12 shrink-0 drop-shadow-[0_2px_8px_rgba(0,0,0,0.35)] transition-transform duration-300 group-hover:rotate-6 rounded-full"
               />
+              <span className="hidden md:flex flex-col leading-tight">
+                <span className="text-[11px] font-bold uppercase tracking-wide text-cc-gold">NAAC A+</span>
+                <span className="text-[10px] font-medium uppercase tracking-wide text-cc-text-muted">Accredited</span>
+              </span>
             </Link>
           </div>
 
