@@ -246,6 +246,7 @@ export default function Header({ isDrawerOpen, onToggleDrawer, onCloseDrawer }) 
         </div>
 
         <div className="flex gap-3 px-6 pt-5">
+          {/* Admission quick-link
           <Link
             to="/admissions/online-application-instructions"
             onClick={onCloseDrawer}
@@ -253,6 +254,7 @@ export default function Header({ isDrawerOpen, onToggleDrawer, onCloseDrawer }) 
           >
             Admission
           </Link>
+          */}
           <Link
             to="/"
             onClick={onCloseDrawer}
