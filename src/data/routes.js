@@ -111,11 +111,11 @@ export function buildNavSections() {
     {
       label: 'Admissions',
       items: [
-        pick('Application Form for UG'),
-        pick('Application Form for PG'),
-        pick('Online Application Instructions', '', 'Instructions for Online Application Form'),
+        // pick('Application Form for UG'),
+        // pick('Application Form for PG'),
+        // pick('Online Application Instructions', '', 'Instructions for Online Application Form'),
         pick('Miscellaneous Information'),
-        pick('International / NRI Student'),
+        // pick('International / NRI Student'),
         pick('Cancellation Policy'),
         pick('Application Queries'),
         pick('Fees Regulating Authority (FRA)', '', 'Fees Regulating Authority(FRA)'),
