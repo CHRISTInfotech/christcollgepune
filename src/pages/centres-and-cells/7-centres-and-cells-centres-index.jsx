@@ -25,7 +25,7 @@ import imgElc from '../../assets/centres/thumbs/electoral_literacy_club.png';
 import imgSgrc from '../../assets/centres/thumbs/student_grievance_redressal_cell.png';
 
 const CENTRES = [
-  { name: 'IQAC', image: imgIqac, path: '/naac-iqac/naac-accreditation/ssr-cycle-2-supporting-documents' },
+  { name: 'IQAC', image: imgIqac, path: '/naac-iqac/iqac/about-iqac' },
   { name: 'Centre For Health and Wellness', image: imgHealth, path: '/centres-and-cells/centre-for-health-and-wellness/activities' },
   { name: 'Nature Club', image: imgNature, path: '/centres-and-cells/nature-club' },
   { name: 'Nirmiti Start Up and Innovation Centre', image: imgNirmiti, path: '/centres-and-cells/nirmiti-start-up-and-innovation-centre' },
