@@ -46,11 +46,14 @@ export default function GalleryPage() {
     return eventSlug ? galleryEvents.find((e) => e.slug === eventSlug) || null : null;
   });
 
+  // Synchronizes with the URL (an external system) so links/back-forward
+  // navigation to a different ?event= after mount still open that event.
   useEffect(() => {
     const eventSlug = searchParams.get('event');
     if (eventSlug) {
       const match = galleryEvents.find((e) => e.slug === eventSlug);
       if (match) {
+        // oxlint-disable-next-line react/set-state-in-effect
         setOpenEvent(match);
       }
     }

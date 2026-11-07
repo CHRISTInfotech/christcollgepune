@@ -33,6 +33,7 @@ export default function PdfFlipBook({ fileUrl, title }) {
   const bookRef = useRef(null);
   const pdfRef = useRef(null);
   const renderingRef = useRef(new Set());
+  const pageImagesRef = useRef({});
 
   const [numPages, setNumPages] = useState(0);
   const [pageImages, setPageImages] = useState({});
@@ -75,7 +76,12 @@ export default function PdfFlipBook({ fileUrl, title }) {
       const ctx = canvas.getContext('2d');
       await page.render({ canvasContext: ctx, viewport }).promise;
       const dataUrl = canvas.toDataURL('image/jpeg', 0.85);
-      setPageImages((prev) => (prev[pageNumber] ? prev : { ...prev, [pageNumber]: dataUrl }));
+      setPageImages((prev) => {
+        if (prev[pageNumber]) return prev;
+        const next = { ...prev, [pageNumber]: dataUrl };
+        pageImagesRef.current = next;
+        return next;
+      });
     } catch {
       /* skip a page that fails to render rather than breaking the whole book */
     } finally {
@@ -85,14 +91,12 @@ export default function PdfFlipBook({ fileUrl, title }) {
 
   useEffect(() => {
     if (!numPages) return;
-    setPageImages((prev) => {
-      const start = Math.max(1, currentPage - 1);
-      const end = Math.min(numPages, currentPage + PREFETCH_AHEAD);
-      for (let p = start; p <= end; p += 1) {
-        if (!prev[p]) renderPage(p);
-      }
-      return prev;
-    });
+    const current = pageImagesRef.current;
+    const start = Math.max(1, currentPage - 1);
+    const end = Math.min(numPages, currentPage + PREFETCH_AHEAD);
+    for (let p = start; p <= end; p += 1) {
+      if (!current[p]) renderPage(p);
+    }
   }, [currentPage, numPages, renderPage]);
 
   useEffect(() => {

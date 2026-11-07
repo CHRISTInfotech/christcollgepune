@@ -1,5 +1,5 @@
 import TabbedContentPage from '../../components/TabbedContentPage';
-import { UsersIcon, CompassIcon, AwardIcon, BuildingIcon, BookIcon, GlobeIcon, MapPinIcon } from '../../components/icons';
+import { UsersIcon, CompassIcon, AwardIcon, BuildingIcon } from '../../components/icons';
 import campusLifeBanner from '../../assets/home/campusLife_20260716095700.jpg';
 import cafeteriaImg from '../../assets/home/CampusFacilitiesRecreationalAreas.jpg';
 import libraryImg from '../../assets/home/CampusFacilitiesLibrary.jpg';

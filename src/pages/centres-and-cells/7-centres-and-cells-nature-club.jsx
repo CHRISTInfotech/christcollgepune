@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import PageHeader from '../../components/PageHeader';
 import Seo from '../../components/Seo';
-import { GlobeIcon, CompassIcon, AwardIcon } from '../../components/icons';
+import { CompassIcon } from '../../components/icons';
 import banner from '../../assets/images/7-centres-and-cells-nature-club/banner.jpg';
 
 // Activity Photos

@@ -1,5 +1,5 @@
 import TabbedContentPage from '../../components/TabbedContentPage';
-import { UsersIcon, AwardIcon, CompassIcon, BookIcon, CheckCircleIcon } from '../../components/icons';
+import { UsersIcon, AwardIcon, CompassIcon } from '../../components/icons';
 import culturalsBanner from '../../assets/home/culturals.jpg';
 
 const PILLARS = [

@@ -190,6 +190,7 @@ function RotatingGallery({ count = 8, intervalMs = 2300 }) {
   );
 }
 
+// eslint-disable-next-line no-unused-vars -- kept for the commented-out marquee bar below
 const TICKER_ANNOUNCEMENTS = [
   {
     id: 'admissions-2026',
@@ -228,6 +229,7 @@ const TICKER_ANNOUNCEMENTS = [
   },
 ];
 
+// eslint-disable-next-line no-unused-vars -- kept for the commented-out admissions card below
 const ADMISSION_LINKS = [
   { label: 'Application Form for UG', path: '/admissions/application-form-for-ug' },
   { label: 'Application Form for PG', path: '/admissions/application-form-for-pg' },

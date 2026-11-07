@@ -6,8 +6,6 @@ import {
   EnvelopeIcon,
   LightbulbIcon,
   CheckCircleIcon,
-  GlobeIcon,
-  VideoIcon,
 } from '../../components/icons';
 import banner from '../../assets/images/7-centres-and-cells-centre-for-digital-media/banner.png';
 

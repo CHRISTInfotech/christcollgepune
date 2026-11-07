@@ -19,7 +19,7 @@ export default function DvvClarification() {
   const [activeTab, setActiveTab] = useState('extended-profile');
   const [searchQuery, setSearchQuery] = useState('');
 
-  const sections = structuredDvvData[activeTab] || [];
+  const sections = useMemo(() => structuredDvvData[activeTab] || [], [activeTab]);
 
   const tabDocCount = useMemo(() => {
     return sections.reduce(

@@ -1,5 +1,5 @@
 import TabbedContentPage from '../../components/TabbedContentPage';
-import { UsersIcon, AwardIcon, CompassIcon, BookIcon, BuildingIcon, EnvelopeIcon, PhoneIcon, CheckCircleIcon } from '../../components/icons';
+import { UsersIcon, AwardIcon, CompassIcon, BuildingIcon, EnvelopeIcon, PhoneIcon, CheckCircleIcon } from '../../components/icons';
 import cpcgBanner from '../../assets/home/cpcg.jpg';
 
 const PILLARS = [

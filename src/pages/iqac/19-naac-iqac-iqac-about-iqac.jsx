@@ -3,7 +3,17 @@ import { Link } from 'react-router-dom';
 import PageHeader from '../../components/PageHeader';
 import Seo from '../../components/Seo';
 import { EnvelopeIcon, DownloadIcon, SearchIcon } from '../../components/icons';
-import iqacCriteriaData from '../../data/iqac_criteria_data.json';
+import iqacCriteriaData from '../../data/iqacCriteria';
+import epStudents202223 from '../../assets/iqac/extended-profile/students-2022-23.pdf';
+import epStudents202122 from '../../assets/iqac/extended-profile/students-2021-22.pdf';
+import epStudents202021 from '../../assets/iqac/extended-profile/students-2020-21.pdf';
+import epStudents201920 from '../../assets/iqac/extended-profile/students-2019-20.pdf';
+import epStudents201819 from '../../assets/iqac/extended-profile/students-2018-19.pdf';
+import epStaff202223 from '../../assets/iqac/extended-profile/teaching-staff-2022-23.pdf';
+import epStaff202122 from '../../assets/iqac/extended-profile/teaching-staff-2021-22.pdf';
+import epStaff202021 from '../../assets/iqac/extended-profile/teaching-staff-2020-21.pdf';
+import epStaff201920 from '../../assets/iqac/extended-profile/teaching-staff-2019-20.pdf';
+import epStaff201819 from '../../assets/iqac/extended-profile/teaching-staff-2018-19.pdf';
 
 const TABS = [
   { key: 'about', label: 'About IQAC' },
@@ -92,19 +102,19 @@ const ROLES_AND_RESPONSIBILITIES = [
 ];
 
 const EXTENDED_PROFILE_STUDENTS = [
-  { title: 'Number of Students Enrolled (FY, SY, TY)', year: '2022 - 2023', link: 'https://christcollegepune.org/uploads/userfiles/FY,SY,TY 2022-2023.pdf' },
-  { title: 'Number of Students Enrolled (FY, SY, TY)', year: '2021 - 2022', link: 'https://christcollegepune.org/uploads/userfiles/FY,SY,TY 2021-2022.pdf' },
-  { title: 'Number of Students Enrolled (FY, SY, TY)', year: '2020 - 2021', link: 'https://christcollegepune.org/uploads/userfiles/FY,SY,TY 2020-2021.pdf' },
-  { title: 'Number of Students Enrolled (FY, SY, TY)', year: '2019 - 2020', link: 'https://christcollegepune.org/uploads/userfiles/FY,SY,TY 2019-2020.pdf' },
-  { title: 'Number of Students Enrolled (FY, SY, TY)', year: '2018 - 2019', link: 'https://christcollegepune.org/uploads/userfiles/FY,SY,TY 2018-2019.pdf' },
+  { title: 'Number of Students Enrolled (FY, SY, TY)', year: '2022 - 2023', link: epStudents202223 },
+  { title: 'Number of Students Enrolled (FY, SY, TY)', year: '2021 - 2022', link: epStudents202122 },
+  { title: 'Number of Students Enrolled (FY, SY, TY)', year: '2020 - 2021', link: epStudents202021 },
+  { title: 'Number of Students Enrolled (FY, SY, TY)', year: '2019 - 2020', link: epStudents201920 },
+  { title: 'Number of Students Enrolled (FY, SY, TY)', year: '2018 - 2019', link: epStudents201819 },
 ];
 
 const EXTENDED_PROFILE_STAFF = [
-  { title: 'Full Time Teaching Staff List', year: '2022 - 2023', link: 'https://christcollegepune.org/uploads/userfiles/Staff List 2022-23.pdf' },
-  { title: 'Full Time Teaching Staff List', year: '2021 - 2022', link: 'https://christcollegepune.org/uploads/userfiles/Staff List 2021-22.pdf' },
-  { title: 'Full Time Teaching Staff List', year: '2020 - 2021', link: 'https://christcollegepune.org/uploads/userfiles/Staff List 2020-21.pdf' },
-  { title: 'Full Time Teaching Staff List', year: '2019 - 2020', link: 'https://christcollegepune.org/uploads/userfiles/Staff List 2019-20.pdf' },
-  { title: 'Full Time Teaching Staff List', year: '2018 - 2019', link: 'https://christcollegepune.org/uploads/userfiles/Staff List 2018-19.pdf' },
+  { title: 'Full Time Teaching Staff List', year: '2022 - 2023', link: epStaff202223 },
+  { title: 'Full Time Teaching Staff List', year: '2021 - 2022', link: epStaff202122 },
+  { title: 'Full Time Teaching Staff List', year: '2020 - 2021', link: epStaff202021 },
+  { title: 'Full Time Teaching Staff List', year: '2019 - 2020', link: epStaff201920 },
+  { title: 'Full Time Teaching Staff List', year: '2018 - 2019', link: epStaff201819 },
 ];
 
 function AboutSection() {

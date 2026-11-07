@@ -1,6 +1,5 @@
 import PageHeader from '../../components/PageHeader';
 import Seo from '../../components/Seo';
-import ImageCarousel from '../../components/ImageCarousel';
 import CategorySection from '../../components/CategorySection';
 import { BookIcon, UsersIcon, CompassIcon } from '../../components/icons';
 import workshopItIndustry from '../../assets/images/3-academics-department-of-science-activities/workshop-it-industry.jpeg';

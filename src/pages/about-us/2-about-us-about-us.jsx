@@ -1,6 +1,5 @@
 import PageHeader from '../../components/PageHeader';
 import Seo from '../../components/Seo';
-import aboutUsImg from '../../assets/aboutus/aboutus.png';
 
 const VALUES = ['Faith in God', 'Moral Uprightness', 'Social Responsibility', 'Pursuit of Excellence'];
 
