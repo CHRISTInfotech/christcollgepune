@@ -24,12 +24,35 @@ import ielts7 from '../../assets/images/gallery/ielts-training-session/7.jpg';
 import ielts8 from '../../assets/images/gallery/ielts-training-session/8.jpg';
 import careerGuidanceSeyona1 from '../../assets/images/gallery/career-guidance-session-alumna/1.jpg';
 import careerGuidanceSeyona2 from '../../assets/images/gallery/career-guidance-session-alumna/2.jpg';
+import linkedin1 from '../../assets/images/gallery/linkedin-launchpad/1.jpg';
+import linkedin2 from '../../assets/images/gallery/linkedin-launchpad/2.jpg';
+import linkedin3 from '../../assets/images/gallery/linkedin-launchpad/3.jpg';
+import linkedin4 from '../../assets/images/gallery/linkedin-launchpad/4.jpg';
+import linkedin5 from '../../assets/images/gallery/linkedin-launchpad/5.jpg';
+import impression1 from '../../assets/images/gallery/power-of-first-impressions/1.jpg';
+import impression2 from '../../assets/images/gallery/power-of-first-impressions/2.jpg';
+import impression3 from '../../assets/images/gallery/power-of-first-impressions/3.jpg';
+import impression4 from '../../assets/images/gallery/power-of-first-impressions/4.jpg';
+import impression5 from '../../assets/images/gallery/power-of-first-impressions/5.jpg';
+import impression6 from '../../assets/images/gallery/power-of-first-impressions/6.jpg';
 
 const CLIMATE_IMAGES = [climate1, climate2, climate3, climate4, climate5, climate6];
 const IELTS_IMAGES = [ielts1, ielts2, ielts3, ielts4, ielts5, ielts6, ielts7, ielts8];
 const CAREER_GUIDANCE_SEYONA_IMAGES = [careerGuidanceSeyona1, careerGuidanceSeyona2];
+const LINKEDIN_IMAGES = [linkedin1, linkedin2, linkedin3, linkedin4, linkedin5];
+const IMPRESSION_IMAGES = [impression1, impression2, impression3, impression4, impression5, impression6];
 
 const SEMINAR = [
+  {
+    name: 'LinkedIn Launchpad',
+    images: LINKEDIN_IMAGES,
+    description: 'An informative session on LinkedIn Launchpad, conducted by Shilpa J. Chetalan, equipped students with valuable insights into creating impactful LinkedIn profiles, effectively showcasing their skills and achievements, expanding professional networks, and exploring career prospects and job opportunities.',
+  },
+  {
+    name: 'The Power of First Impressions: Grooming, Body Language and Communication',
+    images: IMPRESSION_IMAGES,
+    description: 'An insightful session conducted by Ms Ariya Nair, Founder and Director of Gravitas Learning, Career & Life Coach, helped students understand the significance of personal presentation and professional conduct. The session highlighted how appearance, body language, communication, confidence, and overall demeanour contribute to creating a positive first impression, encouraging students to build confidence, refine their interpersonal skills, and cultivate professionalism in their academic and future career journeys.',
+  },
   {
     name: "Seminar on 'Observed Climate Change over the Indian Region'",
     images: CLIMATE_IMAGES,

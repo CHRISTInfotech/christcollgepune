@@ -1,24 +1,69 @@
 import TabbedContentPage from '../../components/TabbedContentPage';
+import CentreVisionMission from '../../components/CentreVisionMission';
+import ImageCarousel from '../../components/ImageCarousel';
+import { CheckCircleIcon, UsersIcon } from '../../components/icons';
+import wspd1 from '../../assets/images/gallery/world-suicide-prevention-day/1.jpg';
+import wspd2 from '../../assets/images/gallery/world-suicide-prevention-day/2.jpg';
+import wspd3 from '../../assets/images/gallery/world-suicide-prevention-day/3.jpg';
+import wspd4 from '../../assets/images/gallery/world-suicide-prevention-day/4.jpg';
+import wspd5 from '../../assets/images/gallery/world-suicide-prevention-day/5.jpg';
+
+const WSPD_IMAGES = [wspd1, wspd2, wspd3, wspd4, wspd5];
+
+const MAJOR_ACTIVITIES = [
+  { title: 'Medical Health Check-ups', body: 'Health screening and medical check-up camps for all FY students to promote preventive healthcare, early identification of health concerns and awareness of healthy lifestyle practices.' },
+  { title: 'Individual Counselling', body: 'Confidential, professional and non-judgemental counselling support for students experiencing personal, emotional, psychological, academic, interpersonal or adjustment-related concerns, with appropriate follow-ups and referrals wherever necessary.' },
+  { title: 'Group Counselling', body: 'Facilitated group interactions that provide students with opportunities to share experiences, develop coping strategies, strengthen interpersonal skills and build emotional resilience in a supportive environment.' },
+  { title: 'Classroom-based Psychoeducational Interventions', body: 'Issue-based awareness and intervention sessions addressing concerns relevant to student life, such as stress and anxiety, emotional regulation, healthy relationships, peer pressure, digital addiction, substance abuse, bullying and effective coping strategies.' },
+  { title: 'World Suicide Prevention Day', body: 'Observance of World Suicide Prevention Day through awareness campaigns, symbolic activities, student engagement and expert-led sessions to promote help-seeking behaviour, reduce stigma and encourage a culture of hope and support.' },
+  { title: "Parents' Orientation and Awareness Sessions", body: 'Interactive sessions for parents to sensitise them to the emotional, psychological and developmental needs of young adults, strengthen parent-student communication and encourage collaborative support for student well-being.' },
+  { title: 'Stress Management and Emotional Wellness', body: 'Activities and expert-led sessions focusing on stress management, mindfulness, emotional intelligence, self-care and healthy coping mechanisms to support students in managing academic and personal challenges.' },
+  { title: 'Healthy Relationships and Interpersonal Well-being', body: 'Programmes that sensitise students to respectful communication, personal boundaries, consent, conflict resolution and the development of healthy relationships.' },
+  { title: 'Addiction Awareness and Prevention', body: 'Awareness programmes on substance abuse, behavioural addictions and their psychological, social and legal implications, encouraging informed decision-making and responsible lifestyle choices.' },
+  { title: 'Staff Wellness Initiatives', body: 'Wellness activities and awareness programmes aimed at promoting emotional well-being, stress management and self-care among teaching and non-teaching staff.' },
+  { title: 'Referral and Support Services', body: 'Establishing linkages with mental health professionals, healthcare institutions and external support agencies to facilitate timely referrals and continuity of care for students requiring specialised assistance.' },
+];
 
 function HomeTab() {
   return (
     <>
       <h2>About the Centre</h2>
-      <p className="mt-4 text-cc-text-body leading-relaxed">
-        The Centre for Health and Wellness at Christ College Pune serves as a vital source of support and well-being for the college community. Our primary goal is to prioritize the health and wellness of all college members, acting as a central hub for promoting physical, mental, and emotional health. The centre offers a wide range of services that cater to the varied needs of students, faculty, and staff.
+      <p className="mt-4 max-w-3xl text-cc-text-body leading-relaxed">
+        Christ College Pune has a dedicated Centre for Health and Wellness (CHW) to promote the
+        physical, mental, emotional and social well-being of students and staff. The Centre
+        provides a supportive platform for health awareness, counselling services, preventive
+        healthcare and wellness initiatives, recognising the importance of creating a healthy and
+        positive campus environment.
       </p>
-      <p className="mt-4 text-cc-text-body leading-relaxed">
-        Education and awareness are integral to our mission by frequently organizing workshops, seminars, and campaigns to empower individuals to make informed health choices. These educational efforts cover diverse topics, including physical fitness, mindfulness, nutrition and other health aspects for college students. By providing this knowledge, we help our students take proactive steps towards better health.
+      <p className="mt-4 max-w-3xl text-cc-text-body leading-relaxed">
+        Through medical health check-ups, individual and group counselling, classroom-based
+        psychoeducational interventions, mental health awareness programmes, parent engagement
+        and staff wellness initiatives, CHW endeavours to address the diverse health and
+        psychological needs of the campus community. It also facilitates early identification of
+        concerns, timely interventions and appropriate referrals, while encouraging help-seeking
+        behaviour and reducing the stigma associated with mental health.
       </p>
-      <p className="mt-4 text-cc-text-body leading-relaxed">
-        Accessibility and inclusivity are core values at the Centre for Health and Wellness. We aim to ensure that everyone in the college community, regardless of their background or abilities, can access the support they need. Our facilities are designed to be welcoming and accommodating, with services tailored to meet the specific needs of our diverse population. This commitment fosters an environment where everyone feels valued and supported.
-      </p>
-      <p className="mt-4 text-cc-text-body leading-relaxed">
-        Collaboration is a crucial component of our work. We partner with various campus organizations and departments, like NSS, Women’s Cell etc, to extend the reach and impact of our initiatives. These collaborations help us promote a campus-wide culture of health and wellness, integrating it into all aspects of college life, from academics to extracurricular activities.
-      </p>
-      <p className="mt-4 text-cc-text-body leading-relaxed">
-        The Centre for Health and Wellness is committed to continuous improvement. We stay responsive to the changing needs of the college community by regularly seeking feedback and evaluating our programs to ensure they are up-to-date and effective. This commitment to growth allows us to adapt to new challenges and opportunities, providing the best possible support.
-      </p>
+
+      <CentreVisionMission
+        vision="To foster a healthy, inclusive and supportive campus community where every individual is empowered to prioritise well-being, develop emotional resilience and lead a physically and psychologically healthy life."
+        mission="To promote holistic health and wellness through preventive healthcare, accessible counselling services, mental health awareness and structured wellness initiatives."
+      />
+
+      <h2 className="mt-12">Major Activities &amp; Initiatives</h2>
+      <div className="mt-6 grid gap-4 sm:grid-cols-2">
+        {MAJOR_ACTIVITIES.map((item) => (
+          <div
+            key={item.title}
+            className="flex items-start gap-3 rounded-cc-lg border border-cc-gray-200 bg-cc-bg-surface p-4 text-sm text-cc-text-body"
+          >
+            <CheckCircleIcon className="mt-0.5 h-4 w-4 shrink-0 text-cc-primary" />
+            <span>
+              <span className="font-semibold text-cc-text-heading">{item.title}:</span>{' '}
+              {item.body}
+            </span>
+          </div>
+        ))}
+      </div>
     </>
   );
 }
@@ -40,17 +85,39 @@ function ActivitiesTab() {
       tag: '6 February',
       body: 'On 6 February, Christ College, Pune, hosted a Seminar on Clinical Insights on Health for Young Women. The seminar was organized jointly by the Centre for Health and Wellness and the Women Cell of the college. The event aimed to raise awareness among young women about various health issues, prevention measures, and management strategies.',
     },
+    {
+      title: 'World Suicide Prevention Day',
+      images: WSPD_IMAGES,
+      body: 'Observance of World Suicide Prevention Day through awareness campaigns, symbolic activities, student engagement and expert-led sessions to promote help-seeking behaviour, reduce stigma and encourage a culture of hope and support.',
+    },
   ];
 
   return (
-    <div className="max-w-3xl">
+    <div>
       <h2>Activities</h2>
-      <div className="mt-6 flex flex-col gap-6">
+      <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {ACTIVITIES.map((activity) => (
-          <div key={activity.title} className="rounded-cc-lg border border-cc-gray-200 bg-cc-bg-surface p-6 shadow-cc-sm">
-            <span className="text-xs font-semibold uppercase tracking-wide text-cc-primary">{activity.tag}</span>
-            <h3 className="mt-2 text-lg font-bold text-cc-text-heading">{activity.title}</h3>
-            <p className="mt-3 text-cc-text-body leading-relaxed">{activity.body}</p>
+          <div
+            key={activity.title}
+            className="group relative overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-card shadow-cc-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-cc-md"
+          >
+            <div className="relative">
+              {activity.images ? (
+                <ImageCarousel images={activity.images} alt={activity.title} className="h-32 w-full" />
+              ) : (
+                <div className="h-32 w-full bg-gradient-to-br from-cc-primary to-cc-primary-deeper" />
+              )}
+              <span className="absolute -bottom-4 left-4 flex h-9 w-9 items-center justify-center rounded-full border-2 border-cc-bg-card bg-cc-primary text-white shadow-cc-sm">
+                <UsersIcon className="h-4 w-4" />
+              </span>
+            </div>
+            <div className="p-4 pt-6">
+              {activity.tag && (
+                <span className="text-[11px] font-semibold uppercase tracking-wide text-cc-primary">{activity.tag}</span>
+              )}
+              <h4 className="mt-1 text-sm font-semibold leading-snug break-words">{activity.title}</h4>
+              <p className="mt-2 text-xs leading-relaxed text-cc-text-muted-light line-clamp-4">{activity.body}</p>
+            </div>
           </div>
         ))}
       </div>
@@ -115,6 +182,7 @@ export default function CentreForHealthAndWellnessActivities({ initialTab = 'hom
     <TabbedContentPage
       pageTitle="Centre for Health and Wellness"
       breadcrumbLabel="Centre for Health and Wellness"
+      breadcrumbSection="Centres & Cells"
       description="Activities, podcasts and support services from the Centre for Health and Wellness at Christ College, Pune, promoting physical, mental and emotional well-being."
       initialTab={initialTab}
       tabs={[

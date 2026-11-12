@@ -8,14 +8,16 @@ const ELIGIBILITY = [
 ];
 
 const SKILL_AREAS = [
-  'Programming in C, C++, Java & Python',
-  'Database Management Systems (MySQL & MongoDB)',
-  'Web Technologies (HTML, CSS, JavaScript & PHP)',
-  'Data Structures & Algorithms',
-  'Data Analytics & Visualization',
-  'Artificial Intelligence & Machine Learning Basics',
-  'Cloud Computing & Virtualization',
-  'Cyber Security & Ethical Hacking Fundamentals',
+  'Programming and Software Development – Python, R, Java, problem-solving, algorithms and software development.',
+  'Statistics and Mathematical Modelling – Statistical analysis, probability, hypothesis testing and predictive modelling.',
+  'Data Analytics and Visualisation – Data interpretation, exploratory data analysis, dashboards and visualisation using tools such as Power BI, Tableau and Python libraries.',
+  'Database Management and Big Data – SQL, database design, data warehousing and handling large-scale datasets.',
+  'Machine Learning and Artificial Intelligence – Supervised and unsupervised learning, classification, regression and predictive analytics.',
+  'Data Mining and Data Engineering – Data collection, preprocessing, transformation, cleaning and extraction of meaningful insights.',
+  'Deep Learning and Emerging Technologies – Neural networks, intelligent systems and applications of AI.',
+  'Cloud Computing and Data Technologies – Cloud-based data processing, storage and deployment of data science applications.',
+  'Business Intelligence and Decision Support – Data-driven decision-making, business analytics and real-world problem-solving.',
+  'Research and Project Development – Hands-on projects, case studies, research methodology and practical implementation of data science solutions.',
 ];
 
 const CAREER_OPPORTUNITIES = [
@@ -108,6 +110,19 @@ export default function BscDataScience() {
                 </li>
               ))}
             </ul>
+
+            <h3 className="mt-8 text-base flex items-center gap-2">
+              <CompassIcon className="h-5 w-5 text-cc-primary shrink-0" />
+              Career Opportunities
+            </h3>
+            <ul className="mt-3 grid gap-2 sm:grid-cols-2">
+              {CAREER_OPPORTUNITIES.map((h) => (
+                <li key={h} className="flex items-start gap-2 text-sm text-cc-text-body">
+                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-cc-primary" aria-hidden="true" />
+                  {h}
+                </li>
+              ))}
+            </ul>
           </div>
 
           <div className="flex flex-col gap-6">
@@ -167,26 +182,6 @@ export default function BscDataScience() {
                 </div>
               </dl>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-cc-bg-surface">
-        <div className="mx-auto max-w-[1200px] px-6 py-16">
-          <h2 className="text-center mb-2 flex items-center justify-center gap-2.5">
-            <CompassIcon className="h-6 w-6 text-cc-primary shrink-0" />
-            Career Opportunities
-          </h2>
-          <p className="text-center text-sm text-cc-text-muted-light mb-8">
-            Graduates of the BSc (Data Science) programme can pursue careers in the following domains:
-          </p>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {CAREER_OPPORTUNITIES.map((role) => (
-              <div key={role} className="rounded-cc-lg border border-cc-gray-200 bg-cc-bg-card p-5 shadow-cc-sm flex items-center gap-3">
-                <span className="h-2 w-2 shrink-0 rounded-full bg-cc-primary" aria-hidden="true" />
-                <span className="text-sm font-semibold text-cc-text-heading">{role}</span>
-              </div>
-            ))}
           </div>
         </div>
       </section>

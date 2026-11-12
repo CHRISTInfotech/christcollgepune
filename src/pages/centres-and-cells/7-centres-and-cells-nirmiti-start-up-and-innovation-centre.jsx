@@ -205,6 +205,7 @@ export default function NirmitiStartUpAndInnovationCentre({ initialTab = 'home' 
     <TabbedContentPage
       pageTitle="Nirmiti Start-Up and Innovation Centre"
       breadcrumbLabel="Nirmiti Start-Up and Innovation Centre"
+      breadcrumbSection="Centres & Cells"
       description="Nirmiti, the Start-Up and Innovation Centre at Christ College, Pune, launched on 3 December 2022, cultivates student entrepreneurship, mentorship and networking with investors."
       bannerImage={nirmitiBanner}
       bannerAlt="Award ceremony on stage at a Nirmiti Start-Up and Innovation Centre event"

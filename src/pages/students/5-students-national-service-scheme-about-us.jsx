@@ -1,7 +1,114 @@
 import TabbedContentPage from '../../components/TabbedContentPage';
-import { UsersIcon, CompassIcon, GlobeIcon, EnvelopeIcon } from '../../components/icons';
+import ImageCarousel from '../../components/ImageCarousel';
+import { UsersIcon, CompassIcon, GlobeIcon, EnvelopeIcon, CalendarIcon } from '../../components/icons';
 import nssBanner from '../../assets/studentlife/NSS/NSS.png';
 import nssCampGroup from '../../assets/studentlife/NSS/nss-camp-group.jpg';
+import yogaDay1 from '../../assets/images/gallery/nss-international-yoga-day/1.jpg';
+import yogaDay2 from '../../assets/images/gallery/nss-international-yoga-day/2.jpg';
+import yogaDay3 from '../../assets/images/gallery/nss-international-yoga-day/3.jpg';
+import yogaDay4 from '../../assets/images/gallery/nss-international-yoga-day/4.jpg';
+import yogaDay5 from '../../assets/images/gallery/nss-international-yoga-day/5.jpg';
+import rakshaBandhan1 from '../../assets/images/gallery/nss-raksha-bandhan/1.jpg';
+import rakshaBandhan2 from '../../assets/images/gallery/nss-raksha-bandhan/2.jpg';
+import rakshaBandhan3 from '../../assets/images/gallery/nss-raksha-bandhan/3.jpg';
+import rakshaBandhan4 from '../../assets/images/gallery/nss-raksha-bandhan/4.jpg';
+import cleanliness1 from '../../assets/images/gallery/nss-cleanliness-drive/1.jpg';
+import cleanliness2 from '../../assets/images/gallery/nss-cleanliness-drive/2.jpg';
+import cleanliness3 from '../../assets/images/gallery/nss-cleanliness-drive/3.jpg';
+import cleanliness4 from '../../assets/images/gallery/nss-cleanliness-drive/4.jpg';
+import cleanliness5 from '../../assets/images/gallery/nss-cleanliness-drive/5.jpg';
+import nssDay1 from '../../assets/images/gallery/nss-day/1.jpg';
+import nssDay2 from '../../assets/images/gallery/nss-day/2.jpg';
+import nssDay3 from '../../assets/images/gallery/nss-day/3.jpg';
+import nssDay4 from '../../assets/images/gallery/nss-day/4.jpg';
+import agakhan1 from '../../assets/images/gallery/nss-aga-khan-palace-visit/1.jpg';
+import agakhan2 from '../../assets/images/gallery/nss-aga-khan-palace-visit/2.jpg';
+import bloodAwareness1 from '../../assets/images/gallery/nss-blood-donation-awareness-session/1.jpg';
+import bloodAwareness2 from '../../assets/images/gallery/nss-blood-donation-awareness-session/2.jpg';
+import bloodAwareness3 from '../../assets/images/gallery/nss-blood-donation-awareness-session/3.jpg';
+import bloodAwareness4 from '../../assets/images/gallery/nss-blood-donation-awareness-session/4.jpg';
+import bloodCamp1 from '../../assets/images/gallery/nss-blood-donation-camp/1.jpg';
+import bloodCamp2 from '../../assets/images/gallery/nss-blood-donation-camp/2.jpg';
+import bloodCamp3 from '../../assets/images/gallery/nss-blood-donation-camp/3.jpg';
+import bloodCamp4 from '../../assets/images/gallery/nss-blood-donation-camp/4.jpg';
+
+const YOGA_DAY_IMAGES = [yogaDay1, yogaDay2, yogaDay3, yogaDay4, yogaDay5];
+const RAKSHA_BANDHAN_IMAGES = [rakshaBandhan1, rakshaBandhan2, rakshaBandhan3, rakshaBandhan4];
+const CLEANLINESS_IMAGES = [cleanliness1, cleanliness2, cleanliness3, cleanliness4, cleanliness5];
+const NSS_DAY_IMAGES = [nssDay1, nssDay2, nssDay3, nssDay4];
+const AGAKHAN_IMAGES = [agakhan1, agakhan2];
+const BLOOD_AWARENESS_IMAGES = [bloodAwareness1, bloodAwareness2, bloodAwareness3, bloodAwareness4];
+const BLOOD_CAMP_IMAGES = [bloodCamp1, bloodCamp2, bloodCamp3, bloodCamp4];
+
+const RECENT_ACTIVITIES_2026 = [
+  {
+    name: 'International Yoga Day for Staff',
+    images: YOGA_DAY_IMAGES,
+    description: 'Our NSS unit observed International Yoga Day with a special session for the college staff, highlighting the importance of yoga in maintaining physical fitness, mental peace and a balanced lifestyle through simple yoga practices and breathing exercises.',
+  },
+  {
+    name: 'Cyber Stalking Workshop (SPPU)',
+    description: 'An awareness workshop under SPPU educating students about recognising unwanted online attention, harassment and misuse of digital platforms, and promoting safe internet practices and responsible digital behaviour.',
+  },
+  {
+    name: 'Nasha Mukta Yuva Campaign (SPPU)',
+    description: 'A campaign to spread awareness among young people about the harmful effects of addiction, encouraging youth to focus on education, sports, personal development and positive activities towards a drug-free society.',
+  },
+  {
+    name: 'Drug-Free Youth Initiative (Yashada)',
+    description: 'Held at the Raj Bhavan Complex, this initiative created awareness about substance abuse among young people, promoting positive habits and informed decision-making for a drug-free society.',
+  },
+  {
+    name: 'Tiranga Rally (Fergusson College)',
+    description: 'NSS volunteers joined a Tiranga Rally at Fergusson College to promote patriotism, national unity and respect for the Indian national flag.',
+  },
+  {
+    name: 'Raksha Bandhan (Paraplegic Rehabilitation Centre)',
+    images: RAKSHA_BANDHAN_IMAGES,
+    description: 'Our NSS team celebrated Raksha Bandhan with members of the Paraplegic Rehabilitation Centre, sharing care, respect and a feeling of togetherness that promoted empathy and community bonding.',
+  },
+  {
+    name: 'Plantation Drive',
+    description: 'Volunteers planted saplings and spread awareness about the importance of trees for clean air, biodiversity and a healthy environment, strengthening the message of environmental conservation.',
+  },
+  {
+    name: 'Republic Day Seminar (Garware College)',
+    description: 'NSS volunteers attended a seminar reflecting on the values of the Indian Constitution — citizenship, unity, equality and national responsibility — and the role of young people in strengthening democracy.',
+  },
+  {
+    name: 'Cleanliness Drive',
+    images: CLEANLINESS_IMAGES,
+    description: 'Volunteers participated in cleanliness activities promoting proper waste disposal and everyday hygiene habits, reinforcing that maintaining a clean environment is a shared responsibility.',
+  },
+  {
+    name: 'NSS Day',
+    images: NSS_DAY_IMAGES,
+    description: 'The NSS unit celebrated NSS Day to recognise the spirit and contribution of volunteers towards society, highlighting selfless service, discipline, leadership and community participation.',
+  },
+  {
+    name: 'Visit to Aga Khan Palace',
+    images: AGAKHAN_IMAGES,
+    description: 'An educational and heritage-learning visit to a site connected with India’s freedom movement, helping volunteers connect classroom learning with the values of courage, unity and service to the nation.',
+  },
+  {
+    name: 'Walk for Health — Mental Health Rally',
+    description: 'NSS volunteers participated in a Mental Health Rally to spread awareness about emotional well-being, healthy habits and seeking support without stigma.',
+  },
+  {
+    name: 'Blood Donation Awareness Session',
+    images: BLOOD_AWARENESS_IMAGES,
+    description: 'A session educating participants about the importance of voluntary blood donation, the donation process, and safe, responsible donation through authorised medical teams — held ahead of the Blood Donation Camp.',
+  },
+  {
+    name: 'Blood Donation Camp',
+    images: BLOOD_CAMP_IMAGES,
+    description: 'The NSS unit organised a Blood Donation Camp encouraging eligible volunteers and community members to contribute through voluntary donation, supporting the need for safe blood supplies in healthcare.',
+  },
+  {
+    name: 'NSS SPPU Camp',
+    description: 'NSS volunteers participated in the NSS SPPU Camp, engaging with the objectives and values of the National Service Scheme and building connections with participants from other colleges.',
+  },
+];
 
 const PILLARS = [
   {
@@ -331,13 +438,43 @@ function HomeTab() {
 
 function ActivitiesTab() {
   return (
-    <div className="max-w-3xl">
-      <h2>Activities</h2>
-      <ActivityList items={ACTIVITIES} />
+    <>
+      <h2 className="flex items-center gap-2.5">
+        <CalendarIcon className="h-6 w-6 text-cc-primary shrink-0" />
+        Recent Activities (2026-27)
+      </h2>
+      <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        {RECENT_ACTIVITIES_2026.map((item) => (
+          <div
+            key={item.name}
+            className="group relative overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-card shadow-cc-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-cc-md"
+          >
+            <div className="relative">
+              {item.images ? (
+                <ImageCarousel images={item.images} alt={item.name} className="h-32 w-full" />
+              ) : (
+                <div className="h-32 w-full bg-gradient-to-br from-cc-primary to-cc-primary-deeper" />
+              )}
+              <span className="absolute -bottom-4 left-4 flex h-9 w-9 items-center justify-center rounded-full border-2 border-cc-bg-card bg-cc-primary text-white shadow-cc-sm">
+                <UsersIcon className="h-4 w-4" />
+              </span>
+            </div>
+            <div className="p-4 pt-6">
+              <h4 className="text-sm font-semibold leading-snug break-words">{item.name}</h4>
+              <p className="mt-2 text-xs leading-relaxed text-cc-text-muted-light line-clamp-4">{item.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
 
-      <h2 className="mt-10">NSS Camps</h2>
-      <ActivityList items={CAMPS} />
-    </div>
+      <div className="max-w-3xl">
+        <h2 className="mt-14">Activities (2022-23)</h2>
+        <ActivityList items={ACTIVITIES} />
+
+        <h2 className="mt-10">NSS Camps</h2>
+        <ActivityList items={CAMPS} />
+      </div>
+    </>
   );
 }
 
@@ -360,6 +497,7 @@ export default function NationalServiceSchemeAboutUs({ initialTab = 'home' }) {
     <TabbedContentPage
       pageTitle="National Service Scheme"
       breadcrumbLabel="National Service Scheme"
+      breadcrumbSection="Centres & Cells"
       description="The National Service Scheme (NSS) at Christ College, Pune operates under the motto 'Not Me But You', developing students' social and civic responsibility through community service, regular activities and residential camps."
       bannerImage={nssBanner}
       bannerAlt="NSS volunteers of Christ College Pune with an e-waste collection bin"

@@ -18,6 +18,14 @@ import aarambh8 from '../../assets/images/gallery/aarambh-2026/8.jpg';
 import aarambh9 from '../../assets/images/gallery/aarambh-2026/9.jpg';
 import aarambh10 from '../../assets/images/gallery/aarambh-2026/10.jpg';
 import aarambh11 from '../../assets/images/gallery/aarambh-2026/11.jpg';
+import aarambhFy1 from '../../assets/images/gallery/aarambh-2026-fy/1.jpg';
+import aarambhFy2 from '../../assets/images/gallery/aarambh-2026-fy/2.jpg';
+import aarambhFy3 from '../../assets/images/gallery/aarambh-2026-fy/3.jpg';
+import aarambhFy4 from '../../assets/images/gallery/aarambh-2026-fy/4.jpg';
+import aarambhFy5 from '../../assets/images/gallery/aarambh-2026-fy/5.jpg';
+import aarambhFy6 from '../../assets/images/gallery/aarambh-2026-fy/6.jpg';
+import aarambhFy7 from '../../assets/images/gallery/aarambh-2026-fy/7.jpg';
+import aarambhFy8 from '../../assets/images/gallery/aarambh-2026-fy/8.jpg';
 import freshers1 from '../../assets/images/gallery/freshers-day-2026/1.jpg';
 import freshers2 from '../../assets/images/gallery/freshers-day-2026/2.jpg';
 import freshers3 from '../../assets/images/gallery/freshers-day-2026/3.jpg';
@@ -28,6 +36,7 @@ import freshers7 from '../../assets/images/gallery/freshers-day-2026/7.jpg';
 
 const CCSA_INAUGURATION_2026_IMAGES = [ccsa2026_1, ccsa2026_2, ccsa2026_3, ccsa2026_4];
 const AARAMBH_2026_IMAGES = [aarambh1, aarambh2, aarambh3, aarambh4, aarambh5, aarambh6, aarambh7, aarambh8, aarambh9, aarambh10, aarambh11];
+const AARAMBH_2026_FY_IMAGES = [aarambhFy1, aarambhFy2, aarambhFy3, aarambhFy4, aarambhFy5, aarambhFy6, aarambhFy7, aarambhFy8];
 const FRESHERS_DAY_2026_IMAGES = [freshers1, freshers2, freshers3, freshers4, freshers5, freshers6, freshers7];
 
 const EVENTS = [
@@ -36,6 +45,11 @@ const EVENTS = [
     date: '21 August 2026',
     images: CCSA_INAUGURATION_2026_IMAGES,
     description: 'The Christ College Science Association (CCSA) was inaugurated on August 21, 2026 in Chavara Hall, with the purpose of bringing awareness of CCSA throughout the year. Overall development and co-curricular enrichment of students is the main motive behind the association, which reaffirms the department’s commitment to fostering a culture of scientific inquiry and innovation.',
+  },
+  {
+    name: 'AARAMBH — Orientation for FYBCS',
+    images: AARAMBH_2026_FY_IMAGES,
+    description: 'Christ College – Pune, organized AARAMBH 2026, the First Year Orientation Programme, to welcome the newly admitted first-year students of the Department of Science and introduce them to college life, academic expectations, and the opportunities available through the department and CCSA. The programme helped first-year students settle into the college environment with confidence and a clear understanding of their academic journey ahead.',
   },
   {
     name: 'AARAMBH — Orientation for SYBCS',
@@ -88,7 +102,7 @@ export default function DepartmentOfScienceAssociationPage() {
     <>
       <Seo
         title="Association (CCSA) — Department of Science"
-        description="The Christ College Science Association (CCSA) at the Department of Science, Christ College Pune — its 2026 inauguration, AARAMBH orientation, Freshers' Day, Code Chase, AI Got Talent, and past events including Icon Blitz, Engage Tech, Sarfarosh and CodexCrusade25."
+        description="The Christ College Science Association (CCSA) at the Department of Science, Christ College Pune — its 2026 inauguration, AARAMBH FY & SY orientations, Freshers' Day, Code Chase, AI Got Talent, and past events including Icon Blitz, Engage Tech, Sarfarosh and CodexCrusade25."
       />
       <PageHeader
         title="Association"

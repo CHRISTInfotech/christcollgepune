@@ -1,16 +1,13 @@
 import PageHeader from '../../components/PageHeader';
-import { ClockIcon, AcademicCapIcon, PhoneIcon, BookIcon, CheckCircleIcon, CompassIcon, DownloadIcon, CalendarIcon, GlobeIcon, GridIcon } from '../../components/icons';
+import { ClockIcon, AcademicCapIcon, PhoneIcon, BookIcon, CheckCircleIcon, CompassIcon, CalendarIcon, GlobeIcon, GridIcon } from '../../components/icons';
 import Seo from '../../components/Seo';
-import PdfViewer from '../../components/PdfViewer';
 import banner from '../../assets/images/3-academics-department-of-arts-ba-economics/banner.jpg';
-import syllabusPdf from '../../assets/acadmics/Arts/ba-economics-syllabus.pdf';
 
 const ELIGIBILITY = [
   'Passed 10+2 (Higher Secondary) or equivalent from any recognized Board in India in any stream.',
 ];
 
 const SKILL_AREAS = [
-  'Applied Excel',
   'Applied Statistics & Econometrics',
   'Policy Making',
   'Data Analysis & Visualization',
@@ -92,7 +89,7 @@ export default function BaEconomics() {
 
             <h3 className="mt-8 text-base flex items-center gap-2">
               <CheckCircleIcon className="h-5 w-5 text-cc-primary shrink-0" />
-              Key Areas of Focus
+              Key Expertise Offered
             </h3>
             <ul className="mt-3 grid gap-2 sm:grid-cols-2">
               {SKILL_AREAS.map((h) => (
@@ -126,11 +123,11 @@ export default function BaEconomics() {
               <dl className="mt-4 flex flex-col divide-y divide-cc-gray-200">
                 <div className="py-3 first:pt-0">
                   <dt className="text-xs uppercase tracking-wide text-cc-text-muted-light">Duration</dt>
-                  <dd className="mt-1 text-sm font-medium text-cc-text-heading">3 Years, Full-Time</dd>
+                  <dd className="mt-1 text-sm font-medium text-cc-text-heading">4 Years, Full-Time</dd>
                 </div>
                 <div className="py-3 last:pb-0">
                   <dt className="text-xs uppercase tracking-wide text-cc-text-muted-light">Structure</dt>
-                  <dd className="mt-1 text-sm font-medium text-cc-text-heading">6 Semesters (132 Credits)</dd>
+                  <dd className="mt-1 text-sm font-medium text-cc-text-heading">8 Semesters (NEP Aligned)</dd>
                 </div>
               </dl>
             </div>
@@ -163,16 +160,6 @@ export default function BaEconomics() {
               </dl>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="bg-cc-bg-surface">
-        <div className="mx-auto max-w-[1200px] px-6 py-16">
-          <h2 className="text-center mb-8 flex items-center justify-center gap-2.5">
-            <DownloadIcon className="h-6 w-6 text-cc-primary shrink-0" />
-            Course Syllabus
-          </h2>
-          <PdfViewer fileUrl={syllabusPdf} title="BA Economics Syllabus" />
         </div>
       </section>
 

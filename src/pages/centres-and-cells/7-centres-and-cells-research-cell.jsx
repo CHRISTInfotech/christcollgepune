@@ -247,6 +247,7 @@ export default function ResearchCell({ initialTab = 'home' }) {
     <TabbedContentPage
       pageTitle="Research Cell"
       breadcrumbLabel="Research Cell"
+      breadcrumbSection="Centres & Cells"
       description="The Research Cell at Christ College, Pune supervises research and development activities, fostering innovation, interdisciplinary collaboration and faculty PhD pursuits — activities, publications and events."
       bannerImage={researchBanner}
       bannerAlt="A research methodology seminar session at Christ College Pune"

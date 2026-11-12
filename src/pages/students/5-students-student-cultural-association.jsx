@@ -1,6 +1,35 @@
 import TabbedContentPage from '../../components/TabbedContentPage';
+import ImageCarousel from '../../components/ImageCarousel';
 import { UsersIcon, CompassIcon, AwardIcon } from '../../components/icons';
 import scaBanner from '../../assets/images/5-students-student-cultural-association/sca-banner.png';
+import aaghaz1 from '../../assets/images/gallery/aaghaz-2026/1.jpg';
+import aaghaz2 from '../../assets/images/gallery/aaghaz-2026/2.jpg';
+import aaghaz3 from '../../assets/images/gallery/aaghaz-2026/3.jpg';
+import aaghaz4 from '../../assets/images/gallery/aaghaz-2026/4.jpg';
+import aaghaz5 from '../../assets/images/gallery/aaghaz-2026/5.jpg';
+import aaghaz6 from '../../assets/images/gallery/aaghaz-2026/6.jpg';
+import arohan1 from '../../assets/images/gallery/arohan/1.jpg';
+import arohan2 from '../../assets/images/gallery/arohan/2.jpg';
+import arohan3 from '../../assets/images/gallery/arohan/3.jpg';
+import arohan4 from '../../assets/images/gallery/arohan/4.jpg';
+import arohan5 from '../../assets/images/gallery/arohan/5.jpg';
+import arohan6 from '../../assets/images/gallery/arohan/6.jpg';
+
+const AAGHAZ_IMAGES = [aaghaz1, aaghaz2, aaghaz3, aaghaz4, aaghaz5, aaghaz6];
+const AROHAN_IMAGES = [arohan1, arohan2, arohan3, arohan4, arohan5, arohan6];
+
+const RECENT_EVENTS = [
+  {
+    name: 'Aaghaz 2026 — Odyssey',
+    images: AAGHAZ_IMAGES,
+    description: 'SCA\'s flagship inaugural fest, themed "Odyssey", welcoming students with ramp walks, music and dance performances that set the tone for the year\'s cultural calendar — celebrating creativity, courage and excellence.',
+  },
+  {
+    name: 'Arohan — College Got Latent',
+    images: AROHAN_IMAGES,
+    description: 'A talent-hunt event in the spirit of "College Got Talent", where participants showcased singing, comedy and performance acts before a panel of student judges in a lively, audience-packed format.',
+  },
+];
 
 const PILLARS = [
   {
@@ -202,7 +231,32 @@ function WhatWeDoTab() {
         </p>
       </div>
 
-      <div className="mt-8 grid gap-5 sm:grid-cols-2">
+      <h3 className="mt-10 flex items-center gap-2.5 text-base font-bold text-cc-text-heading">
+        <UsersIcon className="h-5 w-5 text-cc-primary shrink-0" />
+        Recent Events
+      </h3>
+      <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        {RECENT_EVENTS.map((event) => (
+          <div
+            key={event.name}
+            className="group relative overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-card shadow-cc-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-cc-md"
+          >
+            <div className="relative">
+              <ImageCarousel images={event.images} alt={event.name} className="h-32 w-full" />
+              <span className="absolute -bottom-4 left-4 flex h-9 w-9 items-center justify-center rounded-full border-2 border-cc-bg-card bg-cc-primary text-white shadow-cc-sm">
+                <UsersIcon className="h-4 w-4" />
+              </span>
+            </div>
+            <div className="p-4 pt-6">
+              <h4 className="text-sm font-semibold leading-snug break-words">{event.name}</h4>
+              <p className="mt-2 text-xs leading-relaxed text-cc-text-muted-light line-clamp-4">{event.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <h3 className="mt-14 text-base font-bold text-cc-text-heading">Signature Fests &amp; Competitions</h3>
+      <div className="mt-6 grid gap-5 sm:grid-cols-2">
         {EVENTS.map((event) => (
           <div key={event.name} className="rounded-cc-lg border border-cc-gray-200 bg-cc-bg-surface p-6">
             <h3 className="text-base uppercase tracking-wide text-cc-primary">{event.name}</h3>
@@ -234,6 +288,7 @@ export default function StudentCulturalAssociation({ initialTab = 'home' }) {
   return (
     <TabbedContentPage
       pageTitle="Student Cultural Association"
+      breadcrumbSection="Centres & Cells"
       description="The Student Cultural Association (SCA) at Christ College, Pune is a platform for holistic development through dance, music, literature and theatre — who they are, what they do, and their volunteer wings."
       bannerImage={scaBanner}
       bannerAlt="Students performing on stage at a Student Cultural Association event"

@@ -66,11 +66,11 @@ export default function NewCampusBbaDuplicateVariant() {
               <dl className="mt-4 flex flex-col divide-y divide-cc-gray-200">
                 <div className="py-3 first:pt-0">
                   <dt className="text-xs uppercase tracking-wide text-cc-text-muted-light">Duration</dt>
-                  <dd className="mt-1 text-sm font-medium text-cc-text-heading">3 Years, Full-Time</dd>
+                  <dd className="mt-1 text-sm font-medium text-cc-text-heading">4 Years, Full-Time</dd>
                 </div>
                 <div className="py-3 last:pb-0">
                   <dt className="text-xs uppercase tracking-wide text-cc-text-muted-light">Structure</dt>
-                  <dd className="mt-1 text-sm font-medium text-cc-text-heading">6 Semesters</dd>
+                  <dd className="mt-1 text-sm font-medium text-cc-text-heading">8 Semesters</dd>
                 </div>
               </dl>
             </div>

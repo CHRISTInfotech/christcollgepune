@@ -23,6 +23,19 @@ import udaan2026_7 from '../../assets/images/gallery/udaan-2026/7.jpg';
 import udaan2026_8 from '../../assets/images/gallery/udaan-2026/8.jpg';
 import udaan2026_9 from '../../assets/images/gallery/udaan-2026/9.jpg';
 import udaan2026_10 from '../../assets/images/gallery/udaan-2026/10.jpg';
+import spectra26_1 from '../../assets/images/gallery/spectra-26/1.jpg';
+import spectra26_2 from '../../assets/images/gallery/spectra-26/2.jpg';
+import spectra26_3 from '../../assets/images/gallery/spectra-26/3.jpg';
+import spectra26_4 from '../../assets/images/gallery/spectra-26/4.jpg';
+import spectra26_5 from '../../assets/images/gallery/spectra-26/5.jpg';
+import spectra26_6 from '../../assets/images/gallery/spectra-26/6.jpg';
+import spectra26_7 from '../../assets/images/gallery/spectra-26/7.jpg';
+import spectra26_8 from '../../assets/images/gallery/spectra-26/8.jpg';
+import spectra26_9 from '../../assets/images/gallery/spectra-26/9.jpg';
+
+const SPECTRA_26_IMAGES = [
+  spectra26_1, spectra26_2, spectra26_3, spectra26_4, spectra26_5, spectra26_6, spectra26_7, spectra26_8, spectra26_9,
+];
 
 const ECOMANIA_2025_IMAGES = [
   ecomania2025_1, ecomania2025_2, ecomania2025_3, ecomania2025_4, ecomania2025_5,
@@ -34,6 +47,12 @@ const UDAAN_2026_IMAGES = [
 ];
 
 const FESTIVALS = [
+  {
+    name: "SPECTRA '26",
+    subtitle: 'Intra-departmental Fest',
+    images: SPECTRA_26_IMAGES,
+    description: "SPECTRA '26, the annual intra-departmental fest of the Department of Arts, Christ College, Pune, brought together students through six interdisciplinary competitions promoting creativity, critical thinking, teamwork, and problem-solving. Organised in collaboration with the Departments of Statistics and Data Science and Computer Science at CHRIST (Deemed to be University), Pune Lavasa Campus, the fest benefited over 80 students. The valedictory ceremony featured Dr Ruby Kumari, Founder and Director of Globus Training & Consultancy, who shared insights on skill development, lifelong learning, and career growth. The Aristotelians won the championship, followed by the Shakespeareans as runners-up.",
+  },
   {
     name: "Udaan '26",
     subtitle: 'Inter-Collegiate Fest',
@@ -63,7 +82,7 @@ export default function DepartmentOfArtsFestivalsPage() {
     <>
       <Seo
         title="Fests — Department of Arts"
-        description="Fests organised by the Department of Arts at Christ College, Pune, including Udaan '26, ECOMANIA, and the Eco Mania Economics Fest."
+        description="Fests organised by the Department of Arts at Christ College, Pune, including SPECTRA '26, Udaan '26, ECOMANIA, and the Eco Mania Economics Fest."
       />
       <PageHeader
         title="Fests"

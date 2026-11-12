@@ -6,6 +6,18 @@
     "photoCount": 12
   },
   {
+    "name": "Aaghaz 2026 — Odyssey",
+    "slug": "aaghaz-2026",
+    "department": null,
+    "photoCount": 6
+  },
+  {
+    "name": "Arohan — College Got Latent",
+    "slug": "arohan",
+    "department": null,
+    "photoCount": 6
+  },
+  {
     "name": "AI & ML Workshop — Learn, Build, Apply",
     "slug": "aiml-workshop-learn-build-apply",
     "department": "Science",
@@ -18,10 +30,16 @@
     "photoCount": 2
   },
   {
-    "name": "AARAMBH 2026",
+    "name": "AARAMBH 2026 — SY Orientation",
     "slug": "aarambh-2026",
     "department": "Science",
     "photoCount": 11
+  },
+  {
+    "name": "AARAMBH 2026 — FY Orientation",
+    "slug": "aarambh-2026-fy",
+    "department": "Science",
+    "photoCount": 8
   },
   {
     "name": "Alumni Meet 2023",
@@ -36,6 +54,18 @@
     "photoCount": 8
   },
   {
+    "name": "Aga Khan Palace Visit (NSS)",
+    "slug": "nss-aga-khan-palace-visit",
+    "department": null,
+    "photoCount": 2
+  },
+  {
+    "name": "Beyond the Classroom: A Cinematic Experience — Odyssey",
+    "slug": "beyond-the-classroom-odyssey",
+    "department": "Arts",
+    "photoCount": 4
+  },
+  {
     "name": "BHASHA UTSAV 2024",
     "slug": "bhasha-utsav-2024",
     "department": null,
@@ -48,10 +78,28 @@
     "photoCount": 6
   },
   {
+    "name": "Blood Donation Awareness Session (NSS)",
+    "slug": "nss-blood-donation-awareness-session",
+    "department": null,
+    "photoCount": 4
+  },
+  {
+    "name": "Blood Donation Camp (NSS)",
+    "slug": "nss-blood-donation-camp",
+    "department": null,
+    "photoCount": 4
+  },
+  {
     "name": "Book Review Competition",
     "slug": "book-review-competition",
     "department": "Management",
     "photoCount": 2
+  },
+  {
+    "name": "Bridging the Gap: Empowerment Through Development Schemes",
+    "slug": "bridging-the-gap-eoc",
+    "department": null,
+    "photoCount": 5
   },
   {
     "name": "CCSA Inauguration 2026",
@@ -70,6 +118,12 @@
     "slug": "chrisliga-2023",
     "department": null,
     "photoCount": 16
+  },
+  {
+    "name": "ChrisVerse Expo",
+    "slug": "chrisverse-expo",
+    "department": null,
+    "photoCount": 6
   },
   {
     "name": "CHRYSALIS 2025",
@@ -108,10 +162,34 @@
     "photoCount": 5
   },
   {
+    "name": "Clean Spaces, Healthy Habits: Promoting Washroom Etiquette and Hygiene",
+    "slug": "washroom-hygiene-session",
+    "department": null,
+    "photoCount": 5
+  },
+  {
+    "name": "Cleanliness Drive (NSS)",
+    "slug": "nss-cleanliness-drive",
+    "department": null,
+    "photoCount": 5
+  },
+  {
+    "name": "Christie Couture",
+    "slug": "christie-couture",
+    "department": null,
+    "photoCount": 6
+  },
+  {
     "name": "Cipher 2025",
     "slug": "cipher-2025",
     "department": "Science",
     "photoCount": 4
+  },
+  {
+    "name": "Comclave '26",
+    "slug": "comclave-26",
+    "department": "Commerce",
+    "photoCount": 8
   },
   {
     "name": "Crescita 2023",
@@ -120,10 +198,22 @@
     "photoCount": 17
   },
   {
+    "name": "Crescita — Inter Junior College Fest (Student Council)",
+    "slug": "cresita",
+    "department": null,
+    "photoCount": 6
+  },
+  {
     "name": "DATA DRIVEN DECISION MAKING: THE ROLE OF MATHEMATICS AND STATISTICS IN COMPUTER SCIENCE",
     "slug": "data-driven-decision-making-the-role-of-mathematics-and-statistics-in-computer-science",
     "department": "Science",
     "photoCount": 6
+  },
+  {
+    "name": "Debate — Clash of Minds",
+    "slug": "debate",
+    "department": null,
+    "photoCount": 9
   },
   {
     "name": "Cybersecurity Careers & Beyond: Shaping Tomorrow's Tech Talent",
@@ -135,6 +225,12 @@
     "name": "Demystifying Cyber Security",
     "slug": "demystifying-cyber-security",
     "department": "Science",
+    "photoCount": 6
+  },
+  {
+    "name": "DeSafio 2026",
+    "slug": "desafio-2026",
+    "department": "Commerce",
     "photoCount": 6
   },
   {
@@ -180,6 +276,12 @@
     "photoCount": 2
   },
   {
+    "name": "Financial Awareness Programme",
+    "slug": "financial-awareness-programme",
+    "department": "Commerce",
+    "photoCount": 6
+  },
+  {
     "name": "FINQUEST '25",
     "slug": "finquest-25",
     "department": "Management",
@@ -192,10 +294,34 @@
     "photoCount": 12
   },
   {
+    "name": "FinSmart Club — Trading Session",
+    "slug": "club-finsmart",
+    "department": null,
+    "photoCount": 1
+  },
+  {
+    "name": "First Friday Holy Mass (ACS)",
+    "slug": "acs-first-friday-holy-mass",
+    "department": null,
+    "photoCount": 2
+  },
+  {
+    "name": "Freshers' Day (Department of Arts)",
+    "slug": "freshers-day-arts",
+    "department": "Arts",
+    "photoCount": 6
+  },
+  {
     "name": "Freshers' Day 2026",
     "slug": "freshers-day-2026",
     "department": "Science",
     "photoCount": 7
+  },
+  {
+    "name": "From Case Studies to Entrepreneurship",
+    "slug": "from-case-studies-to-entrepreneurship",
+    "department": "Commerce",
+    "photoCount": 6
   },
   {
     "name": "Future Proof Yourself — Grooming, Goals and Employability",
@@ -220,6 +346,12 @@
     "slug": "gloria-2025",
     "department": null,
     "photoCount": 6
+  },
+  {
+    "name": "Guest Lecture on Human Rights: Principles and Global Challenges",
+    "slug": "guest-lecture-human-rights-principles-global-challenges",
+    "department": "Commerce",
+    "photoCount": 2
   },
   {
     "name": "Guest Lecture on: Mechanistic Modeling of Complex Social Systems",
@@ -252,6 +384,24 @@
     "photoCount": 8
   },
   {
+    "name": "Industrial Visit — Don Bosco Prafulta",
+    "slug": "industrial-visit-don-bosco-prafulta",
+    "department": "Arts",
+    "photoCount": 3
+  },
+  {
+    "name": "Industrial Visit — Krishi Vigyan Kendra",
+    "slug": "industrial-visit-krishi-vigyan-kendra",
+    "department": "Arts",
+    "photoCount": 1
+  },
+  {
+    "name": "Inside Out — Psychological Biases",
+    "slug": "inside-out",
+    "department": "Arts",
+    "photoCount": 6
+  },
+  {
     "name": "International Conference on Emerging Technologies (ICET 23) CS",
     "slug": "international-conference-on-emerging-technologies-icet-23-cs",
     "department": "Science",
@@ -282,6 +432,18 @@
     "photoCount": 5
   },
   {
+    "name": "International Yoga Day for Staff (NSS)",
+    "slug": "nss-international-yoga-day",
+    "department": null,
+    "photoCount": 5
+  },
+  {
+    "name": "Investiture Ceremony (ACS)",
+    "slug": "acs-investiture-ceremony",
+    "department": null,
+    "photoCount": 6
+  },
+  {
     "name": "Investor Awareness Session",
     "slug": "investor-awareness-session",
     "department": "Management",
@@ -292,6 +454,30 @@
     "slug": "joy-of-giving",
     "department": null,
     "photoCount": 10
+  },
+  {
+    "name": "Leadership Training Workshop (Student Council)",
+    "slug": "leadership-training-workshop",
+    "department": null,
+    "photoCount": 6
+  },
+  {
+    "name": "LinkedIn Launchpad",
+    "slug": "linkedin-launchpad",
+    "department": "Arts",
+    "photoCount": 5
+  },
+  {
+    "name": "LitLoom — The Readers' Circle",
+    "slug": "club-litloom",
+    "department": null,
+    "photoCount": 1
+  },
+  {
+    "name": "Lyrica — The Poetry Club",
+    "slug": "club-lyrica",
+    "department": null,
+    "photoCount": 1
   },
   {
     "name": "Manifest 2023",
@@ -312,6 +498,18 @@
     "photoCount": 2
   },
   {
+    "name": "MathVerse — The Math Club",
+    "slug": "club-mathverse",
+    "department": null,
+    "photoCount": 2
+  },
+  {
+    "name": "MOU-Based Tally Add-on Course (Commerce)",
+    "slug": "mou-tally-addon-course",
+    "department": "Commerce",
+    "photoCount": 1
+  },
+  {
     "name": "National Integration Camp 2026",
     "slug": "national-integration-camp-2026",
     "department": null,
@@ -324,10 +522,52 @@
     "photoCount": 2
   },
   {
+    "name": "NSS Day",
+    "slug": "nss-day",
+    "department": null,
+    "photoCount": 4
+  },
+  {
     "name": "Observed Climate Change over the Indian Region — Seminar",
     "slug": "observed-climate-change-seminar",
     "department": "Arts",
     "photoCount": 6
+  },
+  {
+    "name": "Parent-Teacher Meeting (SYBA & TYBA)",
+    "slug": "ptm-syba-tyba",
+    "department": "Arts",
+    "photoCount": 2
+  },
+  {
+    "name": "Peace Walk Against Trafficking",
+    "slug": "peace-walk-against-trafficking",
+    "department": null,
+    "photoCount": 4
+  },
+  {
+    "name": "Pixelora — The Designer's Club",
+    "slug": "club-pixelora",
+    "department": null,
+    "photoCount": 1
+  },
+  {
+    "name": "POSH Awareness Session for Teaching and Non-Teaching Staff",
+    "slug": "posh-awareness-staff",
+    "department": null,
+    "photoCount": 5
+  },
+  {
+    "name": "POSH Awareness Session for Students",
+    "slug": "posh-awareness-students",
+    "department": null,
+    "photoCount": 6
+  },
+  {
+    "name": "Practical Excel Training Programme",
+    "slug": "excel-training-programme",
+    "department": "Commerce",
+    "photoCount": 3
   },
   {
     "name": "PULSE 2025",
@@ -342,6 +582,18 @@
     "photoCount": 4
   },
   {
+    "name": "Raksha Bandhan (NSS)",
+    "slug": "nss-raksha-bandhan",
+    "department": null,
+    "photoCount": 4
+  },
+  {
+    "name": "Quiztoria — The Quiz Club",
+    "slug": "club-quiztoria",
+    "department": null,
+    "photoCount": 1
+  },
+  {
     "name": "Republic Day 2025",
     "slug": "republic-day-2025",
     "department": null,
@@ -352,6 +604,18 @@
     "slug": "republic-day-2023",
     "department": null,
     "photoCount": 7
+  },
+  {
+    "name": "Rhetorix — The Debate Club",
+    "slug": "club-rhetorix",
+    "department": null,
+    "photoCount": 1
+  },
+  {
+    "name": "Sabka Saath, Sabka Vikas",
+    "slug": "sabka-saath-sabka-vikas",
+    "department": "Commerce",
+    "photoCount": 6
   },
   {
     "name": "SAMVAAD '2025",
@@ -366,16 +630,40 @@
     "photoCount": 6
   },
   {
+    "name": "Seminars and Workshops (CHD)",
+    "slug": "chd-seminars-and-workshops",
+    "department": null,
+    "photoCount": 7
+  },
+  {
+    "name": "Shutterbugs — The Photography Club",
+    "slug": "club-shutterbugs",
+    "department": null,
+    "photoCount": 6
+  },
+  {
     "name": "Smart India",
     "slug": "smart-india",
     "department": "Management",
     "photoCount": 8
   },
   {
+    "name": "Spandan — Campus Connect Programme",
+    "slug": "spandan",
+    "department": "Arts",
+    "photoCount": 6
+  },
+  {
     "name": "Spark the Brand",
     "slug": "spark-the-brand",
     "department": "Management",
     "photoCount": 2
+  },
+  {
+    "name": "SPECTRA '26",
+    "slug": "spectra-26",
+    "department": "Arts",
+    "photoCount": 9
   },
   {
     "name": "Syntnia MUN 2025",
@@ -390,6 +678,12 @@
     "photoCount": 2
   },
   {
+    "name": "Teacher's Day (Student Council)",
+    "slug": "teachers-day-sc",
+    "department": null,
+    "photoCount": 6
+  },
+  {
     "name": "Technotsav 2023",
     "slug": "technotsav-2023",
     "department": null,
@@ -402,10 +696,28 @@
     "photoCount": 9
   },
   {
+    "name": "Textbook Tamasha (CCCA)",
+    "slug": "textbook-tamasha-ccca",
+    "department": "Commerce",
+    "photoCount": 3
+  },
+  {
+    "name": "The Power of First Impressions: Grooming, Body Language and Communication",
+    "slug": "power-of-first-impressions",
+    "department": "Arts",
+    "photoCount": 6
+  },
+  {
     "name": "The Success Blueprint: Interview & Attitude Essentials",
     "slug": "success-blueprint-interview-attitude",
     "department": "Management",
     "photoCount": 3
+  },
+  {
+    "name": "Treasure Hunt (CCCA)",
+    "slug": "treasure-hunt-ccca",
+    "department": "Commerce",
+    "photoCount": 2
   },
   {
     "name": "Udaan 2025",
@@ -430,6 +742,18 @@
     "slug": "workshop-on-green-solutions-and-environmental-action",
     "department": null,
     "photoCount": 6
+  },
+  {
+    "name": "World Mental Health Day (CHD)",
+    "slug": "world-mental-health-day",
+    "department": null,
+    "photoCount": 8
+  },
+  {
+    "name": "World Suicide Prevention Day",
+    "slug": "world-suicide-prevention-day",
+    "department": null,
+    "photoCount": 5
   },
   {
     "name": "Yessummit 2025",

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import PageHeader from '../../components/PageHeader';
 import Seo from '../../components/Seo';
+import { UsersIcon, SparklesIcon } from '../../components/icons';
 
 // Centre & Cell Thumbnail Images
 import imgIqac from '../../assets/centres/thumbs/iqac.png';
@@ -45,6 +46,8 @@ const CENTRES = [
   { name: 'Anti-Sexual Harassment Cell', image: imgAshc, path: '/centres-and-cells/anti-sexual-harassment-cell' },
   { name: 'Electoral Literacy Club', image: imgElc, path: '/centres-and-cells/electoral-literacy-club' },
   { name: 'Student Grievance Redressal Cell', image: imgSgrc, path: '/centres-and-cells/student-grievance-redressal-cell' },
+  { name: 'Association of Christian Students', icon: UsersIcon, path: '/centres-and-cells/association-of-christian-students' },
+  { name: 'Clubs & Societies', icon: SparklesIcon, path: '/centres-and-cells/clubs-and-societies' },
 ];
 
 export default function CentresIndex() {
@@ -67,19 +70,23 @@ export default function CentresIndex() {
         </p>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {CENTRES.map(({ name, image, path }) => (
+          {CENTRES.map(({ name, image, icon: Icon, path }) => (
             <Link
               key={name}
               to={path}
               className="flex items-center gap-4 rounded-cc-lg border border-cc-gray-200 bg-cc-bg-surface p-5 shadow-cc-sm transition-colors hover:border-cc-primary"
             >
               <span className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-cc-gray-200 bg-white p-1">
-                <img
-                  src={image}
-                  alt={name}
-                  className="h-full w-full object-contain"
-                  loading="lazy"
-                />
+                {Icon ? (
+                  <Icon className="h-6 w-6 text-cc-primary" />
+                ) : (
+                  <img
+                    src={image}
+                    alt={name}
+                    className="h-full w-full object-contain"
+                    loading="lazy"
+                  />
+                )}
               </span>
               <span className="font-semibold text-cc-text-heading">{name}</span>
             </Link>

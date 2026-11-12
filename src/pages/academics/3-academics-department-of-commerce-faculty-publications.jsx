@@ -2,8 +2,36 @@ import PageHeader from '../../components/PageHeader';
 import Seo from '../../components/Seo';
 import CategorySection from '../../components/CategorySection';
 import { GridIcon, AwardIcon } from '../../components/icons';
+import financialAwareness1 from '../../assets/images/gallery/financial-awareness-programme/1.jpg';
+import financialAwareness2 from '../../assets/images/gallery/financial-awareness-programme/2.jpg';
+import financialAwareness3 from '../../assets/images/gallery/financial-awareness-programme/3.jpg';
+import financialAwareness4 from '../../assets/images/gallery/financial-awareness-programme/4.jpg';
+import financialAwareness5 from '../../assets/images/gallery/financial-awareness-programme/5.jpg';
+import financialAwareness6 from '../../assets/images/gallery/financial-awareness-programme/6.jpg';
+import humanRights1 from '../../assets/images/gallery/guest-lecture-human-rights-principles-global-challenges/1.jpg';
+import humanRights2 from '../../assets/images/gallery/guest-lecture-human-rights-principles-global-challenges/2.jpg';
+import caseStudies1 from '../../assets/images/gallery/from-case-studies-to-entrepreneurship/1.jpg';
+import caseStudies2 from '../../assets/images/gallery/from-case-studies-to-entrepreneurship/2.jpg';
+import caseStudies3 from '../../assets/images/gallery/from-case-studies-to-entrepreneurship/3.jpg';
+import caseStudies4 from '../../assets/images/gallery/from-case-studies-to-entrepreneurship/4.jpg';
+import caseStudies5 from '../../assets/images/gallery/from-case-studies-to-entrepreneurship/5.jpg';
+import caseStudies6 from '../../assets/images/gallery/from-case-studies-to-entrepreneurship/6.jpg';
+
+const FINANCIAL_AWARENESS_IMAGES = [financialAwareness1, financialAwareness2, financialAwareness3, financialAwareness4, financialAwareness5, financialAwareness6];
+const HUMAN_RIGHTS_IMAGES = [humanRights1, humanRights2];
+const CASE_STUDIES_IMAGES = [caseStudies1, caseStudies2, caseStudies3, caseStudies4, caseStudies5, caseStudies6];
 
 const SEMINARS = [
+  {
+    name: 'Financial Awareness Programme',
+    images: FINANCIAL_AWARENESS_IMAGES,
+    description: 'Mr Onkar Joshi, Analyst – Fund Accounting, BNY, Kharadi, Pune, conducted a career guidance and industry interaction session, "Corporate, Higher Studies, Business — Pursuing Clarity and Growth in the World of Finance," sharing practical insights into careers in finance, banking, corporate management, higher education, entrepreneurship, and international trade, along with the growing role of AI in finance. Dr Abhijeet Birari followed with "FinTech as a Career: Future of Finance," familiarising students with the changing financial landscape and emerging career opportunities in FinTech, investment banking, financial analysis, wealth management, and the stock market. Together, the sessions encouraged students to explore emerging career pathways and make informed professional choices.',
+  },
+  {
+    name: 'Guest Lecture on Human Rights: Principles and Global Challenges',
+    images: HUMAN_RIGHTS_IMAGES,
+    description: 'A guest lecture on "Human Rights: Principles and Global Challenges" was organized for FY M.Com students, featuring Dr Manjula Gaur, Assistant Professor, Christ College, Pune, as the resource person. The session provided insights into the Universal Declaration of Human Rights (UDHR), corporate social responsibility, business ethics, labour rights, and human rights protection in India, and highlighted the role of the National and State Human Rights Commissions in addressing human rights violations. The interactive lecture sensitized students to the importance of ethical business practices, corporate accountability, and human rights safeguards in the modern business environment.',
+  },
   {
     name: 'Seminar on NSE Investment Awareness Programme',
     description: 'Valuable insights into financial markets, safe investing practices, and early financial planning were provided to FY and SY students through the NSE Investment Awareness Programme. Complex financial concepts were simplified and effectively explained by Ms Jyoti Agarwal through an interactive and engaging approach. Greater awareness of responsible investing and investor protection was fostered, and essential financial knowledge was imparted to the participants.',
@@ -23,6 +51,11 @@ const SEMINARS = [
 ];
 
 const CORPORATE_CONNECT = [
+  {
+    name: 'From Case Studies to Entrepreneurship',
+    images: CASE_STUDIES_IMAGES,
+    description: '"From Case Studies to Entrepreneurship" featured Mr Nikunj Dujari, Marketing & Business Growth Consultant, as the resource person. The session focused on connecting academic concepts with real-world business practices through case studies and industry experiences. Students gained practical insights into brand building, marketing strategies, business growth, consumer behaviour, market opportunities, and entrepreneurial decision-making. The interactive session encouraged students to develop an entrepreneurial mindset, apply theoretical knowledge to practical situations, and understand the importance of innovation, adaptability, and strategic thinking in building successful businesses.',
+  },
   {
     name: 'Bridging Campus Dreams to Corporate Reality',
     description: '‘Bridging Campus Dreams to Corporate Reality’ seminar was a highly impactful event that successfully met its objective of guiding students toward corporate readiness. Mr Shivam Warade’s expertise, combined with his practical advice, inspired students to reflect on their academic journey and prepare proactively for their careers.',
@@ -50,7 +83,7 @@ export default function DepartmentOfCommerceFacultyPublicationsPage() {
     <>
       <Seo
         title="Seminars/ Corporate Connect — Department of Commerce"
-        description="Seminars and corporate connect sessions from the Department of Commerce at Christ College, Pune, including the NSE Investment Awareness Programme, professional certifications in finance, technical trading, resume building, and MBA career guidance."
+        description="Seminars and corporate connect sessions from the Department of Commerce at Christ College, Pune, including Financial Awareness Programme, Human Rights guest lecture, From Case Studies to Entrepreneurship, professional certifications in finance, technical trading, resume building, and MBA career guidance."
       />
       <PageHeader
         title="Seminars/ Corporate Connect"

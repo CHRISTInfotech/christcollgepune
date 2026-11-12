@@ -1,9 +1,7 @@
 import PageHeader from '../../components/PageHeader';
-import { ClockIcon, AcademicCapIcon, PhoneIcon, BookIcon, CheckCircleIcon, CompassIcon, DownloadIcon, CalendarIcon, GlobeIcon, GridIcon } from '../../components/icons';
+import { ClockIcon, AcademicCapIcon, PhoneIcon, BookIcon, CheckCircleIcon, CompassIcon, CalendarIcon, GlobeIcon, GridIcon } from '../../components/icons';
 import Seo from '../../components/Seo';
-import PdfViewer from '../../components/PdfViewer';
 import banner from '../../assets/images/3-academics-department-of-commerce-department-page/department-banner.JPG';
-import syllabusPdf from '../../assets/acadmics/Commerce/bcom-syllabus-new.pdf';
 
 const ELIGIBILITY = [
   'Passed 10+2 (Higher Secondary) or equivalent from any recognized Board in India in any stream.',
@@ -79,15 +77,18 @@ export default function BcomBachelorOfCommerce() {
               Programme Overview
             </h2>
             <p className="mt-4 text-cc-text-body leading-relaxed text-justify">
-              The department strives every year to provide a quality education that meets students' needs and makes them future-ready. In our classroom, we strive to innovate with lecture and student-centric methods such as role plays, simulations, group assignments, discussions, debates, case studies, etc. The department incorporates several best practices into its curriculum, including peer mentoring, holistic development programs, social outreach programs, publication of research papers, and skill enhancement programs. The Christ College Commerce Association (CCCA) provides a platform to foster innovation, nurture skills, and build leaders through various commercial and cultural activities. Our experienced faculty is a strong pillar of the department, whose focus is to empower a diverse community of students to nurture their capabilities, transform their lives, and find success through high-quality teaching and learning processes. We also encourage students to organize events, participate in events organized by other colleges, and get involved in socially relevant activities. By participating in various college fests, our students have received numerous accolades. As a Christite community, we are incredibly proud of our alumni who have carried on the legacy of Christite and demonstrated their mettle in a wide range of fields.
+              The Bachelor of Commerce (B.Com) programme at Christ College Pune offers a dynamic learning environment that develops students&rsquo; understanding of commerce, business, finance, and related disciplines. The programme encourages intellectual curiosity, ethical conduct, creativity, and the discovery of individual talents. A three/four-year undergraduate programme, B.Com provides students with a strong academic foundation along with opportunities to develop communication, analytical, leadership, and entrepreneurial capabilities.
             </p>
             <p className="mt-4 text-cc-text-body leading-relaxed text-justify">
-              A vibrant educational institution for commerce students, to equip them with knowledge and skills in all domains, with core objectives to imbibe values and explore hidden talents. A platform to realise their full potential and thus make them employable globally. Three years at CHRIST College Pune will foster students with professional excellence, entrepreneurship skills, and make them responsible citizens. Apart from the curriculum, students are introduced to industry experts and scholarly research. With such academic and professional exposure, students are prepared for a variety of business roles and are equipped for higher education. The program is a blend of academic specialization and activities such as practical exposure, research projects, corporate connect programs, industrial visits, certification programs, placement drives, and a commerce club.
+              Learning extends beyond the classroom through interactions with industry professionals, academicians, and researchers, enabling students to gain insights into contemporary business practices. Students receive experiential exposure through research projects, corporate connect programmes, industrial visits, internships, certification courses, placement initiatives, and Commerce Club activities. These experiences enable them to apply classroom concepts to practical situations and understand the evolving requirements of the professional world.
+            </p>
+            <p className="mt-4 text-cc-text-body leading-relaxed text-justify">
+              The programme prepares graduates for career opportunities across accounting, banking, finance, taxation, management, entrepreneurship, and allied fields, while also providing a foundation for higher education and professional certifications. With its emphasis on knowledge, application, and holistic development, the B.Com programme seeks to shape capable professionals, enterprising individuals, and responsible contributors to society.
             </p>
 
             <h3 className="mt-8 text-base flex items-center gap-2">
               <CheckCircleIcon className="h-5 w-5 text-cc-primary shrink-0" />
-              Key Areas of Focus
+              Key Expertise Offered
             </h3>
             <ul className="mt-3 grid gap-2 sm:grid-cols-2">
               {SKILL_AREAS.map((h) => (
@@ -158,16 +159,6 @@ export default function BcomBachelorOfCommerce() {
               </dl>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="bg-cc-bg-surface">
-        <div className="mx-auto max-w-[1200px] px-6 py-16">
-          <h2 className="text-center mb-8 flex items-center justify-center gap-2.5">
-            <DownloadIcon className="h-6 w-6 text-cc-primary shrink-0" />
-            Course Syllabus
-          </h2>
-          <PdfViewer fileUrl={syllabusPdf} title="BA/BCom Syllabus" />
         </div>
       </section>
 

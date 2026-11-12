@@ -36,7 +36,7 @@ export default function StudentGrievanceRedressalCell() {
         title="Student Grievance Redressal Cell"
         description="The Student Grievance Redressal Cell at Christ College, Pune addresses academic and administrative grievances, including a dedicated mechanism for SC/ST students per UGC directives."
       />
-      <PageHeader title="Student Grievance Redressal Cell" breadcrumbs={[{ label: 'Student Life' }, { label: 'Student Grievance Redressal Cell' }]} />
+      <PageHeader title="Student Grievance Redressal Cell" breadcrumbs={[{ label: 'Centres & Cells' }, { label: 'Student Grievance Redressal Cell' }]} />
 
       <section className="mx-auto max-w-[1200px] px-6 py-16">
         <div className="max-w-3xl">

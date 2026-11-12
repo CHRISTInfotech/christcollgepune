@@ -1,6 +1,29 @@
 import TabbedContentPage from '../../components/TabbedContentPage';
-import { DownloadIcon } from '../../components/icons';
+import ImageCarousel from '../../components/ImageCarousel';
+import { DownloadIcon, CalendarIcon, UsersIcon } from '../../components/icons';
 import membersPdf from '../../assets/studentlife/cells/WOMEN CELL MEMBERS(2).pdf';
+import debate1 from '../../assets/images/gallery/debate/1.jpg';
+import debate2 from '../../assets/images/gallery/debate/2.jpg';
+import debate3 from '../../assets/images/gallery/debate/3.jpg';
+import debate4 from '../../assets/images/gallery/debate/4.jpg';
+import debate5 from '../../assets/images/gallery/debate/5.jpg';
+import debate6 from '../../assets/images/gallery/debate/6.jpg';
+import debate7 from '../../assets/images/gallery/debate/7.jpg';
+import debate8 from '../../assets/images/gallery/debate/8.jpg';
+import debate9 from '../../assets/images/gallery/debate/9.jpg';
+import peaceWalk1 from '../../assets/images/gallery/peace-walk-against-trafficking/1.jpg';
+import peaceWalk2 from '../../assets/images/gallery/peace-walk-against-trafficking/2.jpg';
+import peaceWalk3 from '../../assets/images/gallery/peace-walk-against-trafficking/3.jpg';
+import peaceWalk4 from '../../assets/images/gallery/peace-walk-against-trafficking/4.jpg';
+import washroom1 from '../../assets/images/gallery/washroom-hygiene-session/1.jpg';
+import washroom2 from '../../assets/images/gallery/washroom-hygiene-session/2.jpg';
+import washroom3 from '../../assets/images/gallery/washroom-hygiene-session/3.jpg';
+import washroom4 from '../../assets/images/gallery/washroom-hygiene-session/4.jpg';
+import washroom5 from '../../assets/images/gallery/washroom-hygiene-session/5.jpg';
+
+const DEBATE_IMAGES = [debate1, debate2, debate3, debate4, debate5, debate6, debate7, debate8, debate9];
+const PEACE_WALK_IMAGES = [peaceWalk1, peaceWalk2, peaceWalk3, peaceWalk4];
+const WASHROOM_IMAGES = [washroom1, washroom2, washroom3, washroom4, washroom5];
 
 const FUNCTIONS = [
   'Address and prevent various forms of harassment, including sexual harassment.',
@@ -16,6 +39,24 @@ const FUNCTIONS = [
 ];
 
 const ACTIVITIES = [
+  {
+    name: 'Debate — "Clash of Minds"',
+    date: '14 October 2026',
+    images: DEBATE_IMAGES,
+    description: 'A debate competition organised by the Women\'s Cell and the Department of Arts, engaging students in a spirited exchange of ideas and sharpening their critical thinking and public speaking skills.',
+  },
+  {
+    name: 'Peace Walk Against Trafficking',
+    date: 'July 2026',
+    images: PEACE_WALK_IMAGES,
+    description: 'Staff and students joined a public peace walk held on Anti-Human Trafficking Day to raise awareness against human trafficking and show solidarity with survivors, carrying placards calling to stop trafficking and win back humanity.',
+  },
+  {
+    name: 'Clean Spaces, Healthy Habits: Promoting Washroom Etiquette and Hygiene',
+    date: '17 July 2026',
+    images: WASHROOM_IMAGES,
+    description: 'A session for students on washroom etiquette and menstrual hygiene, covering the use of sanitary napkin vending machines installed across campus and promoting healthy, respectful shared spaces.',
+  },
   {
     name: 'Garba Party for Staff',
     date: '4 October 2022',
@@ -108,19 +149,32 @@ function HomeTab() {
 
 function ActivitiesTab() {
   return (
-    <div className="max-w-3xl">
-      <h2>Activities Conducted</h2>
-      <dl className="mt-6 flex flex-col divide-y divide-cc-gray-200">
-        {ACTIVITIES.map((item) => (
-          <div key={item.name} className="py-4 first:pt-0">
-            <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-              <dt className="font-semibold text-cc-text-heading">{item.name}</dt>
-              <span className="text-xs uppercase tracking-wide text-cc-text-muted-light">{item.date}</span>
-            </div>
-            <dd className="mt-1 text-sm text-cc-text-muted-light">{item.description}</dd>
+    <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      {ACTIVITIES.map((item) => (
+        <div
+          key={item.name}
+          className="group relative overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-card shadow-cc-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-cc-md"
+        >
+          <div className="relative">
+            {item.images ? (
+              <ImageCarousel images={item.images} alt={item.name} className="h-32 w-full" />
+            ) : (
+              <div className="h-32 w-full bg-gradient-to-br from-cc-primary to-cc-primary-deeper" />
+            )}
+            <span className="absolute -bottom-4 left-4 flex h-9 w-9 items-center justify-center rounded-full border-2 border-cc-bg-card bg-cc-primary text-white shadow-cc-sm">
+              <UsersIcon className="h-4 w-4" />
+            </span>
           </div>
-        ))}
-      </dl>
+          <div className="p-4 pt-6">
+            <h4 className="text-sm font-semibold leading-snug break-words">{item.name}</h4>
+            <p className="mt-1.5 flex items-center gap-1.5 text-[11px] uppercase tracking-wide text-cc-primary">
+              <CalendarIcon className="h-3 w-3 shrink-0" />
+              {item.date}
+            </p>
+            <p className="mt-2 text-xs leading-relaxed text-cc-text-muted-light line-clamp-4">{item.description}</p>
+          </div>
+        </div>
+      ))}
     </div>
   );
 }
@@ -130,6 +184,7 @@ export default function WomensCell({ initialTab = 'home' }) {
     <TabbedContentPage
       pageTitle="Women's Cell"
       breadcrumbLabel="Women's Cell"
+      breadcrumbSection="Centres & Cells"
       description="The Women's Cell at Christ College, Pune works towards women's empowerment and gender equality, fostering a safe, gender-sensitive campus for female students and staff — objectives, functions, members and activities."
       initialTab={initialTab}
       tabs={[

@@ -10,7 +10,7 @@ export default function StudentsInsurance202627() {
         title="Students Insurance 2026-27"
         description="View or download the Christ College, Pune Students Insurance 2026-27 document covering the student insurance scheme for the academic year."
       />
-      <PageHeader title="Students Insurance 2026-27" breadcrumbs={[{ label: 'Student Life' }, { label: 'Students Insurance 2026-27' }]} />
+      <PageHeader title="Students Insurance 2026-27" breadcrumbs={[{ label: 'Centres & Cells' }, { label: 'Students Insurance 2026-27' }]} />
 
       <section className="mx-auto max-w-[1200px] px-6 py-16">
         <p className="max-w-3xl text-cc-text-body">

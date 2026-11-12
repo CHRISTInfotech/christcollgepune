@@ -1,8 +1,69 @@
 import TabbedContentPage from './TabbedContentPage';
+import ImageCarousel from './ImageCarousel';
 import { UsersIcon, AcademicCapIcon, GlobeIcon, DownloadIcon } from './icons';
 import councilBanner from '../assets/images/5-students-student-council/council-banner.png';
 import members2223 from '../assets/studentlife/SC/Student Council Members 22-23.pdf';
 import members2324 from '../assets/studentlife/SC/Student Council Members 23-24.pdf';
+import cresita1 from '../assets/images/gallery/cresita/1.jpg';
+import cresita2 from '../assets/images/gallery/cresita/2.jpg';
+import cresita3 from '../assets/images/gallery/cresita/3.jpg';
+import cresita4 from '../assets/images/gallery/cresita/4.jpg';
+import cresita5 from '../assets/images/gallery/cresita/5.jpg';
+import cresita6 from '../assets/images/gallery/cresita/6.jpg';
+import teachersDay1 from '../assets/images/gallery/teachers-day-sc/1.jpg';
+import teachersDay2 from '../assets/images/gallery/teachers-day-sc/2.jpg';
+import teachersDay3 from '../assets/images/gallery/teachers-day-sc/3.jpg';
+import teachersDay4 from '../assets/images/gallery/teachers-day-sc/4.jpg';
+import teachersDay5 from '../assets/images/gallery/teachers-day-sc/5.jpg';
+import teachersDay6 from '../assets/images/gallery/teachers-day-sc/6.jpg';
+import leadership1 from '../assets/images/gallery/leadership-training-workshop/1.jpg';
+import leadership2 from '../assets/images/gallery/leadership-training-workshop/2.jpg';
+import leadership3 from '../assets/images/gallery/leadership-training-workshop/3.jpg';
+import leadership4 from '../assets/images/gallery/leadership-training-workshop/4.jpg';
+import leadership5 from '../assets/images/gallery/leadership-training-workshop/5.jpg';
+import leadership6 from '../assets/images/gallery/leadership-training-workshop/6.jpg';
+
+const CRESITA_IMAGES = [cresita1, cresita2, cresita3, cresita4, cresita5, cresita6];
+const TEACHERS_DAY_IMAGES = [teachersDay1, teachersDay2, teachersDay3, teachersDay4, teachersDay5, teachersDay6];
+const LEADERSHIP_IMAGES = [leadership1, leadership2, leadership3, leadership4, leadership5, leadership6];
+
+const ACTIVITIES = [
+  {
+    name: 'Investiture Ceremony',
+    description: 'The formal ceremony marking the formation of the new Student Council, where incoming members take charge from the outgoing council for the academic year.',
+  },
+  {
+    name: 'Independence Day',
+    description: 'The Student Council organises the Independence Day flag-hoisting and cultural programme on campus, marking the occasion with patriotic fervour.',
+  },
+  {
+    name: "Teacher's Day",
+    images: TEACHERS_DAY_IMAGES,
+    description: "Students came together to celebrate and honour their teachers through performances, tributes and a programme organised by the Student Council to mark Teacher's Day.",
+  },
+  {
+    name: 'Crescita — Inter Junior College Fest',
+    images: CRESITA_IMAGES,
+    description: 'An inter-junior-college fest organised by the Student Council, bringing together junior college students from across the city for a day of competitions and cultural events.',
+  },
+  {
+    name: 'Leadership Training Workshop',
+    images: LEADERSHIP_IMAGES,
+    description: 'A workshop for Student Council members and class representatives focused on building leadership, communication and event-management skills.',
+  },
+  {
+    name: 'Joy of Giving',
+    description: 'A charity drive organised by the Student Council collecting essentials and contributions for underprivileged communities, encouraging students towards social responsibility.',
+  },
+  {
+    name: 'Daksh',
+    description: 'A Student Council initiative aimed at skill-building and student development, organised on campus for the student community.',
+  },
+  {
+    name: 'Voters Awareness Programme',
+    description: 'An awareness programme encouraging students to register as voters and understand the importance of civic and electoral participation.',
+  },
+];
 
 const PILLARS = [
   {
@@ -126,6 +187,34 @@ function ConstitutionTab() {
   );
 }
 
+function ActivitiesTab() {
+  return (
+    <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      {ACTIVITIES.map((item) => (
+        <div
+          key={item.name}
+          className="group relative overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-card shadow-cc-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-cc-md"
+        >
+          <div className="relative">
+            {item.images ? (
+              <ImageCarousel images={item.images} alt={item.name} className="h-32 w-full" />
+            ) : (
+              <div className="h-32 w-full bg-gradient-to-br from-cc-primary to-cc-primary-deeper" />
+            )}
+            <span className="absolute -bottom-4 left-4 flex h-9 w-9 items-center justify-center rounded-full border-2 border-cc-bg-card bg-cc-primary text-white shadow-cc-sm">
+              <UsersIcon className="h-4 w-4" />
+            </span>
+          </div>
+          <div className="p-4 pt-6">
+            <h4 className="text-sm font-semibold leading-snug break-words">{item.name}</h4>
+            <p className="mt-2 text-xs leading-relaxed text-cc-text-muted-light line-clamp-4">{item.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 function MembersTab() {
   return (
     <div className="max-w-3xl">
@@ -160,12 +249,14 @@ export default function StudentCouncilPage({ initialTab = 'home' }) {
   return (
     <TabbedContentPage
       pageTitle="Student Council"
+      breadcrumbSection="Centres & Cells"
       description="The Student Council is the apex student body at Christ College, Pune, integrating academic and co-curricular life and linking students, faculty and administration. Read its role, Constitution, and member lists."
       bannerImage={councilBanner}
       bannerAlt="Student Council members of Christ College Pune on stage at a college event"
       initialTab={initialTab}
       tabs={[
         { key: 'home', label: 'Home', render: () => <HomeTab /> },
+        { key: 'activities', label: 'Activities', render: () => <ActivitiesTab /> },
         { key: 'constitution', label: 'Constitution', render: () => <ConstitutionTab /> },
         { key: 'members', label: 'Members', render: () => <MembersTab /> },
       ]}

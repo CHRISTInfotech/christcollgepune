@@ -1,22 +1,38 @@
 import PageHeader from '../../components/PageHeader';
-import { ClockIcon, AcademicCapIcon, PhoneIcon, BookIcon, CheckCircleIcon, DownloadIcon, CalendarIcon, GlobeIcon, GridIcon } from '../../components/icons';
+import { ClockIcon, AcademicCapIcon, PhoneIcon, BookIcon, CheckCircleIcon, CompassIcon, CalendarIcon, GlobeIcon, GridIcon } from '../../components/icons';
 import Seo from '../../components/Seo';
-import PdfViewer from '../../components/PdfViewer';
 import banner from '../../assets/images/3-academics-department-of-science-bsc-bachelor-of-computer-science/banner.JPG';
-import syllabusPdf from '../../assets/acadmics/Science/bachelor-of-computer-science-syllabus.pdf';
 
 const ELIGIBILITY = [
   'Passed 10+2 (Higher Secondary) or equivalent in Science stream with Mathematics from a recognized Board.',
 ];
 
 const SKILL_AREAS = [
-  'Networking',
-  'Software Testing',
-  'Full Stack Development',
-  'Operating System Development',
-  'Data Science',
-  'Object Oriented Programming',
-  'Application Development',
+  'Programming & Software Development – C, C++, Java, Python, problem-solving, algorithms and application development.',
+  'Software Engineering & Application Development – Software design, software testing, debugging, quality assurance and full-stack development.',
+  'Database Management & Data Technologies – DBMS, SQL, database design, data management and data processing.',
+  'Computer Networks & Cybersecurity – Network architecture, communication protocols, network administration and information security.',
+  'Operating Systems & Computer Architecture – Operating system concepts, Linux, system programming and computer organisation.',
+  'Artificial Intelligence & Emerging Technologies – AI, machine learning, data science, cloud computing, blockchain and IoT.',
+  'Research, Innovation & Project Development – Industry-oriented projects, practical implementation, research skills, teamwork and technical problem-solving.',
+];
+
+const CAREER_OPPORTUNITIES = [
+  'Software Developer / Software Engineer',
+  'Web and Full-Stack Developer',
+  'Mobile Application Developer',
+  'Python / Java Programmer',
+  'Data Analyst',
+  'AI and Machine Learning Associate',
+  'Cybersecurity Analyst',
+  'Network Administrator',
+  'Database Administrator',
+  'Software Testing and Quality Assurance Analyst',
+  'Cloud Computing Associate',
+  'System Administrator',
+  'IT Support and Application Support Specialist',
+  'Business Intelligence Analyst',
+  'Freelance Developer and Technology Entrepreneur',
 ];
 
 const DOCUMENTS = [
@@ -37,7 +53,7 @@ export default function BscBachelorOfComputerScience() {
     <>
       <Seo
         title="BSc (Bachelor of Computer Science)"
-        description="BSc (Bachelor of Computer Science) at Christ College, Pune is a 3-year, 6-semester full-time programme covering software development, software testing, operating systems and Java programming, preparing students for careers in development, networking and analytics."
+        description="BSc (Bachelor of Computer Science) at Christ College, Pune is a 4-year, 8-semester full-time programme covering software development, software testing, operating systems and Java programming, preparing students for careers in development, networking and analytics."
       />
       <PageHeader
         breadcrumbs={[{ label: 'Department of Science', path: '/academics/department-of-science/department-page' }, { label: 'BSc (Bachelor of Computer Science)' }]}
@@ -80,10 +96,23 @@ export default function BscBachelorOfComputerScience() {
 
             <h3 className="mt-8 text-base flex items-center gap-2">
               <CheckCircleIcon className="h-5 w-5 text-cc-primary shrink-0" />
-              Skill Areas
+              Key Expertise Offered
             </h3>
             <ul className="mt-3 flex flex-col gap-2">
               {SKILL_AREAS.map((h) => (
+                <li key={h} className="flex items-start gap-2 text-sm text-cc-text-body">
+                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-cc-primary" aria-hidden="true" />
+                  {h}
+                </li>
+              ))}
+            </ul>
+
+            <h3 className="mt-8 text-base flex items-center gap-2">
+              <CompassIcon className="h-5 w-5 text-cc-primary shrink-0" />
+              Career Opportunities
+            </h3>
+            <ul className="mt-3 grid gap-2 sm:grid-cols-2">
+              {CAREER_OPPORTUNITIES.map((h) => (
                 <li key={h} className="flex items-start gap-2 text-sm text-cc-text-body">
                   <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-cc-primary" aria-hidden="true" />
                   {h}
@@ -138,16 +167,6 @@ export default function BscBachelorOfComputerScience() {
               </dl>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="bg-cc-bg-surface">
-        <div className="mx-auto max-w-[1200px] px-6 py-16">
-          <h2 className="text-center mb-8 flex items-center justify-center gap-2.5">
-            <DownloadIcon className="h-6 w-6 text-cc-primary shrink-0" />
-            Course Syllabus
-          </h2>
-          <PdfViewer fileUrl={syllabusPdf} title="BSc Computer Science Syllabus" />
         </div>
       </section>
 

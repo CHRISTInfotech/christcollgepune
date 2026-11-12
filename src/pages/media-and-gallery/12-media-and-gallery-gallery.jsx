@@ -39,7 +39,10 @@ function extractYear(name) {
 export default function GalleryPage() {
   const [searchParams] = useSearchParams();
   const [search, setSearch] = useState('');
-  const [department, setDepartment] = useState('All');
+  const [department, setDepartment] = useState(() => {
+    const dept = searchParams.get('department');
+    return dept && DEPARTMENTS.includes(dept) ? dept : 'All';
+  });
   const [sort, setSort] = useState('name-asc');
   const [openEvent, setOpenEvent] = useState(() => {
     const eventSlug = searchParams.get('event');

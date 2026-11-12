@@ -288,6 +288,7 @@ export default function PhysicalEducation({ initialTab = 'home' }) {
     <TabbedContentPage
       pageTitle="Physical Education & Sports"
       breadcrumbLabel="Physical Education"
+      breadcrumbSection="Centres & Cells"
       description="The Department of Physical Education and Sports at Christ College, Pune nurtures students' mental, social and emotional development through sport, teamwork and healthy competition — team, activities, facilities and achievements."
       bannerImage={athleticsBanner}
       bannerAlt="College basketball teams and staff posing together on the court"

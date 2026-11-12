@@ -350,6 +350,16 @@
     "notes": "Facilities & Activities sub-page, linked from the Department of Arts page, not in main nav menu."
   },
   {
+    "id": "3-academics-department-of-arts-events-and-activities",
+    "section": "3. Academics",
+    "page": "Department of Arts",
+    "sub_link": "Events and Activities",
+    "url": "",
+    "path": "/academics/department-of-arts/events-and-activities",
+    "verification": "Needs URL verification",
+    "notes": "Not present in the source xlsx sitemap; added from the 29-10-26 UPDATION Drive content-extraction pass (Department of Arts Events & Activities folder)."
+  },
+  {
     "id": "3-academics-department-of-arts-ba-variant",
     "section": "3. Academics",
     "page": "Department of Arts",
@@ -788,6 +798,26 @@
     "path": "/centres-and-cells/iqac/feedback-analysis",
     "verification": "Verified",
     "notes": ""
+  },
+  {
+    "id": "7-centres-and-cells-association-of-christian-students",
+    "section": "7. Centres & Cells",
+    "page": "Association of Christian Students",
+    "sub_link": "",
+    "url": "",
+    "path": "/centres-and-cells/association-of-christian-students",
+    "verification": "Needs URL verification",
+    "notes": "Not present in the source xlsx sitemap; added from the 29-10-26 UPDATION Drive content-extraction pass (Cells and Centres folder)."
+  },
+  {
+    "id": "7-centres-and-cells-clubs-and-societies",
+    "section": "7. Centres & Cells",
+    "page": "Clubs & Societies",
+    "sub_link": "",
+    "url": "",
+    "path": "/centres-and-cells/clubs-and-societies",
+    "verification": "Needs URL verification",
+    "notes": "Not present in the source xlsx sitemap; added from the 29-10-26 UPDATION Drive content-extraction pass (Cells and Centres folder)."
   },
   {
     "id": "7-centres-and-cells-nirmiti-start-up-and-innovation-centre",
@@ -2317,6 +2347,16 @@
     "url": "https://christcollegepune.org/departments-activities/main%20campus/department%20of%20commerce/commerce/NzI1NQ==",
     "path": "/academics/department-of-commerce/activities",
     "verification": "Verified",
+    "notes": "Facilities & Activities sub-page, linked from the Department of Commerce page, not in main nav menu."
+  },
+  {
+    "id": "3-academics-department-of-commerce-events-and-activities",
+    "section": "3. Academics",
+    "page": "Department of Commerce",
+    "sub_link": "Events and Activities",
+    "url": "",
+    "path": "/academics/department-of-commerce/events-and-activities",
+    "verification": "Needs URL verification",
     "notes": "Facilities & Activities sub-page, linked from the Department of Commerce page, not in main nav menu."
   },
   {

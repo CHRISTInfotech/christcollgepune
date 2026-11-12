@@ -324,7 +324,7 @@ export default function LibraryAboutUs({ initialTab = 'home' }) {
     <TabbedContentPage
       pageTitle="Library"
       breadcrumbLabel="Library"
-      breadcrumbSection="Centres &amp; Cells"
+      breadcrumbSection="Centres & Cells"
       description="The Christ College, Pune Library occupies 1975 sq. ft. on the 3rd floor, featuring 9488+ books, N-List digital databases, periodicals, and comprehensive student support services."
       initialTab={initialTab}
       tabs={[

@@ -25,7 +25,7 @@ export default function AntiRaggingCell() {
         title="Anti-Ragging Cell"
         description="The Anti-Ragging Cell at Christ College, Pune was established as per UGC regulations to maintain a ragging-free campus, with an Anti-Ragging Squad and regular awareness programmes."
       />
-      <PageHeader title="Anti-Ragging Cell" breadcrumbs={[{ label: 'Student Life' }, { label: 'Anti-Ragging Cell' }]} />
+      <PageHeader title="Anti-Ragging Cell" breadcrumbs={[{ label: 'Centres & Cells' }, { label: 'Anti-Ragging Cell' }]} />
 
       <section className="mx-auto max-w-[1200px] px-6 py-16">
         <div className="max-w-3xl">

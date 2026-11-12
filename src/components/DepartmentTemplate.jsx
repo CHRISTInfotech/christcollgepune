@@ -16,7 +16,6 @@ import {
   BookIcon,
   ClockIcon,
   CheckCircleIcon,
-  BriefcaseIcon,
   SparklesIcon,
   DocumentTextIcon,
   QuoteIcon,
@@ -27,15 +26,38 @@ import {
   LightbulbIcon,
 } from './icons';
 
-// Splits prose into sentences without breaking on single-letter abbreviations
-// like "B. Com" or "M. Com". Those periods are masked out before splitting
-// (rather than just excluded from the split pattern) so the text around them
-// isn't silently dropped, then restored once the sentences are split.
+// Splits prose into sentences without breaking on abbreviations — spaced
+// ("B. Com"), compact dotted ("B.A.", "M.Com.", "Ph.D."), or single
+// trailing-period forms ("BSc.", "etc."). Sentence boundaries are found by
+// scanning for delimiters directly (rather than matching "prefix + delimiter"
+// as one unit), since the latter silently drops everything back to the
+// previous boundary the moment one delimiter fails its lookahead.
 function splitSentences(text) {
   const PLACEHOLDER = String.fromCharCode(0);
-  const masked = text.replace(/\b([A-Z])\.(?=\s)/g, `$1${PLACEHOLDER}`);
-  const matches = masked.match(/[^.!?]+[.!?]+(?=\s|$)|[^.!?]+$/g) || [masked];
-  return matches
+  const masked = text
+    // Compact multi-segment abbreviations like "B.A.", "M.Com.", "Ph.D." —
+    // matched as a whole run so a period mid-abbreviation (not followed by
+    // whitespace) never gets treated as a sentence boundary.
+    .replace(/\b[A-Z][a-z]?(?:\.[A-Z][a-z]*)+\./g, (m) => m.replace(/\./g, PLACEHOLDER))
+    // Spaced single-letter abbreviations like "B. Com" or "M. Com".
+    .replace(/\b([A-Z])\.(?=\s)/g, `$1${PLACEHOLDER}`);
+
+  // A real sentence boundary is a delimiter run followed by whitespace +
+  // a capital letter, or by end of string — this is what distinguishes it
+  // from a trailing-period abbreviation like "BSc." followed by a lowercase
+  // continuation ("BSc. in Data Science").
+  const boundary = /[.!?]+(?=\s+[A-Z]|\s*$)/g;
+  const sentences = [];
+  let start = 0;
+  let match;
+  while ((match = boundary.exec(masked))) {
+    const end = match.index + match[0].length;
+    sentences.push(masked.slice(start, end));
+    start = end;
+  }
+  if (start < masked.length) sentences.push(masked.slice(start));
+
+  return sentences
     .map((s) => s.split(PLACEHOLDER).join('.').trim())
     .filter(Boolean);
 }
@@ -538,10 +560,6 @@ export default function DepartmentTemplate({
                           <DocumentTextIcon className="h-3 w-3 text-cc-primary" />
                           Choice-Based Credit
                         </span>
-                        <span className="inline-flex items-center gap-1 bg-cc-gray-100 px-2.5 py-0.5 rounded-full font-medium">
-                          <BriefcaseIcon className="h-3 w-3 text-cc-primary" />
-                          Industry Training
-                        </span>
                       </div>
 
                       <div className="mt-auto pt-5">
@@ -713,7 +731,7 @@ export default function DepartmentTemplate({
                   </div>
                   <h2 className="text-2xl sm:text-3xl font-extrabold text-cc-primary flex items-center gap-2.5">
                     <GridIcon className="h-7 w-7 text-cc-primary shrink-0" />
-                    Department Activities &amp; Events
+                    Beyond the Classroom
                   </h2>
                 </div>
 

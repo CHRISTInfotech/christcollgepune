@@ -26,11 +26,35 @@ import digitalSkills2 from '../../assets/images/gallery/digital-skills-workshop-
 import digitalSkills3 from '../../assets/images/gallery/digital-skills-workshop-canva/3.jpg';
 import digitalSkills4 from '../../assets/images/gallery/digital-skills-workshop-canva/4.jpg';
 import digitalSkills5 from '../../assets/images/gallery/digital-skills-workshop-canva/5.jpg';
+import chrisverse1 from '../../assets/images/gallery/chrisverse-expo/1.jpg';
+import chrisverse2 from '../../assets/images/gallery/chrisverse-expo/2.jpg';
+import chrisverse3 from '../../assets/images/gallery/chrisverse-expo/3.jpg';
+import chrisverse4 from '../../assets/images/gallery/chrisverse-expo/4.jpg';
+import chrisverse5 from '../../assets/images/gallery/chrisverse-expo/5.jpg';
+import chrisverse6 from '../../assets/images/gallery/chrisverse-expo/6.jpg';
+import insideOut1 from '../../assets/images/gallery/inside-out/1.jpg';
+import insideOut2 from '../../assets/images/gallery/inside-out/2.jpg';
+import insideOut3 from '../../assets/images/gallery/inside-out/3.jpg';
+import insideOut4 from '../../assets/images/gallery/inside-out/4.jpg';
+import insideOut5 from '../../assets/images/gallery/inside-out/5.jpg';
+import insideOut6 from '../../assets/images/gallery/inside-out/6.jpg';
 
 const ASPIRE_EXPO_IMAGES = [aspireExpo1, aspireExpo2, aspireExpo3, aspireExpo4, aspireExpo5, aspireExpo6, aspireExpo7, aspireExpo8];
 const DIGITAL_SKILLS_IMAGES = [digitalSkills1, digitalSkills2, digitalSkills3, digitalSkills4, digitalSkills5];
+const CHRISVERSE_IMAGES = [chrisverse1, chrisverse2, chrisverse3, chrisverse4, chrisverse5, chrisverse6];
+const INSIDE_OUT_IMAGES = [insideOut1, insideOut2, insideOut3, insideOut4, insideOut5, insideOut6];
 
 const ACTIVITY = [
+  {
+    name: 'ChrisVerse Expo',
+    images: CHRISVERSE_IMAGES,
+    description: 'ChrisVerse at Christ College Pune marked the coming together of various student clubs through an engaging day of activities and celebrations. The event commenced with the inauguration of the clubs, followed by student-led stalls featuring interactive games, quizzes, food, and a dedicated book stall, celebrating the spirit of creativity, collaboration, and student engagement.',
+  },
+  {
+    name: 'Inside Out — Psychological Biases',
+    images: INSIDE_OUT_IMAGES,
+    description: 'The event on Psychological Biases offered students an engaging and interactive exploration of the human mind and its thought processes. The programme featured a choir performance and a unique on-stage appearance by a gorilla, adding an element of creativity and excitement. Multiple stalls were set up featuring psychological games, mind games, and interactive activities that challenged participants’ thinking, perception, and decision-making, encouraging fellow students to understand how psychological biases influence everyday thoughts and behaviour.',
+  },
   {
     name: 'Aspire Expo',
     images: ASPIRE_EXPO_IMAGES,

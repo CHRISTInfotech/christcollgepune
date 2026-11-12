@@ -18,7 +18,7 @@ export default function ElectoralLiteracyClub() {
         title="Electoral Literacy Club"
         description="The Electoral Literacy Club at Christ College, Pune promotes civic engagement, electoral awareness and responsible citizenship among students through voter education and registration drives."
       />
-      <PageHeader title="Electoral Literacy Club" breadcrumbs={[{ label: 'Student Life' }, { label: 'Electoral Literacy Club' }]} />
+      <PageHeader title="Electoral Literacy Club" breadcrumbs={[{ label: 'Centres & Cells' }, { label: 'Electoral Literacy Club' }]} />
 
       <section className="mx-auto max-w-[1200px] px-6 py-16">
         <div className="max-w-3xl">

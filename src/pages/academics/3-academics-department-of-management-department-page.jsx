@@ -6,6 +6,7 @@ import ccma from '../../assets/images/3-academics-department-of-management-depar
 import corporateConnect from '../../assets/images/3-academics-department-of-management-department-page/corporate-connect.JPG';
 import campusUpdates from '../../assets/images/3-academics-department-of-management-department-page/campus-updates.JPG';
 import facultyPublications from '../../assets/images/3-academics-department-of-management-department-page/faculty-publications.jpg';
+import eventsAndActivities from '../../assets/images/gallery/ai-logic-hunt-2026/1.jpg';
 import { getTestimonialsByDepartment } from '../../data/testimonials';
 
 const PROGRAMMES = [
@@ -29,6 +30,7 @@ const ACTIVITIES = [
   { name: 'Conference/Workshop/Exhibitions', description: 'Industry engagement through talks, visits and internships.', image: corporateConnect, path: '/academics/department-of-management/activities' },
   { name: 'Newsletter', description: 'Department newsletter — Eloquence.', image: campusUpdates, path: '/academics/department-of-management/newsletter' },
   { name: 'Seminars/ Corporate Connect', description: 'Research and publications by department faculty.', image: facultyPublications, path: '/academics/department-of-management/seminars-and-corporate-connect' },
+  { name: 'Events and Activities', description: 'Photo gallery of department events and activities.', image: eventsAndActivities, path: '/media-and-gallery/gallery?department=Management' },
 ];
 
 const TESTIMONIALS = getTestimonialsByDepartment('management');

@@ -6,6 +6,7 @@ import association from '../../assets/images/3-academics-department-of-arts-ba-d
 import activities from '../../assets/images/3-academics-department-of-arts-ba-department-programme-page/activities.JPG';
 import achievementKrishna from '../../assets/images/3-academics-department-of-arts-ba-department-programme-page/achievement-krishna-chauhan.png';
 import facultyPublications from '../../assets/images/3-academics-department-of-arts-ba-department-programme-page/faculty-publications.jpg';
+import eventsAndActivities from '../../assets/images/gallery/aspire-expo/1.jpg';
 import { getTestimonialsByDepartment } from '../../data/testimonials';
 
 const PROGRAMMES = [
@@ -29,6 +30,7 @@ const ACTIVITIES = [
   { name: 'CCAA', description: 'Christ College Arts Association.', image: association, path: '/academics/department-of-arts/association' },
   { name: 'Conference/Workshop/Exhibitions', description: 'Student-led activities and initiatives.', image: activities, path: '/academics/department-of-arts/activities' },
   { name: 'Seminars/ Corporate Connect', description: 'Research and publications by department faculty.', image: facultyPublications, path: '/academics/department-of-arts/seminars-and-corporate-connect' },
+  { name: 'Events and Activities', description: 'Freshers\' Day, PTM, industrial visits and more.', image: eventsAndActivities, path: '/academics/department-of-arts/events-and-activities' },
 ];
 
 const ACHIEVEMENTS = [
@@ -52,16 +54,18 @@ export default function DepartmentOfArtsPage() {
       bannerImage={departmentBanner}
       programmes={PROGRAMMES}
       aboutParagraphs={ABOUT_PARAGRAPHS}
-      vision="To be a leading academic and research department in economics that generates innovative ideas and solutions to complex economic challenges facing society."
-      mission="The Department of Arts is dedicated to advancing knowledge and understanding of economics through teaching, research, and outreach."
+      vision="To foster intellectually curious, socially responsible and compassionate individuals through the study of language, literature and human behaviour."
+      mission="To provide a holistic learning environment that promotes critical thinking, effective communication, psychological understanding, creativity and social awareness, empowering students to become confident individuals and responsible global citizens."
       hod={{
         name: 'Mr. Biju Sebastian',
         title: 'Head of Department',
         image: hodBijuSebastian,
         messageParagraphs: [
-          'Greetings from the Department of Arts. For the BA programme, the department provides Economics as the primary subject. Students study Microeconomics, Macroeconomics, and Economic Development and Policy in India. The department also provides a variety of soft skills. Students in the BA programme can take enrichment courses in Research Methodology, Data Analysis, and Fundamental Computational Techniques for Data Analysis.',
-          'Because of its great usefulness and enormous demand in the labour market, Economics is a perennially popular and well-regarded discipline. Fundamentally, Economics is the study of evaluating alternatives and making informed decisions. The programme develops critical thinking, analytical reasoning, and problem-solving abilities that prepare students for both professional and personal success.',
-          'Employers frequently seek the skills acquired through studying Economics, including decision-making, problem-solving, information gathering and processing, statistical analysis, and effective written and verbal communication. These competencies open up opportunities in both the public and private sectors.',
+          'Welcome to the Department of Arts at Christ College, Pune!',
+          'The Department of Arts is committed to providing a dynamic and enriching learning environment that encourages intellectual curiosity, critical thinking, creativity, and holistic development. Through our Bachelor of Arts (BA) programme, which brings together English, Psychology, and Economics under the National Education Policy (NEP) framework of Savitribai Phule Pune University, we strive to equip students with the knowledge, skills, and perspectives necessary to thrive in an increasingly complex and interconnected world.',
+          'Each discipline offers unique opportunities for learning and growth. English fosters effective communication, literary appreciation, and cultural understanding; Psychology deepens our understanding of human behaviour and mental processes; and Economics develops analytical reasoning and informed decision-making through the study of economic systems and contemporary socio-economic issues. Together, these disciplines provide a strong foundation for academic advancement, professional growth, and responsible citizenship.',
+          'We place great emphasis on experiential learning, research aptitude, skill development, and the practical application of knowledge. Through interactive teaching, presentations, projects, discussions, and co-curricular activities, our students are encouraged to develop essential competencies such as communication, problem-solving, collaboration, and independent thinking.',
+          'With the support of our dedicated faculty, we strive to create an inclusive and stimulating environment that empowers students to explore their potential, pursue academic and professional excellence, and become responsible citizens. We are committed to shaping confident, compassionate, and socially conscious individuals prepared to make a meaningful contribution to society.',
         ],
       }}
       activities={ACTIVITIES}

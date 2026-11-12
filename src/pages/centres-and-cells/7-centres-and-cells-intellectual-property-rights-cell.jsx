@@ -17,7 +17,7 @@ export default function IntellectualPropertyRightsCell() {
         title="Intellectual Property Rights Cell"
         description="The Intellectual Property Rights Cell at Christ College, Pune creates awareness about patents and copyright, and guides inventors on patenting their inventions."
       />
-      <PageHeader title="Intellectual Property Rights Cell" breadcrumbs={[{ label: 'Student Life' }, { label: 'Intellectual Property Rights Cell' }]} />
+      <PageHeader title="Intellectual Property Rights Cell" breadcrumbs={[{ label: 'Centres & Cells' }, { label: 'Intellectual Property Rights Cell' }]} />
 
       <section className="mx-auto max-w-[1200px] px-6 py-16">
         <img

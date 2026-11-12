@@ -1,9 +1,7 @@
 import PageHeader from '../../components/PageHeader';
-import { ClockIcon, AcademicCapIcon, PhoneIcon, BookIcon, CheckCircleIcon, CalendarIcon, GridIcon, GlobeIcon, DownloadIcon } from '../../components/icons';
+import { ClockIcon, AcademicCapIcon, PhoneIcon, BookIcon, CheckCircleIcon, CalendarIcon, GridIcon, GlobeIcon } from '../../components/icons';
 import Seo from '../../components/Seo';
-import PdfViewer from '../../components/PdfViewer';
 import banner from '../../assets/images/3-academics-department-of-management-bba-bachelor-of-business-administration/banner.JPG';
-import syllabusPdf from '../../assets/acadmics/Management/bba-syllabus.pdf';
 
 const ELIGIBILITY = [
   'Passed 10+2 (Higher Secondary) or equivalent in any stream with a minimum of 40% marks.',
@@ -100,7 +98,7 @@ export default function BbaBachelorOfBusinessAdministration() {
 
             <h3 className="mt-8 text-base flex items-center gap-2">
               <CheckCircleIcon className="h-5 w-5 text-cc-primary shrink-0" />
-              Programme Highlights
+              Key Expertise Offered
             </h3>
             <ul className="mt-3 flex flex-col gap-2">
               {HIGHLIGHTS.map((h) => (
@@ -158,16 +156,6 @@ export default function BbaBachelorOfBusinessAdministration() {
               </dl>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="bg-cc-bg-surface">
-        <div className="mx-auto max-w-[1200px] px-6 py-16">
-          <h2 className="text-center mb-8 flex items-center justify-center gap-2.5">
-            <DownloadIcon className="h-6 w-6 text-cc-primary shrink-0" />
-            Course Syllabus
-          </h2>
-          <PdfViewer fileUrl={syllabusPdf} title="BBA (Bachelor of Business Administration) Syllabus" />
         </div>
       </section>
 

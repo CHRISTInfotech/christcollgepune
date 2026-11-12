@@ -4,6 +4,16 @@ import testimonialAbith from '../assets/images/3-academics-department-of-science
 import testimonialJuliet from '../assets/images/3-academics-department-of-science-department-page/testimonial-juliet-jenny.png';
 import testimonialKirti from '../assets/images/3-academics-department-of-science-department-page/testimonial-kirti-nikam.jpg';
 import testimonialKrishna from '../assets/images/3-academics-department-of-arts-ba-department-programme-page/achievement-krishna-chauhan.png';
+import testimonialShaina from '../assets/images/3-academics-department-of-arts-ba-department-programme-page/testimonial-shaina-sharma.jpg';
+import testimonialUjala from '../assets/images/3-academics-department-of-arts-ba-department-programme-page/testimonial-ujala-mishra.jpg';
+import testimonialAriz from '../assets/images/3-academics-department-of-arts-ba-department-programme-page/testimonial-ariz-khan.jpg';
+import testimonialArchi from '../assets/images/3-academics-department-of-arts-ba-department-programme-page/testimonial-archi-singh.jpg';
+import testimonialVaishnavi from '../assets/images/3-academics-department-of-commerce-department-page/testimonial-vaishnavi-nair.jpg';
+import testimonialKirthi from '../assets/images/3-academics-department-of-commerce-department-page/testimonial-kirthi-m-dominic.jpg';
+import testimonialKuldeep from '../assets/images/3-academics-department-of-commerce-department-page/testimonial-kuldeep-singh-rajpurohit.jpg';
+import testimonialKirtan from '../assets/images/3-academics-department-of-commerce-department-page/testimonial-kirtan-shetty.jpg';
+import testimonialMark from '../assets/images/3-academics-department-of-commerce-department-page/testimonial-mark-britto.jpg';
+import testimonialAarushi from '../assets/images/3-academics-department-of-commerce-department-page/testimonial-aarushi-miglani.jpg';
 
 export const DEPARTMENTS = [
   { key: 'all', label: 'All Departments' },
@@ -21,9 +31,59 @@ export const TESTIMONIALS_DATA = [
     departmentName: 'Department of Commerce',
     departmentPath: '/academics/department-of-commerce/department-page',
     name: 'Vaishnavi Nair',
-    programme: 'B.Com, 2021–2024',
-    photo: 'https://christcollegepune.org/uploads/testimonial/medium/1242487989_2025-03-12_10-12-15.JPG',
-    quote: 'The college fostered a sense of community that made every student feel valued. The vibrant campus life, along with the many extracurricular opportunities, helped me develop essential soft skills like communication.'
+    programme: 'B.Com, 2023–24',
+    photo: testimonialVaishnavi,
+    quote: 'My time at Christ College has been incredibly rewarding. The faculty members were always approachable and supportive, creating a nurturing environment for learning. The college fostered a sense of community that made every student feel valued. The vibrant campus life, along with the many extracurricular opportunities, helped me develop essential soft skills like communication, leadership, and teamwork.'
+  },
+  {
+    id: 'comm-4',
+    department: 'commerce',
+    departmentName: 'Department of Commerce',
+    departmentPath: '/academics/department-of-commerce/department-page',
+    name: 'Kirthi M Dominic',
+    programme: 'B.Com, 2022–23',
+    photo: testimonialKirthi,
+    quote: 'Joining Christ in 2020 was the beginning of something special. From online classes to vibrant campus life, every experience—from events to friendships—shaped unforgettable memories. The support from teachers and peers made Christ feel like family.'
+  },
+  {
+    id: 'comm-5',
+    department: 'commerce',
+    departmentName: 'Department of Commerce',
+    departmentPath: '/academics/department-of-commerce/department-page',
+    name: 'Kuldeep Singh Rajpurohit',
+    programme: 'B.Com, 2024–25',
+    photo: testimonialKuldeep,
+    quote: 'My journey at Christ College has been truly transformative. The vibrant campus life, inspiring staff, and endless opportunities helped me grow academically and personally. From cultural fests to social initiatives, every experience shaped me into a confident, well-rounded individual.'
+  },
+  {
+    id: 'comm-6',
+    department: 'commerce',
+    departmentName: 'Department of Commerce',
+    departmentPath: '/academics/department-of-commerce/department-page',
+    name: 'Kirtan Shetty',
+    programme: 'B.Com, 2023–24',
+    photo: testimonialKirtan,
+    quote: "These halls have been more than just a place of learning – they've been a catalyst for growth. Through the challenges and triumphs, I've discovered my own resilience and developed the skills to thrive in a fast-paced world. Christ has been the foundation where I've gained not just knowledge, but a deeper understanding of myself and my purpose."
+  },
+  {
+    id: 'comm-7',
+    department: 'commerce',
+    departmentName: 'Department of Commerce',
+    departmentPath: '/academics/department-of-commerce/department-page',
+    name: 'Mark Britto',
+    programme: 'B.Com, 2023–24',
+    photo: testimonialMark,
+    quote: "My time pursuing my Bachelor of Commerce at Christ College was a profoundly transformative chapter that shaped not just my academic foundation, but my entire approach to personal and professional growth. The college's motto, 'Enlighten To Excel,' was never just a phrase on the wall; it became the guiding principle of my daily life on campus. The dedicated faculty actively enlightened my path, instilling the confidence, leadership, and public speaking skills that empowered me to truly excel in competitive environments."
+  },
+  {
+    id: 'comm-8',
+    department: 'commerce',
+    departmentName: 'Department of Commerce',
+    departmentPath: '/academics/department-of-commerce/department-page',
+    name: 'Aarushi Miglani',
+    programme: 'B.Com, 2024–25',
+    photo: testimonialAarushi,
+    quote: 'My journey at Christ College, Pune, has been truly memorable. The college has excellent, supportive, and highly knowledgeable teachers who always motivate students to learn and excel. The positive and friendly environment, along with quality education and various opportunities, helps students grow both academically and personally.'
   },
   {
     id: 'comm-2',
@@ -126,20 +186,40 @@ export const TESTIMONIALS_DATA = [
     department: 'arts',
     departmentName: 'Department of Arts',
     departmentPath: '/academics/department-of-arts/ba-department-programme-page',
-    name: 'Sarah Mathews',
-    programme: 'BA (English), 2021–2024',
-    photo: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&h=300&fit=crop&crop=faces',
-    quote: 'The Department of Arts provides an intellectually stimulating environment with exceptional faculty mentorship. Through literary seminars, debate forums, and research papers, I developed strong analytical thinking and leadership capabilities.'
+    name: 'Shaina Sharma',
+    programme: 'BA, 2021–22',
+    photo: testimonialShaina,
+    quote: 'Christ College brings immense pride and honour. College life is the experience we yearn for, and I\'ve cherished every moment on campus. It\'s the friendships and supportive faculty that made it truly special. Despite the challenges, the Christ culture taught us to smile in the face of obstacles. Remember, "Once a Christite, always a Christite."'
   },
   {
     id: 'arts-3',
     department: 'arts',
     departmentName: 'Department of Arts',
     departmentPath: '/academics/department-of-arts/ba-department-programme-page',
-    name: 'Ananya Deshmukh',
-    programme: 'BA (Psychology), 2021–2024',
-    photo: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop&crop=faces',
-    quote: 'Christ College provided a transformative academic journey. The faculty in the Arts department nurture empathy and analytical depth, preparing us to engage meaningfully with societal challenges and career opportunities.'
+    name: 'Ujala Mishra',
+    programme: 'BA, 2022–23',
+    photo: testimonialUjala,
+    quote: 'My college journey at Christ College was enriching and transformative. With constant support from dedicated faculty, I gained confidence, refined my skills, and grew personally and professionally. The well-designed curriculum and diverse opportunities provided a strong foundation, fostering both academic excellence and overall personality development in an inspiring environment.'
+  },
+  {
+    id: 'arts-4',
+    department: 'arts',
+    departmentName: 'Department of Arts',
+    departmentPath: '/academics/department-of-arts/ba-department-programme-page',
+    name: 'Ariz Khan',
+    programme: 'BA, 2023–24',
+    photo: testimonialAriz,
+    quote: 'Christ College has been a journey of growth and discovery. The curriculum sharpened my academic edge, while the vibrant Arts Department nurtured my passion for dance. With supportive faculty and enriching opportunities, it truly shaped both my mind and spirit.'
+  },
+  {
+    id: 'arts-5',
+    department: 'arts',
+    departmentName: 'Department of Arts',
+    departmentPath: '/academics/department-of-arts/ba-department-programme-page',
+    name: 'Archi Singh',
+    programme: 'BA, 2024–25',
+    photo: testimonialArchi,
+    quote: 'Stepping into college, I anticipated lectures and exams, but what I found was a second home. The campus wasn\'t just buildings and classrooms; it was a vibrant space where I grew, laughed, and formed lifelong bonds. College was a transformative journey—supportive teachers, top-quality facilities, engaging activities, and lifelong friendships. It wasn\'t just education; it was a home where I discovered myself.'
   }
 ];
 

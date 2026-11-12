@@ -1,9 +1,7 @@
 import PageHeader from '../../components/PageHeader';
-import { ClockIcon, AcademicCapIcon, PhoneIcon, BookIcon, CheckCircleIcon, CompassIcon, DownloadIcon, CalendarIcon, GlobeIcon, GridIcon } from '../../components/icons';
+import { ClockIcon, AcademicCapIcon, PhoneIcon, BookIcon, CheckCircleIcon, CompassIcon, CalendarIcon, GlobeIcon, GridIcon } from '../../components/icons';
 import Seo from '../../components/Seo';
-import PdfViewer from '../../components/PdfViewer';
 import banner from '../../assets/images/3-academics-department-of-commerce-department-page/department-banner.JPG';
-import syllabusPdf from '../../assets/acadmics/Commerce/mcom-syllabus-real.pdf';
 
 const ELIGIBILITY = [
   "Bachelor's degree in B.Com., BBA, BCA, or BBM (IB) from a recognized university in India.",
@@ -91,7 +89,7 @@ export default function McomMasterOfCommerce() {
 
             <h3 className="mt-8 text-base flex items-center gap-2">
               <CheckCircleIcon className="h-5 w-5 text-cc-primary shrink-0" />
-              Key Areas of Focus
+              Key Expertise Offered
             </h3>
             <ul className="mt-3 grid gap-2 sm:grid-cols-2">
               {SKILL_AREAS.map((h) => (
@@ -162,16 +160,6 @@ export default function McomMasterOfCommerce() {
               </dl>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="bg-cc-bg-surface">
-        <div className="mx-auto max-w-[1200px] px-6 py-16">
-          <h2 className="text-center mb-8 flex items-center justify-center gap-2.5">
-            <DownloadIcon className="h-6 w-6 text-cc-primary shrink-0" />
-            Course Syllabus
-          </h2>
-          <PdfViewer fileUrl={syllabusPdf} title="MCom Syllabus" />
         </div>
       </section>
 

@@ -1,17 +1,37 @@
 import PageHeader from '../../components/PageHeader';
-import { ClockIcon, AcademicCapIcon, PhoneIcon, BookIcon, CheckCircleIcon, DownloadIcon, CalendarIcon, GlobeIcon, GridIcon } from '../../components/icons';
+import { ClockIcon, AcademicCapIcon, PhoneIcon, BookIcon, CheckCircleIcon, CompassIcon, CalendarIcon, GlobeIcon, GridIcon } from '../../components/icons';
 import Seo from '../../components/Seo';
-import PdfViewer from '../../components/PdfViewer';
 import courseImage from '../../assets/images/3-academics-department-of-science-msc-master-of-computer-science/course-image.JPG';
-import syllabusPdf from '../../assets/acadmics/Science/msc-computer-science-syllabus.pdf';
 
 const SKILL_AREAS = [
-  'Software Development',
-  'Software Testing',
-  'Artificial Intelligence',
-  'Machine Learning',
-  'Networking',
-  'Advanced Programming',
+  'Advanced Programming & Software Development',
+  'Artificial Intelligence & Machine Learning',
+  'Data Science & Big Data Analytics',
+  'Cybersecurity & Information Assurance',
+  'Cloud Computing & Distributed Systems',
+  'Advanced Database Management & Data Engineering',
+  'Software Engineering & Quality Assurance',
+  'Internet of Things (IoT) & Embedded Technologies',
+  'Blockchain & Emerging Technologies',
+  'Research, Innovation & Advanced Computing',
+];
+
+const CAREER_OPPORTUNITIES = [
+  'Software Developer / Senior Software Engineer',
+  'Full-Stack Application Developer',
+  'Data Scientist / Data Engineer',
+  'Artificial Intelligence and Machine Learning Engineer',
+  'Cybersecurity and Information Security Analyst',
+  'Cloud Computing and DevOps Engineer',
+  'Database Administrator',
+  'Big Data Engineer',
+  'Blockchain and IoT Developer',
+  'Computer Vision and Generative AI Developer',
+  'Systems Analyst and IT Consultant',
+  'Software Testing and Automation Engineer',
+  'Research Assistant / Research Associate',
+  'Academic and Research Professional',
+  'Technology Entrepreneur',
 ];
 
 const ELIGIBILITY = [
@@ -78,10 +98,23 @@ export default function MscMasterOfComputerScience() {
 
             <h3 className="mt-8 text-base flex items-center gap-2">
               <CheckCircleIcon className="h-5 w-5 text-cc-primary shrink-0" />
-              Skill Areas
+              Key Expertise Offered
             </h3>
-            <ul className="mt-3 flex flex-col gap-2">
+            <ul className="mt-3 grid gap-2 sm:grid-cols-2">
               {SKILL_AREAS.map((h) => (
+                <li key={h} className="flex items-start gap-2 text-sm text-cc-text-body">
+                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-cc-primary" aria-hidden="true" />
+                  {h}
+                </li>
+              ))}
+            </ul>
+
+            <h3 className="mt-8 text-base flex items-center gap-2">
+              <CompassIcon className="h-5 w-5 text-cc-primary shrink-0" />
+              Career Opportunities
+            </h3>
+            <ul className="mt-3 grid gap-2 sm:grid-cols-2">
+              {CAREER_OPPORTUNITIES.map((h) => (
                 <li key={h} className="flex items-start gap-2 text-sm text-cc-text-body">
                   <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-cc-primary" aria-hidden="true" />
                   {h}
@@ -137,16 +170,6 @@ export default function MscMasterOfComputerScience() {
               </dl>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="bg-cc-bg-surface">
-        <div className="mx-auto max-w-[1200px] px-6 py-16">
-          <h2 className="text-center mb-8 flex items-center justify-center gap-2.5">
-            <DownloadIcon className="h-6 w-6 text-cc-primary shrink-0" />
-            Course Syllabus
-          </h2>
-          <PdfViewer fileUrl={syllabusPdf} title="MSc Computer Science Syllabus" />
         </div>
       </section>
 
