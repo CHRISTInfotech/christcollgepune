@@ -2,6 +2,29 @@ import PageHeader from '../../components/PageHeader';
 import Seo from '../../components/Seo';
 import ImageCarousel from '../../components/ImageCarousel';
 import { GridIcon, BookIcon, UsersIcon, AwardIcon, CompassIcon, GlobeIcon, CalendarIcon } from '../../components/icons';
+import marketingConclave1 from '../../assets/images/gallery/marketing-conclave-marketing-5-0/1.jpg';
+import marketingConclave2 from '../../assets/images/gallery/marketing-conclave-marketing-5-0/2.jpg';
+import marketingConclave3 from '../../assets/images/gallery/marketing-conclave-marketing-5-0/3.jpg';
+import marketingConclave4 from '../../assets/images/gallery/marketing-conclave-marketing-5-0/4.jpg';
+import marketingConclave5 from '../../assets/images/gallery/marketing-conclave-marketing-5-0/5.jpg';
+import marketingConclave6 from '../../assets/images/gallery/marketing-conclave-marketing-5-0/6.jpg';
+import marketingConclave7 from '../../assets/images/gallery/marketing-conclave-marketing-5-0/7.jpg';
+import marketingConclave8 from '../../assets/images/gallery/marketing-conclave-marketing-5-0/8.jpg';
+import marketingConclave9 from '../../assets/images/gallery/marketing-conclave-marketing-5-0/9.jpg';
+import marketingConclave10 from '../../assets/images/gallery/marketing-conclave-marketing-5-0/10.jpg';
+import marketingConclave11 from '../../assets/images/gallery/marketing-conclave-marketing-5-0/11.jpg';
+import marketingConclave12 from '../../assets/images/gallery/marketing-conclave-marketing-5-0/12.jpg';
+import marketingConclave13 from '../../assets/images/gallery/marketing-conclave-marketing-5-0/13.jpg';
+import marketingConclave14 from '../../assets/images/gallery/marketing-conclave-marketing-5-0/14.jpg';
+import c2c_1 from '../../assets/images/gallery/campus2corporate/1.jpg';
+import c2c_2 from '../../assets/images/gallery/campus2corporate/2.jpg';
+import c2c_3 from '../../assets/images/gallery/campus2corporate/3.jpg';
+import finAwareness1 from '../../assets/images/gallery/financial-awareness-session/1.jpg';
+import finAwareness2 from '../../assets/images/gallery/financial-awareness-session/2.jpg';
+import finAwareness3 from '../../assets/images/gallery/financial-awareness-session/3.jpg';
+import aiCyber1 from '../../assets/images/gallery/ai-cyber-security-orientation/1.jpg';
+import aiCyber2 from '../../assets/images/gallery/ai-cyber-security-orientation/2.jpg';
+import aiCyber3 from '../../assets/images/gallery/ai-cyber-security-orientation/3.jpg';
 import successBlueprint1 from '../../assets/images/gallery/success-blueprint-interview-attitude/1.jpg';
 import successBlueprint2 from '../../assets/images/gallery/success-blueprint-interview-attitude/2.jpg';
 import successBlueprint3 from '../../assets/images/gallery/success-blueprint-interview-attitude/3.jpg';
@@ -47,6 +70,33 @@ import webinarDemystify from '../../assets/images/3-academics-department-of-mana
 import webinarIndianBanking from '../../assets/images/3-academics-department-of-management-activities/indian-banking-sector.jpg';
 import sulaWines from '../../assets/images/3-academics-department-of-management-activities/sula-wines-nashik.jpg';
 
+const MARKETING_CONCLAVE_IMAGES = [
+  marketingConclave1,
+  marketingConclave2,
+  marketingConclave3,
+  marketingConclave4,
+  marketingConclave5,
+  marketingConclave6,
+  marketingConclave7,
+  marketingConclave8,
+  marketingConclave9,
+  marketingConclave10,
+  marketingConclave11,
+  marketingConclave12,
+  marketingConclave13,
+  marketingConclave14,
+];
+
+const CONFERENCE = [
+  {
+    name: "Marketing Conclave: \u2018Marketing 5.0 \u2013 AI, Technology & Human Connection\u2019",
+    date: '',
+    images: MARKETING_CONCLAVE_IMAGES,
+    description:
+      'A Marketing Conclave was organised, featuring industry experts Mr Yerramalli Srinivas Raju, Mr Rakesh Gaur, Mr Mangesh Kulkarni and Mrs Parul Mathur, who shared valuable insights into emerging marketing trends, artificial intelligence, technological advancements and customer engagement. The session provided students with industry perspectives on the evolving marketing landscape and the importance of balancing technology with human connection.',
+  },
+];
+
 const ACTIVITY = [
   {
     name: "International Women's Day — Panel Discussion",
@@ -78,6 +128,12 @@ const ACTIVITY = [
 ];
 
 const WORKSHOP = [
+  {
+    name: 'Session on Financial Awareness',
+    images: [finAwareness1, finAwareness2, finAwareness3],
+    description:
+      'A Workshop on Financial Awareness was conducted for students, led by Dr Abhinav Jog, BFSI Trainer and former AGM at SBI. The workshop focused on financial literacy, banking practices, investment awareness and effective money management, equipping students with practical knowledge to make informed financial decisions.',
+  },
   {
     name: 'CET Crash Course 2026',
     date: '21–26 April 2026',
@@ -140,6 +196,12 @@ const WORKSHOP = [
 ];
 
 const SEMINAR = [
+  {
+    name: 'Orientation Session on Artificial Intelligence and Cyber Security',
+    images: [aiCyber1, aiCyber2, aiCyber3],
+    description:
+      'Orientation Session on Artificial Intelligence and Cyber Security Add-on Certificate Courses was organised to introduce students to emerging technologies and their growing industry relevance. The session highlighted industry-recognised certification, expert-led masterclasses, mentorship, guided learning and hands-on capstone projects. Led by Mr. Kiran Krishna Sawant, Senior Engagement Associate at BharatCares, the initiative aimed to strengthen students’ technological competencies, enhance digital awareness and prepare them for evolving career opportunities.',
+  },
   {
     name: 'Seminar on Transforming Challenges into Opportunities: The Future of Business',
     date: '4 March 2025',
@@ -291,6 +353,13 @@ const FIELD_VISIT = [
 
 const CORPORATE_CONNECT = [
   {
+    name: 'Corporate Talk: ‘Campus2Corporate – Bridging Academic Learning with Workplace Readiness’',
+    date: '17 October 2026',
+    images: [c2c_1, c2c_2, c2c_3],
+    description:
+      'The Department of Management, Christ College–Pune, organised a Corporate Talk titled “CAMPUS2CORPORATE” on 17 October 2026. The session was led by Mr. Fahim Mohammed, Director of Engineering & R&D at NICE Actimize, who shared valuable industry insights and professional perspectives on transitioning from campus life to the corporate world. The talk provided students with an opportunity to understand corporate expectations, explore industry trends and gain practical insights into professional development, career readiness and workplace skills.',
+  },
+  {
     name: 'IndusInd Bank Visit',
     date: '22 January 2025',
     description: 'Christ College Pune organized an industrial visit to IndusInd Bank\'s Magarpatta branch for TY BBA and SY BBA students, accompanied by Prof. Bitto Benny and Prof. Siju. Students explored customer service, cash handling, and loan processing, with a Q&A session with branch head Mr. Mehul Soni covering digitalization, career opportunities, and the role of the RBI.',
@@ -340,26 +409,27 @@ export default function DepartmentOfManagementActivitiesPage() {
   return (
     <>
       <Seo
-        title="Activities — Department of Management"
-        description="Activities, workshops, seminars, webinars, industrial visits and corporate connect sessions organised by the Department of Management at Christ College, Pune."
+        title="Conference/Workshop/Exhibitions — Department of Management"
+        description="Conferences, conclaves, workshops, exhibitions, seminars, webinars, industrial visits and corporate connect sessions organised by the Department of Management at Christ College, Pune."
       />
       <PageHeader
-        title="Activities"
+        title="Conference/Workshop/Exhibitions"
         breadcrumbs={[
           { label: 'Department of Management', path: '/academics/department-of-management/department-page' },
-          { label: 'Activities' },
+          { label: 'Conference/Workshop/Exhibitions' },
         ]}
       />
 
       <section className="mx-auto max-w-[1200px] px-6 py-16">
         <p className="max-w-3xl text-cc-text-body">
           Beyond academics, the Department of Management organises a wide range of co-curricular
-          activities for students — activities, workshops, seminars, webinars, industrial and
+          activities for students — conferences, conclaves, workshops, exhibitions, seminars, webinars, industrial and
           field visits, and corporate connect sessions — grouped below by category.
         </p>
 
         <div className="mt-10 flex flex-col gap-14">
-          <CategorySection icon={UsersIcon} title="Activity" items={ACTIVITY} />
+          <CategorySection icon={CalendarIcon} title="Conference / Conclave" items={CONFERENCE} />
+          <CategorySection icon={UsersIcon} title="Activity / Exhibition" items={ACTIVITY} />
           <CategorySection icon={BookIcon} title="Workshop" items={WORKSHOP} />
           <CategorySection icon={GridIcon} title="Seminar" items={SEMINAR} />
           <CategorySection icon={GlobeIcon} title="Webinar" items={WEBINAR} />

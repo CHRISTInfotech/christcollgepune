@@ -23,8 +23,35 @@ import samriddhi1 from '../../assets/images/gallery/samriddhi-investor-awareness
 import samriddhi2 from '../../assets/images/gallery/samriddhi-investor-awareness/2.jpg';
 import samvaad1 from '../../assets/images/gallery/samvaad-2025/1.jpg';
 import samvaad2 from '../../assets/images/gallery/samvaad-2025/2.jpg';
+import c2c_1 from '../../assets/images/gallery/campus2corporate/1.jpg';
+import c2c_2 from '../../assets/images/gallery/campus2corporate/2.jpg';
+import c2c_3 from '../../assets/images/gallery/campus2corporate/3.jpg';
+import c2c_4 from '../../assets/images/gallery/campus2corporate/4.jpg';
+import c2c_5 from '../../assets/images/gallery/campus2corporate/5.jpg';
+import finAwareness1 from '../../assets/images/gallery/financial-awareness-session/1.jpg';
+import finAwareness2 from '../../assets/images/gallery/financial-awareness-session/2.jpg';
+import finAwareness3 from '../../assets/images/gallery/financial-awareness-session/3.jpg';
+import finAwareness4 from '../../assets/images/gallery/financial-awareness-session/4.jpg';
+import finAwareness5 from '../../assets/images/gallery/financial-awareness-session/5.jpg';
+import aiCyber1 from '../../assets/images/gallery/ai-cyber-security-orientation/1.jpg';
+import aiCyber2 from '../../assets/images/gallery/ai-cyber-security-orientation/2.jpg';
+import aiCyber3 from '../../assets/images/gallery/ai-cyber-security-orientation/3.jpg';
+import aiCyber4 from '../../assets/images/gallery/ai-cyber-security-orientation/4.jpg';
+import aiCyber5 from '../../assets/images/gallery/ai-cyber-security-orientation/5.jpg';
 
 const SEMINAR = [
+  {
+    name: 'Orientation Session on Artificial Intelligence and Cyber Security',
+    images: [aiCyber1, aiCyber2, aiCyber3, aiCyber4, aiCyber5],
+    description:
+      'Orientation Session on Artificial Intelligence and Cyber Security Add-on Certificate Courses was organised to introduce students to emerging technologies and their growing industry relevance. The session highlighted industry-recognised certification, expert-led masterclasses, mentorship, guided learning and hands-on capstone projects. Led by Mr. Kiran Krishna Sawant, Senior Engagement Associate at BharatCares, the initiative aimed to strengthen students’ technological competencies, enhance digital awareness and prepare them for evolving career opportunities.',
+  },
+  {
+    name: 'Session on Financial Awareness',
+    images: [finAwareness1, finAwareness2, finAwareness3, finAwareness4, finAwareness5],
+    description:
+      'A Workshop on Financial Awareness was conducted for students, led by Dr Abhinav Jog, BFSI Trainer and former AGM at SBI. The workshop focused on financial literacy, banking practices, investment awareness and effective money management, equipping students with practical knowledge to make informed financial decisions.',
+  },
   {
     name: 'Seminar on Building a Better LinkedIn Profile for Increased Visibility',
     date: '19 October 2023',
@@ -144,6 +171,13 @@ const SEMINAR = [
 ];
 
 const CORPORATE_CONNECT = [
+  {
+    name: 'Corporate Talk: ‘Campus2Corporate – Bridging Academic Learning with Workplace Readiness’',
+    date: '17 October 2026',
+    images: [c2c_1, c2c_2, c2c_3, c2c_4, c2c_5],
+    description:
+      'The Department of Management, Christ College–Pune, organised a Corporate Talk titled “CAMPUS2CORPORATE” on 17 October 2026. The session was led by Mr. Fahim Mohammed, Director of Engineering & R&D at NICE Actimize, who shared valuable industry insights and professional perspectives on transitioning from campus life to the corporate world. The talk provided students with an opportunity to understand corporate expectations, explore industry trends and gain practical insights into professional development, career readiness and workplace skills.',
+  },
   {
     name: 'SPPU Startup Talk Series — Conversation with Young Entrepreneurs',
     date: '9 February 2026',

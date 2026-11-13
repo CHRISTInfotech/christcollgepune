@@ -8,6 +8,16 @@ import marketSquare from '../../assets/images/3-academics-department-of-manageme
 import mindMasters from '../../assets/images/3-academics-department-of-management-festivals/mind-masters.jpg';
 import marketSquareManifest2026_1 from '../../assets/images/gallery/market-square-manifest-2026/1.jpg';
 import marketSquareManifest2026_2 from '../../assets/images/gallery/market-square-manifest-2026/2.jpg';
+import fiesta2026_1 from '../../assets/images/gallery/fiesta-2026/1.jpg';
+import fiesta2026_2 from '../../assets/images/gallery/fiesta-2026/2.jpg';
+import fiesta2026_3 from '../../assets/images/gallery/fiesta-2026/3.jpg';
+import fiesta2026_4 from '../../assets/images/gallery/fiesta-2026/4.jpg';
+import fiesta2026_5 from '../../assets/images/gallery/fiesta-2026/5.jpg';
+import tatva2026_1 from '../../assets/images/gallery/tatva-2026/1.jpg';
+import tatva2026_2 from '../../assets/images/gallery/tatva-2026/2.jpg';
+import tatva2026_3 from '../../assets/images/gallery/tatva-2026/3.jpg';
+import tatva2026_4 from '../../assets/images/gallery/tatva-2026/4.jpg';
+import tatva2026_5 from '../../assets/images/gallery/tatva-2026/5.jpg';
 import tatva2025_1 from '../../assets/images/gallery/tatva-2025/1.jpg';
 import tatva2025_2 from '../../assets/images/gallery/tatva-2025/2.jpg';
 import pulse2025_1 from '../../assets/images/gallery/pulse-2025/1.jpg';
@@ -16,6 +26,18 @@ import fiesta2025_1 from '../../assets/images/gallery/fiesta-2025/1.jpg';
 import fiesta2025_2 from '../../assets/images/gallery/fiesta-2025/2.jpg';
 
 const FESTIVALS = [
+  {
+    name: 'Fiesta \u201926 \u2014 Utopia',
+    images: [fiesta2026_1, fiesta2026_2, fiesta2026_3, fiesta2026_4, fiesta2026_5],
+    description:
+      'FIESTA \u201926 \u2013 UTOPIA was an intra-departmental management competition organised by the MBA students of CHRIST (Deemed to be University), Lavasa Campus. Conducted in both online and offline modes, the event featured six competitions across Human Resources, Marketing, Finance, Business Analytics, Treasure Hunt, and Best Management Team. The activities provided students with a platform to apply theoretical management concepts through practical challenges. The competition fostered analytical thinking, strategic decision-making, creativity, teamwork, leadership, and problem-solving skills. The event concluded with a Valedictory Ceremony, recognising the contributions of student coordinators and faculty members and felicitating the winners.',
+  },
+  {
+    name: 'TATVA 2026',
+    images: [tatva2026_1, tatva2026_2, tatva2026_3, tatva2026_4, tatva2026_5],
+    description:
+      'TATVA 2026 was a distinctive experiential learning initiative envisioned to reconnect the younger generation with the wisdom, knowledge, and cultural legacy of India. Rooted in the spirit of Indian Knowledge Systems (IKS), the event provided a vibrant platform for students to explore, reinterpret, and celebrate India\u2019s rich intellectual heritage through contemporary perspectives. The exhibition was inaugurated by Prof. Dr. Dhananjay Mandlik, Dean, Faculty of Commerce and Management, Savitribai Phule Pune University (SPPU). Featuring 29 thoughtfully curated stalls, the exhibition brought alive diverse domains of Indian knowledge including philosophy, science, mathematics, medicine, architecture, commerce, arts, and sustainable living through creative exhibits, interactive demonstrations, and gamified learning activities. A special highlight was the theatrical portrayal of legendary Indian scholars and intellectuals such as Aryabhata, Chanakya, Sushruta, Gargi, and Panini.',
+  },
   {
     name: 'Market Square & Manifest 2026',
     date: '28 February 2026',
@@ -89,7 +111,7 @@ export default function DepartmentOfManagementFestivalsPage() {
     <>
       <Seo
         title="Festivals — Department of Management"
-        description="Festivals organised by the Department of Management at Christ College, Pune, including Market Square & Manifest 2026, TATVA 2025, PULSE 2025, Fiesta 2025, Manifest, Market Square, Xllenz, Mind Masters, Cipher and Crescita."
+        description="Festivals organised by the Department of Management at Christ College, Pune, including Fiesta ’26 – Utopia, TATVA 2026, Market Square & Manifest 2026, TATVA 2025, PULSE 2025, Fiesta 2025, Manifest, Market Square, Xllenz, Mind Masters, Cipher and Crescita."
       />
       <PageHeader
         title="Festivals"

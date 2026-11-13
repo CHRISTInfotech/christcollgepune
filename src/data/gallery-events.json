@@ -30,6 +30,12 @@
     "photoCount": 2
   },
   {
+    "name": "AI & Cyber Security Add-on Orientation",
+    "slug": "ai-cyber-security-orientation",
+    "department": "Management",
+    "photoCount": 10
+  },
+  {
     "name": "AARAMBH 2026 — SY Orientation",
     "slug": "aarambh-2026",
     "department": "Science",
@@ -142,6 +148,12 @@
     "slug": "ccsa-inauguration-2026",
     "department": "Science",
     "photoCount": 4
+  },
+  {
+    "name": "Campus2Corporate Corporate Talk",
+    "slug": "campus2corporate",
+    "department": "Management",
+    "photoCount": 10
   },
   {
     "name": "Can AI Be Creative?",
@@ -276,10 +288,22 @@
     "photoCount": 2
   },
   {
+    "name": "Fiesta 2026 — Utopia",
+    "slug": "fiesta-2026",
+    "department": "Management",
+    "photoCount": 20
+  },
+  {
     "name": "Financial Awareness Programme",
     "slug": "financial-awareness-programme",
     "department": "Commerce",
     "photoCount": 6
+  },
+  {
+    "name": "Financial Awareness Session",
+    "slug": "financial-awareness-session",
+    "department": "Management",
+    "photoCount": 10
   },
   {
     "name": "FINQUEST '25",
@@ -498,6 +522,12 @@
     "photoCount": 2
   },
   {
+    "name": "Marketing Conclave: Marketing 5.0 – AI, Technology & Human Connection",
+    "slug": "marketing-conclave-marketing-5-0",
+    "department": "Management",
+    "photoCount": 14
+  },
+  {
     "name": "MathVerse — The Math Club",
     "slug": "club-mathverse",
     "department": null,
@@ -676,6 +706,12 @@
     "slug": "tatva-2025",
     "department": "Management",
     "photoCount": 2
+  },
+  {
+    "name": "TATVA 2026",
+    "slug": "tatva-2026",
+    "department": "Management",
+    "photoCount": 21
   },
   {
     "name": "Teacher's Day (Student Council)",
