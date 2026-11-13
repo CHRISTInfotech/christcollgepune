@@ -1,4 +1,5 @@
 import TabbedContentPage from '../../components/TabbedContentPage';
+import CentreVisionMission from '../../components/CentreVisionMission';
 import { DownloadIcon } from '../../components/icons';
 import researchBanner from '../../assets/images/7-centres-and-cells-research-cell/research-banner.png';
 import membersPdf from '../../assets/studentlife/cells/Researh cell.pdf';
@@ -45,35 +46,30 @@ function HomeTab() {
     <>
       <h2>About Us</h2>
       <p className="mt-4 max-w-3xl text-cc-text-body">
-        The Research Cell at our institution plays a pivotal role in the supervision and
-        guidance of research and development activities. Our key objectives include fostering
-        innovation within the academic community to contribute to academic excellence. We aim
-        to facilitate interdisciplinary research collaboration, thereby enhancing the
-        institution&rsquo;s research output and impact.
+        The Research Cell of Christ College Pune is committed to fostering a vibrant culture of
+        research, innovation and academic inquiry among faculty members and students. It strives
+        to create an intellectually stimulating environment that encourages systematic
+        investigation, interdisciplinary collaboration and the generation of knowledge.
       </p>
       <p className="mt-4 max-w-3xl text-cc-text-body">
-        The Research Cell is responsible for constructing new R&amp;D and research policies for
-        our institution, ensuring they align with our academic goals. It also focuses on
-        building and maintaining relationships with research centers, institutions, and industry
-        organizations to stay updated on research and development initiatives. The Cell actively
-        encourages faculty members to pursue Ph.D. studies and guides them to advance knowledge,
-        address societal needs, and stimulate innovation.
+        The Research Cell facilitates research activities by promoting scholarly publications,
+        organising research-oriented workshops, seminars, conferences and faculty development
+        programmes. It also encourages faculty and students to undertake research projects,
+        pursue doctoral studies, participate in academic collaborations and disseminate research
+        outcomes through reputed journals and conferences.
       </p>
       <p className="mt-4 max-w-3xl text-cc-text-body">
-        Moreover, the Research Cell conducts research and surveys to identify entrepreneurial
-        opportunities for our students, in addition to organizing events like research project
-        exhibitions &amp; competitions, and business stalls. It maintains records of research
-        guides within the institute and those associated with research centers of the college.
-        Furthermore, the Research Cell collaborates with department heads to organize research
-        conferences, workshops, seminars, and Faculty Development Programs (FDPs). It also
-        motivates faculty and students to publish their research works as journals or conference
-        publications, furthering our commitment to academic and research excellence.
+        Through its initiatives, the Research Cell seeks to strengthen research competencies,
+        promote ethical research practices and bridge the gap between academic knowledge and
+        real-world challenges. It aspires to position Christ College Pune as an institution that
+        values inquiry, innovation and knowledge creation as integral components of higher
+        education.
       </p>
-      <p className="mt-4 max-w-3xl text-cc-text-body">
-        The Research Cell stands at the forefront of academic innovation and development,
-        driving the institution&rsquo;s mission to advance knowledge and contribute to societal
-        progress.
-      </p>
+
+      <CentreVisionMission
+        vision="To establish Christ College Pune as a centre of academic excellence and research innovation by nurturing a strong research culture that promotes intellectual curiosity, interdisciplinary collaboration, ethical inquiry and socially relevant knowledge creation."
+        mission="The Research Cell of Christ College Pune aims to empower faculty members and students to pursue meaningful research by providing an enabling academic environment, strengthening research capabilities, facilitating scholarly collaborations and promoting ethical research practices. It seeks to encourage knowledge creation and the application of research to address contemporary challenges and societal needs."
+      />
 
       <h2 className="mt-10">Members</h2>
       <DocumentCard name="Research Cell Members" file={membersPdf} />
@@ -145,6 +141,18 @@ function PublicationsTab() {
 }
 
 const EVENTS = [
+  {
+    name: 'Workshop on Research Writing: Introduction and Making a Conceptual Map',
+    description: 'A workshop designed to familiarise participants with the fundamentals of academic research writing and the process of developing a conceptual map. The session covered details on using minor and major premise to develop the introduction chapter.',
+  },
+  {
+    name: 'Case Writing Workshop: Developing Effective Teaching Cases',
+    description: 'A workshop aimed at developing participants’ skills in writing effective teaching cases. It introduced the principles of case development, emphasising real-world business situations, problem identification, narrative development and the use of cases as an experiential teaching and learning tool.',
+  },
+  {
+    name: 'Research Foundation and the Present Role of Libraries',
+    description: 'An insightful session highlighting the importance of research foundations and the evolving role of libraries in academic research. It explored how modern libraries support researchers through digital resources, research databases, information access and scholarly knowledge dissemination.',
+  },
   {
     name: 'International Conference on New Management Trends, Changes & Business Leadership Challenges in the Present Global Economic Scenario',
     date: '24–25 February 2023',
@@ -224,6 +232,9 @@ function EventsTab() {
               {item.date && (
                 <span className="mt-1 block text-xs uppercase tracking-wide text-cc-text-muted-light">{item.date}</span>
               )}
+              {item.description && (
+                <dd className="mt-2 text-sm text-cc-text-muted-light">{item.description}</dd>
+              )}
             </div>
             {item.link && (
               <a
@@ -249,6 +260,7 @@ export default function ResearchCell({ initialTab = 'home' }) {
       breadcrumbLabel="Research Cell"
       breadcrumbSection="Centres & Cells"
       description="The Research Cell at Christ College, Pune supervises research and development activities, fostering innovation, interdisciplinary collaboration and faculty PhD pursuits — activities, publications and events."
+      tagline="Research, Innovation & Academic Inquiry"
       bannerImage={researchBanner}
       bannerAlt="A research methodology seminar session at Christ College Pune"
       initialTab={initialTab}

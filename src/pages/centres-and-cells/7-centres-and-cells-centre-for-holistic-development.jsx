@@ -36,6 +36,10 @@ const RECENT_ACTIVITIES = [
     body: 'An art-based initiative that provides students with an opportunity to explore creativity, express themselves and experience the connection between art and emotional well-being.',
   },
   {
+    title: 'Life Skills Training',
+    body: 'Interactive and experiential programmes that equip students with essential life skills such as communication, emotional intelligence, decision-making, problem-solving, time management and healthy relationship-building, led by our own faculty members.',
+  },
+  {
     title: 'Christie Couture',
     images: CHRISTIE_COUTURE_IMAGES,
     body: 'A creative and collaborative platform that encourages students to explore their creativity, express their individuality and engage in activities that promote confidence, teamwork and self-expression.',
@@ -131,13 +135,24 @@ function AboutTab() {
     <div className="space-y-10">
       <div className="max-w-3xl">
         <p className="text-cc-text-body">
-          Welcome to the Centre for Holistic Development, where we believe in nurturing the mind, body, and spirit to create a harmonious and balanced life. It is a dedicated space where students' personal growth and well-being take center stage. At CHRIST College, we understand that education is not just about academic excellence; it's about nurturing individuals into well-rounded, confident, and resilient beings. The Centre for Holistic Development is our commitment to this ethos. Our counselor is available to provide a compassionate listening ear, offer guidance, and extend comfort to students grappling with a diverse array of personal, academic, or emotional challenges.
+          The Centre for Holistic Development (CHD) is an integral part of Christ College
+          Pune&rsquo;s commitment to nurturing well-rounded individuals. Recognising that
+          education extends beyond academic achievement, CHD provides students with
+          opportunities to explore their potential, develop essential life skills and grow into
+          confident, compassionate and responsible individuals.
         </p>
         <p className="mt-4 text-cc-text-body">
-          One of our key focus is on students who may have faced obstacles in realizing their full potential due to motivational factors or other challenges. We work diligently to develop remedial systems that help these students overcome their barriers and excel academically and personally.
+          We believe that holistic development is achieved when the different dimensions of an
+          individual&rsquo;s life &ndash; personal, emotional, social, intellectual, physical and
+          ethical &ndash; are nurtured in an integrated manner. Through interactive workshops,
+          experiential learning, creative activities, life skills programmes, leadership
+          opportunities and community engagement, CHD encourages students to discover their
+          strengths, build meaningful relationships, make responsible choices and prepare for
+          the challenges of life.
         </p>
         <p className="mt-4 text-cc-text-body">
-          At CHRIST College, Pune, the Centre for Holistic Development is not just a service but a commitment to nurturing the holistic growth of our students, equipping them to face the challenges of today's world with confidence and resilience. We invite all students to approach our dedicated counselors for guidance and support on their journey toward personal and academic success.
+          The Centre strives to create an inclusive and vibrant campus environment where every
+          student is encouraged to learn, participate, grow and contribute positively to society.
         </p>
       </div>
 
@@ -330,6 +345,7 @@ export default function CentreForHolisticDevelopment({ initialTab = 'about' }) {
       breadcrumbLabel="Centre for Holistic Development"
       breadcrumbSection="Centres & Cells"
       description="The Centre for Holistic Development at Christ College, Pune offers counselling and support for students' personal, academic and emotional well-being, nurturing mind, body and spirit."
+      tagline="Embrace Growth, Ignite Brilliance"
       bannerImage={chdBanner}
       bannerAlt="Centre for Holistic Development"
       initialTab={initialTab}

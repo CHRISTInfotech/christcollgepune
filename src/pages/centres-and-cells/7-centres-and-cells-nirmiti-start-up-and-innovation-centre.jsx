@@ -1,4 +1,5 @@
 import TabbedContentPage from '../../components/TabbedContentPage';
+import CentreVisionMission from '../../components/CentreVisionMission';
 import nirmitiBanner from '../../assets/images/7-centres-and-cells-nirmiti-start-up-and-innovation-centre/nirmiti-banner.png';
 import nirmitiLogo from '../../assets/studentlife/cells/Innovation  Centre.jpg';
 
@@ -103,15 +104,10 @@ function HomeTab() {
         Nirmiti is more than just a center; it's a catalyst for change. We understand the importance of staying abreast of in-trend products and technologies. Through Nirmiti, we aim to channelize the efforts of our students, guiding them towards the creation of ventures that resonate with contemporary market demands. Our center serves as vibrant hubs for networking, offering students the unique opportunity to connect with fellow entrepreneurs, seasoned professionals, and potential investors. These connections are invaluable, providing avenues for collaboration, mentorship, and exposure. By fostering these relationships, we empower our students to access funding, gain visibility, and discover new business prospects.
       </p>
 
-      <h2 className="mt-10">Vision</h2>
-      <p className="mt-4 text-cc-text-body">
-        To inspire and equip students with the skills, mindset, and network to pursue their entrepreneurial passions and create innovative solutions for the world’s most pressing problems.
-      </p>
-
-      <h2 className="mt-10">Mission</h2>
-      <p className="mt-4 text-cc-text-body">
-        To foster a culture of creativity and collaboration among students, faculty, and industry partners, and to provide them with the resources, guidance, and opportunities to develop and implement innovative solutions for real-world challenges.
-      </p>
+      <CentreVisionMission
+        vision="To inspire and equip students with the skills, mindset, and network to pursue their entrepreneurial passions and create innovative solutions for the world’s most pressing problems."
+        mission="To foster a culture of creativity and collaboration among students, faculty, and industry partners, and to provide them with the resources, guidance, and opportunities to develop and implement innovative solutions for real-world challenges."
+      />
     </>
   );
 }
@@ -207,6 +203,7 @@ export default function NirmitiStartUpAndInnovationCentre({ initialTab = 'home' 
       breadcrumbLabel="Nirmiti Start-Up and Innovation Centre"
       breadcrumbSection="Centres & Cells"
       description="Nirmiti, the Start-Up and Innovation Centre at Christ College, Pune, launched on 3 December 2022, cultivates student entrepreneurship, mentorship and networking with investors."
+      tagline="Start-Up & Innovation Centre — Launched 3 December 2022"
       bannerImage={nirmitiBanner}
       bannerAlt="Award ceremony on stage at a Nirmiti Start-Up and Innovation Centre event"
       initialTab={initialTab}

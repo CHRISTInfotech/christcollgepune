@@ -32,7 +32,18 @@ export default function CentreVisionMission({ vision, mission }) {
             </span>
             <div>
               <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-cc-gold">Mission</h3>
-              <p className="mt-2 text-sm leading-relaxed text-white sm:text-base">{mission}</p>
+              {Array.isArray(mission) ? (
+                <ul className="mt-2 flex flex-col gap-2">
+                  {mission.map((item) => (
+                    <li key={item.title} className="text-sm leading-relaxed text-white sm:text-base">
+                      <span className="font-semibold text-cc-gold">{item.title}:</span>{' '}
+                      {item.description}
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="mt-2 text-sm leading-relaxed text-white sm:text-base">{mission}</p>
+              )}
             </div>
           </div>
         </div>

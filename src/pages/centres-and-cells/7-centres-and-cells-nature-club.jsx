@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import PageHeader from '../../components/PageHeader';
 import Seo from '../../components/Seo';
 import { CompassIcon } from '../../components/icons';
@@ -60,21 +61,9 @@ const GALLERY = [
 function HomeTab() {
   return (
     <div className="space-y-8">
-      {/* Banner */}
-      <div className="overflow-hidden rounded-2xl border border-cc-gray-200 shadow-cc-sm">
-        <img
-          src={banner}
-          alt="Nature Club Banner"
-          className="h-64 w-full object-cover sm:h-80 lg:h-96"
-        />
-      </div>
-
       {/* About Us Card */}
       <div className="rounded-2xl border border-cc-gray-200 bg-cc-bg-surface p-6 shadow-cc-sm sm:p-8">
-        <span className="inline-block rounded-full bg-cc-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-cc-primary">
-          Environmental Stewardship &bull; UN SDGs
-        </span>
-        <h2 className="mt-2 text-2xl font-bold text-cc-text-heading sm:text-3xl">About Us</h2>
+        <h2 className="text-2xl font-bold text-cc-text-heading sm:text-3xl">About Us</h2>
 
         <div className="mt-4 space-y-4 text-cc-text-body leading-relaxed text-justify [text-align-last:left]">
           <p>
@@ -206,9 +195,33 @@ export default function NatureClub() {
         description="The Nature Club at Christ College, Pune — an environmental initiative aligned with the UN's Sustainable Development Goals, organising tree planting, clean-up campaigns, and eco-awareness activities."
       />
       <PageHeader
-        title="Nature Club"
         breadcrumbs={[{ label: 'Centres & Cells' }, { label: 'Nature Club' }]}
       />
+
+      <section className="mx-auto max-w-[1200px] px-6 pt-10">
+        <motion.div
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
+          className="overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-surface shadow-cc-sm"
+        >
+          <div className="grid sm:grid-cols-[280px_1fr]">
+            <div className="h-48 sm:h-full">
+              <img src={banner} alt="" aria-hidden="true" className="h-full w-full object-cover" />
+            </div>
+            <div className="border-t border-cc-gray-200 px-6 py-8 sm:border-t-0 sm:border-l sm:px-10">
+              <div className="border-l-4 border-cc-gold pl-5">
+                <span className="block text-xs font-bold uppercase tracking-[0.15em] text-cc-primary">
+                  Environmental Stewardship • UN SDGs
+                </span>
+                <h1 className="mt-1 text-3xl font-extrabold tracking-tight text-cc-text-heading sm:text-4xl">
+                  Nature Club
+                </h1>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </section>
 
       <section className="mx-auto max-w-[1200px] px-6 py-14">
         {/* Tab Strip */}

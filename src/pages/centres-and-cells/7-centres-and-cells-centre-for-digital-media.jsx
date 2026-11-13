@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import PageHeader from '../../components/PageHeader';
 import Seo from '../../components/Seo';
 import {
@@ -48,26 +49,38 @@ export default function CentreForDigitalMedia() {
         description="The Centre of Digital Media (CDM) at Christ College, Pune — managing college branding, social media, video production, live streaming, digital archives, and institutional communications."
       />
       <PageHeader
-        title="Centre for Digital Media"
         breadcrumbs={[{ label: 'Centres & Cells' }, { label: 'Centre for Digital Media' }]}
       />
 
-      <section className="mx-auto max-w-[1200px] px-6 py-14 space-y-10">
-        {/* Banner */}
-        <div className="overflow-hidden rounded-2xl border border-cc-gray-200 shadow-cc-sm">
-          <img
-            src={banner}
-            alt="Centre for Digital Media"
-            className="h-64 w-full object-cover sm:h-80 lg:h-96"
-          />
-        </div>
+      <section className="mx-auto max-w-[1200px] px-6 pt-10">
+        <motion.div
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
+          className="overflow-hidden rounded-cc-lg border border-cc-gray-200 bg-cc-bg-surface shadow-cc-sm"
+        >
+          <div className="grid sm:grid-cols-[280px_1fr]">
+            <div className="h-48 sm:h-full">
+              <img src={banner} alt="" aria-hidden="true" className="h-full w-full object-cover" />
+            </div>
+            <div className="border-t border-cc-gray-200 px-6 py-8 sm:border-t-0 sm:border-l sm:px-10">
+              <div className="border-l-4 border-cc-gold pl-5">
+                <span className="block text-xs font-bold uppercase tracking-[0.15em] text-cc-primary">
+                  Digital Branding • Media Production • Communications
+                </span>
+                <h1 className="mt-1 text-3xl font-extrabold tracking-tight text-cc-text-heading sm:text-4xl">
+                  Centre for Digital Media
+                </h1>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </section>
 
+      <section className="mx-auto max-w-[1200px] px-6 py-14 space-y-10">
         {/* About Us Card */}
         <div className="rounded-2xl border border-cc-gray-200 bg-cc-bg-surface p-6 shadow-cc-sm sm:p-8">
-          <span className="inline-block rounded-full bg-cc-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-cc-primary">
-            Digital Branding &bull; Media Production &bull; Communications
-          </span>
-          <h2 className="mt-2 text-2xl font-bold text-cc-text-heading sm:text-3xl">About Us</h2>
+          <h2 className="text-2xl font-bold text-cc-text-heading sm:text-3xl">About Us</h2>
 
           <div className="mt-4 space-y-4 text-cc-text-body leading-relaxed text-justify [text-align-last:left]">
             <p>

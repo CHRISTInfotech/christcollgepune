@@ -1,5 +1,6 @@
 import TabbedContentPage from '../../components/TabbedContentPage';
 import ImageCarousel from '../../components/ImageCarousel';
+import CentreVisionMission from '../../components/CentreVisionMission';
 import { UsersIcon, CompassIcon, AwardIcon } from '../../components/icons';
 import scaBanner from '../../assets/images/5-students-student-cultural-association/sca-banner.png';
 import aaghaz1 from '../../assets/images/gallery/aaghaz-2026/1.jpg';
@@ -164,18 +165,29 @@ function HomeTab() {
       <div className="max-w-3xl">
         <h2>About SCA</h2>
         <p className="mt-4 text-cc-text-body">
-          The Student Cultural Association (SCA) is a platform dedicated to fostering holistic
-          development among students at Christ College, Pune. Aligned with the
+          The Student Cultural Association (SCA) serves as a platform dedicated to fostering
+          holistic development among students at Christ College, Pune. Aligned with the
           college&rsquo;s vision and mission, SCA aims to empower Christites by offering
           opportunities for personal growth and transformation.
         </p>
         <p className="mt-4 text-cc-text-body">
-          Embracing a wide array of artistic expressions, such as dance, music, literature,
-          and theatre, the Student Cultural Association recognizes the inherent beauty in all
-          art forms. It wholeheartedly encourages students to step forward and showcase their
+          Embracing a wide array of artistic expressions, such as Dance, Music, Literature,
+          and Theatre, the Student Cultural Association recognizes the inherent beauty in all
+          art forms. We wholeheartedly encourage students to step forward and showcase their
           talents, fostering an environment of creativity and self-improvement on campus.
         </p>
+        <p className="mt-4 text-cc-text-body">
+          Our mission goes beyond merely unlocking students&rsquo; potential; we also strive
+          to instil in them a sense of social responsibility. By nurturing socially conscious
+          individuals, we aspire to contribute positively to society and create a meaningful
+          impact on the world.
+        </p>
       </div>
+
+      <CentreVisionMission
+        vision="SCA creates, nurtures and transforms an individual’s mind by extending a plethora of opportunities for the growth of the students, in culmination with the College’s vision and mission statement."
+        mission="A sense of responsibility in the student community of Christ College, Pune towards self and the society."
+      />
 
       <div className="mt-10 grid gap-6 sm:grid-cols-3">
         {PILLARS.map((pillar) => (

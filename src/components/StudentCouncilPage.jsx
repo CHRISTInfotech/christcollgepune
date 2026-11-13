@@ -1,5 +1,6 @@
 import TabbedContentPage from './TabbedContentPage';
 import ImageCarousel from './ImageCarousel';
+import CentreVisionMission from './CentreVisionMission';
 import { UsersIcon, AcademicCapIcon, GlobeIcon, DownloadIcon } from './icons';
 import councilBanner from '../assets/images/5-students-student-council/council-banner.png';
 import members2223 from '../assets/studentlife/SC/Student Council Members 22-23.pdf';
@@ -65,6 +66,14 @@ const ACTIVITIES = [
   },
 ];
 
+const MISSION_POINTS = [
+  { title: 'Empower Leadership', description: 'Nurture confident, accountable and proactive leaders equipped to lead with vision, integrity and purpose.' },
+  { title: 'Unlock Potential', description: 'Discover, develop and amplify students’ talents, strengths and capabilities through diverse opportunities and experiences.' },
+  { title: 'Foster Excellence', description: 'Cultivate creativity, innovation, collaboration and a relentless pursuit of excellence.' },
+  { title: 'Champion Engagement', description: 'Inspire active participation, inclusivity and meaningful contributions to campus life and society.' },
+  { title: 'Drive Transformation', description: 'Instil values of responsibility, resilience, empathy and social commitment to shape changemakers beyond the classroom.' },
+];
+
 const PILLARS = [
   {
     icon: UsersIcon,
@@ -121,6 +130,11 @@ function HomeTab() {
           Pune community to ease and complement the quality of life and learning for students.
         </p>
       </div>
+
+      <CentreVisionMission
+        vision="To ignite the spirit of leadership, cultivate a culture of excellence and empower a generation of visionary, resilient and socially responsible individuals who inspire change, challenge conventions and shape the future."
+        mission={MISSION_POINTS}
+      />
 
       <div className="mt-10 grid gap-6 sm:grid-cols-3">
         {PILLARS.map((pillar) => (

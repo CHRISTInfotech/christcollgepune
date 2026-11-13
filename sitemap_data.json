@@ -817,7 +817,117 @@
     "url": "",
     "path": "/centres-and-cells/clubs-and-societies",
     "verification": "Needs URL verification",
-    "notes": "Not present in the source xlsx sitemap; added from the 29-10-26 UPDATION Drive content-extraction pass (Cells and Centres folder)."
+    "notes": "Not present in the source xlsx sitemap; added from the 29-10-26 UPDATION Drive content-extraction pass (Cells and Centres folder). Redesigned as a directory/index page linking out to each club's own page below."
+  },
+  {
+    "id": "7-centres-and-cells-club-lyrica",
+    "section": "7. Centres & Cells",
+    "page": "Clubs & Societies",
+    "sub_link": "Lyrica — The Poetry Club",
+    "url": "",
+    "path": "/centres-and-cells/clubs-and-societies/lyrica",
+    "verification": "Needs URL verification",
+    "notes": "Individual club page, linked from the Clubs & Societies index."
+  },
+  {
+    "id": "7-centres-and-cells-club-inkspire",
+    "section": "7. Centres & Cells",
+    "page": "Clubs & Societies",
+    "sub_link": "Inkspire — The Writer's Forum",
+    "url": "",
+    "path": "/centres-and-cells/clubs-and-societies/inkspire",
+    "verification": "Needs URL verification",
+    "notes": "Individual club page, linked from the Clubs & Societies index."
+  },
+  {
+    "id": "7-centres-and-cells-club-litloom",
+    "section": "7. Centres & Cells",
+    "page": "Clubs & Societies",
+    "sub_link": "LitLoom — The Readers' Circle",
+    "url": "",
+    "path": "/centres-and-cells/clubs-and-societies/litloom",
+    "verification": "Needs URL verification",
+    "notes": "Individual club page, linked from the Clubs & Societies index."
+  },
+  {
+    "id": "7-centres-and-cells-club-mathverse",
+    "section": "7. Centres & Cells",
+    "page": "Clubs & Societies",
+    "sub_link": "MathVerse — The Math Club",
+    "url": "",
+    "path": "/centres-and-cells/clubs-and-societies/mathverse",
+    "verification": "Needs URL verification",
+    "notes": "Individual club page, linked from the Clubs & Societies index."
+  },
+  {
+    "id": "7-centres-and-cells-club-pixelora",
+    "section": "7. Centres & Cells",
+    "page": "Clubs & Societies",
+    "sub_link": "Pixelora — The Designer's Club",
+    "url": "",
+    "path": "/centres-and-cells/clubs-and-societies/pixelora",
+    "verification": "Needs URL verification",
+    "notes": "Individual club page, linked from the Clubs & Societies index."
+  },
+  {
+    "id": "7-centres-and-cells-club-quiztoria",
+    "section": "7. Centres & Cells",
+    "page": "Clubs & Societies",
+    "sub_link": "Quiztoria — The Quiz Club",
+    "url": "",
+    "path": "/centres-and-cells/clubs-and-societies/quiztoria",
+    "verification": "Needs URL verification",
+    "notes": "Individual club page, linked from the Clubs & Societies index."
+  },
+  {
+    "id": "7-centres-and-cells-club-rhetorix",
+    "section": "7. Centres & Cells",
+    "page": "Clubs & Societies",
+    "sub_link": "Rhetorix — The Debate Club",
+    "url": "",
+    "path": "/centres-and-cells/clubs-and-societies/rhetorix",
+    "verification": "Needs URL verification",
+    "notes": "Individual club page, linked from the Clubs & Societies index."
+  },
+  {
+    "id": "7-centres-and-cells-club-shutterbugs",
+    "section": "7. Centres & Cells",
+    "page": "Clubs & Societies",
+    "sub_link": "Shutterbugs — The Photography Club",
+    "url": "",
+    "path": "/centres-and-cells/clubs-and-societies/shutterbugs",
+    "verification": "Needs URL verification",
+    "notes": "Individual club page, linked from the Clubs & Societies index."
+  },
+  {
+    "id": "7-centres-and-cells-club-theatre",
+    "section": "7. Centres & Cells",
+    "page": "Clubs & Societies",
+    "sub_link": "Theatre Club",
+    "url": "",
+    "path": "/centres-and-cells/clubs-and-societies/theatre",
+    "verification": "Needs URL verification",
+    "notes": "Individual club page, linked from the Clubs & Societies index."
+  },
+  {
+    "id": "7-centres-and-cells-club-heritage",
+    "section": "7. Centres & Cells",
+    "page": "Clubs & Societies",
+    "sub_link": "Heritage Club",
+    "url": "",
+    "path": "/centres-and-cells/clubs-and-societies/heritage",
+    "verification": "Needs URL verification",
+    "notes": "Individual club page, linked from the Clubs & Societies index."
+  },
+  {
+    "id": "7-centres-and-cells-club-finsmart",
+    "section": "7. Centres & Cells",
+    "page": "Clubs & Societies",
+    "sub_link": "FinSmart Club",
+    "url": "",
+    "path": "/centres-and-cells/clubs-and-societies/finsmart",
+    "verification": "Needs URL verification",
+    "notes": "Individual club page, linked from the Clubs & Societies index."
   },
   {
     "id": "7-centres-and-cells-nirmiti-start-up-and-innovation-centre",
@@ -988,6 +1098,16 @@
     "path": "/centres-and-cells/equal-opportunity-cell",
     "verification": "Verified",
     "notes": "Centre is listed, but a dedicated URL was not independently verified in this crawl."
+  },
+  {
+    "id": "7-centres-and-cells-scholarship-support-cell",
+    "section": "7. Centres & Cells",
+    "page": "Scholarship Support Cell",
+    "sub_link": "",
+    "url": "",
+    "path": "/centres-and-cells/scholarship-support-cell",
+    "verification": "Needs URL verification",
+    "notes": "New cell page added from Drive-sourced content (write-up, team, Achievers Spotlight 2026, Scholarship Awareness Session); not yet independently verified against the live site."
   },
   {
     "id": "7-centres-and-cells-research-cell",

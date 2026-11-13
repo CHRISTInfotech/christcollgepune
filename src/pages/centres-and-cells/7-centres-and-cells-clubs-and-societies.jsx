@@ -1,207 +1,126 @@
-import TabbedContentPage from '../../components/TabbedContentPage';
-import ImageCarousel from '../../components/ImageCarousel';
+import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import PageHeader from '../../components/PageHeader';
+import Seo from '../../components/Seo';
 import CentreVisionMission from '../../components/CentreVisionMission';
+import { VideoIcon, BuildingIcon } from '../../components/icons';
+import logo from '../../assets/images/7-centres-and-cells-clubs-and-societies/logo.jpg';
 import lyrica1 from '../../assets/images/gallery/club-lyrica/1.jpg';
+import inkspire1 from '../../assets/images/gallery/club-inkspire/1.jpg';
 import litloom1 from '../../assets/images/gallery/club-litloom/1.jpg';
 import mathverse1 from '../../assets/images/gallery/club-mathverse/1.jpg';
-import mathverse2 from '../../assets/images/gallery/club-mathverse/2.jpg';
 import pixelora1 from '../../assets/images/gallery/club-pixelora/1.jpg';
 import quiztoria1 from '../../assets/images/gallery/club-quiztoria/1.jpg';
 import rhetorix1 from '../../assets/images/gallery/club-rhetorix/1.jpg';
 import shutterbugs1 from '../../assets/images/gallery/club-shutterbugs/1.jpg';
-import shutterbugs2 from '../../assets/images/gallery/club-shutterbugs/2.jpg';
-import shutterbugs3 from '../../assets/images/gallery/club-shutterbugs/3.jpg';
-import shutterbugs4 from '../../assets/images/gallery/club-shutterbugs/4.jpg';
-import shutterbugs5 from '../../assets/images/gallery/club-shutterbugs/5.jpg';
-import shutterbugs6 from '../../assets/images/gallery/club-shutterbugs/6.jpg';
 import finsmart1 from '../../assets/images/gallery/club-finsmart/1.jpg';
 
-const MATHVERSE_IMAGES = [mathverse1, mathverse2];
-const SHUTTERBUGS_IMAGES = [shutterbugs1, shutterbugs2, shutterbugs3, shutterbugs4, shutterbugs5, shutterbugs6];
+const CLUBS = [
+  { name: 'Lyrica', tagline: 'The Poetry Club', category: 'Literary', image: lyrica1, path: '/centres-and-cells/clubs-and-societies/lyrica' },
+  { name: 'Inkspire', tagline: "The Writer's Forum", category: 'Literary', image: inkspire1, path: '/centres-and-cells/clubs-and-societies/inkspire' },
+  { name: 'LitLoom', tagline: "The Readers' Circle", category: 'Literary', image: litloom1, path: '/centres-and-cells/clubs-and-societies/litloom' },
+  { name: 'MathVerse', tagline: 'The Math Club', category: 'Academic', image: mathverse1, path: '/centres-and-cells/clubs-and-societies/mathverse' },
+  { name: 'Pixelora', tagline: "The Designer's Club", category: 'Visual Arts', image: pixelora1, path: '/centres-and-cells/clubs-and-societies/pixelora' },
+  { name: 'Quiztoria', tagline: 'The Quiz Club', category: 'Academic', image: quiztoria1, path: '/centres-and-cells/clubs-and-societies/quiztoria' },
+  { name: 'Rhetorix', tagline: 'The Debate Club — Dept. of Arts', category: 'Literary', image: rhetorix1, path: '/centres-and-cells/clubs-and-societies/rhetorix' },
+  { name: 'Shutterbugs', tagline: 'The Photography Club', category: 'Visual Arts', image: shutterbugs1, path: '/centres-and-cells/clubs-and-societies/shutterbugs' },
+  { name: 'Theatre Club', tagline: 'Acting, drama & stage performance', category: 'Performing Arts', icon: VideoIcon, path: '/centres-and-cells/clubs-and-societies/theatre' },
+  { name: 'Heritage Club', tagline: 'Dept. of Management', category: 'Department Club', icon: BuildingIcon, path: '/centres-and-cells/clubs-and-societies/heritage' },
+  { name: 'FinSmart Club', tagline: 'Dept. of Commerce', category: 'Department Club', image: finsmart1, path: '/centres-and-cells/clubs-and-societies/finsmart' },
+];
 
-function ClubTab({ tagline, about, vision, mission, images, eventTitle, eventDescription }) {
+export default function ClubsAndSocieties() {
   return (
-    <div className="space-y-10">
-      <div className="max-w-3xl">
-        {tagline && (
-          <span className="mb-2 inline-block text-sm font-semibold uppercase tracking-wide text-cc-primary">
-            {tagline}
-          </span>
-        )}
-        <p className="text-cc-text-body">{about}</p>
-      </div>
+    <>
+      <Seo
+        title="Clubs & Societies"
+        description="Christ College, Pune's student clubs and societies — Lyrica, Inkspire, LitLoom, MathVerse, Pixelora, Quiztoria, Rhetorix, Shutterbugs, Theatre Club, Heritage Club and FinSmart Club — platforms for creative, literary, artistic and intellectual growth."
+      />
+      <PageHeader breadcrumbs={[{ label: 'Centres & Cells' }, { label: 'Clubs & Societies' }]} />
 
-      {(vision || mission) && <CentreVisionMission vision={vision} mission={mission} />}
+      {/* Hero */}
+      <motion.div
+        initial={{ opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.45, ease: [0.4, 0, 0.2, 1] }}
+        className="relative overflow-hidden"
+      >
+        <div className="relative flex min-h-[240px] items-end sm:min-h-[300px]">
+          <img src={logo} alt="" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-cc-primary-deeper/95 via-cc-primary-deeper/70 to-cc-primary-deeper/30" />
 
-      {images && (
-        <div className="max-w-2xl overflow-hidden rounded-cc-lg border border-cc-gray-200 shadow-cc-sm">
-          <ImageCarousel images={images} alt={eventTitle || 'Club photo'} className="h-64 w-full" />
+          <div className="relative z-10 mx-auto w-full max-w-[1200px] px-6 py-10 sm:py-12">
+            <h1 className="text-4xl font-extrabold tracking-tight text-white drop-shadow-sm sm:text-5xl">
+              Clubs &amp; Societies
+            </h1>
+            <p className="mt-2 max-w-2xl text-sm font-semibold uppercase tracking-wide text-cc-gold sm:text-base">
+              Explore, Create, Belong
+            </p>
+          </div>
         </div>
-      )}
+      </motion.div>
 
-      {eventTitle && (
-        <div className="max-w-3xl rounded-cc-md border border-cc-gray-200 bg-cc-bg-surface p-5 shadow-sm">
-          <h3 className="text-cc-primary uppercase tracking-wide text-sm font-semibold">{eventTitle}</h3>
-          <p className="mt-2 text-sm text-cc-text-body">{eventDescription}</p>
+      <section className="mx-auto max-w-[1200px] px-6 py-16">
+        <div className="max-w-3xl">
+          <h2>About Clubs &amp; Societies</h2>
+          <p className="mt-4 text-cc-text-body leading-relaxed">
+            Clubs and Societies at Christ College, Pune, offer a vibrant, student-driven
+            platform to explore interests, nurture talents, and encourage innovation. Comprising
+            academic and cultural clubs, they bring together like-minded students to share
+            ideas, collaborate, and turn their interests into meaningful initiatives. Managed by
+            students under the guidance of faculty coordinators, the clubs organise various
+            activities, competitions, workshops, and events at both club and college levels.
+          </p>
         </div>
-      )}
-    </div>
-  );
-}
 
-function LyricaTab() {
-  return (
-    <ClubTab
-      tagline="The Poetry Club"
-      about="Lyrica celebrates poetry as a powerful medium of creativity, emotion and self-expression. The club encourages students to explore different poetic forms, experiment with language and share their voices through poetry recitations, creative writing and literary engagements."
-      vision="To celebrate the power of poetry as a medium of creativity, imagination and self-expression."
-      mission="To encourage poetic expression, nurture emerging poets and promote appreciation of diverse poetic voices and traditions."
-      images={[lyrica1]}
-    />
-  );
-}
+        <CentreVisionMission
+          vision="To foster a vibrant, inclusive, and student-driven campus culture that nurtures talents, encourages innovation, and empowers students to become confident, creative, and responsible leaders."
+          mission="To provide a platform for students to explore their interests and showcase their talents through academic and cultural clubs; to encourage like-minded students to collaborate, exchange ideas, and organise engaging activities and college-wide events; to develop leadership, teamwork, communication, creativity, and organisational skills through active student participation; and to promote inclusivity, innovation, and holistic development by transforming students’ ideas into meaningful experiences."
+        />
 
-function InkspireTab() {
-  return (
-    <ClubTab
-      tagline="The Writer's Forum"
-      about="Inkspire provides a creative space for students to express their thoughts, ideas and imagination through the written word. Through creative writing, storytelling, poetry and literary activities, the club nurtures emerging writers and encourages original expression."
-      vision="To inspire creative expression and nurture a community of imaginative and thoughtful writers."
-      mission="To provide opportunities for students to develop their writing skills through creative writing, storytelling and literary expression."
-    />
-  );
-}
+        <h2 className="mt-14">All Clubs &amp; Societies</h2>
+        <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {CLUBS.map(({ name, tagline, category, image, icon: Icon, path }, index) => (
+            <motion.div
+              key={name}
+              initial={{ opacity: 0, y: 14 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.35, delay: Math.min(index, 8) * 0.04, ease: [0.4, 0, 0.2, 1] }}
+            >
+              <Link
+                to={path}
+                className="group focus-visible:ring-cc-primary relative block overflow-hidden rounded-cc-lg border border-cc-gray-200 shadow-cc-sm transition-shadow duration-300 hover:shadow-cc focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+              >
+                <div className="relative aspect-[4/3] w-full overflow-hidden bg-cc-primary-deeper">
+                  {Icon ? (
+                    <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-cc-primary to-cc-primary-deeper">
+                      <Icon className="h-14 w-14 text-white/90" aria-hidden="true" />
+                    </div>
+                  ) : (
+                    <img
+                      src={image}
+                      alt=""
+                      aria-hidden="true"
+                      loading="lazy"
+                      className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+                    />
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
 
-function LitLoomTab() {
-  return (
-    <ClubTab
-      tagline="The Readers' Circle"
-      about="LitLoom celebrates the joy of reading and fosters a vibrant literary community among students. Through book discussions, reading challenges and literary explorations, the club encourages critical appreciation, imagination and a lifelong love for reading."
-      vision="To cultivate a vibrant reading culture that inspires imagination, knowledge and literary appreciation."
-      mission="To encourage reading habits, explore diverse literary works and promote meaningful literary discussions."
-      images={[litloom1]}
-    />
-  );
-}
+                  <span className="absolute left-3 top-3 rounded-cc-pill bg-cc-gold px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-cc-primary-deeper shadow-xs">
+                    {category}
+                  </span>
 
-function MathVerseTab() {
-  return (
-    <ClubTab
-      tagline="The Math Club"
-      about="MathVerse aims to make mathematics engaging, accessible and enjoyable through mathematical games, interactive activities, film screenings, discussions, and collaborative experiences. By connecting mathematics with history, stories, and real-world applications, the club seeks to help students discover the beauty and relevance of mathematics in everyday life."
-      vision="To inspire curiosity and creativity by making mathematics engaging, relatable, and meaningful beyond the classroom."
-      mission="To promote mathematical thinking, problem-solving, and collaboration through interactive activities and innovative learning experiences."
-      images={MATHVERSE_IMAGES}
-    />
-  );
-}
-
-function PixeloraTab() {
-  return (
-    <ClubTab
-      tagline="The Designer's Club"
-      about="Pixelora provides a creative platform for students to explore visual communication, graphic design and digital creativity. Through poster-making, digital art and innovative design projects, the club encourages artistic expression, visual storytelling and creative collaboration."
-      vision="To foster creativity and visual imagination through innovative design and digital expression."
-      mission="To develop students' artistic and digital design skills through creative projects, visual storytelling and collaborative activities."
-      images={[pixelora1]}
-    />
-  );
-}
-
-function QuiztoriaTab() {
-  return (
-    <ClubTab
-      tagline="The Quiz Club"
-      about="Quiztoria aims to make learning engaging, interactive and intellectually stimulating through quizzes and knowledge-based activities. The club encourages curiosity, general awareness and analytical thinking while providing opportunities for students to test their knowledge and participate in healthy competition."
-      vision="To create curious, knowledgeable and intellectually engaged learners with a spirit of discovery."
-      mission="To promote knowledge, critical thinking and healthy competition through quizzes and interactive learning activities."
-      images={[quiztoria1]}
-    />
-  );
-}
-
-function RhetorixTab() {
-  return (
-    <ClubTab
-      tagline="The Debate Club — Department of Arts"
-      about="Rhetorix provides a dynamic platform for students to express ideas, engage in intellectual discussions and develop critical thinking skills. Through debates, discussions and interactive activities, the club aims to nurture confident speakers, effective communicators and thoughtful individuals."
-      vision="To nurture articulate, confident and critical thinkers who engage in meaningful dialogue."
-      mission="To develop debating skills, logical reasoning and persuasive communication through constructive discussions and debates."
-      images={[rhetorix1]}
-      eventTitle="Debate Competition"
-      eventDescription="Rhetorix's flagship event, bringing together students for spirited debate on a wide range of topics."
-    />
-  );
-}
-
-function ShutterbugsTab() {
-  return (
-    <ClubTab
-      tagline="The Photography Club"
-      about="Shutterbugs provides a creative platform for students to explore the art of photography and visual storytelling. Through photography assignments, photo walks, competitions and creative projects, the club encourages students to capture perspectives, document experiences and express stories through images."
-      vision="To nurture creative visual storytellers who capture perspectives, emotions and experiences through photography."
-      mission="To develop students' photographic skills, encourage artistic experimentation and promote visual storytelling through practical experiences and collaborative activities."
-      images={SHUTTERBUGS_IMAGES}
-      eventTitle="Online Photography Contest — World Environment Day"
-      eventDescription="Shutterbugs, in collaboration with the Centre for Environment and Climate Change, organised an online photography contest on the occasion of World Environment Day, encouraging students to capture the beauty of nature and highlight the importance of environmental conservation."
-    />
-  );
-}
-
-function TheatreTab() {
-  return (
-    <ClubTab
-      about="The Theatre Club provides a creative platform for students to explore the art of acting, drama, and stage performance. It encourages students to express themselves through storytelling, role-play, improvisation, and theatrical productions. The club nurtures creativity, confidence, communication, and collaboration while bringing together students who share a passion for the performing arts."
-      vision="To nurture creative expression and artistic excellence by inspiring students to explore the transformative power of theatre."
-      mission="To develop students' acting, communication, and collaborative skills through engaging theatrical activities and performances."
-    />
-  );
-}
-
-function HeritageTab() {
-  return (
-    <ClubTab
-      tagline="Department of Management — Celebrating Our Past, Preserving Our Legacy, Inspiring Our Future"
-      about="The Heritage Club of the Department of Management serves as a vibrant platform for students to discover the stories, art, architecture and traditions that shape our cultural identity. By bringing history to life through engaging experiences and creative explorations, the club seeks to build meaningful connections between our roots, our present and the generations yet to come."
-      vision="To nurture a profound appreciation of our rich cultural heritage, historical legacy and traditions, inspiring students to value, celebrate and preserve our heritage for generations to come."
-      mission="To provide students with meaningful opportunities to explore, experience and connect with our cultural past through heritage walks, historical visits and creative activities, fostering cultural awareness and a lasting commitment to heritage conservation."
-    />
-  );
-}
-
-function FinSmartTab() {
-  return (
-    <ClubTab
-      tagline="Department of Commerce — Where Strategy and Curiosity Meet Financial Clarity"
-      about="FinSmart Club introduces students to the fundamentals of trading, financial markets, financial independence and current affairs, helping them transform curiosity into financial confidence through interactive sessions and real-world market insights."
-      images={[finsmart1]}
-      eventTitle="Session on Trading"
-      eventDescription="FinSmart Club organised an informative session on trading for BCom students, conducted by Mrs Sandeep Kaur. The session introduced students to the basics of trading, market trends, and technical analysis — chart reading, bullish and bearish markets, and trading strategies used in financial markets."
-    />
-  );
-}
-
-export default function ClubsAndSocieties({ initialTab = 'lyrica' }) {
-  return (
-    <TabbedContentPage
-      pageTitle="Clubs & Societies"
-      breadcrumbLabel="Clubs & Societies"
-      breadcrumbSection="Centres & Cells"
-      description="Christ College, Pune's student clubs and societies — Lyrica, Inkspire, LitLoom, MathVerse, Pixelora, Quiztoria, Rhetorix, Shutterbugs, Theatre Club, Heritage Club and FinSmart Club — platforms for creative, literary, artistic and intellectual growth."
-      initialTab={initialTab}
-      tabs={[
-        { key: 'lyrica', label: 'Lyrica', render: () => <LyricaTab /> },
-        { key: 'inkspire', label: 'Inkspire', render: () => <InkspireTab /> },
-        { key: 'litloom', label: 'LitLoom', render: () => <LitLoomTab /> },
-        { key: 'mathverse', label: 'MathVerse', render: () => <MathVerseTab /> },
-        { key: 'pixelora', label: 'Pixelora', render: () => <PixeloraTab /> },
-        { key: 'quiztoria', label: 'Quiztoria', render: () => <QuiztoriaTab /> },
-        { key: 'rhetorix', label: 'Rhetorix', render: () => <RhetorixTab /> },
-        { key: 'shutterbugs', label: 'Shutterbugs', render: () => <ShutterbugsTab /> },
-        { key: 'theatre', label: 'Theatre Club', render: () => <TheatreTab /> },
-        { key: 'heritage', label: 'Heritage Club', render: () => <HeritageTab /> },
-        { key: 'finsmart', label: 'FinSmart Club', render: () => <FinSmartTab /> },
-      ]}
-    />
+                  <div className="absolute inset-x-0 bottom-0 p-4">
+                    <span className="block text-lg font-bold text-white drop-shadow-sm">{name}</span>
+                    <span className="block text-xs font-medium text-white/80">{tagline}</span>
+                  </div>
+                </div>
+              </Link>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+    </>
   );
 }

@@ -40,15 +40,24 @@ const ROLES = [
 function HomeTab() {
   return (
     <>
-      <span className="inline-block rounded-full bg-cc-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-cc-primary">
-        Diversity &bull; Equity &bull; Inclusion
-      </span>
-      <h2 className="mt-2">About the Cell</h2>
+      <h2>About the Cell</h2>
       <p className="mt-4 max-w-3xl text-cc-text-body leading-relaxed">
-        The <strong>Equal Opportunity Cell (EOC)</strong> at Christ College, Pune is established to oversee
-        the effective implementation of policies and programmes for disadvantaged and minority groups, to provide
-        guidance and counselling with respect to academic, financial, social and other matters, and to enhance
-        the diversity and inclusive culture of the college community.
+        The <strong>Equal Opportunity Cell (EOC)</strong> functions as a central coordinating body
+        overseeing the activities of the SC/ST Committee and the OPEM Cell, which caters to Other
+        Backward Classes (OBCs), Persons with Disabilities (PwDs), Economically Weaker Sections
+        (EWS), and minority communities.
+      </p>
+      <p className="mt-4 max-w-3xl text-cc-text-body leading-relaxed">
+        The Cell is committed to ensuring fairness, equality, and inclusivity across the
+        institution. It addresses students&rsquo; concerns and works towards ensuring that
+        individuals from disadvantaged and minority communities receive equal opportunities in
+        all academic and institutional activities. It also strives to prevent harassment and
+        discrimination based on religion, race, caste, disability, or any other social category,
+        thereby fostering a safe, equitable, and inclusive learning environment. The EOC monitors
+        the effective implementation of institutional policies and programs meant for
+        disadvantaged groups. It also provides guidance and counselling related to academic,
+        financial, social, and other concerns while promoting diversity and inclusiveness on the
+        campus.
       </p>
 
       <CentreVisionMission
@@ -160,6 +169,7 @@ export default function EqualOpportunityCell({ initialTab = 'home' }) {
       breadcrumbLabel="Equal Opportunity Cell"
       breadcrumbSection="Centres & Cells"
       description="The Equal Opportunity Cell at Christ College, Pune promotes diversity, equity and inclusion, safeguarding the interests of minority-group students, teaching and non-teaching staff on campus."
+      tagline="Diversity • Equity • Inclusion"
       bannerImage={banner}
       bannerAlt="Equal Opportunity Cell"
       initialTab={initialTab}

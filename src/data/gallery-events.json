@@ -48,6 +48,12 @@
     "photoCount": 8
   },
   {
+    "name": "Achievers Spotlight 2026",
+    "slug": "achievers-spotlight-2026",
+    "department": null,
+    "photoCount": 6
+  },
+  {
     "name": "Alumni Meet 2023",
     "slug": "alumni-meet-2023",
     "department": null,
@@ -252,6 +258,12 @@
     "photoCount": 19
   },
   {
+    "name": "Digital Financial Safety and Responsible Money Management",
+    "slug": "finsmart-digital-financial-safety",
+    "department": "Commerce",
+    "photoCount": 4
+  },
+  {
     "name": "Digital Skills Workshop — Canva",
     "slug": "digital-skills-workshop-canva",
     "department": "Arts",
@@ -417,6 +429,12 @@
     "name": "Industrial Visit — Krishi Vigyan Kendra",
     "slug": "industrial-visit-krishi-vigyan-kendra",
     "department": "Arts",
+    "photoCount": 1
+  },
+  {
+    "name": "Inkspire — The Writer's Forum",
+    "slug": "club-inkspire",
+    "department": null,
     "photoCount": 1
   },
   {
@@ -652,6 +670,12 @@
     "slug": "samvaad-2025",
     "department": "Management",
     "photoCount": 2
+  },
+  {
+    "name": "Scholarship Awareness Session",
+    "slug": "scholarship-awareness-session",
+    "department": null,
+    "photoCount": 1
   },
   {
     "name": "Science Exhibition 2024",
