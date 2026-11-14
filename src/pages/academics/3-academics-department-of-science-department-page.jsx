@@ -32,10 +32,10 @@ const ABOUT_PARAGRAPHS = [
 
 const ACTIVITIES = [
   { name: 'Fests', description: 'Department festivals and technical fests held throughout the academic year.', image: events, path: '/academics/department-of-science/festivals' },
-  { name: 'CCSA', description: 'Christ College Science Association (CCSA) and its events.', image: ccsa, path: '/academics/department-of-science/association' },
-  { name: 'Conference/Workshop/Exhibitions', description: 'Workshops, seminars, corporate talks and field visits organised by the department.', image: clubActivities, path: '/academics/department-of-science/activities' },
-  { name: 'Seminars/ Corporate Connect', description: 'Research and publications by department faculty.', image: facultyPublications, path: '/academics/department-of-science/seminars-and-corporate-connect' },
-  { name: 'Events and Activities', description: 'Photo gallery of department events and activities.', image: eventsAndActivities, path: '/media-and-gallery/gallery?department=Science' },
+  { name: 'CCSA', description: 'Christ College Science Association', image: ccsa, path: '/academics/department-of-science/association' },
+  { name: 'Conference/Workshop/Exhibitions', description: 'Conferences, workshops and exhibitions organised by the department.', image: clubActivities, path: '/academics/department-of-science/activities' },
+  { name: 'Seminars/ Corporate Connect', description: 'Industry seminars and guest talks connecting students with the corporate world.', image: facultyPublications, path: '/academics/department-of-science/seminars-and-corporate-connect' },
+  { name: 'Events and Activities', description: 'Department events, activities and photo highlights.', image: eventsAndActivities, path: '/media-and-gallery/gallery?department=Science' },
 ];
 
 const ACHIEVEMENTS = [

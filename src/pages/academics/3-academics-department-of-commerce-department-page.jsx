@@ -21,10 +21,10 @@ const ABOUT_PARAGRAPHS = [
 
 const ACTIVITIES = [
   { name: 'Fests', description: 'Department festival and competition showcasing student skills and creativity.', image: desafio, path: '/academics/department-of-commerce/festivals' },
-  { name: 'CCCA', description: 'Christ College Commerce Association - organizes workshops, seminars, competitions, and cultural events.', image: ccca, path: '/academics/department-of-commerce/association' },
-  { name: 'Conference/Workshop/Exhibitions', description: 'Interactive webinars and guest lectures from industry and academic experts.', image: webinar, path: '/academics/department-of-commerce/activities' },
-  { name: 'Seminars/ Corporate Connect', description: 'Scholarly research publications contributing to advanced academic knowledge.', image: facultyPublications, path: '/academics/department-of-commerce/seminars-and-corporate-connect' },
-  { name: 'Events and Activities', description: 'Online add-on courses including Tally and Personality Development.', image: eventsAndActivities, path: '/academics/department-of-commerce/events-and-activities' },
+  { name: 'CCCA', description: 'Christ College Commerce Association', image: ccca, path: '/academics/department-of-commerce/association' },
+  { name: 'Conference/Workshop/Exhibitions', description: 'Conferences, workshops and exhibitions organised by the department.', image: webinar, path: '/academics/department-of-commerce/activities' },
+  { name: 'Seminars/ Corporate Connect', description: 'Industry seminars and guest talks connecting students with the corporate world.', image: facultyPublications, path: '/academics/department-of-commerce/seminars-and-corporate-connect' },
+  { name: 'Events and Activities', description: 'Department events, activities and photo highlights.', image: eventsAndActivities, path: '/academics/department-of-commerce/events-and-activities' },
 ];
 
 const ACHIEVEMENTS = [

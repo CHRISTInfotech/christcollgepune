@@ -9,7 +9,6 @@ import jossyPGeorge from '../../assets/images/2-about-us-administration/jossy-p-
 import arunAntonyChullyAcademic from '../../assets/images/2-about-us-administration/arun-antony-chully-academic.png';
 import antonyPuthusseryAcademic from '../../assets/images/2-about-us-administration/antony-puthussery-academic.png';
 import deepaSujith from '../../assets/images/2-about-us-administration/deepa-sujith.png';
-import jijiJohnson from '../../assets/images/2-about-us-administration/jiji-johnson.png';
 import nilimaShingate from '../../assets/images/2-about-us-administration/nilima-shingate.png';
 import bijuSebastian from '../../assets/images/2-about-us-administration/biju-sebastian.png';
 
@@ -42,8 +41,7 @@ const MANAGEMENT = [
 const ACADEMIC_ADMINISTRATION = [
   { name: 'Rev. Dr. Arun Antony Chully CMI', role: 'Director', photo: arunAntonyChullyAcademic },
   { name: 'Rev. Dr. Antony Puthussery CMI', role: 'Administrator', photo: antonyPuthusseryAcademic },
-  { name: 'Ms. Deepa Sujith', role: 'HOD, Management', photo: deepaSujith },
-  { name: 'Dr. Jiji Johnson', role: 'HOD, Commerce', photo: jijiJohnson },
+  { name: 'Ms. Deepa Sujith', role: 'HOD, Commerce & Management', photo: deepaSujith },
   { name: 'Ms. Nilima Shingate', role: 'HOD, Computer Science', photo: nilimaShingate },
   { name: 'Mr. Biju Sebastian', role: 'HOD, Arts', photo: bijuSebastian },
 ];

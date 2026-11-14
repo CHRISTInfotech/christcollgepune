@@ -453,7 +453,7 @@ export default function DepartmentTemplate({
                   Have questions about syllabus, eligibility, or admissions?
                 </p>
                 <Link
-                  to="/admissions/contact-us"
+                  to="/admissions/application-queries"
                   className="inline-flex w-full items-center justify-center gap-1.5 rounded-cc-pill bg-cc-primary px-3 py-1.5 text-xs font-semibold text-white hover:bg-cc-primary-dark transition-colors shadow-xs"
                 >
                   <EnvelopeIcon className="h-3.5 w-3.5" />
@@ -567,7 +567,7 @@ export default function DepartmentTemplate({
                           to={prog.path}
                           className="inline-flex w-full items-center justify-center gap-2 rounded-cc-pill bg-cc-gray-100 px-4 py-2.5 text-xs font-bold text-cc-primary transition-all group-hover:bg-cc-primary group-hover:text-white group-hover:shadow-sm"
                         >
-                          <span>Explore Syllabus &amp; Details</span>
+                          <span>Explore More</span>
                           <span className="transition-transform group-hover:translate-x-1">&rarr;</span>
                         </Link>
                       </div>

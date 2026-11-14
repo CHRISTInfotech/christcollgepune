@@ -27,10 +27,10 @@ const ABOUT_PARAGRAPHS = [
 
 const ACTIVITIES = [
   { name: 'Fests', description: 'Department festivals and cultural celebrations.', image: events, path: '/academics/department-of-arts/festivals' },
-  { name: 'CCAA', description: 'Christ College Arts Association.', image: association, path: '/academics/department-of-arts/association' },
-  { name: 'Conference/Workshop/Exhibitions', description: 'Student-led activities and initiatives.', image: activities, path: '/academics/department-of-arts/activities' },
-  { name: 'Seminars/ Corporate Connect', description: 'Research and publications by department faculty.', image: facultyPublications, path: '/academics/department-of-arts/seminars-and-corporate-connect' },
-  { name: 'Events and Activities', description: 'Freshers\' Day, PTM, industrial visits and more.', image: eventsAndActivities, path: '/academics/department-of-arts/events-and-activities' },
+  { name: 'CCAA', description: 'Christ College Arts Association', image: association, path: '/academics/department-of-arts/association' },
+  { name: 'Conference/Workshop/Exhibitions', description: 'Conferences, workshops and exhibitions organised by the department.', image: activities, path: '/academics/department-of-arts/activities' },
+  { name: 'Seminars/ Corporate Connect', description: 'Industry seminars and guest talks connecting students with the corporate world.', image: facultyPublications, path: '/academics/department-of-arts/seminars-and-corporate-connect' },
+  { name: 'Events and Activities', description: 'Department events, activities and photo highlights.', image: eventsAndActivities, path: '/academics/department-of-arts/events-and-activities' },
 ];
 
 const ACHIEVEMENTS = [

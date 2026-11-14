@@ -27,11 +27,11 @@ const ABOUT_PARAGRAPHS = [
 
 const ACTIVITIES = [
   { name: 'Fests', description: 'Annual business and management festival showcasing student talents.', image: fiesta, path: '/academics/department-of-management/festivals' },
-  { name: 'CCMA', description: 'Christ College Management Association - student-led events and workshops.', image: ccma, path: '/academics/department-of-management/association' },
-  { name: 'Conference/Workshop/Exhibitions', description: 'Conferences, conclaves, workshops and exhibitions connecting students with industry leaders.', image: marketingConclave, path: '/academics/department-of-management/activities' },
+  { name: 'CCMA', description: 'Christ College Management Association', image: ccma, path: '/academics/department-of-management/association' },
+  { name: 'Conference/Workshop/Exhibitions', description: 'Conferences, workshops and exhibitions organised by the department.', image: marketingConclave, path: '/academics/department-of-management/activities' },
   { name: 'Newsletter', description: 'Department newsletter — Eloquence.', image: campusUpdates, path: '/academics/department-of-management/newsletter' },
-  { name: 'Seminars/ Corporate Connect', description: 'Research and publications by department faculty.', image: facultyPublications, path: '/academics/department-of-management/seminars-and-corporate-connect' },
-  { name: 'Events and Activities', description: 'Photo gallery of department events and activities.', image: eventsAndActivities, path: '/media-and-gallery/gallery?department=Management' },
+  { name: 'Seminars/ Corporate Connect', description: 'Industry seminars and guest talks connecting students with the corporate world.', image: facultyPublications, path: '/academics/department-of-management/seminars-and-corporate-connect' },
+  { name: 'Events and Activities', description: 'Department events, activities and photo highlights.', image: eventsAndActivities, path: '/media-and-gallery/gallery?department=Management' },
 ];
 
 const TESTIMONIALS = getTestimonialsByDepartment('management');
