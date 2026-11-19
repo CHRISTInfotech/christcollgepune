@@ -2,7 +2,7 @@ import { useState } from 'react';
 import PageHeader from '../../components/PageHeader';
 import Seo from '../../components/Seo';
 import { ChevronDownIcon } from '../../components/icons';
-import jamesThayyil from '../../assets/images/2-about-us-administration/james-thayyil.png';
+import joyPhilipKakkanattu from '../../assets/images/2-about-us-administration/joy-philip-kakkanattu.jpg';
 import antonyPuthussery from '../../assets/images/2-about-us-administration/antony-puthussery.png';
 import peterKochalumkal from '../../assets/images/2-about-us-administration/peter-kochalumkal.jpg';
 import jossyPGeorge from '../../assets/images/2-about-us-administration/jossy-p-george.jpg';
@@ -31,7 +31,7 @@ import omkarAnnasahebPokharkar from '../../assets/images/2-about-us-administrati
 import vivekYerwadekar from '../../assets/images/2-about-us-administration/staff/vivek-yerwadekar.png';
 
 const MANAGEMENT = [
-  { name: 'Rev. Fr. James Thayyil CMI', role: 'Manager', photo: jamesThayyil },
+  { name: 'Dr. (Fr) Joy Philip Kakkanattu CMI', role: 'Manager', photo: joyPhilipKakkanattu },
   { name: 'Rev. Dr. Arun Antony Chully CMI', role: 'Director / Principal', photo: arunAntonyChullyAcademic },
   { name: 'Rev. Dr. Antony Puthussery CMI', role: 'Administrator', photo: antonyPuthussery },
   { name: 'Rev. Dr. Peter Kochalumkal CMI', role: 'Member', photo: peterKochalumkal },

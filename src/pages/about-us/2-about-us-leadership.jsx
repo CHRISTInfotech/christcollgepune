@@ -1,9 +1,9 @@
 import PageHeader from '../../components/PageHeader';
 import Seo from '../../components/Seo';
 
-import frJamesThayyil from '../../assets/aboutus/leadership/FrJames thayyil.png';
+import frJoyPhilipKakkanattu from '../../assets/aboutus/leadership/Joy Philip Kakkanattu.jpg';
 import frAntonyPuthussery from '../../assets/aboutus/leadership/Fr Antony.jpg';
-import frArunAntonyChully from '../../assets/aboutus/leadership/Fr arun.png';
+import frArunAntonyChully from '../../assets/aboutus/leadership/Fr arun.jpg';
 import frJosephCC from '../../assets/aboutus/leadership/Fr Joseph cc.png';
 import frMartinMallath from '../../assets/aboutus/leadership/Rev_ Fr_ Martin Mallath CMI.jpg';
 import frLijoThomas from '../../assets/aboutus/leadership/Fr Lijo.png';
@@ -29,7 +29,7 @@ const SECTIONS = [
         designation: 'General Councillor for Education, CMI Congregation',
         photo: frMartinMallath,
       },
-      { name: 'Fr James Thayyil CMI', designation: 'Manager', photo: frJamesThayyil },
+      { name: 'Dr. (Fr) Joy Philip Kakkanattu CMI', designation: 'Manager', photo: frJoyPhilipKakkanattu },
       { name: 'Dr. (Fr) Arun Antony Chully CMI', designation: 'Director / Principal', photo: frArunAntonyChully },
       { name: 'Rev. Dr. Antony Puthussery CMI', designation: 'Administrator', photo: frAntonyPuthussery },
       { name: 'Dr. Fr Joseph CC', designation: 'Vice Chancellor, Christ University', photo: frJosephCC },
@@ -39,7 +39,7 @@ const SECTIONS = [
   {
     title: 'Governing Body',
     people: [
-      { name: 'Fr James Thayyil CMI', designation: 'Chairman', photo: frJamesThayyil },
+      { name: 'Dr. (Fr) Joy Philip Kakkanattu CMI', designation: 'Chairman', photo: frJoyPhilipKakkanattu },
       { name: 'Dr. (Fr) Arun Antony Chully CMI', designation: 'Member', photo: frArunAntonyChully },
       { name: 'Rev. Dr. Antony Puthussery CMI', designation: 'Member', photo: frAntonyPuthussery },
       { name: 'Dr. Fr Lijo Thomas', designation: 'Member', photo: frLijoThomas },
@@ -51,7 +51,7 @@ const SECTIONS = [
   {
     title: 'College Development Council',
     people: [
-      { name: 'Fr James Thayyil CMI', designation: 'Chairman', photo: frJamesThayyil },
+      { name: 'Dr. (Fr) Joy Philip Kakkanattu CMI', designation: 'Chairman', photo: frJoyPhilipKakkanattu },
       { name: 'Dr. (Fr) Arun Antony Chully CMI', designation: 'Principal / Secretary', photo: frArunAntonyChully },
       { name: 'Rev. Dr. Antony Puthussery CMI', designation: 'Administrator', photo: frAntonyPuthussery },
       { name: 'Mr Jagdish Salve', designation: 'Management Representative', photo: jagdishSalve },
